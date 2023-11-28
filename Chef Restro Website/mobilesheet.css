@@ -1,7 +1,4 @@
 /* Header is here */
-body {
-    overflow-x: hidden;
-}
 
 .h-list {
     width: 100%;
@@ -29,7 +26,6 @@ body {
 #check:checked~ul {
     left: 0%;
 }
-
 
 /* Home section is here  */
 #navbar {
@@ -67,7 +63,6 @@ body {
     box-shadow: none;
 }
 
-
 /* About-Us section is here */
 #aboutUs {
     padding: 0 20px;
@@ -89,7 +84,6 @@ body {
 .right-about {
     margin-left: 0;
 }
-
 
 /* Menu section is here */
 #our-menu{
@@ -126,7 +120,6 @@ body {
     width: 100%;
     margin-bottom: 20px;
 }
-
 
 /* Service section is here */
 .partner-item img{
@@ -179,14 +172,26 @@ body {
     flex-basis: 45%;
 }
 
-
 /* Some Utility classes */
 .heading{
     font-size: 30px;
 }
 
-/* FOR FOOTER */
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 475px) {
+
+    .left-home h1 {
+        margin-top: 20px;
+        font-size: 27px;
+    }
+
+    .input-row{
+        flex-direction: column;
+    }
+
+    .input-group{
+        margin: 10px 0px;
+    }
+
     .footer-section {
         flex-direction: column;
         justify-content: flex-start;
