@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,400&family=Poppins:wght@300;400&family=Ubuntu:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #190f0f;
+}
+
+header {
+    margin-bottom: 170px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 0 0 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #190f0f;
+    z-index: 1000;
+}
+
+#check,
+.CheckBtn {
+    display: none;
+}
+
+.listing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listing li {
+    list-style: none;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.listing li:hover {
+    transform: translateY(-10px);
+}
+
+.listing li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.listing li a:hover {
+    color: rgb(255, 85, 0);
+    text-decoration: underline;
+}
+
+.left-nav img {
+    height: 7rem;
+}
+
+.CheckBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: red;
+    line-height: 80px;
+}
+
+/* ---HOME SECTION--- */
+
+#home {
+    width: 100%;
+}
+
+.divide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 62px 50px;
+}
+
+.left {
+    color: #fff;
+}
+
+.left h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+}
+
+.left p {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.right img {
+    height: 25rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    box-shadow: rgba(254, 156, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.right img:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(254, 156, 0, 0.35) 0px 7px 29px 0px;
+}
+
+.head-btn {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.head-btn button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* -----ABOUT US SECTION----- */
+
+#aboutus {
+    color: #fff;
+    margin-top: 32px;
+}
+
+.left-about img {
+    height: 30rem;
+    box-shadow: rgba(254, 156, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.right-about {
+    margin: 0px 2rem 0px 6rem;
+}
+
+.right-about h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.right-about p {
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+    margin: 25px 0px;
+}
+
+/* <-----OUR MENU SECTION-----> */
+
+#menu {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* -----SWIPER STARTS FROM HERE----- */
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 32em;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 22em;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2.5em;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    filter: blur(1px);
+}
+
+.card-img {
+    width: 10em;
+    height: 12em;
+    margin-bottom: 2em;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.b-title {
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.b-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.bTn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 111, 0);
+    border: 2px solid rgb(255, 111, 0);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bTn:hover {
+    background: transparent;
+    color: rgb(255, 111, 0);
+}
+
+
+/* ----OFFER SECTION---- */
+
+#offer {
+    margin: 30px 0;
+    padding: 25px;
+}
+
+.offer-container {
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* LEFT IS HERE */
+.o-left {
+    background-color: yellow;
+    padding: 20px;
+    height: 100%;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20% 0 0 20%;
+}
+
+.o-left h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #401C10;
+    font-style: italic;
+}
+
+.img-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img-left img {
+    height: 3rem;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: all 0.4s linear;
+}
+
+.img-left img:hover {
+    transform: scale(1.1);
+}
+
+/* CENTER IS HERE */
+.o-center img {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.o-center img:hover {
+    transform: scale(1.2);
+}
+
+/* RIGHT IS HERE */
+.o-right {
+    height: 100%;
+    background: orange;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20% 20% 0;
+}
+
+.o-right img {
+    height: 20rem;
+    rotate: 30deg;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s linear;
+}
+
+.o-right img:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* -----NEWS SECTION---- */
+
+#news {
+    margin: 50px 0;
+}
+
+.news-contain {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Imgs/News\ Bg\ Cover.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.n-left {
+    height: 100%;
+    flex-basis: 60%;
+    background-color: #f5f5f5;
+    border-radius: 0 40% 40% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.n-left img {
+    width: 38rem;
+}
+
+.n-right {
+    height: 100%;
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.n-about {
+    margin-top: 30%;
+}
+
+.n-about h2 {
+    color: #fff;
+    font-size: 70px;
+    font-family: fantasy;
+    letter-spacing: 3px;
+}
+
+.n-about h3 {
+    font-size: 50px;
+    font-family: cursive;
+    color: goldenrod;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.n-about p {
+    font-size: 40px;
+    font-family: fantasy;
+    color: #fff;
+    margin-bottom: 50px;  
+}
+
+.n-about span {
+    font-size: 50px;
+    color: rgb(255, 111, 0);
+    font-family: fantasy;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.n-about button {
+    margin: 0 auto;
+    display: block;
+}
+
+/* -----CONTACT US SECTION---- */
+
+.contact-box {
+    height: 86vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background: linear-gradient(to right, orange, yellow);
+    color: #401C10;
+}
+
+/* LEFT-BOX */
+.cnct-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cnct-left h3 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+}
+
+label {
+    margin-bottom: 8px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cnct-Form button {
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    margin-top: 40px;
+}
+
+.cnct-Form button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* RIGHT BOX */
+.cnct-right {
+    flex-basis: 40%;
+}
+
+.cnct-right img {
+    max-width: 45%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* #FOOTER SECTION IS HERE */
+
+.footer-section {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 85px 0;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.footer-item h2 {
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 28px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer-item h2::after {
+    content: '';
+    width: 5rem;
+    height: 0.2rem;
+    background: goldenrod;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+.footer-item p {
+    margin-bottom: 10px;
+    transition: all 0.2s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-item p:hover {
+    transform: translateX(5px);
+}
+
+.footer-item a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer-item a:hover {
+    color: rgb(255, 209, 0);
+}
+
+.social ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.social ul li {
+    list-style: none;
+    transition: all 0.3s linear;
+    margin-right: 15px;
+}
+
+.social ul li:hover {
+    transform: scale(1.1);
+}
+
+.social ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+footer .footerPara {
+    text-align: center;
+    color: rgb(255, 209, 0);
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* SCROLL ON TOP IS HERE */
+
+#scroll-on-top {
+    background-color: rgb(255, 209, 0);
+    color: #000;
+    padding: 9px;
+    border-radius: 9px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 1rem;
+    right: 4%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    cursor: pointer;
+}
+
+
+/* SOME UTILITY CLASSES WHICH WE CAN USE UNIVERSAL */
+
+.head {
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+}
+
+.H-Btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.H-Btn {
+    outline: none;
+    border: 2px solid rgb(255, 111, 0);
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 35px;
+    cursor: pointer;
+    background-color: rgb(255, 111, 0);
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s linear;
+}
+
+.H-Btn:hover {
+    transform: translateY(-10px);
+    background: transparent;
+    border: 2px solid rgb(255, 111, 0);
+}
+
+/* RESPONSIVE NAVBAR */
+
+@media screen and (max-width:805px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Header Section */
+    .listing {
+        width: 100%;
+        height: 50vh;
+        background-color: #190f0f;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10rem;
+        left: 100%;
+        transition: all 1s ease-in;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .CheckBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+    /* Home Section */
+    .divide {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .left {
+        margin-top: 30px;
+    }
+
+    .right img {
+        height: 20rem;
+    }
+
+    /* About-Us Section */
+    #aboutus .divide {
+        flex-direction: column;
+    }
+
+    .left-about img {
+        height: 25rem;
+        margin-bottom: 30px;
+    }
+
+    /* Offer Section */
+    .offer-container {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .o-left,
+    .o-right {
+        flex-basis: 100%;
+        border-radius: 0;
+        padding: 15px;
+    }
+
+    .o-right {
+        margin-top: 20px;
+    }
+
+    /* News Section */
+    .news-contain {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .n-left,
+    .n-right {
+        flex-basis: 100%;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+
+    .n-left img {
+        width: 28rem;
+    }
+
+    .n-about {
+        margin-top: 20px;
+    }
+
+    .n-about h2 {
+        font-size: 40px;
+    }
+
+    .n-about h3 {
+        font-size: 30px;
+    }
+
+    .n-about p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .n-about span {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    /* Contact Us */
+    .contact-box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cnct-left,
+    .cnct-right {
+        flex-basis: 100%;
+    }
+
+    .cnct-left {
+        padding: 20px;
+    }
+
+    /* Footer Section */
+    .footer-section {
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .footer-item {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-item h2 {
+        font-size: 24px;
+    }
+
+    .footer-item h2::after {
+        top: 2rem;
+    }
+
+    .footer-item p {
+        font-size: 16px;
+    }
+
+    .footer-item a {
+        font-size: 16px;
+    }
+
+    .social ul li {
+        margin-right: 10px;
+    }
+
+    .social ul li a {
+        font-size: 24px;
+    }
+
+    .footerPara {
+        font-size: 14px;
+    }
+
+}
