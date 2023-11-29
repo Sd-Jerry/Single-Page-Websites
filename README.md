@@ -25,4 +25,5 @@ If you have ideas for improvement, bug fixes, or want to add your own single-pag
 Happy coding! 🌐✨
 
 ## Project Links
-👉Cheft Restro Website-- https://sd-jerry.github.io/Single-Page-Websites/Chef%20Restro%20Website
+👉Cheft Restro Website-- https://sd-jerry.github.io/Single-Page-Websites/Chef%20Restro%20Website     
+👉The Burger House Website-- https://sd-jerry.github.io/Single-Page-Websites/The%20Burger%20House%20Website
