@@ -29,6 +29,7 @@
 
 /* Home section is here  */
 #navbar {
+    border: 2px solid red;
     position: relative;
     z-index: 1;
 }
