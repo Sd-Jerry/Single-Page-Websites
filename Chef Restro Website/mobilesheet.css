@@ -1,5 +1,9 @@
 /* Header is here */
 
+body {
+    overflow-x: hidden;
+}
+
 .h-list {
     width: 100%;
     height: 70vh;

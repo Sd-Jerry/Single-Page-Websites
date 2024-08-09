@@ -12,12 +12,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid red;
+}
+
+.right-nav{
+    margin-right: 50px;
 }
 
 .h-list {
-    margin-right: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -80,7 +84,7 @@
 /* HOME SECTION IS START FROM HERE */
 
 #home {
-    width: 100%;
+    width: 100%; 
     display: flex;
     justify-content: space-around;
     align-items: center;
