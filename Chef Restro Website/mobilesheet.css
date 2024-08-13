@@ -31,18 +31,20 @@ body {
     left: 0%;
 }
 
-/* Home section is here  */
 #navbar {
     border: 2px solid red;
     position: relative;
     z-index: 1;
 }
 
+/* Home section is here  */
+
 #home {
     margin-top: 50px;
     flex-direction: column;
     text-align: center;
     padding: 20px 20px 0 20px;
+    border: 2px solid red;
 }
 
 .left-home h1 {
