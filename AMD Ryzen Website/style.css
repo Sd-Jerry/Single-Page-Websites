@@ -9,6 +9,7 @@
 /* -------HEADER SECTION IS HERE------- */
 
 header {
+    border: 1px solid red;
     height: 260px;
     position: relative;
 }
@@ -103,6 +104,10 @@ header::after {
 
 /* ---------HOME SECTION IS HERE--------- */
 
+#home{
+    border: 1px solid green;
+}
+
 #home h1 {
     padding: 31px 50px;
     font-size: 30px;
@@ -148,6 +153,10 @@ header::after {
 }
 
 /* -----------PRODUCT SECTION IS HERE--------- */
+
+#product{
+    border: 2px solid yellow;
+}
 
 .p-list {
     display: flex;
@@ -273,7 +282,7 @@ header::after {
 /* -------EXPO SECTION IS HERE------- */
 
 #expo {
-    border: 1px solid;
+    border: 2px solid red;
     background-color: black;
 }
 
@@ -324,6 +333,7 @@ header::after {
 /* -------PERFORMANCE SECTION IS HERE------- */
 
 #performance {
+    border: 2px solid greenyellow;
     background-color: black;
     color: #fff;
 }
@@ -352,7 +362,7 @@ header::after {
 
 #platform {
     background-color: black;
-    border: 1px solid;
+    border: 2px solid blueviolet;
 }
 
 #platform .expo-container .expo-card {
@@ -408,6 +418,7 @@ header::after {
 /* <!---------FOOTER SECTION IS HERE---------> */
 
 #footer {
+    border: 2px solid burlywood;
     background-color: black;
     width: 100%;
 }
