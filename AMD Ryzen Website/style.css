@@ -42,13 +42,13 @@ header::after {
     opacity: 0.6;
 }
 
-/* #navbar .responsive {
+#navbar .responsive {
     display: none;
 }
 
 #navbar #ryzen {
     display: none;
-} */
+}
 
 #navbar {
     display: flex;

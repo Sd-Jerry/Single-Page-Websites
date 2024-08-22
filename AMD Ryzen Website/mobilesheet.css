@@ -1,0 +1,35 @@
+/* -------EXPO SECTION IS HERE------- */
+
+.expo-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.expo-card{
+    width: 90%;
+    height: auto;
+}
+
+.expo-card img{
+    width: 100%;
+}
+
+.am5{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left-am5 ,
+.right-am5{
+    width: 100%;
+    text-align: center;   
+}
+
+.right-am5 img{
+    width: 100%;
+    height: auto;
+}
+
+.left-am5 button{
+    margin-top: 20px;
+}
