@@ -33,3 +33,35 @@
 .left-am5 button{
     margin-top: 20px;
 }
+
+/* -------PERFORMANCE SECTION IS HERE------- */
+
+.performance-c1 img{
+    height: auto;
+    width: 90%;
+}
+
+.performance-c2{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.performance-c1 .product-left,
+.performance-c1 .product-right{
+    width: 100%;
+}
+
+.performance-c2 .product-left img{
+    height: auto;
+    width: 100%;
+}
+
+.performance-c2 .product-right{
+    margin-top: 20px;
+}
+
+.performance-c2 .product-right button{
+    margin-top: 20px;
+}
