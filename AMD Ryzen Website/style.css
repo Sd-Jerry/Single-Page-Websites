@@ -42,13 +42,13 @@ header::after {
     opacity: 0.6;
 }
 
-#navbar .responsive {
+/* #navbar .responsive {
     display: none;
 }
 
 #navbar #ryzen {
     display: none;
-}
+} */
 
 #navbar {
     display: flex;
@@ -229,6 +229,11 @@ header::after {
     position: relative;
     margin-top: 20px;
     padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
 }
 
 .sub-cont::before {
@@ -257,14 +262,6 @@ header::after {
     z-index: -1;
     background-color: black;
     opacity: 0.8;
-}
-
-.sub-cont {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    color: #fff;
 }
 
 .sub-cont .product-right h2 {
@@ -470,7 +467,7 @@ header::after {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px 80px 20px 80px;
+    padding: 50px 80px 20px;
 }
 
 .footer-item {

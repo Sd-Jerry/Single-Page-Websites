@@ -1,3 +1,49 @@
+/* -------HEADER-NAVBAR SECTION IS HERE------- */
+
+#navbar ul li a {
+    font-size: 12px;
+}
+
+/* ---------HOME SECTION IS HERE--------- */
+
+#home h1{
+    font-size: 28px;
+}
+
+.home-container{
+    flex-wrap: nowrap;
+}
+
+.home-left img{
+    height: 17rem;
+}
+
+/* -----------PRODUCT SECTION IS HERE--------- */
+
+.p-list{
+    padding: 0 80px;
+}
+
+.product-container{
+    flex-wrap: nowrap;
+}
+
+.product-right img,
+.product-left img{
+    height: 17rem;
+}
+
+.sub-cont .product-right h2 {
+    font-size: 32px;
+    margin: 5px 0px;
+}
+
+.sub-cont .product-right p {
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+
 /* -------EXPO SECTION IS HERE------- */
 
 .expo-container{
@@ -5,8 +51,9 @@
     align-items: center;
 }
 
-.expo-card{
-    width: 90%;
+.expo-card,
+#platform .expo-container .expo-card{
+    width: 70%;
     height: auto;
 }
 
@@ -15,18 +62,18 @@
 }
 
 .am5{
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 20px;
 }
 
 .left-am5 ,
 .right-am5{
-    width: 100%;
+    width: 90%;
     text-align: center;   
 }
 
 .right-am5 img{
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -55,7 +102,7 @@
 
 .performance-c2 .product-left img{
     height: auto;
-    width: 100%;
+    width: 90%;
 }
 
 .performance-c2 .product-right{
@@ -64,4 +111,49 @@
 
 .performance-c2 .product-right button{
     margin-top: 20px;
+}
+
+/* ---------PLATFORM SECTION IS HERE---------  */
+
+.pf-container .product-left img {
+    margin-left: 25px;
+    height: 13rem;
+}
+
+.pf-container2 .product-right img {
+    height: 11rem;
+}
+
+/* ------------ FOOTER SECTION IS HERE -----------  */
+
+.footer-list{
+    padding: 50px 30px 20px;
+}
+
+
+.footer-bottom ul li a,
+.footer-bottom ul span a{
+    margin: 0 6px;
+}
+
+
+.copy-right{
+    font-size: 13px
+}
+
+/* ------------ SOME UTILITY CLASSES -----------  */
+
+.head{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.para {
+    font-size: 15px;
+    margin: 20px 5px;
+}
+
+.h3{
+    font-size: 18px;
+    margin-bottom: 10px;
 }
