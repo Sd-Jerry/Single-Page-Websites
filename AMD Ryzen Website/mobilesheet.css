@@ -6,30 +6,30 @@
 
 /* ---------HOME SECTION IS HERE--------- */
 
-#home h1{
+#home h1 {
     font-size: 28px;
 }
 
-.home-container{
+.home-container {
     flex-wrap: nowrap;
 }
 
-.home-left img{
+.home-left img {
     height: 17rem;
 }
 
 /* -----------PRODUCT SECTION IS HERE--------- */
 
-.p-list{
+.p-list {
     padding: 0 80px;
 }
 
-.product-container{
+.product-container {
     flex-wrap: nowrap;
 }
 
 .product-right img,
-.product-left img{
+.product-left img {
     height: 17rem;
 }
 
@@ -46,49 +46,49 @@
 
 /* -------EXPO SECTION IS HERE------- */
 
-.expo-container{
+.expo-container {
     flex-direction: column;
     align-items: center;
 }
 
 .expo-card,
-#platform .expo-container .expo-card{
+#platform .expo-container .expo-card {
     width: 70%;
     height: auto;
 }
 
-.expo-card img{
+.expo-card img {
     width: 100%;
 }
 
-.am5{
+.am5 {
     flex-direction: column-reverse;
     padding: 20px;
 }
 
-.left-am5 ,
-.right-am5{
+.left-am5,
+.right-am5 {
     width: 90%;
-    text-align: center;   
+    text-align: center;
 }
 
-.right-am5 img{
+.right-am5 img {
     width: 80%;
     height: auto;
 }
 
-.left-am5 button{
+.left-am5 button {
     margin-top: 20px;
 }
 
 /* -------PERFORMANCE SECTION IS HERE------- */
 
-.performance-c1 img{
+.performance-c1 img {
     height: auto;
     width: 90%;
 }
 
-.performance-c2{
+.performance-c2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -96,20 +96,20 @@
 }
 
 .performance-c1 .product-left,
-.performance-c1 .product-right{
+.performance-c1 .product-right {
     width: 100%;
 }
 
-.performance-c2 .product-left img{
+.performance-c2 .product-left img {
     height: auto;
     width: 90%;
 }
 
-.performance-c2 .product-right{
+.performance-c2 .product-right {
     margin-top: 20px;
 }
 
-.performance-c2 .product-right button{
+.performance-c2 .product-right button {
     margin-top: 20px;
 }
 
@@ -126,24 +126,24 @@
 
 /* ------------ FOOTER SECTION IS HERE -----------  */
 
-.footer-list{
+.footer-list {
     padding: 50px 30px 20px;
 }
 
 
 .footer-bottom ul li a,
-.footer-bottom ul span a{
+.footer-bottom ul span a {
     margin: 0 6px;
 }
 
 
-.copy-right{
+.copy-right {
     font-size: 13px
 }
 
 /* ------------ SOME UTILITY CLASSES -----------  */
 
-.head{
+.head {
     font-size: 20px;
     margin: 5px;
 }
@@ -153,7 +153,88 @@
     margin: 20px 5px;
 }
 
-.h3{
+.h3 {
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+
+/*----------- MAX-WIDTH SET TO TABLET SIZE AT 768PX ----------- */
+
+@media screen and (max-width:769px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* -------HEADER-NAVBAR SECTION IS HERE------- */
+
+    #navbar {
+        padding: 1.5rem 1rem 1rem;
+    }
+
+    #navbar ul li {
+        padding-right: 8px;
+        margin: 5px 2px;
+    }
+
+    #navbar ul li a {
+        font-size: 10px;
+    }
+
+    .logo img {
+        margin-left: 15px;
+    }
+
+    /* ---------HOME SECTION IS HERE--------- */
+
+    #home h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .home-container {
+        flex-wrap: wrap;
+    }
+
+    .home-right {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    /* -----------PRODUCT SECTION IS HERE--------- */
+
+    .p-list {
+        padding: 10px;
+    }
+
+    .product-container {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+
+    .product-left {
+        flex-basis: 100%;
+    }
+
+    .product-right {
+        flex-basis: 100%;
+    }
+
+    #product .product-container:nth-child(3) {
+        flex-wrap: wrap;
+    }
+
+    .sub-cont {
+        text-align: center;
+    }
+
+    #product .sub-cont .product-left img{
+        height: 10rem;
+    }
+
+    .sub-cont .product-right h2 {
+        font-size: 25px;
+        margin: 15px 0px;
+    }
 }
