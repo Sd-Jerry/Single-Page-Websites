@@ -229,7 +229,7 @@
         text-align: center;
     }
 
-    #product .sub-cont .product-left img{
+    #product .sub-cont .product-left img {
         height: 10rem;
     }
 
@@ -237,4 +237,49 @@
         font-size: 25px;
         margin: 15px 0px;
     }
+
+    /* -------PERFORMANCE SECTION IS HERE------- */
+
+    .pf-container .product-left img {
+        height: 10rem;
+    }
+
+    .pf-container2 {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .pf-container3 {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    /* ------------ FOOTER SECTION IS HERE -----------  */
+
+    .f-container {
+        padding: 20px 60px;
+    }
+
+    .footer-list {
+        padding: 50px 10px 20px;
+    }
+
+    .footer-item{
+        text-align: center;
+    }
+
+    .footer-item h2{
+        font-size: 20px;
+    }
+
+    .footer-item ul li {
+        font-size: 13px;
+    }
+
+    .footer-bottom ul {
+        flex-wrap: wrap;
+    }
+
 }
