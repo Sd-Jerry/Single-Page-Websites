@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 /* -------HEADER SECTION IS HERE------- */
 
 header {
@@ -42,14 +47,6 @@ header::after {
     opacity: 0.6;
 }
 
-/* #navbar .responsive {
-    display: none;
-}
-
-#navbar #ryzen {
-    display: none;
-} */
-
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -62,6 +59,11 @@ header::after {
     cursor: pointer;
     transition: all 0.4s linear;
     box-shadow: rgba(255, 228, 129, 0.2) 0px 7px 29px 0px;
+}
+
+#check,
+.CheckBtn {
+  display: none;
 }
 
 #navbar ul {

@@ -266,11 +266,11 @@
         padding: 50px 10px 20px;
     }
 
-    .footer-item{
+    .footer-item {
         text-align: center;
     }
 
-    .footer-item h2{
+    .footer-item h2 {
         font-size: 20px;
     }
 
@@ -282,4 +282,88 @@
         flex-wrap: wrap;
     }
 
+}
+
+/*----------- MAX-WIDTH SET TO TABLET SIZE AT 480PX ----------- */
+
+@media screen and (max-width: 485px) {
+
+    /* ---------HEADER SECTION IS HERE--------- */
+
+    header{
+        height: 210px;
+    }
+
+    #list {
+        width: 100%;
+        height: 50vh;
+        background-color: #190f0f;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5.5rem;
+        left: 100%;
+        transition: all 1s ease-in;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .CheckBtn {
+        display: block;
+        color: rgb(255, 119, 0);
+        margin: 15px 25px 0 0;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+
+    /* ---------HOME SECTION IS HERE--------- */
+
+    #home h1{
+        font-size: 15px;
+    }
+
+    .home-left img {
+        height: 12rem;
+    }
+    
+    /* -----------PRODUCT SECTION IS HERE--------- */
+    .p-list {
+        flex-wrap: wrap;
+    }
+    
+    .p-list li a{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .product-right img,
+    .product-left img {
+        height: 13rem;
+    }
+
+    /* -------PERFORMANCE SECTION IS HERE------- */
+    .pf-container2 .product-right img {
+        height: 8rem;
+    }
+
+    /* ------ SOME UTILITY CLASSES------  */
+    .head{
+        font-size: 18px;
+    }
+
+    .para{
+        font-size: 12px;
+    }
+
+    .Btn{
+        padding: 8px;
+        font-size: 10px;
+    }
 }
