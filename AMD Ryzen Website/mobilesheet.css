@@ -290,7 +290,7 @@
 
     /* ---------HEADER SECTION IS HERE--------- */
 
-    header{
+    header {
         height: 210px;
     }
 
@@ -314,7 +314,7 @@
 
     .CheckBtn {
         display: block;
-        color: rgb(255, 119, 0);
+        color: rgb(198, 115, 0);        ;
         margin: 15px 25px 0 0;
     }
 
@@ -325,20 +325,20 @@
 
     /* ---------HOME SECTION IS HERE--------- */
 
-    #home h1{
+    #home h1 {
         font-size: 15px;
     }
 
     .home-left img {
         height: 12rem;
     }
-    
+
     /* -----------PRODUCT SECTION IS HERE--------- */
     .p-list {
         flex-wrap: wrap;
     }
-    
-    .p-list li a{
+
+    .p-list li a {
         font-size: 12px;
         padding: 5px;
     }
@@ -348,22 +348,149 @@
         height: 13rem;
     }
 
-    /* -------PERFORMANCE SECTION IS HERE------- */
-    .pf-container2 .product-right img {
+    #product .sub-cont .product-left img {
         height: 8rem;
     }
 
-    /* ------ SOME UTILITY CLASSES------  */
-    .head{
+    .sub-cont .product-right h2 {
         font-size: 18px;
     }
 
-    .para{
+    .sub-cont .product-right p {
         font-size: 12px;
     }
 
-    .Btn{
+    /* <-- -------EXPO SECTION IS HERE------- --> */
+    .expo-card h2 {
+        font-size: 17px;
+    }
+
+    /* -------PERFORMANCE SECTION IS HERE------- */
+
+    .pf-container {
+        height: 315px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .pf-container .product-left img,
+    .pf-container2 .product-right img {
+        height: 8rem;
+        margin: 0;
+    }
+
+    .pf-container3 .product-right img {
+        height: 13rem;
+    }
+
+    .pf-container3 {
+        margin-top: 20px;
+    }
+
+    /* <!---------FOOTER SECTION IS HERE---------> */
+
+    .f-right {
+        width: 93%;
+        border: none;
+        margin-top: 10px;
+    }
+
+    .footer-list {
+        flex-wrap: wrap;
+    }
+
+    #scroll-on-top {
+        width: 30px;
+        height: 30px;
+        right: 10%;
+        bottom: 2rem;
+      }
+
+
+    /* ------ SOME UTILITY CLASSES------  */
+    .head {
+        font-size: 17px;
+    }
+
+    .para {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .Btn {
         padding: 8px;
         font-size: 10px;
+    }
+
+    .h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .home-right {
+        padding: 0px;
+    }
+
+    .home-left img {
+        height: 9rem;
+    }
+
+    .product-container{
+        padding:  20px 25px;
+    }
+
+    .product-right img,
+    .product-left img {
+        height: 9rem;
+    }
+
+    .expo-container {
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .expo-card, #platform .expo-container .expo-card {
+        width: 70%;
+    }
+
+    .performance-c1 {
+        padding: 15px 0px;
+    }
+
+    .pf-container {
+        height: 280px;
+    }
+
+    .pf-container .product-left img,
+    .pf-container2 .product-right img {
+        height: 6rem;
+    }
+
+    .pf-container3 .product-right img {
+        height: 11rem;
+    }
+
+    .f-container .f-left button{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .footer-item {
+        text-align: left;
+    }
+
+    .footer-item h2 {
+        font-size: 17px;
+    }
+
+    .head {
+        font-size: 15px;
+        margin: 5px 8px;
+    }
+
+    h3 {
+        font-size: 15px;
     }
 }
