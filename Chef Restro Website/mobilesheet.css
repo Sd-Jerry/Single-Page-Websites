@@ -7,7 +7,7 @@
     margin-right: 35px;
 }
 
-.h-list li{
+.h-list li {
     padding: 5px;
     margin: 10px;
 }
@@ -18,20 +18,20 @@
 }
 
 /* ------- OUR CHEF. IS HERE ------ */
-.chef-sub-contain{
+.chef-sub-contain {
     height: 100vh;
 }
 
-.left-chef{
+.left-chef {
     padding: 10px;
 }
 
-.left-chef p{
+.left-chef p {
     line-height: normal;
 }
 
 /* ----- SERVICE SECTION IS HERE ------ */
-.left-part{
+.left-part {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,19 +39,18 @@
     border: 1px solid #ffd07e;
 }
 
-.right-part p{
+.right-part p {
     font-size: 18px;
     font-weight: normal;
 }
 
 /* CONTACT-US SECTION IS HERE */
-.contact-box{
+.contact-box {
     width: 80%;
 }
 
 
-
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 769px) {
 
     /* Header is here */
     .h-list {
@@ -82,7 +81,6 @@
     }
 
     #navbar {
-        border: 2px solid red;
         position: relative;
         z-index: 1;
     }
@@ -94,11 +92,11 @@
         flex-direction: column;
         text-align: center;
         padding: 20px 20px 0 20px;
-        border: 2px solid red;
     }
 
     .left-home h1 {
         font-size: 30px;
+        margin: 10px 0px;
     }
 
     .left-home .h-para {
@@ -111,7 +109,7 @@
 
     .right-home img {
         height: auto;
-        max-width: 100%;
+        max-width: 50%;
         margin-top: 20px;
     }
 
@@ -135,11 +133,15 @@
     }
 
     .left-about img {
-        width: 100%;
+        width: 58%;
     }
 
     .right-about {
         margin-left: 0;
+    }
+
+    .right-about p {
+        padding: 10px;
     }
 
     /* Menu section is here */
@@ -195,12 +197,12 @@
     }
 
     .left-part {
-        width: 100%;
+        border: none;
+        width: 50%;
         padding: 0;
     }
 
     .left-part .d-block {
-        width: 28%;
         margin: 0 auto;
         margin-bottom: 10px;
     }
@@ -237,9 +239,83 @@
 
 @media screen and (max-width: 475px) {
 
+    .logo img {
+        height: 75px;
+    }
+
+    .logo h3 {
+        font-size: 1.5rem;
+    }
+
+    #home {
+        margin-top: 15px;
+    }
+
     .left-home h1 {
         margin-top: 20px;
-        font-size: 27px;
+        font-size: 25px;
+    }
+
+    .heading {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .about-head p strong {
+        font-size: 15px;
+    }
+
+    .sub-head {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .right-about p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #chef {
+        margin-top: 30px;
+    }
+
+    .left-chef h3 {
+        font-size: 25px;
+    }
+
+    .left-chef p {
+        font-size: 15px;
+    }
+
+    .partner-item img {
+        width: 140px;
+    }
+
+    .partners-abt h4 {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .left-part .d-block {
+        height: 100px;
+    }
+
+    .partBtn {
+        width: 110px;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .social ul {
+        justify-content: space-evenly;
+    }
+
+    .footer-item h2 {
+        font-size: 22px;
+    }
+
+    footer .footerPara {
+        font-size: 13px;
     }
 
     .input-row {
@@ -251,8 +327,107 @@
     }
 
     .footer-section {
-        flex-direction: column;
-        justify-content: flex-start;
-        padding-left: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .h-list{
+        height: 55vh;
+        top: 6.6rem;
+    }
+
+    .h-list li a{
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .logo h3 {
+        font-size: 1.2rem;
+    }
+
+    .checkBtn{
+        font-size: 25px;
+    }
+
+    .left-home .col-red p {
+        font-size: 14px;
+    }
+
+    .left-home h1{
+        font-size: 18px;
+    }
+
+    .left-home .h-para {
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .chef-sub-contain{
+        padding: 0px;
+    }
+
+    .left-chef{
+        padding: 10px;
+    }
+
+    .left-chef h3 {
+        font-size: 18px;
+    }
+
+    .left-chef p {
+        font-size: 12px;
+    }
+
+    .partner-item img {
+        width: 110px;
+    }
+
+    .right-part p {
+        font-size: 14px;
+        margin: 1rem 0;
+    }
+    
+    .footer-item h2{
+        font-size: 18px;
+    }
+    
+    .footer-item h2::after {
+        top: 2rem;
+    }
+    
+    .footer-item a{
+        font-size: 14px;
+    }
+
+    #scroll-on-top {
+        bottom: 4rem;
+        right: 5%;
+        height: 32px;
+        width: 32px;
+    }
+
+    .contact-box h2{
+        font-size: 20px;
+    }
+
+    .contact-box p{
+        font-size: 14px;
+        padding-right: 15px;
+    }
+    label{
+        font-size: 16px;
+    }
+
+    placeholder{
+        font-size: 10px;
     }
 }
