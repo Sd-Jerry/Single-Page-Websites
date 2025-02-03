@@ -36,7 +36,6 @@
     justify-content: center;
     align-items: center;
     width: 30%;
-    border: 1px solid #ffd07e;
 }
 
 .right-part p {
@@ -62,7 +61,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 8.5rem;
+        top: 9.5rem;
         left: 100%;
         transition: all 1s ease-in;
     }
@@ -85,10 +84,14 @@
         z-index: 1;
     }
 
+    .logo {
+        margin-left: 50px;
+    }
+
     /* Home section is here  */
 
     #home {
-        margin-top: 50px;
+        margin-top: 10px;
         flex-direction: column;
         text-align: center;
         padding: 20px 20px 0 20px;
