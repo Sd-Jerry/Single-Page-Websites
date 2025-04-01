@@ -1,0 +1,126 @@
+@media (max-width: 1374px) {
+
+    .nav-left {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 1294px) {
+
+    .list li a {
+        padding: 0 8px;
+    }
+
+}
+
+@media (max-width: 1197px) {
+
+    .nav-left {
+        margin-top: 15px;
+    }
+
+    .nav-left img {
+        height: 80px;
+        width: 170px;
+    }
+
+    .list li a {
+        font-size: 1.1rem;
+    }
+
+    .f-btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1102px) {
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+    .list li a {
+        padding: 0 10px;
+    }
+
+    .nav-left img {
+        height: 100px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 944px) {
+
+    .list li a {
+        font-size: 0.9rem;
+    }
+
+    .f-btn {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 805px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        flex-direction: row;
+        border-bottom: 1px solid grey;
+        padding: 10px;
+
+    }
+
+    .list {
+        width: 100%;
+        height: 62vh;
+        background-color: #190f0f;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 7.2rem;
+        left: 100%;
+        transition: all 1s ease-in;
+        border-bottom: none;
+    }
+
+    .list li a {
+        color: #fff;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .CheckBtn {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+}
+
+@media (max-width: 475px) {
+
+    .list {
+        top: 6.5rem;
+    }
+
+    .nav-left img {
+        height: 90px;
+        width: 160px;
+    }
+
+    .CheckBtn {
+        font-size: 25px;
+    }
+}
