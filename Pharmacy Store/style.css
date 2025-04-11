@@ -8,7 +8,8 @@
     scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100vw;
 }
@@ -45,7 +46,7 @@ html, body {
     display: flex;
     margin-top: 20px;
     padding-left: 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(0, 60, 239);
 }
 
 .list li {
@@ -63,13 +64,12 @@ html, body {
     font-weight: 600;
 }
 
-
 .list li:hover {
     transform: translateY(-5px);
 }
 
 .list li a:hover {
-    color: tomato;
+    color: rgb(0, 139, 181);
 }
 
 #check {
@@ -81,8 +81,6 @@ html, body {
     cursor: pointer;
     font-size: 30px;
     float: right;
-    color: red;
+    color: rgb(0, 21, 255);
     line-height: 80px;
 }
-
-  

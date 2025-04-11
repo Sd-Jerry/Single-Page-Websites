@@ -79,13 +79,13 @@
 
     .list {
         width: 100%;
-        height: 62vh;
+        height: 46vh;
         background-color: #190f0f;
         text-align: center;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 7.2rem;
+        top: 4.1rem;
         left: 100%;
         transition: all 1s ease-in;
         border-bottom: none;
@@ -122,5 +122,12 @@
 
     .CheckBtn {
         font-size: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .list {
+        top: 4.2rem;
     }
 }
