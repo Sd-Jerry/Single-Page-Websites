@@ -15,14 +15,14 @@ body {
 }
 
 /* ----- HEADER SECTION ------ */
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: whitesmoke;
     z-index: 1000;
     transition: top 0.3s;
-}
+} */
 
 #navbar {
     display: flex;
@@ -83,4 +83,24 @@ body {
     float: right;
     color: rgb(0, 21, 255);
     line-height: 80px;
+}
+
+/* ----- HOME SECTION ------ */
+#home{
+    width: 100%;
+    height: 76vh;
+    border: 2px solid red;
+
+}
+
+.fs-img {
+    background-image: url('./Imgs/New\ young-woman-pharmacist-pharmacy.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 76vh;
+    width: 100%;
 }
