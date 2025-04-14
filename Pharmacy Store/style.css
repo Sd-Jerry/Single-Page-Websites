@@ -88,13 +88,12 @@ body {
 /* ----- HOME SECTION ------ */
 #home{
     width: 100%;
-    height: 76vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 }
 
 .fs-img {
-    background-image: url('./Imgs/New\ young-woman-pharmacist-pharmacy.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url('./Imgs/New\ young-woman-pharmacist-pharmacy.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -103,4 +102,27 @@ body {
     position: relative;
     height: 76vh;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
+
+.left-txt{
+    border: 2px solid red;
+    height: 30vh;
+    width: 50%;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid #ff9a19;
+    outline: none;
+    border-radius: 5px;
+    background: #ff9a19;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+  
+  .btn:hover {
+    background: transparent;
+  }
