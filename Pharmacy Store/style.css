@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    line-height: 6rem;
+    line-height: 4em;
     padding-top: 10px;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .list {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-left: 0;
     border-bottom: 1px solid rgb(0, 60, 239);
 }
@@ -86,13 +86,10 @@ body {
 }
 
 /* ----- HOME SECTION ------ */
-#home{
+
+#home {
     width: 100%;
-    /* border: 2px solid red; */
-
-}
-
-.fs-img {
+    height: 80vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url('./Imgs/New\ young-woman-pharmacist-pharmacy.jpg');
     background-size: cover;
     background-position: center;
@@ -100,29 +97,82 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 76vh;
-    width: 100%;
     display: flex;
     align-items: center;
 }
 
-.left-txt{
-    border: 2px solid red;
-    height: 30vh;
+.left-txt {
+    color: #fff;
     width: 50%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.left-txt h1 {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 15px 25px
+}
+
+.left-txt p {
+    font-size: 42px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    padding: 5px 10px 30px;
+}
+
+.left-txt p span {
+    font-weight: 500;
 }
 
 .btn {
-    border: 2px solid #ff9a19;
-    outline: none;
-    border-radius: 5px;
-    background: #ff9a19;
-    color: #fff;
+    position: relative;
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
     cursor: pointer;
-    transition: all 0.3s ease-in;
-  }
-  
-  .btn:hover {
-    background: transparent;
-  }
+    outline: none;
+    border-radius: 2px;
+    color: black;
+    padding: 12px 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn::after {
+    content: "";
+    background: lightblue;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.btn:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.btn:hover{
+    background-color: rgb(235, 250, 255);
+}
