@@ -70,6 +70,15 @@
         overflow-x: hidden;
     }
 
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: whitesmoke;
+        z-index: 1000;
+        transition: top 0.3s;
+    }
+
     #navbar {
         flex-direction: row;
         border-bottom: 1px solid grey;
