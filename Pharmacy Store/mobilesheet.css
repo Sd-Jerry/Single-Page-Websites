@@ -24,9 +24,6 @@
         font-size: 1.1rem;
     }
 
-    .f-btn {
-        font-size: 15px;
-    }
 }
 
 @media screen and (max-width: 1102px) {
@@ -49,11 +46,6 @@
 @media screen and (max-width: 944px) {
     .list li a {
         font-size: 0.9rem;
-    }
-
-    .f-btn {
-        font-size: 15px;
-        margin-left: 5px;
     }
 }
 
@@ -160,12 +152,12 @@
         padding: 5px 5px 15px;
     }
 
-    .btn {
+    .H-btn {
         font-size: 12px;
         padding: 8px 16px;
     }
 
-    .btn a {
+    .H-btn a {
         font-size: 12px;
     }
 }
@@ -201,7 +193,7 @@
         font-size: 13px;
     }
 
-    .btn a {
+    .H-btn a {
         font-size: 10px;
     }
 }
