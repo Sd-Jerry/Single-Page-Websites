@@ -1,21 +1,16 @@
-@media (max-width: 1374px) {
-
+@media screen and (max-width: 1374px) {
     .nav-left {
         margin-left: 0;
     }
-
 }
 
-@media (max-width: 1294px) {
-
+@media screen and (max-width: 1294px) {
     .list li a {
         padding: 0 8px;
     }
-
 }
 
-@media (max-width: 1197px) {
-
+@media screen and (max-width: 1197px) {
     .nav-left {
         margin-top: 15px;
     }
@@ -34,8 +29,7 @@
     }
 }
 
-@media (max-width: 1102px) {
-
+@media screen and (max-width: 1102px) {
     #navbar {
         flex-direction: column;
         align-items: center;
@@ -52,8 +46,7 @@
     }
 }
 
-@media (max-width: 944px) {
-
+@media screen and (max-width: 944px) {
     .list li a {
         font-size: 0.9rem;
     }
@@ -64,8 +57,7 @@
     }
 }
 
-@media (max-width: 805px) {
-
+@media screen and (max-width: 805px) {
     body {
         overflow-x: hidden;
     }
@@ -94,7 +86,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 4.1rem;
+        top: 7.6rem;
         left: 100%;
         transition: all 1s ease-in;
         border-bottom: none;
@@ -116,9 +108,26 @@
     #check:checked~ul {
         left: 0%;
     }
+
+    /* ------ HOME SECTION IS HERE ----- */
+
+    #home {
+        height: 77vh;
+        margin-top: 19%;
+    }
+
+    .left-txt p {
+        font-size: 35px;
+    }
 }
 
-@media (max-width: 475px) {
+@media screen and (max-width: 769px) {
+    #home {
+        height: 78vh;
+    }
+}
+
+@media screen and (max-width: 475px) {
 
     .list {
         top: 6.5rem;
@@ -132,11 +141,67 @@
     .CheckBtn {
         font-size: 25px;
     }
+
+    /* ------ HOME SECTION IS HERE ----- */
+    #home {
+        padding: 30px 15px;
+        background-position: center;
+        height: 50vh;
+        margin-top: 30%;
+    }
+
+    .left-txt h1 {
+        font-size: 12px;
+        padding: 6px 8px 15px;
+    }
+
+    .left-txt p {
+        font-size: 20px;
+        padding: 5px 5px 15px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .btn a {
+        font-size: 12px;
+    }
 }
 
-@media (max-width: 425px) {
+
+@media screen and (max-width: 426px) {
 
     .list {
         top: 4.2rem;
+    }
+
+    /* ------ HOME SECTION IS HERE ----- */
+    #home {
+        height: auto;
+        margin-top: 33%;
+    }
+
+    .left-txt h1 {
+        font-size: 10px;
+    }
+
+    .left-txt p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    #home {
+        margin-top: 45%;
+    }
+
+    .left-txt p {
+        font-size: 13px;
+    }
+
+    .btn a {
+        font-size: 10px;
     }
 }
