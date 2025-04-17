@@ -23,23 +23,27 @@ body {
     align-content: center;
     line-height: 4em;
     padding-top: 10px;
+    background-color: #0F1D33;
 }
 
 .nav-left {
     margin: 12px 0 0 40px;
+    border: 1px solid white;
 }
 
 .nav-left img {
     height: 110px;
     width: 200px;
     cursor: pointer;
+    border: 1px solid white;
+
 }
 
 .list {
     display: flex;
     margin-top: 30px;
     padding-left: 0;
-    border-bottom: 1px solid rgb(0, 60, 239);
+    border-bottom: 1px solid #91A8D4;
 }
 
 .list li {
@@ -50,7 +54,8 @@ body {
 .list li a {
     padding: 0px 15px;
     font-size: 1.2rem;
-    color: black;
+    color: #A9C8F8;
+    /* color: black; */
     cursor: pointer;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -74,7 +79,7 @@ body {
     cursor: pointer;
     font-size: 30px;
     float: right;
-    color: rgb(0, 21, 255);
+    color: #A9C8F8;
     line-height: 80px;
 }
 
@@ -173,19 +178,17 @@ body {
 
 /* <-- ----- BESTSELLER PRODUCTS SECTION IS HERE ---- --> */
 #bestseller {
-    border: 2px solid red;
-    width: 100%;
     /* height: 80vh; */
+    width: 100%;
+    background: white;
     font-family: Arial, sans-serif;
     padding: 50px 80px 50px;
-    background-color: whitesmoke;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
-    border: 1px solid brown;
-    background: white;
+    background-color: white;
 }
 
 .filters {
@@ -194,15 +197,21 @@ body {
     align-items: center;
     gap: 8px;
     font-weight: 600;
-    font-size: 16px;
+    font-family: 'Quicksand';
 }
 
 .filters .active {
-    color: #8db600;
+    color: #6ca7fe;
+    font-size: 35px;
 }
 
 .filters .separator {
     color: #999999;
+    font-size: 20px;
+}
+
+.filters span {
+    font-size: 35px;
 }
 
 .cards {
@@ -210,7 +219,8 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
-    border: 1px solid blueviolet;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media (min-width: 640px) {
@@ -238,6 +248,7 @@ body {
     font-size: 12px;
     color: #9ca3af;
     margin-bottom: 4px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .title {
@@ -268,7 +279,7 @@ body {
 }
 
 .price {
-    color: #8db600;
+    color: #6ca7fe;
     font-weight: 600;
     font-size: 16px;
 }
@@ -278,8 +289,10 @@ body {
     gap: 8px;
 }
 
-.btn {
-    border: 1px solid #d1d5db;
+.whatsapp-btn {
+    outline: none;
+    border: 0.5px solid #25d366;
+    color: #25d366;
     border-radius: 4px;
     padding: 6px 8px;
     cursor: pointer;
@@ -287,19 +300,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4b5563;
     font-size: 14px;
     transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.btn:hover {
-    color: #111827;
-    border-color: #111827;
-}
-
-.whatsapp-btn {
-    color: #25d366;
-    border-color: #25d366;
 }
 
 .whatsapp-btn:hover {
