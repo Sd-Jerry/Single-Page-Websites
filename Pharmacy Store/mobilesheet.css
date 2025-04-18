@@ -16,14 +16,12 @@
     }
 
     .nav-left img {
-        height: 80px;
-        width: 170px;
+        height: 70px;
     }
 
     .list li a {
         font-size: 1.1rem;
     }
-
 }
 
 @media screen and (max-width: 1102px) {
@@ -34,18 +32,56 @@
     }
 
     .list li a {
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .nav-left img {
-        height: 100px;
-        width: 180px;
+        height: 85px;
     }
 }
 
-@media screen and (max-width: 944px) {
-    .list li a {
-        font-size: 0.9rem;
+@media screen and (max-width: 1024px) {
+    /* ------ BESTSELLER SECTION IS HERE ----- */
+
+    #bestseller {
+        padding: 40px 40px;
+    }
+
+    .filters {
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .filters span {
+        font-size: 28px;
+    }
+
+    .filters .active {
+        font-size: 28px;
+    }
+
+    .filters .separator {
+        font-size: 18px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .product-image {
+        max-width: 120px;
+        margin-bottom: 16px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .whatsapp-btn {
+        font-size: 12px;
+        padding: 5px 7px;
     }
 }
 
@@ -104,8 +140,8 @@
     /* ------ HOME SECTION IS HERE ----- */
 
     #home {
-        height: 77vh;
-        margin-top: 19%;
+        height: 85vh;
+        margin-top: 15%;
     }
 
     .left-txt p {
@@ -115,19 +151,109 @@
 
 @media screen and (max-width: 769px) {
     #home {
-        height: 78vh;
+        height: 85vh;
+    }
+
+    /* ------ BESTSELLER SECTION IS HERE ----- */
+    #bestseller {
+        padding: 30px 25px;
+    }
+
+    .filters {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .filters span {
+        font-size: 22px;
+    }
+
+    .filters .active {
+        font-size: 22px;
+    }
+
+    .filters .separator {
+        font-size: 16px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 12px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .title {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .category {
+        font-size: 11px;
+    }
+
+    .product-image {
+        max-width: 100px;
+        margin-bottom: 14px;
+    }
+
+    .bottom-row {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .whatsapp-btn {
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .list{
+        top: 7rem;
+        height: 48vh;
+    }
+
+    .nav-left img {
+        height: 70px;
+    }
+
+    #home {
+        height: 65vh;
+    }
+
+    .left-txt h1 {
+        padding: 10px 15px;
+    }
+
+    .left-txt p {
+        font-size: 30px;
     }
 }
 
 @media screen and (max-width: 475px) {
 
     .list {
-        top: 6.5rem;
+        top: 6.2rem;
+    }
+
+    .list li a {
+        font-size: 1rem;
     }
 
     .nav-left img {
-        height: 90px;
-        width: 160px;
+        height: 60px;
     }
 
     .CheckBtn {
@@ -139,7 +265,7 @@
         padding: 30px 15px;
         background-position: center;
         height: 50vh;
-        margin-top: 30%;
+        margin-top: 20%;
     }
 
     .left-txt h1 {
@@ -149,7 +275,7 @@
 
     .left-txt p {
         font-size: 20px;
-        padding: 5px 5px 15px;
+        padding: 5px 0px 15px;
     }
 
     .H-btn {
@@ -160,19 +286,95 @@
     .H-btn a {
         font-size: 12px;
     }
+
+    /* ------ BESTSELLER SECTION IS HERE ----- */
+
+    #bestseller {
+        padding: 20px 15px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4px;
+    }
+
+    .filters span {
+        font-size: 18px;
+    }
+
+    .filters .active {
+        font-size: 18px;
+    }
+
+    .filters .separator {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .category {
+        font-size: 10px;
+    }
+
+    .product-image {
+        max-width: 90px;
+        margin-bottom: 12px;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .stars {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 13px;
+    }
+
+    .whatsapp-btn {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
 }
 
 
 @media screen and (max-width: 426px) {
 
+    .nav-left img {
+        height: 50px;
+    }
+
     .list {
-        top: 4.2rem;
+        top: 6.2rem;
+    }
+
+    .list li a {
+        font-size: 0.9rem;
     }
 
     /* ------ HOME SECTION IS HERE ----- */
     #home {
         height: auto;
-        margin-top: 33%;
+        margin-top: 26%;
     }
 
     .left-txt h1 {
@@ -185,8 +387,16 @@
 }
 
 @media screen and (max-width: 321px) {
+    .nav-left img {
+        height: 45px;
+    }
+
+    .list li a {
+        font-size: 0.8rem;
+    }
+
     #home {
-        margin-top: 45%;
+        margin-top: 32%;
     }
 
     .left-txt p {
