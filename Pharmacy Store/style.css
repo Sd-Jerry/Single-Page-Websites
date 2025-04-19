@@ -54,8 +54,8 @@ body {
     /* color: black; */
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
 }
 
 .list li:hover {
@@ -172,6 +172,7 @@ body {
 }
 
 /* <-- ----- BESTSELLER PRODUCTS SECTION IS HERE ---- --> */
+
 #bestseller {
     /* height: 80vh; */
     width: 100%;
@@ -290,4 +291,68 @@ body {
 .whatsapp-btn:hover {
     color: #128c4a;
     border-color: #128c4a;
+}
+
+/* ----- ABOUT-US SECTION IS HERE ----- */
+
+#abt-us {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+    background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.content {
+    position: absolute;
+    inset: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    border: 1px solid red;
+}
+
+.content h1 {
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.1;
+    max-width: 600px;
+    margin: 0;
+}
+
+.content h2{
+    font-family: 'Nunito',sans-serif;
+    margin-top: 15px;
+}
+
+.content p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid blue;
 }
