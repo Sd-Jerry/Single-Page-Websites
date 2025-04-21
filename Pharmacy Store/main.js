@@ -26,3 +26,13 @@
 //                     community. Your health is our priority, and we are committed to supporting you every step of the
 //                     way. Thank you for choosing us as your trusted healthcare partner!
 
+@media (max-width: 640px) {
+    .container {
+      flex-direction: column;
+      gap: 2rem 0;
+      align-items: center;
+    }
+    .feature-item {
+      min-width: auto;
+    }
+  }

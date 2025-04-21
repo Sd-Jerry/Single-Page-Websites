@@ -329,11 +329,10 @@ body {
     justify-content: center;
     height: 100%;
     color: white;
-    border: 1px solid red;
 }
 
 .content h1 {
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 800;
     font-size: 3rem;
     line-height: 1.1;
@@ -341,8 +340,8 @@ body {
     margin: 0;
 }
 
-.content h2{
-    font-family: 'Nunito',sans-serif;
+.content h2 {
+    font-family: 'Nunito', sans-serif;
     margin-top: 15px;
 }
 
@@ -354,5 +353,53 @@ body {
     max-width: 600px;
     margin-top: 10px;
     padding: 5px;
-    border: 1px solid blue;
+}
+
+/* <-- ----- FEATURE SECTION IS HERE ----- --> */
+
+.feature-section {
+    width: 90%;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+}
+
+.f-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 220px;
+    cursor: pointer;
+}
+
+.feature-item:hover,
+.subtitle:hover{
+    color: #6ca7fe;
+}
+
+.icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #9ca3af;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
 }

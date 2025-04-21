@@ -239,6 +239,11 @@
         font-size: 1rem;
         max-width: 100%;
     }
+
+/* <----- FEATURE SECTION IS HERE -----> */
+    .f-container{
+        gap: 2rem;
+    }
 }
 
 
@@ -314,7 +319,7 @@
     /* ------ BESTSELLER SECTION IS HERE ----- */
 
     #bestseller {
-        padding: 20px 15px;
+        padding: 20px 40px;
     }
 
     .filters {
@@ -391,6 +396,11 @@
 
     .content h1 {
         font-size: 1.75rem;
+        padding-top: 30px;
+    }
+
+    .content h2 {
+        font-size: 1rem;
     }
 
     .content p {
