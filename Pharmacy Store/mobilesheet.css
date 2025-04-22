@@ -227,7 +227,7 @@
     }
 
     .content {
-        padding: 0 20px;
+        padding: 10px 20px;
     }
 
     .content h1 {
@@ -436,6 +436,15 @@
     .left-txt p {
         font-size: 16px;
     }
+
+    /* ------ ABOUT-US SECTION IS HERE ----- */
+    .content h1{
+        padding-top: 15px;
+    }
+
+    .content h2 {
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 321px) {
@@ -457,5 +466,9 @@
 
     .H-btn a {
         font-size: 10px;
+    }
+
+    .background-image {
+        height: 340px;
     }
 }

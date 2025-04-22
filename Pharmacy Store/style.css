@@ -361,6 +361,7 @@ body {
     width: 90%;
     padding: 3rem 1rem;
     margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .f-container {
@@ -379,7 +380,7 @@ body {
 }
 
 .feature-item:hover,
-.subtitle:hover{
+.subtitle:hover {
     color: #6ca7fe;
 }
 
@@ -402,4 +403,46 @@ body {
     color: #9ca3af;
     margin: 0;
     font-family: 'Rubik', sans-serif;
+}
+
+/* <----- CONTACT-US SECTION IS HERE ------> */
+
+#contact-us {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #6ca7fe;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.sub-contactbox1,
+.sub-contactbox2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #00796b;
+    width: 50%;
+}
+
+.sub-contactbox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cnct-box{
+    border: 1px solid darkmagenta;
+    display: flex;
+    justify-content: center;
 }
