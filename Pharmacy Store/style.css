@@ -357,10 +357,10 @@ body {
 
 /* <-- ----- FEATURE SECTION IS HERE ----- --> */
 
-.feature-section {
+#feature-section {
     width: 90%;
     padding: 3rem 1rem;
-    margin: 0 auto;
+    margin: 50px auto;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -405,44 +405,215 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-/* <----- CONTACT-US SECTION IS HERE ------> */
+/* <----- FOOTER SECTION IS HERE ------> */
 
-#contact-us {
-    width: 90%;
-    margin: 0 auto;
-    padding: 50px 20px;
-    background-color: #6ca7fe;
+#footer{
+    margin-top: 20px;
+    padding: 10px 0;
 }
 
-.contact-box {
+.footer-main {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    border: 1px solid #e5e7eb;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.footer-image img {
+    max-height: 350px;
+    object-fit: contain;
+}
+
+.footer-content {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.contact-info {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 2rem;
+}
+
+.contact-info h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: 'Quicksand',sans-serif;
+    color: #111827;
+    margin: 0 0 2rem 0;
+}
+
+.n-font{
+    font-family: 'Nunito',sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #111827;
+    font-size: 1rem;
+}
+
+.add{
+    color: #676767;
+    font-family: 'Rubik',sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contact-item i {
+    font-size: 1.125rem;
+    color: #111827;
+    margin-right: 0.75rem;
+}
+
+.contact-item a {
+    color: rgb(0, 139, 181);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: 'Rubik',sans-serif;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2.5rem;
+    color: #000;
+}
+
+.social-icons a {
+    font-size: 1.3rem;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.social-icons a:hover {
+    color: #6ca7fe;
+    transform: scale(1.5);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.sub-contactbox1,
-.sub-contactbox2 {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 5px solid #00796b;
+.link-section {
     width: 50%;
+    margin-bottom: 2rem;
 }
 
-.sub-contactbox2{
+.link-section h3 {
+    margin-bottom: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.link-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.link-section ul li,
+.footer-bottom p{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.footer-bottom {
+    max-width: 80rem;
+    margin: 2.5rem auto 0 auto;
+    padding: 0 1.5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.875rem;
 }
 
-.cnct-box{
-    border: 1px solid darkmagenta;
+.payment-logos {
     display: flex;
-    justify-content: center;
+    gap: 0.5rem;
+}
+
+.payment-logos img {
+    width: 330px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .footer-main {
+        flex-direction: row;
+        border-bottom: none;
+    }
+
+    .footer-image {
+        flex: 0 0 33.3333%;
+        justify-content: flex-start;
+        border-bottom: none;
+        border-right: 1px solid #e5e7eb;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .footer-content {
+        flex: 0 0 66.6667%;
+        flex-direction: row;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .contact-info {
+        width: 50%;
+        padding-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .footer-links {
+        width: 50%;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+    }
 }
