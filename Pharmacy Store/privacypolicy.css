@@ -1,10 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#terms{
-    border: 2px solid red;
-    padding: 50px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+#terms,
+#privacy {
+    padding: 30px 50px;
+}
+
+h1,
+h2 {
+    color: #00529B;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+ul {
+    margin: 0 0 15px 20px;
 }
