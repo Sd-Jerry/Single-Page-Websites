@@ -4,18 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 40px;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
-
 #terms,
 #privacy {
     padding: 30px 50px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 30px;
 }
 
 h1,
@@ -39,4 +36,62 @@ p {
 
 ul {
     margin: 0 0 15px 20px;
+}
+
+/* FOOTER SECTION IS HERE */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-cont {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.f-cont p {
+    margin: 0;
+}
+
+.f-cont p span {
+    color: #00529B;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+/* RESPONSIVE SECTION IS HERE */
+@media screen and (max-width: 475px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #terms,
+    #privacy {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 14px;
+    }
 }
