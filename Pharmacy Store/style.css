@@ -407,14 +407,14 @@ body {
 
 /* <----- FOOTER SECTION IS HERE ------> */
 
-#footer{
+#footer {
     margin-top: 20px;
     padding: 10px 0;
 }
 
 .footer-main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid #e5e7eb;
     max-width: 90%;
     margin: 0 auto;
@@ -426,7 +426,7 @@ body {
 .footer-image {
     display: flex;
     justify-content: center;
-    flex: 0 0 100%;
+    flex: 1 0 0%;
     padding: 1.5rem;
     border-bottom: 1px solid #e5e7eb;
 }
@@ -437,9 +437,9 @@ body {
 }
 
 .footer-content {
-    flex: 1 1 100%;
+    flex: 2 0 0%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 1.5rem;
 }
 
@@ -452,22 +452,22 @@ body {
 .contact-info h2 {
     font-weight: 800;
     font-size: 1.5rem;
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #111827;
     margin: 0 0 2rem 0;
 }
 
-.n-font{
-    font-family: 'Nunito',sans-serif;
+.n-font {
+    font-family: 'Nunito', sans-serif;
     font-weight: 700;
     margin-bottom: 0.25rem;
     color: #111827;
     font-size: 1rem;
 }
 
-.add{
+.add {
     color: #676767;
-    font-family: 'Rubik',sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 0.9rem;
     margin-bottom: 2rem;
 }
@@ -489,7 +489,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
-    font-family: 'Rubik',sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .contact-item a:hover {
@@ -500,6 +500,7 @@ body {
     display: flex;
     gap: 2.5rem;
     color: #000;
+    margin-top: 70px;
 }
 
 .social-icons a {
@@ -540,12 +541,28 @@ body {
 }
 
 .link-section ul li,
-.footer-bottom p{
-    font-weight: 400;
-    font-size: 0.875rem;
+.footer-bottom p {
     line-height: 1.5;
     margin-bottom: 0.75rem;
     font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.link-section ul li a {
+    font-size: 0.875rem;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.link-section ul li a:hover{
+    color: #6ca7fe;
+    text-decoration:underline;
+}
+
+.footer-bottom p span {
+    color: #6ca7fe;
+    font-weight: 500;
 }
 
 .footer-bottom {
@@ -567,53 +584,4 @@ body {
 .payment-logos img {
     width: 330px;
     object-fit: contain;
-}
-
-
-
-
-
-
-
-
-/* Responsive styles */
-@media (min-width: 768px) {
-    .footer-main {
-        flex-direction: row;
-        border-bottom: none;
-    }
-
-    .footer-image {
-        flex: 0 0 33.3333%;
-        justify-content: flex-start;
-        border-bottom: none;
-        border-right: 1px solid #e5e7eb;
-        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    }
-
-    .footer-content {
-        flex: 0 0 66.6667%;
-        flex-direction: row;
-        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    }
-
-    .contact-info {
-        width: 50%;
-        padding-right: 2rem;
-        margin-bottom: 0;
-    }
-
-    .footer-links {
-        width: 50%;
-    }
-
-    .footer-bottom {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .footer-bottom p {
-        margin: 0;
-    }
 }

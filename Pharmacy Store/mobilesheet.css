@@ -83,6 +83,54 @@
         font-size: 12px;
         padding: 5px 7px;
     }
+
+    /* ----- FOOTER SECTIONN IS HERE ----- */
+    .footer-main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer-image {
+        padding: 1rem 0;
+        border-bottom: none;
+    }
+
+    .footer-image iframe {
+        width: 80%;
+        height: 300px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .link-section {
+        width: 45%;
+    }
+
+    .social-icons {
+        margin-top: 4rem;
+    }
+
+    .footer-bottom {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .payment-logos img {
+        width: 250px;
+    }
 }
 
 @media screen and (max-width: 805px) {
@@ -240,8 +288,8 @@
         max-width: 100%;
     }
 
-/* <----- FEATURE SECTION IS HERE -----> */
-    .f-container{
+    /* <----- FEATURE SECTION IS HERE -----> */
+    .f-container {
         gap: 2rem;
     }
 }
@@ -268,6 +316,36 @@
 
     .left-txt p {
         font-size: 30px;
+    }
+
+    /* ----- FOOTER SECTION IS HERE ----- */
+    .link-section {
+        width: 100%;
+    }
+
+    .footer-main {
+        padding: 0.75rem;
+    }
+
+    .contact-item i {
+        margin-bottom: 0.3rem;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .footer-image iframe {
+        height: 250px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+
+    .payment-logos img {
+        width: 200px;
     }
 }
 
@@ -406,8 +484,22 @@
     .content p {
         font-size: 0.875rem;
     }
-}
 
+    /* ----- FOOTER SECTION ----- */
+    .footer-content {
+        padding: 0.5rem 0;
+        flex-direction: column;
+    }
+
+    .footer-image iframe {
+        height: 200px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+}
 
 @media screen and (max-width: 426px) {
 
@@ -438,13 +530,18 @@
     }
 
     /* ------ ABOUT-US SECTION IS HERE ----- */
-    .content h1{
+    .content h1 {
         padding-top: 15px;
     }
 
     .content h2 {
         font-size: 0.9rem;
     }
+
+    /* -----FOOTER SECTION ------ */
+    /* .footer-content {
+        flex-direction: column;
+    } */
 }
 
 @media screen and (max-width: 321px) {
