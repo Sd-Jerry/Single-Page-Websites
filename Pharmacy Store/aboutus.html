@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./aboutus.css">
+</head>
+
+<body>
+    <main>
+        <section class="slider-section">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="./Imgs/LP IMG 1950.jpg" alt="Image 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Imgs/New Home Pg.jpg" alt="Image 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Imgs/inside of pharmacy store .jpg" alt="Image 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Imgs/Aboutus.png" alt="Image 4">
+                    </div>
+                </div>
+                <!-- If you want pagination (dots) -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <!-- Your own JS -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                effect: "fade", // <-- fade effect
+                fadeEffect: {
+                    crossFade: true,
+                },
+                autoplay: {
+                    delay: 3000, // 3 seconds
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+    </main>
+</body>
+
+</html>
