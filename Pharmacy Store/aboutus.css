@@ -100,6 +100,160 @@ body {
   margin: 0;
 }
 
+/* ----- SERVICE SECTION IS HERE ----- */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 32px auto;
+  border: 8px solid #9ca3af;
+  /* gray-400 */
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+/* Top decoration */
+.top-decoration {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.top-decoration span {
+  display: inline-block;
+  height: 4px;
+  border-radius: 9999px;
+  background-color: #2563eb;
+  /* blue-600 */
+}
+
+.top-decoration .long {
+  width: 64px;
+}
+
+.top-decoration .short {
+  width: 32px;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #9ca3af;
+  /* gray-400 */
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* Title */
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 40px 0;
+}
+
+/* Grid container */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 64px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Each item */
+.item {
+  flex: 1 1 280px;
+  max-width: 280px;
+  box-sizing: border-box;
+}
+
+/* Icon container */
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px auto;
+  border-radius: 50%;
+  background-color: #2563eb;
+  /* blue-600 */
+  border: 2px solid #93c5fd;
+  /* blue-300 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Special icon circle for Pixel Perfect Design */
+.icon-circle.outlined {
+  background-color: #eff6ff;
+  /* blue-50 */
+  color: #2563eb;
+  /* blue-600 */
+}
+
+/* Headings */
+.item h3 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 12px 0;
+}
+
+/* Pixel Perfect Design heading color */
+.item.pixel h3 {
+  color: #2563eb;
+}
+
+/* Paragraph */
+.item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 960px) {
+  .grid {
+    gap: 40px 48px;
+    max-width: 700px;
+  }
+
+  .item {
+    max-width: 220px;
+    flex: 1 1 220px;
+  }
+
+  .item p {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    gap: 32px 32px;
+    max-width: 320px;
+  }
+
+  .item {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .item p {
+    max-width: 280px;
+  }
+}
+
 /* RESPONSIVE SECTION IS HERE  */
 
 @media (max-width: 991px) {
