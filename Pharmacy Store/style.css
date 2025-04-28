@@ -355,6 +355,11 @@ body {
     padding: 5px;
 }
 
+.content .H-btn{
+    width: 130px;
+    margin-top: 20px;
+}
+
 /* <-- ----- FEATURE SECTION IS HERE ----- --> */
 
 #feature-section {
