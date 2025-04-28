@@ -21,8 +21,7 @@ body {
 }
 
 .about-section {
-  /* background-color: #A9C8F8; */
-  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   padding-top: 48px;
@@ -52,8 +51,6 @@ body {
   justify-content: center;
   gap: 12px;
   max-width: 100%;
-  /* margin-left: auto;
-  margin-right: auto; */
   flex-wrap: wrap;
 }
 
@@ -102,19 +99,13 @@ body {
 
 /* ----- SERVICE SECTION IS HERE ----- */
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+#s-container {
   background: white;
   color: black;
   text-align: center;
-}
-
-.container {
   max-width: 1200px;
   margin: 32px auto;
   border: 8px solid #9ca3af;
-  /* gray-400 */
   padding: 32px;
   box-sizing: border-box;
 }
@@ -132,7 +123,6 @@ body {
   height: 4px;
   border-radius: 9999px;
   background-color: #2563eb;
-  /* blue-600 */
 }
 
 .top-decoration .long {
@@ -144,18 +134,18 @@ body {
 }
 
 /* Subtitle */
-.subtitle {
-  color: #9ca3af;
-  /* gray-400 */
-  font-size: 14px;
+.s-subtitle {
+  font-size: 20px;
   margin-bottom: 16px;
+  font-family: 'Rubik', sans-serif;
 }
 
 /* Title */
-h2 {
+.s-head {
   font-weight: 700;
   font-size: 24px;
   margin: 0 0 40px 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Grid container */
@@ -171,8 +161,14 @@ h2 {
 /* Each item */
 .item {
   flex: 1 1 280px;
-  max-width: 280px;
+  max-width: 416px;
   box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.item:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Icon container */
@@ -182,9 +178,7 @@ h2 {
   margin: 0 auto 16px auto;
   border-radius: 50%;
   background-color: #2563eb;
-  /* blue-600 */
   border: 2px solid #93c5fd;
-  /* blue-300 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,24 +186,12 @@ h2 {
   font-size: 20px;
 }
 
-/* Special icon circle for Pixel Perfect Design */
-.icon-circle.outlined {
-  background-color: #eff6ff;
-  /* blue-50 */
-  color: #2563eb;
-  /* blue-600 */
-}
-
 /* Headings */
 .item h3 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 0 12px 0;
-}
-
-/* Pixel Perfect Design heading color */
-.item.pixel h3 {
-  color: #2563eb;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Paragraph */
@@ -218,40 +200,9 @@ h2 {
   font-size: 14px;
   line-height: 1.5;
   margin: 0 auto;
-  max-width: 240px;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 960px) {
-  .grid {
-    gap: 40px 48px;
-    max-width: 700px;
-  }
-
-  .item {
-    max-width: 220px;
-    flex: 1 1 220px;
-  }
-
-  .item p {
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 600px) {
-  .grid {
-    gap: 32px 32px;
-    max-width: 320px;
-  }
-
-  .item {
-    max-width: 100%;
-    flex: 1 1 100%;
-  }
-
-  .item p {
-    max-width: 280px;
-  }
+  padding: 15px;
+  max-width: 100%;
+  font-family: 'Rubik', sans-serif;
 }
 
 /* RESPONSIVE SECTION IS HERE  */
@@ -272,6 +223,22 @@ h2 {
 
   .content-container {
     gap: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  .grid {
+    gap: 40px 48px;
+    max-width: 700px;
+  }
+
+  .item {
+    max-width: 220px;
+    flex: 1 1 220px;
+  }
+
+  .item p {
+    max-width: 200px;
   }
 }
 
@@ -301,6 +268,22 @@ h2 {
 
   .subtitle {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    gap: 32px 32px;
+    max-width: 320px;
+  }
+
+  .item {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .item p {
+    max-width: 280px;
   }
 }
 
