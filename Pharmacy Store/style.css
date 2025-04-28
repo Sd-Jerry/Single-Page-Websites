@@ -382,11 +382,11 @@ body {
     gap: 0.75rem;
     min-width: 220px;
     cursor: pointer;
+    transition: all 0.2 ease-in;
 }
 
-.feature-item:hover,
-.subtitle:hover {
-    color: #6ca7fe;
+.feature-item:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .icon {
@@ -400,6 +400,15 @@ body {
     line-height: 1.25rem;
     margin: 0;
     font-family: 'Nunito', sans-serif;
+}
+
+.title a{
+    text-decoration: none;
+    color: #000;
+}
+
+.title a:hover{
+    color: #6ca7fe;
 }
 
 .subtitle {
