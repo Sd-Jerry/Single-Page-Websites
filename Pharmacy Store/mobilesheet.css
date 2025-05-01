@@ -13,6 +13,19 @@
 }
 
 /* -------------------------------- */
+@media screen and (max-width: 1240px) {
+
+    /* ----- ABOUTUS SECTION ----- */
+    .abt-container {
+        max-width: 95%;
+    }
+
+    .abt-content {
+        padding: 0 20px;
+    }
+}
+
+/* -------------------------------- */
 @media screen and (max-width: 1197px) {
     .nav-left {
         margin-top: 15px;
@@ -24,6 +37,13 @@
 
     .list li a {
         font-size: 1.1rem;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width: 1135px) {
+    .abt-container {
+        max-width: 100%;
     }
 }
 
@@ -45,51 +65,18 @@
 }
 
 /* -------------------------------- */
+@media screen and (max-width: 1076px) {
+
+    /* -----ABOUTUS SECTION----- */
+    .abt-container {
+        height: 85vh;
+    }
+}
+
+/* -------------------------------- */
 @media screen and (max-width: 1024px) {
-    /* ------ BESTSELLER SECTION IS HERE ----- */
 
-    #bestseller {
-        padding: 40px 40px;
-    }
-
-    .filters {
-        justify-content: center;
-        gap: 6px;
-    }
-
-    .filters span {
-        font-size: 28px;
-    }
-
-    .filters .active {
-        font-size: 28px;
-    }
-
-    .filters .separator {
-        font-size: 18px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 16px;
-    }
-
-    .product-image {
-        max-width: 120px;
-        margin-bottom: 16px;
-    }
-
-    .price {
-        font-size: 15px;
-    }
-
-    .whatsapp-btn {
-        font-size: 12px;
-        padding: 5px 7px;
-    }
-
-    /* ----- FOOTER SECTIONN IS HERE ----- */
+    /* ----- FOOTER SECTION IS HERE ----- */
     .footer-main {
         flex-direction: column;
         padding: 1rem;
@@ -135,6 +122,31 @@
 
     .payment-logos img {
         width: 250px;
+    }
+}
+
+/* -------------------------------- */
+/* ----- ABOUTUS SECTION ----- */
+@media (max-width: 991px) {
+    .abt-container {
+        height: 65vh;
+    }
+
+    .abt-title {
+        font-size: 30px;
+    }
+
+    .abt-subtitle {
+        font-size: 20px;
+    }
+
+    .image {
+        width: 200px;
+        height: 140px;
+    }
+
+    .content-container {
+        gap: 30px;
     }
 }
 
@@ -209,91 +221,40 @@
         height: 85vh;
     }
 
-    /* ------ BESTSELLER SECTION IS HERE ----- */
-    #bestseller {
-        padding: 30px 25px;
-    }
-
-    .filters {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    .filters span {
-        font-size: 22px;
-    }
-
-    .filters .active {
-        font-size: 22px;
-    }
-
-    .filters .separator {
-        font-size: 16px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-        padding: 12px;
-    }
-
-    .card {
-        padding: 12px;
-    }
-
-    .title {
-        font-size: 13px;
-        margin-bottom: 12px;
-    }
-
-    .category {
-        font-size: 11px;
-    }
-
-    .product-image {
-        max-width: 100px;
-        margin-bottom: 14px;
-    }
-
-    .bottom-row {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: space-between;
-    }
-
-    .price {
-        font-size: 14px;
-    }
-
-    .whatsapp-btn {
-        font-size: 12px;
-        padding: 5px 6px;
-    }
-
-    /* ------ ABOUT-US SECTION IS HERE ----- */
-    .background-image {
-        height: 330px;
-    }
-
-    .content {
-        padding: 10px 20px;
-    }
-
-    .content h1 {
-        font-size: 2.25rem;
-        max-width: 100%;
-    }
-
-    .content p {
-        font-size: 1rem;
-        max-width: 100%;
-    }
-
     /* <----- FEATURE SECTION IS HERE -----> */
     .f-container {
         gap: 2rem;
     }
+
+    /* ------ ABOUT-US SECTION ----- */
+
+    .abt-subtitle {
+        font-size: 18px;
+    }
+
+    .images-wrapper {
+        gap: 8px;
+    }
+
+    .image {
+        width: 30%;
+        height: auto;
+    }
+
+    .content-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .left-content,
+    .right-content {
+        flex: 1 1 100%;
+    }
+
+    .content-title {
+        font-size: 20px;
+    }
+
 }
 
 /* -------------------------------- */
@@ -318,10 +279,6 @@
 
     .left-txt p {
         font-size: 30px;
-    }
-
-    .abt-us {
-        height: auto;
     }
 
     /* ----- FOOTER SECTION IS HERE ----- */
@@ -354,22 +311,6 @@
         width: 200px;
     }
 }
-
-/* -------------------------------- */
-@media screen and (max-width: 589px) {
-    .background-image {
-        height: 390px;
-    }
-
-    .content h1 {
-        font-size: 2rem;
-    }
-
-    .content h2 {
-        font-size: 18px;
-    }
-}
-
 
 /* -------------------------------- */
 @media screen and (max-width: 475px) {
@@ -417,95 +358,17 @@
         font-size: 12px;
     }
 
-    /* ------ BESTSELLER SECTION IS HERE ----- */
-
-    #bestseller {
-        padding: 20px 40px;
+    /* ------ ABOUT-US SECTION ----- */
+    .image {
+        width: 40%;
     }
 
-    .filters {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 4px;
+    .abt-title {
+        font-size: 26px;
     }
 
-    .filters span {
-        font-size: 18px;
-    }
-
-    .filters .active {
-        font-size: 18px;
-    }
-
-    .filters .separator {
-        display: none;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 10px;
-    }
-
-    .card {
-        padding: 10px;
-    }
-
-    .title {
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    .category {
-        font-size: 10px;
-    }
-
-    .product-image {
-        max-width: 90px;
-        margin-bottom: 12px;
-    }
-
-    .bottom-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-    }
-
-    .stars {
-        font-size: 10px;
-    }
-
-    .price {
-        font-size: 13px;
-    }
-
-    .whatsapp-btn {
-        font-size: 11px;
-        padding: 4px 6px;
-    }
-
-    /* ------ ABOUT-US SECTION IS HERE ----- */
-
-    .background-image {
-        height: 340px;
-    }
-
-    .content h1 {
-        font-size: 1.75rem;
-        padding-top: 30px;
-    }
-
-    .content h2 {
-        font-size: 1rem;
-    }
-
-    .content p {
-        font-size: 0.875rem;
-    }
-
-    .content .H-btn {
-        width: 100px;
+    .abt-subtitle {
+        font-size: 16px;
     }
 
     /* ----- FOOTER SECTION ----- */
@@ -553,29 +416,29 @@
         font-size: 16px;
     }
 
-    /* ------ ABOUT-US SECTION IS HERE ----- */
-    .content h1 {
-        padding-top: 15px;
+    /* ----- ABOUTUS SECTION ----- */
+    .abt-container {
+        height: 168vh;
     }
 
-    .content h2 {
-        font-size: 0.9rem;
+    .image {
+        width: 100%;
+        height: auto;
     }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 376px) {
-    .background-image {
-        height: 360px;
+
+    /* ----- ABOUTUS SECTION ----- */
+    .abt-container {
+        height: 140vh;
     }
 
-    .content {
-        padding: 5px 15px;
+    .image {
+        width: 90%;
     }
 
-    .content h1 {
-        padding-top: 5px;
-    }
 }
 
 /* -------------------------------- */
@@ -596,11 +459,8 @@
         font-size: 13px;
     }
 
-    .H-btn a {
-        font-size: 10px;
-    }
-
-    .background-image {
-        height: 390px;
+    /* ----- ABOUTUS SECTION ----- */
+    .abt-container {
+        height: 130vh;
     }
 }
