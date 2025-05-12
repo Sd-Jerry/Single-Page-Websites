@@ -171,64 +171,111 @@ body {
     background-color: rgb(235, 250, 255);
 }
 
-/* <-- ----- FEATURE SECTION IS HERE ----- --> */
+/* ------ ABOUT US SECTION IS HERE -----  */
 
-#feature-section {
-    width: 95%;
-    padding: 3rem 1rem;
-    margin: 50px auto;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+#abt-us {
+    background-color: #3f5c59;
+    color: #fff;
+    line-height: 1.6;
+    height: 100vh;
 }
 
-.f-container {
+.hero-section {
+    height: 100%;
+    padding: 20px;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.main {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 5rem 2rem;
+    gap: 40px;
 }
 
-.feature-item {
+.left {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px 30px;
+}
+
+.left h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.left h2{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    
+}
+
+.right {
+    flex: 1;
+    min-width: 280px;
+}
+
+.card {
+    background-color: #f0eee9;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+    height: 90%;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    min-width: 220px;
-    cursor: pointer;
-    transition: all 0.2 ease-in;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.feature-item:hover {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.card .logo {
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.icon {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-}
-
-.title {
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    margin: 0;
+.card h2{
     font-family: 'Nunito', sans-serif;
+    margin: 20px 0;
 }
 
-.title a {
+.card p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.card h3{
+    font-family: 'Quicksand', sans-serif;
+    color: #3f5c59;
+    margin: 20px 0;
+}
+
+.abt-btn{
+    width: 50%;
+    background-color: #6ca7fe;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.abt-btn a{
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
-.title a:hover {
-    color: #6ca7fe;
-}
-
-.subtitle {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: #9ca3af;
-    margin: 0;
-    font-family: 'Rubik', sans-serif;
-}
 
 /* ----- SERVICE SECTION IS HERE ----- */
 
@@ -331,126 +378,6 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-/* ----- ABOUT-US SECTION IS HERE ----- */
-
-#about-section {
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
-    padding-top: 48px;
-    padding-bottom: 80px;
-    text-align: center;
-    background-color: ghostwhite;
-}
-
-.abt-container {
-    max-width: 90%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.bg-img {
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    display: block;
-}
-
-.abt-overlay {
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
-    opacity: 0.8;
-    pointer-events: none;
-}
-
-.abt-content {
-    position: absolute;
-    inset: 0;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    color: white;
-}
-
-.abt-title {
-    font-weight: 600;
-    font-size: 35px;
-    margin: 0 0 8px 0;
-    font-family: 'Rubik', sans-serif;
-    text-align: center;
-}
-
-.abt-subtitle {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 auto;
-    max-width: 650px;
-    line-height: 1.2;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.images-wrapper {
-    margin-top: 32px;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    max-width: 100%;
-    flex-wrap: wrap;
-    cursor: pointer;
-}
-
-.image {
-    width: 250px;
-    height: 166px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-.content-section {
-    margin-top: 40px;
-    padding: 24px;
-    background-color: #d7d2cc;
-}
-
-.content-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.left-content,
-.right-content {
-    flex: 1 1 45%;
-}
-
-.content-title {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.2;
-    margin: 0 0 16px 0;
-}
-
-.content-text {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-}
 
 /* <----- FOOTER SECTION IS HERE ------> */
 

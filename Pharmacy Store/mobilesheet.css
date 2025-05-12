@@ -15,14 +15,6 @@
 /* -------------------------------- */
 @media screen and (max-width: 1240px) {
 
-    /* ----- ABOUTUS SECTION ----- */
-    .abt-container {
-        max-width: 95%;
-    }
-
-    .abt-content {
-        padding: 0 20px;
-    }
 }
 
 /* -------------------------------- */
@@ -42,9 +34,7 @@
 
 /* -------------------------------- */
 @media screen and (max-width: 1135px) {
-    .abt-container {
-        max-width: 100%;
-    }
+
 }
 
 /* -------------------------------- */
@@ -67,10 +57,6 @@
 /* -------------------------------- */
 @media screen and (max-width: 1076px) {
 
-    /* -----ABOUTUS SECTION----- */
-    .abt-container {
-        height: 85vh;
-    }
 }
 
 /* -------------------------------- */
@@ -126,28 +112,7 @@
 }
 
 /* -------------------------------- */
-/* ----- ABOUTUS SECTION ----- */
 @media (max-width: 991px) {
-    .abt-container {
-        height: 65vh;
-    }
-
-    .abt-title {
-        font-size: 30px;
-    }
-
-    .abt-subtitle {
-        font-size: 20px;
-    }
-
-    .image {
-        width: 200px;
-        height: 140px;
-    }
-
-    .content-container {
-        gap: 30px;
-    }
 }
 
 /* -------------------------------- */
@@ -219,11 +184,6 @@
 @media screen and (max-width: 769px) {
     #home {
         height: 85vh;
-    }
-
-    /* <----- FEATURE SECTION IS HERE -----> */
-    .f-container {
-        gap: 2rem;
     }
 
     /* ------ ABOUT-US SECTION ----- */
@@ -358,19 +318,6 @@
         font-size: 12px;
     }
 
-    /* ------ ABOUT-US SECTION ----- */
-    .image {
-        width: 40%;
-    }
-
-    .abt-title {
-        font-size: 26px;
-    }
-
-    .abt-subtitle {
-        font-size: 16px;
-    }
-
     /* ----- FOOTER SECTION ----- */
     .footer-content {
         padding: 0.5rem 0;
@@ -416,15 +363,6 @@
         font-size: 16px;
     }
 
-    /* ----- ABOUTUS SECTION ----- */
-    .abt-container {
-        height: 168vh;
-    }
-
-    .image {
-        width: 100%;
-        height: auto;
-    }
 }
 
 /* -------------------------------- */
@@ -459,8 +397,4 @@
         font-size: 13px;
     }
 
-    /* ----- ABOUTUS SECTION ----- */
-    .abt-container {
-        height: 130vh;
-    }
 }

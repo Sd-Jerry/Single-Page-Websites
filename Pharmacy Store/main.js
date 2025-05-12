@@ -372,4 +372,285 @@
         // .content .H-btn {
         //     width: 130px;
         //     margin-top: 20px;
-        // }
+// }
+    
+
+// <!-- ----- FEATURE SECTION IS HERE ----- -->
+//         <section id="feature-section">
+//             <div class="f-container">
+//                 <div class="feature-item">
+//                     <i class="fa-solid fa-truck icon"></i>
+//                     <div>
+//                         <h3 class="title"> <a href="./index.html#s-container">Fast Delivery</a></h3>
+//                         <p class="subtitle">Free Shipping On All Order</p>
+//                     </div>
+//                 </div>
+//                 <div class="feature-item">
+//                     <i class="fa-solid fa-file-prescription icon"></i>
+//                     <div>
+//                         <h3 class="title"><a href="./index.html#s-container">Prescription Filling</a></h3>
+//                         <p class="subtitle">Precision, Care, Every Prescription</p>
+//                     </div>
+//                 </div>
+//                 <div class="feature-item">
+//                     <i class="fa-brands fa-nutritionix icon"></i>
+//                     <div>
+//                         <h3 class="title"><a href="./index.html#s-container">Nutritional Support</a></h3>
+//                         <p class="subtitle">Supporting Your Health, Naturally</p>
+//                     </div>
+//                 </div>
+//                 <div class="feature-item">
+//                     <i class="fa-solid fa-prescription-bottle-medical icon"></i>
+//                     <div>
+//                         <h3 class="title"><a href="./index.html#s-container">Non-Prescription Items</a></h3>
+//                         <p class="subtitle">Support Online 24 Hours A Day</p>
+//                     </div>
+//                 </div>
+//                 <div class="feature-item">
+//                     <i class="fa-solid fa-headset icon"></i>
+//                     <div>
+//                         <h3 class="title"><a href="./index.html#s-container">Prior Authorization Support</a></h3>
+//                         <p class="subtitle">Simplifying Access To The Care You Need</p>
+//                     </div>
+//                 </div>
+//             </div>
+//         </section>
+
+// <-- ----- FEATURE SECTION IS HERE ----- -->
+// #feature-section {
+//     width: 95%;
+//     padding: 3rem 1rem;
+//     margin: 50px auto;
+//     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+// }
+
+// .f-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 5rem 2rem;
+// }
+
+// .feature-item {
+//     display: flex;
+//     align-items: center;
+//     gap: 0.75rem;
+//     min-width: 220px;
+//     cursor: pointer;
+//     transition: all 0.2 ease-in;
+// }
+
+// .feature-item:hover {
+//     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+// }
+
+// .icon {
+//     font-size: 1.5rem;
+//     flex-shrink: 0;
+// }
+
+// .title {
+//     font-weight: 600;
+//     font-size: 1rem;
+//     line-height: 1.25rem;
+//     margin: 0;
+//     font-family: 'Nunito', sans-serif;
+// }
+
+// .title a {
+//     text-decoration: none;
+//     color: #000;
+// }
+
+// .title a:hover {
+//     color: #6ca7fe;
+// }
+
+// .subtitle {
+//     font-size: 0.875rem;
+//     line-height: 1.25rem;
+//     color: #9ca3af;
+//     margin: 0;
+//     font-family: 'Rubik', sans-serif;
+// }
+
+// <!-- ----- ABOUTUS SECTION IS HERE ----- -->
+//         <section id="about-section">
+//             <div class="abt-container">
+//                 <img src="./Imgs/inside of pharmacy store .jpg" alt="Levin's Pharmacy Store Photo" class="bg-img">
+//                 <div class="abt-overlay"></div>
+//                 <div class="abt-content">
+//                     <h2 class="abt-title">About us</h2>
+//                     <p class="abt-subtitle">
+//                         Welcome to Levin's Pharmacy - Your Trusted Oceanside Good Neighbor Pharmacy Since 1922!.
+//                     </p>
+//                     <div class="images-wrapper">
+//                         <img src="./Imgs/LP IMG 1950.jpg"
+//                             alt="Woman and man discussing work at a table in a bright office" class="image" width="90"
+//                             height="90" />
+//                         <img src="./Imgs/Aboutus.png" alt="Woman working on a laptop in a white office environment"
+//                             class="image" width="90" height="90" />
+//                         <img src="./Imgs/Inside the str.png"
+//                             alt="Two women chatting and smiling at a desk with notebooks and laptop" class="image"
+//                             width="90" height="90" />
+//                         <img src="./Imgs/New Home Pg.jpg" alt="Man working with papers and laptop in a cozy office"
+//                             class="image" width="90" height="90" />
+//                     </div>
+//                 </div>
+//             </div>
+
+//             <div class="content-section">
+//                 <div class="content-container">
+//                     <div class="left-content">
+//                         <h3 class="content-title">
+//                             At Levin's Pharmacy, we are dedicated to providing exceptional care and support to our
+//                             community.
+//                         </h3>
+//                         <p class="content-text">
+//                             With over a century of experience, we pride ourselves on being more than just a pharmacy; we
+//                             are
+//                             your partners in health and wellness.
+//                             offer a comprehensive range of products and services tailored to meet your unique healthcare
+//                             needs.
+//                             From over-the-counter medications and health supplements to personal care items and medical
+//                             equipment, we strive to ensure that you have access to everything you need for your
+//                             well-being.
+//                         </p>
+//                     </div>
+//                     <div class="right-content">
+//                         <p class="content-text">
+//                             In addition to our pharmacy services, we provide personalized consultations, medication
+//                             management,
+//                             and immunization services to help you stay healthy and informed. Our knowledgeable and
+//                             friendly
+//                             staff is always here to answer your questions and provide guidance, ensuring that you
+//                             receive the
+//                             best possible care.
+//                             At Levin's Pharmacy, we believe in building lasting relationships with our patients and the
+//                             community. Your health is our priority, and we are committed to supporting you every step of
+//                             the
+//                             way. Thank you for choosing us as your trusted healthcare partner!
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//         </section>
+
+// #about-section {
+//     border-bottom-left-radius: 24px;
+//     border-bottom-right-radius: 24px;
+//     padding-top: 48px;
+//     padding-bottom: 80px;
+//     text-align: center;
+//     background-color: ghostwhite;
+// }
+
+// .abt-container {
+//     max-width: 90%;
+//     height: 70vh;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     margin-left: auto;
+//     margin-right: auto;
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .bg-img {
+//     width: 100%;
+//     height: 90vh;
+//     object-fit: cover;
+//     display: block;
+// }
+
+// .abt-overlay {
+//     position: absolute;
+//     inset: 0;
+//     background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+//     opacity: 0.8;
+//     pointer-events: none;
+// }
+
+// .abt-content {
+//     position: absolute;
+//     inset: 0;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 40px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     height: 100%;
+//     color: white;
+// }
+
+// .abt-title {
+//     font-weight: 600;
+//     font-size: 35px;
+//     margin: 0 0 8px 0;
+//     font-family: 'Rubik', sans-serif;
+//     text-align: center;
+// }
+
+// .abt-subtitle {
+//     font-size: 24px;
+//     font-weight: 600;
+//     margin: 0 auto;
+//     max-width: 650px;
+//     line-height: 1.2;
+//     font-family: 'Quicksand', sans-serif;
+// }
+
+// .images-wrapper {
+//     margin-top: 32px;
+//     display: flex;
+//     justify-content: center;
+//     gap: 12px;
+//     max-width: 100%;
+//     flex-wrap: wrap;
+//     cursor: pointer;
+// }
+
+// .image {
+//     width: 250px;
+//     height: 166px;
+//     object-fit: contain;
+//     flex-shrink: 0;
+// }
+
+// .content-section {
+//     margin-top: 40px;
+//     padding: 24px;
+//     background-color: #d7d2cc;
+// }
+
+// .content-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 50px;
+//     max-width: 90%;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// .left-content,
+// .right-content {
+//     flex: 1 1 45%;
+// }
+
+// .content-title {
+//     font-family: 'Quicksand', sans-serif;
+//     font-weight: 800;
+//     font-size: 20px;
+//     line-height: 1.2;
+//     margin: 0 0 16px 0;
+// }
+
+// .content-text {
+//     font-family: 'Rubik', sans-serif;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.5;
+//     margin: 0;
+// }
