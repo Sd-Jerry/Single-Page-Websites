@@ -177,24 +177,18 @@ body {
     background-color: #3f5c59;
     color: #fff;
     line-height: 1.6;
-    height: 100vh;
-}
-
-.hero-section {
-    height: 100%;
-    padding: 20px;
-    max-width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 }
 
 .main {
-    height: 100%;
+    padding: 20px;
+    margin: auto;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    border: 2px solid wheat;
 }
 
 .left {
@@ -210,7 +204,7 @@ body {
     margin-bottom: 20px;
 }
 
-.left h2{
+.left h2 {
     margin-top: 50px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -220,7 +214,7 @@ body {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     padding: 10px 0;
-    
+
 }
 
 .right {
@@ -246,22 +240,22 @@ body {
     margin-bottom: 10px;
 }
 
-.card h2{
+.card h2 {
     font-family: 'Nunito', sans-serif;
     margin: 20px 0;
 }
 
-.card p{
+.card p {
     font-family: 'Poppins', sans-serif;
 }
 
-.card h3{
+.card h3 {
     font-family: 'Quicksand', sans-serif;
     color: #3f5c59;
     margin: 20px 0;
 }
 
-.abt-btn{
+.abt-btn {
     width: 50%;
     background-color: #6ca7fe;
     border: none;
@@ -271,112 +265,13 @@ body {
     cursor: pointer;
 }
 
-.abt-btn a{
+.abt-btn a {
     text-decoration: none;
     color: white;
 }
 
 
 /* ----- SERVICE SECTION IS HERE ----- */
-
-#s-container {
-    background: white;
-    color: black;
-    text-align: center;
-    max-width: 1200px;
-    margin: 32px auto;
-    /* border: 8px solid #9ca3af; */
-    border: 8px solid #6ca7fe;
-    padding: 32px;
-    box-sizing: border-box;
-}
-
-.top-decoration {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 8px;
-}
-
-.top-decoration span {
-    display: inline-block;
-    height: 4px;
-    border-radius: 9999px;
-    background-color: #2563eb;
-}
-
-.top-decoration .long {
-    width: 64px;
-}
-
-.top-decoration .short {
-    width: 32px;
-}
-
-.s-subtitle {
-    font-size: 20px;
-    margin-bottom: 16px;
-    font-family: 'Rubik', sans-serif;
-}
-
-.s-head {
-    font-weight: 700;
-    font-size: 24px;
-    margin: 0 0 40px 0;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 48px 64px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.item {
-    flex: 1 1 280px;
-    max-width: 416px;
-    box-sizing: border-box;
-    cursor: pointer;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.item:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.icon-circle {
-    width: 64px;
-    height: 64px;
-    margin: 0 auto 16px auto;
-    border-radius: 50%;
-    background-color: #2563eb;
-    border: 2px solid #93c5fd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-}
-
-.item h3 {
-    font-weight: 700;
-    font-size: 18px;
-    margin: 0 0 12px 0;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.item p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 0 auto;
-    padding: 15px;
-    max-width: 100%;
-    font-family: 'Rubik', sans-serif;
-}
 
 
 /* <----- FOOTER SECTION IS HERE ------> */

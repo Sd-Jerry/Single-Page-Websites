@@ -13,11 +13,6 @@
 }
 
 /* -------------------------------- */
-@media screen and (max-width: 1240px) {
-
-}
-
-/* -------------------------------- */
 @media screen and (max-width: 1197px) {
     .nav-left {
         margin-top: 15px;
@@ -30,11 +25,6 @@
     .list li a {
         font-size: 1.1rem;
     }
-}
-
-/* -------------------------------- */
-@media screen and (max-width: 1135px) {
-
 }
 
 /* -------------------------------- */
@@ -52,11 +42,6 @@
     .nav-left img {
         height: 85px;
     }
-}
-
-/* -------------------------------- */
-@media screen and (max-width: 1076px) {
-
 }
 
 /* -------------------------------- */
@@ -112,7 +97,36 @@
 }
 
 /* -------------------------------- */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+
+    /* ABOUT US SECTION IS HERE */
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .right{
+        display: contents;
+    }
+
+    .left h1 {
+        font-size: 1.8rem;
+    }
+
+    .left h2 {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 /* -------------------------------- */
@@ -185,36 +199,6 @@
     #home {
         height: 85vh;
     }
-
-    /* ------ ABOUT-US SECTION ----- */
-
-    .abt-subtitle {
-        font-size: 18px;
-    }
-
-    .images-wrapper {
-        gap: 8px;
-    }
-
-    .image {
-        width: 30%;
-        height: auto;
-    }
-
-    .content-container {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .left-content,
-    .right-content {
-        flex: 1 1 100%;
-    }
-
-    .content-title {
-        font-size: 20px;
-    }
-
 }
 
 /* -------------------------------- */
@@ -269,6 +253,31 @@
 
     .payment-logos img {
         width: 200px;
+    }
+}
+
+/* -------------------------------- */
+@media (max-width: 600px) {
+
+    /* ABOUT US SECTION IS HERE */
+    .left h1 {
+        font-size: 1.5rem;
+    }
+
+    .left h2 {
+        font-size: 1rem;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+
+    .card h3 {
+        font-size: 0.95rem;
+    }
+
+    .abt-btn {
+        width: 100%;
     }
 }
 
@@ -366,18 +375,7 @@
 }
 
 /* -------------------------------- */
-@media screen and (max-width: 376px) {
-
-    /* ----- ABOUTUS SECTION ----- */
-    .abt-container {
-        height: 140vh;
-    }
-
-    .image {
-        width: 90%;
-    }
-
-}
+@media screen and (max-width: 376px) {}
 
 /* -------------------------------- */
 @media screen and (max-width: 321px) {
