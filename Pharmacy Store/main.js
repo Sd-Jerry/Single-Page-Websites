@@ -51,8 +51,7 @@
                     <p>
                         Levin's Pharmacy offers a wide selection of over-the-counter medications, skincare products,
                         greeting cards, toys, gifts, and various house ware items to meet all your everyday needs. We
-                        also
-                        carry an extensive range of surgical supplies and durable medical equipment, including canes,
+                        also carry an extensive range of surgical supplies and durable medical equipment, including canes,
                         walkers, wheelchairs, nebulizers, and more.
                     </p>
                 </div>
@@ -75,10 +74,8 @@
                     <h3>Fast, Free Delivery</h3>
                     <p>
                         At Levin's Pharmacy, we understand that our patients lead busy lives and some may have
-                        difficulty
-                        getting around. That's why we offer fast, free delivery Monday through Saturday to make it more
-                        convenient for you. For those who prefer to pick up their prescriptions in person, we provide
-                        ample
+                        difficulty getting around. That's why we offer fast, free delivery Monday through Saturday to make it more
+                        convenient for you. For those who prefer to pick up their prescriptions in person, we provide ample
                         parking and offer curbside service for added ease and convenience.
                     </p>
                 </div>
@@ -89,12 +86,9 @@
                     <h3>Saving Our Patients Money</h3>
                     <p>
                         At Levin's Pharmacy, we understand that healthcare costs continue to rise, and we are committed
-                        to
-                        helping our patients save money. We offer competitive prices on both brand-name and generic
-                        medications, and we price-match many of our local competitors. To further help our patients
-                        save, we
-                        automatically apply all available manufacturer discounts and rebates to prescription copays,
-                        ensuring you get the best possible price.
+                        to helping our patients save money. We offer competitive prices on both brand-name and generic
+                        medications, and we price-match many of our local competitors. To further help our patients save, we
+                        automatically apply all available manufacturer discounts and rebates to prescription copay, ensuring you get the best possible price.
                     </p>
                 </div>
             </div>
