@@ -271,27 +271,34 @@ body {
 
 
 /* ----- SERVICE SECTION IS HERE ----- */
+#services{
+    margin: 20px 0;
+}
 
-#card-section {
+#services h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0;
+}
+.card-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 70px;
     max-width: 1300px;
     margin: auto;
-
-    font-family: Arial, sans-serif;
     background: #f4f4f4;
     padding: 20px;
-    border: 2px solid green;
 }
+
 
 .flip-card {
     background-color: transparent;
     width: 350px;
-    height: 350px;
+    height: 480px;
     perspective: 1000px;
-    border: 1px solid red;
 }
 
 .flip-card-inner {
@@ -300,8 +307,6 @@ body {
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    /* border: 1px solid blue; */
-
 }
 
 .flip-card.flipped .flip-card-inner {
@@ -329,10 +334,22 @@ body {
     padding: 20px;
 }
 
+
+.s-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.s-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .icon-circle {
     width: 64px;
     height: 64px;
-    margin: 0 auto 16px auto;
+    margin: 20px auto 16px auto;
     border-radius: 50%;
     background-color: #2563eb;
     border: 2px solid #93c5fd;
@@ -343,8 +360,22 @@ body {
     font-size: 20px;
 }
 
+.flip-card-front h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.flip-card-front p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
 .flip-card-back {
-    background-color: #333;
+    /* background-color: #333; */
+    background-color: #0056b3;
     color: white;
     transform: rotateY(180deg);
     display: flex;
@@ -354,6 +385,16 @@ body {
     text-align: center;
 }
 
+.flip-card-back ul {
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.flip-card-back ul li {
+    margin: 20px 0;
+}
+
+
 button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -362,10 +403,13 @@ button {
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    transition: 0.2s ease-out;
 }
 
 button:hover {
     background-color: #0056b3;
+    color: whitesmoke;
+    transform: scale(1.1);
 }
 
 /* <----- FOOTER SECTION IS HERE ------> */
