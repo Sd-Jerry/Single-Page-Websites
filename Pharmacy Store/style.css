@@ -271,17 +271,18 @@ body {
 
 
 /* ----- SERVICE SECTION IS HERE ----- */
-#services{
+#services {
     margin: 20px 0;
 }
 
-#services h1{
+#services h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 10px;
 }
+
 .card-section {
     display: flex;
     flex-wrap: wrap;
@@ -410,6 +411,88 @@ button:hover {
     background-color: #0056b3;
     color: whitesmoke;
     transform: scale(1.1);
+}
+
+/* <!-- ----- WHY-CHOOSE-US SECTION IS HERE ----- --> */
+
+#choose-us {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.why-choose-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e9f6fd;
+    border-radius: 12px;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.why-choose-content {
+    flex: 1 1 500px;
+}
+
+.why-choose-content h2 {
+    font-size: 28px;
+    color: #0b2653;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.why-choose-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #ff6d3d;
+    border-radius: 4px;
+}
+
+.feature-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    color: #0b2653;
+    margin-bottom: 5px;
+}
+
+.feature-box p {
+    color: #555;
+    font-size: 14px;
+}
+
+.why-choose-image {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* <----- FOOTER SECTION IS HERE ------> */

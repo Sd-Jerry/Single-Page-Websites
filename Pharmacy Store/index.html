@@ -284,6 +284,62 @@
             </div>
         </section>
 
+        <!-- ----- WHY-CHOOSE-US SECTION IS HERE ----- -->
+        <section id="choose-us">
+            <div class="why-choose-section">
+                <div class="why-choose-content">
+                    <h2>Why Choose Us?</h2>
+
+                    <div class="feature-box">
+                        <div>
+                            <h3>Heading-1</h3>
+                            <p>Include data.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div>
+                            <h3>Heading-2</h3>
+                            <p>Include data.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div>
+                            <h3>Heading-3</h3>
+                            <p>Include data.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div>
+                            <h3>Heading-4</h3>
+                            <p>Include data.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div>
+                            <h3>Heading-5</h3>
+                            <p>Include data.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <div>
+                            <h3>Heading-6</h3>
+                            <p>Include data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-choose-image">
+                    <img src="your-image-path.webp" alt="Levin's pharmacy photo" />
+                </div>
+            </div>
+        </section>
+
+
         <!-- ----- FOOTER SECTION IS HERE ----- -->
         <footer id="footer">
             <div class="footer-main">
@@ -371,10 +427,28 @@
 </body>
 
 <script>
-    function flipCard(button) {
-        const card = button.closest('.flip-card');
-        card.classList.toggle('flipped');
-    }
+    const cards = document.querySelectorAll('.flip-card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', function (e) {
+            // Prevent nested card click from toggling multiple times
+            e.stopPropagation();
+
+            // Flip back any other flipped card
+            cards.forEach(c => {
+                if (c !== this) c.classList.remove('flipped');
+            });
+
+            // Toggle this card
+            this.classList.toggle('flipped');
+        });
+    });
+
+    // Optional: click outside to close any open cards
+    document.addEventListener('click', function () {
+        cards.forEach(card => card.classList.remove('flipped'));
+    });
+
 </script>
 
 </html>

@@ -201,7 +201,6 @@
     }
 
     .flip-card {
-        width: 100%;
         max-width: 90vw;
       }
 }
@@ -332,6 +331,15 @@
         font-size: 12px;
     }
 
+    /* ----- SERVICE SECTION ----- */
+    #services h1{
+        font-size: 25px;
+    }
+
+    .flip-card{
+        width: 100%;
+    }
+
     /* ----- FOOTER SECTION ----- */
     .footer-content {
         padding: 0.5rem 0;
@@ -380,7 +388,13 @@
 }
 
 /* -------------------------------- */
-@media screen and (max-width: 376px) {}
+@media screen and (max-width: 376px) {
+
+     /* ----- SERVICE SECTION ----- */
+    #services h1{
+        font-size: 20px;
+    }
+}
 
 /* -------------------------------- */
 @media screen and (max-width: 321px) {
