@@ -111,7 +111,7 @@
         padding: 20px 10px;
     }
 
-    .right{
+    .right {
         display: contents;
     }
 
@@ -202,7 +202,20 @@
 
     .flip-card {
         max-width: 90vw;
-      }
+    }
+
+    .why-choose-section {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .why-choose-image h2 {
+        text-align: center;
+    }
+
+    .why-choose-image {
+        margin-top: 30px;
+    }
 }
 
 /* -------------------------------- */
@@ -332,11 +345,11 @@
     }
 
     /* ----- SERVICE SECTION ----- */
-    #services h1{
+    #services h1 {
         font-size: 25px;
     }
 
-    .flip-card{
+    .flip-card {
         width: 100%;
     }
 
@@ -390,8 +403,8 @@
 /* -------------------------------- */
 @media screen and (max-width: 376px) {
 
-     /* ----- SERVICE SECTION ----- */
-    #services h1{
+    /* ----- SERVICE SECTION ----- */
+    #services h1 {
         font-size: 20px;
     }
 }

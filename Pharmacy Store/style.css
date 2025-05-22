@@ -416,13 +416,12 @@ button:hover {
 /* <!-- ----- WHY-CHOOSE-US SECTION IS HERE ----- --> */
 
 #choose-us {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
     padding: 40px 20px;
 }
 
 .why-choose-section {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     background-color: #e9f6fd;
     border-radius: 12px;
@@ -433,18 +432,23 @@ button:hover {
     justify-content: space-between;
 }
 
-.why-choose-content {
-    flex: 1 1 500px;
+.why-choose-image {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.why-choose-content h2 {
+.why-choose-image h2 {
     font-size: 28px;
+    font-family: 'Rubik', sans-serif;
     color: #0b2653;
     margin-bottom: 30px;
     position: relative;
 }
 
-.why-choose-content h2::after {
+.why-choose-image h2::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -453,6 +457,23 @@ button:hover {
     height: 4px;
     background-color: #ff6d3d;
     border-radius: 4px;
+}
+
+.why-choose-image p {
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.why-choose-image img {
+    max-width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-content {
+    flex: 1 1 500px;
 }
 
 .feature-box {
@@ -464,35 +485,26 @@ button:hover {
     gap: 15px;
     margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease-in;
 }
 
-.feature-box img {
-    width: 40px;
-    height: 40px;
+.feature-box:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .feature-box h3 {
     font-size: 18px;
     color: #0b2653;
     margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .feature-box p {
     color: #555;
     font-size: 14px;
-}
-
-.why-choose-image {
-    flex: 1 1 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.why-choose-image img {
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* <----- FOOTER SECTION IS HERE ------> */
