@@ -15,6 +15,54 @@ body {
     overflow-x: hidden !important;
 }
 
+/*<----------------------------- STICKY SECTION -------------------------------->*/
+
+.float-btn {
+  position: fixed;
+  height: 86px;
+  width: 95px;
+  bottom: 120px;
+  right: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(237, 33, 58, 0.7), rgba(147, 41, 30, 0.7));
+  color: #fff;
+  text-align: center;
+  padding: 20px 5px;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  z-index: 100;
+  text-decoration: none;
+  box-shadow: 2px 2px 3px #353535;
+  transition: ease-in-out 0.3s;
+}
+
+.float-btn:hover {
+  color: #fff;
+  border-radius: 25%;
+  transform: translateY(-5px);
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 70px;
+  right: 55px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-float i {
+  position: relative;
+  top: 7px;
+  font-size: 34px;
+}
+
 /* ----- HEADER SECTION ------ */
 
 #navbar {
@@ -174,9 +222,10 @@ body {
 /* ------ ABOUT US SECTION IS HERE -----  */
 
 #abt-us {
-    background-color: #3f5c59;
+    background-color: #42a5f5;
     color: #fff;
     line-height: 1.6;
+    margin-top: 40px;
 }
 
 .main {
@@ -256,7 +305,7 @@ body {
 
 .abt-btn {
     width: 50%;
-    background-color: #6ca7fe;
+    background-color: #1a73e8;
     border: none;
     outline: none;
     padding: 15px 20px;
@@ -288,10 +337,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 70px;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: auto;
-    background: #f4f4f4;
+    background-color: #64b5f6;
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 
@@ -395,7 +445,6 @@ body {
     margin: 20px 0;
 }
 
-
 button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -417,15 +466,14 @@ button:hover {
 
 #choose-us {
     background-color: #f9f9f9;
-    padding: 40px 20px;
+    padding: 40px 0px;
 }
 
 .why-choose-section {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
-    background-color: #e9f6fd;
-    border-radius: 12px;
-    padding: 40px 20px;
+    background-color: #90caf9;
+    padding: 40px 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -438,12 +486,12 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .why-choose-image h2 {
     font-size: 28px;
     font-family: 'Rubik', sans-serif;
-    color: #0b2653;
     margin-bottom: 30px;
     position: relative;
 }
@@ -511,7 +559,7 @@ button:hover {
 
 #footer {
     margin-top: 20px;
-    padding: 10px 0;
+    padding-top: 10px;
 }
 
 .footer-main {
@@ -519,10 +567,10 @@ button:hover {
     flex-direction: row;
     border: 1px solid #e5e7eb;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0px auto 50px;
     padding: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-color: #bbdefb;
 }
 
 .footer-image {
@@ -530,7 +578,7 @@ button:hover {
     justify-content: center;
     flex: 1 0 0%;
     padding: 1.5rem;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #5b5b5b;
 }
 
 .footer-image img {
@@ -662,28 +710,40 @@ button:hover {
     text-decoration: underline;
 }
 
+.footer-bottom {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.875rem;    
+    background: #000;
+    color: #6b7280;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .footer-bottom p span {
     color: #6ca7fe;
     font-weight: 500;
 }
 
-.footer-bottom {
-    max-width: 80rem;
-    margin: 2.5rem auto 0 auto;
-    padding: 0 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #6b7280;
-    font-size: 0.875rem;
-}
+/* SCROLL ON TOP IS HERE */
 
-.payment-logos {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.payment-logos img {
-    width: 330px;
-    object-fit: contain;
+#scroll-on-top {
+  background-color: #6ca7fe;
+  color: #000;
+  padding: 9px;
+  border-radius: 9px;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 1rem;
+  right: 4%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  cursor: pointer;
 }

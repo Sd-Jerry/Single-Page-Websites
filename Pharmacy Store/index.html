@@ -16,6 +16,10 @@
 </head>
 
 <body>
+    <!----------------------- STICKY SECTION  -------------------------------->
+    <a href=" https://wa.me/9033497582" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"> </i></a>
+
     <!-- ----- HEADER SECTION IS HERE ---- -->
     <header class="sticky">
         <nav id="navbar">
@@ -31,8 +35,8 @@
                 </label>
                 <ul class="list">
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#s-container">SERVICES</a></li>
-                    <li><a href="#about-section">ABOUT US</a></li>
+                    <li><a href="#abt-us">ABOUT US</a></li>
+                    <li><a href="#services">SERVICES</a></li>
                     <li><a href="#footer">CONTACT US</a></li>
                     <!-- <li><a href="#feature-section">SERVICES</a></li> -->
                     <!-- <li><a href="#testinomal">TESTINOMAL</a></li> -->
@@ -292,7 +296,7 @@
                     <p>Locally Owned & Trusted Since 1922 Over 100 years of compassionate, community-based care. </p>
                     <img src="./Imgs/Aboutus.png" alt="Levin's pharmacy photo" />
                 </div>
-                
+
                 <div class="why-choose-content">
                     <div class="feature-box">
                         <div>
@@ -304,35 +308,39 @@
                     <div class="feature-box">
                         <div>
                             <h3>Fast, Free Delivery & Curbside</h3>
-                            <p>We bring your medications to your door or meet at your car --  free of charge.</p>
+                            <p>We bring your medications to your door or meet at your car -- free of charge.</p>
                         </div>
                     </div>
 
                     <div class="feature-box">
                         <div>
                             <h3>RX Local Application</h3>
-                            <p>Smart, simple refills with RX local app., refills, track and manage prescription with just a few taps. </p>
+                            <p>Smart, simple refills with RX local app., refills, track and manage prescription with
+                                just a few taps. </p>
                         </div>
                     </div>
 
                     <div class="feature-box">
                         <div>
                             <h3>We Help You To Save Money</h3>
-                            <p>We price match local competitors and automatically apply manufacture discount and copay rebates.</p>
+                            <p>We price match local competitors and automatically apply manufacture discount and copay
+                                rebates.</p>
                         </div>
                     </div>
 
                     <div class="feature-box">
                         <div>
                             <h3>Prior Authorization Support</h3>
-                            <p>We work directly with the doctors and insurance companies to handle delays and paperwork, so you don't have to.</p>
+                            <p>We work directly with the doctors and insurance companies to handle delays and paperwork,
+                                so you don't have to.</p>
                         </div>
                     </div>
 
                     <div class="feature-box">
                         <div>
                             <h3>Trusted Healthcare Brands</h3>
-                            <p>We carry high-quality, clinical trusted brands like : Pure Encapsulations®️, Jarrow®️, Life Extension®️, Thorne®️ and many more.</p>
+                            <p>We carry high-quality, clinical trusted brands like : Pure Encapsulations®️, Jarrow®️,
+                                Life Extension®️, Thorne®️ and many more.</p>
                         </div>
                     </div>
                 </div>
@@ -418,13 +426,17 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Copyright © 2025-2026, All Rights Reserved to <span>Levin's Pharmacy.</span></p>
-                <div class="payment-logos">
-                    <img src="./Imgs/Card-logos.jpg" alt="Visa credit card logo" />
-                </div>
+                <p>COPYRIGHT &copy; @2025-2026 ALL RIGHT RESERVED TO <span>LEVIN'S PHARMACY OFFICIALS.</span></p>
             </div>
         </footer>
+
     </main>
+
+    <!-- SCROLL ON TOP IS HERE -->
+    <div id="scroll-on-top" onclick="scrolltop();">
+        <span><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+
 </body>
 
 <script>
@@ -450,6 +462,11 @@
         cards.forEach(card => card.classList.remove('flipped'));
     });
 
+    // SCROLL ON TOP
+    function scrolltop() {
+        let b = window.document;
+        b = location.href = '#home';
+    }
 </script>
 
 </html>
