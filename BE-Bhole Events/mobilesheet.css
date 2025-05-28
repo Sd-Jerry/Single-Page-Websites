@@ -1,0 +1,55 @@
+/* -------------------------------- */
+@media screen and (max-width: 805px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: whitesmoke;
+        z-index: 1000;
+        transition: top 0.3s;
+    }
+
+    /* ----- HEADER SECTION ----- */
+    #navbar {
+        flex-direction: row;
+        border-bottom: 1px solid grey;
+        padding: 10px;
+        line-height: 5em;
+
+    }
+
+    .list {
+        width: 100%;
+        height: 70vh;
+        background-color: #190f0f;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6.2rem;
+        left: 100%;
+        transition: all 1s ease-in;
+        border-bottom: none;
+    }
+
+    .list li a {
+        color: #fff;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .CheckBtn {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+}
