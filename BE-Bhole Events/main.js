@@ -1,5 +1,5 @@
 // Typing Text
-const text = "BE-Bhole Events Website is coming soon......";
+const text = "BE-Bhole Events Website Is Coming Soon......";
 const typingText = document.getElementById("typing-text");
 
 let i = 0;
