@@ -1,4 +1,17 @@
 /* -------------------------------- */
+@media screen and (max-width: 905px)
+{
+    .nav-left img{
+        width: 150px;
+    }
+
+    .list li a{
+        font-size: 1rem;
+    }
+}
+
+
+/* -------------------------------- */
 @media screen and (max-width: 805px) {
     body {
         overflow-x: hidden;
@@ -24,13 +37,13 @@
 
     .list {
         width: 100%;
-        height: 70vh;
-        background-color: goldenrod;
+        height: 65vh;
+        background-color: rgba(83, 59, 0, 0.508);
         text-align: center;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 6.2rem;
+        top: 8.8rem;
         left: 100%;
         transition: all 1s ease-in;
         border-bottom: none;
@@ -52,17 +65,7 @@
     #check:checked~ul {
         left: 0%;
     }
-
-    /* ----- COMING SOON SECTION ----- */
-    #typing-text{
-        white-space: pre-wrap;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 475px) {
-    /* ----- COMING SOON SECTION ----- */
-    #typing-text{
-        font-size: 1.5rem;
-    }
 }
