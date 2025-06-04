@@ -603,6 +603,10 @@ button:hover {
     font-size: 1rem;
 }
 
+.contact-info ul{
+    list-style: none;
+}
+
 .add {
     color: #676767;
     font-family: 'Rubik', sans-serif;
@@ -638,7 +642,7 @@ button:hover {
     display: flex;
     gap: 2.5rem;
     color: #000;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 .social-icons a {
