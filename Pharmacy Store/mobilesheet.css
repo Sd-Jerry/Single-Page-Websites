@@ -95,9 +95,9 @@
         width: 250px;
     }
 
-    /* --------WHATSAPP FLOAT BUTTON--------- */
-    .whatsapp-float {
-        right: 35px;
+    /* --------CALL FLOAT BUTTON--------- */
+    .call-button {
+        right: 32px;
     }
 }
 
@@ -153,7 +153,6 @@
         flex-direction: row;
         border-bottom: 1px solid grey;
         padding: 10px;
-
     }
 
     .list {
@@ -222,15 +221,11 @@
         margin-top: 30px;
     }
 
-    /* --------WHATSAPP FLOAT BUTTON--------- */
-    .whatsapp-float {
-        height: 45px;
-        width: 45px;
-        right: 26px;
-    }
-
-    .whatsapp-float i {
-        font-size: 30px;
+    /* --------CALL FLOAT BUTTON--------- */
+    .call-button {
+        right: 25px;
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -297,7 +292,7 @@
         font-size: 1.5rem;
     }
 
-    .left h2 {
+    .left h2,.left p {
         font-size: 1rem;
     }
 
@@ -313,16 +308,11 @@
         width: 100%;
     }
 
-    /* --------WHATSAPP FLOAT BUTTON--------- */
-    .whatsapp-float {
-        height: 40px;
-        width: 40px;
-        right: 18px;
-    }
-
-    .whatsapp-float i {
-        font-size: 25px;
-        top: 2px;
+    /* --------CALL FLOAT BUTTON--------- */
+    .call-button {
+        right: 20px;
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -395,6 +385,15 @@
         justify-content: flex-start;
         gap: 2rem;
     }
+
+    /* -------- FLOAT BUTTON--------- */
+    .call-button{
+        right: 15px;
+    }
+
+    .call-button i{
+        font-size: 20px;
+    }
 }
 
 /* -------------------------------- */
@@ -436,18 +435,22 @@
         font-size: 20px;
     }
 
-    /* --------WHATSAPP FLOAT BUTTON--------- */
+    /* -------- FLOAT BUTTON--------- */
+    .call-button{
+        height: 40px;
+        width: 40px;
+        right: 11px;
+    }
 
-    .whatsapp-float,
+    .call-button i{
+        font-size: 16px;
+    }
+
     #scroll-on-top {
         height: 32px;
         width: 32px;
     }
 
-    .whatsapp-float i {
-        font-size: 18px;
-        top: -4px;
-    }
 }
 
 /* -------------------------------- */
@@ -468,15 +471,18 @@
         font-size: 13px;
     }
 
-    /* --------WHATSAPP FLOAT BUTTON--------- */
-    .whatsapp-float {
-        right: 12px;
-        background-color: #25d36687;
-        box-shadow: none;
+    /* -------- FLOAT BUTTON--------- */
+    .call-button{
+        height: 35px;
+        width: 35px;
+        bottom: 78px;
     }
 
+    .call-button i{
+        font-size: 14px;
+    }
+    
     #scroll-on-top {
-        background-color: #6ca7fe7d;
         height: 28px;
         width: 28px;
         bottom: 2rem;

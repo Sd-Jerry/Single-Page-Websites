@@ -16,55 +16,35 @@ body {
 }
 
 /*<----------------------------- STICKY SECTION -------------------------------->*/
-
-.float-btn {
-  position: fixed;
-  height: 86px;
-  width: 95px;
-  bottom: 120px;
-  right: 30px;
-  border-radius: 50%;
-  background: linear-gradient(to right, rgba(237, 33, 58, 0.7), rgba(147, 41, 30, 0.7));
-  color: #fff;
-  text-align: center;
-  padding: 20px 5px;
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  z-index: 100;
-  text-decoration: none;
-  box-shadow: 2px 2px 3px #353535;
-  transition: ease-in-out 0.3s;
+.call-button {
+    position: fixed;
+    bottom: 70px;
+    right: 52px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    font-size: 24px;
+    z-index: 1000;
 }
 
-.float-btn:hover {
-  color: #fff;
-  border-radius: 25%;
-  transform: translateY(-5px);
+.call-button:hover {
+    transform: scale(1.1);
 }
 
-.whatsapp-float {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 70px;
-  right: 55px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-}
-
-.whatsapp-float i {
-  position: relative;
-  top: 7px;
-  font-size: 34px;
+.call-button:active {
+    transform: scale(0.95);
 }
 
 /* ----- HEADER SECTION ------ */
-
 #navbar {
     display: flex;
     justify-content: space-around;
@@ -241,7 +221,7 @@ body {
 
 .left {
     flex: 2;
-    min-width: 300px;
+    width: 300px;
     padding: 20px 30px;
 }
 
@@ -255,12 +235,14 @@ body {
 .left h2 {
     margin-top: 50px;
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
 }
 
 .left p {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     padding: 10px 0;
 
 }
@@ -293,13 +275,19 @@ body {
     margin: 20px 0;
 }
 
+.card ul {
+    list-style: square;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 25px;
+}
+
 .card p {
     font-family: 'Poppins', sans-serif;
 }
 
 .card h3 {
     font-family: 'Quicksand', sans-serif;
-    color: #3f5c59;
+    color: #1a73e8;
     margin: 20px 0;
 }
 
@@ -536,7 +524,7 @@ button:hover {
     transition: 0.3s ease-in;
 }
 
-.feature-box:hover{
+.feature-box:hover {
     transform: scale(1.02);
     cursor: pointer;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -716,7 +704,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 0.875rem;    
+    font-size: 0.875rem;
     background: #000;
     color: #6b7280;
     padding: 10px;
@@ -731,19 +719,25 @@ button:hover {
 /* SCROLL ON TOP IS HERE */
 
 #scroll-on-top {
-  background-color: #6ca7fe;
-  color: #000;
-  padding: 9px;
-  border-radius: 9px;
-  width: 35px;
-  height: 35px;
-  position: fixed;
-  bottom: 1rem;
-  right: 4%;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 200;
-  cursor: pointer;
+    background-color: #007bff;
+    color: #000;
+    padding: 9px;
+    border-radius: 9px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 1rem;
+    right: 4%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+#scroll-on-top:hover {
+    border-radius: 0;
+    color: white;
 }
