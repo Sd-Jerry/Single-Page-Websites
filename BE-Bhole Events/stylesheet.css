@@ -1,6 +1,4 @@
 /* ----- GOOGLE FONTS LINK ----- */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
 
 * {
@@ -22,13 +20,18 @@ body {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    line-height: 5em;
+    line-height: 3em;
     padding-top: 10px;
     background-color: whitesmoke;
+    border: 2px solid darkblue;
+}
+
+.nav-left {
+    border: 2px solid yellow;
 }
 
 .nav-left img {
-    width: 180px;
+    width: 170px;
     cursor: pointer;
 }
 
@@ -36,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid wheat;
 }
 
 .list {
@@ -56,8 +60,8 @@ body {
     color: goldenrod;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 600;
 }
 
 .list li:hover {
@@ -85,8 +89,66 @@ body {
 #home {
     height: 100vh;
     width: 100%;
-    background-color: goldenrod;
+    border: 2px solid red;
 }
+
+.swiper {
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide {
+    position: relative;
+    /* Required for caption absolute positioning */
+    overflow: hidden;
+}
+
+
+.swiper-slide img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    animation: kenburns 12s ease-in-out infinite;
+}
+
+/* Ken Burns Effect Animation */
+@keyframes kenburns {
+    0% {
+        transform: scale(1.1);
+        /* Start slightly zoomed in */
+    }
+
+    100% {
+        transform: scale(1);
+        /* End at normal size (zoomed out) */
+    }
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 24px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 2;
+}
+
+/* Show caption only on active slide */
+.swiper-slide-active .caption {
+    opacity: 1;
+}
+
 
 
 /* ---------- FOOTER SECTION ----------- */
@@ -94,7 +156,7 @@ body {
     width: 100%;
     margin-top: 20px;
     padding-top: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
