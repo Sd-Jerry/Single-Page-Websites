@@ -91,10 +91,6 @@
         text-align: center;
     }
 
-    .payment-logos img {
-        width: 250px;
-    }
-
     /* --------CALL FLOAT BUTTON--------- */
     .call-button {
         right: 32px;
@@ -185,23 +181,22 @@
     #check:checked~ul {
         left: 0%;
     }
-
-    /* ------ HOME SECTION IS HERE ----- */
-
-    #home {
-        height: 85vh;
-        margin-top: 15%;
-    }
-
-    .left-txt p {
-        font-size: 35px;
-    }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 769px) {
+    #navbar {
+        border-bottom: none;
+    }
+
+    /* ----- HOME SECTION ------ */
     #home {
-        height: 85vh;
+        margin-top: 138px;
+    }
+
+    .caption {
+        width: 85%;
+        font-size: 25px;
     }
 
     .flip-card {
@@ -232,6 +227,7 @@
 /* -------------------------------- */
 @media screen and (max-width: 640px) {
 
+    /* header section */
     .list {
         top: 7rem;
         height: 48vh;
@@ -241,16 +237,13 @@
         height: 70px;
     }
 
+    /* home section */
     #home {
-        height: 65vh;
+        margin-top: 122px;
     }
 
-    .left-txt h1 {
-        padding: 10px 15px;
-    }
-
-    .left-txt p {
-        font-size: 30px;
+    .caption {
+        font-size: 20px;
     }
 
     /* ----- FOOTER SECTION IS HERE ----- */
@@ -278,10 +271,6 @@
     .footer-bottom {
         font-size: 0.8rem;
     }
-
-    .payment-logos img {
-        width: 200px;
-    }
 }
 
 /* -------------------------------- */
@@ -292,7 +281,8 @@
         font-size: 1.5rem;
     }
 
-    .left h2,.left p {
+    .left h2,
+    .left p {
         font-size: 1rem;
     }
 
@@ -319,6 +309,7 @@
 /* -------------------------------- */
 @media screen and (max-width: 475px) {
 
+    /* header section */
     .list {
         top: 6.2rem;
     }
@@ -335,31 +326,14 @@
         font-size: 25px;
     }
 
-    /* ------ HOME SECTION IS HERE ----- */
+    /* home section */
     #home {
-        padding: 30px 15px;
-        background-position: center;
-        height: 50vh;
-        margin-top: 20%;
+        margin-top: 112px;
     }
 
-    .left-txt h1 {
-        font-size: 12px;
-        padding: 6px 8px 15px;
-    }
-
-    .left-txt p {
-        font-size: 20px;
-        padding: 5px 0px 15px;
-    }
-
-    .H-btn {
-        font-size: 12px;
-        padding: 8px 16px;
-    }
-
-    .H-btn a {
-        font-size: 12px;
+    .caption {
+        width: 90%;
+        font-size: 18px;
     }
 
     /* ----- SERVICE SECTION ----- */
@@ -387,22 +361,17 @@
     }
 
     /* -------- FLOAT BUTTON--------- */
-    .call-button{
+    .call-button {
         right: 15px;
     }
 
-    .call-button i{
+    .call-button i {
         font-size: 20px;
     }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 426px) {
-
-    .nav-left img {
-        height: 50px;
-    }
-
     .list {
         top: 6.2rem;
     }
@@ -411,20 +380,11 @@
         font-size: 0.9rem;
     }
 
-    /* ------ HOME SECTION IS HERE ----- */
-    #home {
-        height: auto;
-        margin-top: 26%;
-    }
-
-    .left-txt h1 {
-        font-size: 10px;
-    }
-
-    .left-txt p {
+    /* home section */
+    .caption {
+        width: 100%;
         font-size: 16px;
     }
-
 }
 
 /* -------------------------------- */
@@ -436,13 +396,13 @@
     }
 
     /* -------- FLOAT BUTTON--------- */
-    .call-button{
+    .call-button {
         height: 40px;
         width: 40px;
         right: 11px;
     }
 
-    .call-button i{
+    .call-button i {
         font-size: 16px;
     }
 
@@ -450,7 +410,6 @@
         height: 32px;
         width: 32px;
     }
-
 }
 
 /* -------------------------------- */
@@ -463,25 +422,30 @@
         font-size: 0.8rem;
     }
 
-    #home {
-        margin-top: 32%;
-    }
-
     .left-txt p {
         font-size: 13px;
     }
 
+    /* Home section */
+    #home {
+        margin-top: 110px;
+    }
+
+    .caption {
+        font-size: 14px;
+    }
+
     /* -------- FLOAT BUTTON--------- */
-    .call-button{
+    .call-button {
         height: 35px;
         width: 35px;
         bottom: 78px;
     }
 
-    .call-button i{
+    .call-button i {
         font-size: 14px;
     }
-    
+
     #scroll-on-top {
         height: 28px;
         width: 28px;

@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="icon" type="image/png" href="./Imgs/fulllogo.png">
+    <link rel="icon" type="image/png" href="./Imgs/fulllogo.png">
     <title>Levin's Pharmacy | Store </title>
 
     <!-- FONT AWESOME LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- CSS LINK -->
     <link rel="stylesheet" href="./style.css">
     <!-- Link to mobile styles -->
@@ -27,7 +29,7 @@
         <nav id="navbar">
 
             <div class="nav-left">
-                <img src="./Imgs/fulllogo-Photoroom.png" alt="Pharmacy Store Logo">
+                <img src="./Imgs/LogoWithPng.png" alt="Pharmacy Store Logo">
             </div>
 
             <div class="nav-right">
@@ -48,10 +50,63 @@
     <main>
         <!-- ----- HOME SECTION IS HERE ---- -->
         <section id="home">
-            <div class="left-txt">
-                <h1>MEDICAL SERVICES YOU CAN TRUST</h1>
-                <p>Precise and dependable pharmacist with <span>15 years of experience</span> </p>
-                <button type="submit" class="H-btn"> <a href="#abt-us">Explore Now</a></button>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="./Imgs/Home Img-1.jpg" alt="Our Doctor's Photo" />
+                        <div class="overlay"></div>
+                        <div class="caption"><h1>Welcome to Levin's Pharmacy</h1>
+                            <p>
+                                Serving care, trust, and health since 1922.
+                                Your neighborhood pharmacy with a personal touch.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./Imgs/Home Img-2.png" alt="Pharmacy Outer Image" />
+                        <div class="overlay"></div>
+                        <div class="caption"><h1>Your Neighborhood Pharmacy--Right Around the Corner</h1>
+                            <p>
+                                Located at the heart of the community, Levin's Pharmacy is where health meets hometown
+                                care.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./Imgs/Home Img-3.png" alt="Customer Photo With Employ" />
+                        <div class="overlay"></div>
+                        <div class="caption"><h1>Smiles That Matter</h1>
+                            <p>We take the time to understand your needs — so you can feel confident, cared for, and
+                                supported.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./Imgs/Home IMg-4.jpg" alt="Pharmacy Old Image" />
+                        <div class="overlay"></div>
+                        <div class="caption"><h1>Legacy of Levin's Pharmacy</h1>
+                            <p>From handwritten prescriptions to modern health solutions — Levin's has always been by
+                                your side.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./Imgs/Home Img-5.png" alt="Image Of Inside Store" />
+                        <div class="overlay"></div>
+                        <div class="caption"><h1>A Modern Approach to Trusted Care</h1>
+                            <p>From tradition to technology — we continue to deliver quality healthcare in a clean,
+                                organized, and modern environment.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -389,10 +444,13 @@
                             <a href="tel:+516-766-2288">Phone : 516-766-2288</a>
                         </div>
                         <div class="social-icons">
-                            <a href="https://www.facebook.com/people/Levins-Pharmacy/61568601305342/?mibextid=wwXIfr&rdid=JSSpRcP0sqgA3KJT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1H2YLB1ncZ%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/people/Levins-Pharmacy/61568601305342/?mibextid=wwXIfr&rdid=JSSpRcP0sqgA3KJT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1H2YLB1ncZ%2F%3Fmibextid%3DwwXIfr"
+                                target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
                             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                             <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/levinspharmacy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/levinspharmacy/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
 
@@ -410,16 +468,20 @@
                             <h3>Services</h3>
                             <ul>
                                 <li><a href="#services">Free Delivery</a></li>
-                                <li><a href="https://pharmacyfinder.rxlocal.com/pharmacyfinder/ny/oceanside/levins-oceanside-pharmacy" target="_blank" rel="noopener noreferrer">Our Application</a></li>
+                                <li><a href="https://pharmacyfinder.rxlocal.com/pharmacyfinder/ny/oceanside/levins-oceanside-pharmacy"
+                                        target="_blank" rel="noopener noreferrer">Our Application</a></li>
                                 <li><a href="tel:+516-766-2288">Phone Number</a></li>
                             </ul>
                         </div>
                         <div class="link-section">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="https://maps.app.goo.gl/p8RWsYj5dxrF5R6u8" target="_blank" rel="noopener noreferrer">Store Location</a></li>
-                                <li><a href="./privacypolicy.html#privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
-                                <li><a href="./privacypolicy.html#terms" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
+                                <li><a href="https://maps.app.goo.gl/p8RWsYj5dxrF5R6u8" target="_blank"
+                                        rel="noopener noreferrer">Store Location</a></li>
+                                <li><a href="./privacypolicy.html#privacy" target="_blank"
+                                        rel="noopener noreferrer">Privacy Policy</a></li>
+                                <li><a href="./privacypolicy.html#terms" target="_blank" rel="noopener noreferrer">Terms
+                                        & Conditions</a></li>
                                 <li><a href="fax:+516-766-0687">Fax Number</a></li>
                             </ul>
                         </div>
@@ -446,36 +508,54 @@
         <span><i class="fa-solid fa-arrow-up"></i></span>
     </div>
 
-</body>
 
-<script>
-    const cards = document.querySelectorAll('.flip-card');
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    cards.forEach(card => {
-        card.addEventListener('click', function (e) {
-            // Prevent nested card click from toggling multiple times
-            e.stopPropagation();
-
-            // Flip back any other flipped card
-            cards.forEach(c => {
-                if (c !== this) c.classList.remove('flipped');
-            });
-
-            // Toggle this card
-            this.classList.toggle('flipped');
+    <script>
+        // swiper-JS For Home Page
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true,
+            },
+            speed: 1500, // <<< Increase speed to slow down the fade (default is 300ms)
+            autoplay: {
+                delay: 4000, // Time between slides
+                disableOnInteraction: false,
+            },
         });
-    });
 
-    // Optional: click outside to close any open cards
-    document.addEventListener('click', function () {
-        cards.forEach(card => card.classList.remove('flipped'));
-    });
+        const cards = document.querySelectorAll('.flip-card');
 
-    // SCROLL ON TOP
-    function scrolltop() {
-        let b = window.document;
-        b = location.href = '#home';
-    }
-</script>
+        cards.forEach(card => {
+            card.addEventListener('click', function (e) {
+                // Prevent nested card click from toggling multiple times
+                e.stopPropagation();
+
+                // Flip back any other flipped card
+                cards.forEach(c => {
+                    if (c !== this) c.classList.remove('flipped');
+                });
+
+                // Toggle this card
+                this.classList.toggle('flipped');
+            });
+        });
+
+        // Optional: click outside to close any open cards
+        document.addEventListener('click', function () {
+            cards.forEach(card => card.classList.remove('flipped'));
+        });
+
+        // SCROLL ON TOP
+        function scrolltop() {
+            let b = window.document;
+            b = location.href = '#home';
+        }
+    </script>
+
+</body>
 
 </html>
