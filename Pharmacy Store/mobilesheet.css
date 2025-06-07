@@ -46,6 +46,10 @@
 
 /* -------------------------------- */
 @media screen and (max-width: 1024px) {
+    /* about-us section */
+    .left {
+    flex: 1;
+}
 
     /* ----- FOOTER SECTION IS HERE ----- */
     .footer-main {
