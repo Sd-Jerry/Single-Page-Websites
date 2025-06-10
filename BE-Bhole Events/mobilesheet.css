@@ -1,15 +1,24 @@
 /* -------------------------------- */
-@media screen and (max-width: 905px)
-{
-    .nav-left img{
-        width: 150px;
-    }
-
-    .list li a{
-        font-size: 1rem;
+@media screen and (max-width: 1024px) {
+    /* HOME SECTION */
+    .caption{
+        width: 80%;
+        font-size: 26px;
     }
 }
 
+/* -------------------------------- */
+@media screen and (max-width: 905px) {
+
+    /* ----- HEADER SECTION ----- */
+    .nav-left img {
+        width: 150px;
+    }
+
+    .list li a {
+        font-size: 1rem;
+    }
+}
 
 /* -------------------------------- */
 @media screen and (max-width: 805px) {
@@ -17,6 +26,7 @@
         overflow-x: hidden;
     }
 
+    /* STICKY SECTION */
     .sticky {
         position: fixed;
         top: 0;
@@ -31,19 +41,17 @@
         flex-direction: row;
         border-bottom: 1px solid grey;
         padding: 10px;
-        line-height: 5em;
-
     }
 
     .list {
         width: 100%;
-        height: 65vh;
-        background-color: rgba(83, 59, 0, 0.508);
+        height: 50vh;
+        background-color: goldenrod;
         text-align: center;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 8.8rem;
+        top: 7.6rem;
         left: 100%;
         transition: all 1s ease-in;
         border-bottom: none;
@@ -65,7 +73,52 @@
     #check:checked~ul {
         left: 0%;
     }
+
+    /* HOME SECTION */
+    #home{
+        height: 80vh;
+        margin-top: 134px;
+    }
 }
 
+/* -------------------------------- */
+@media screen and (max-width: 575px) {
+    /* HOME SECTION */
+    .caption{
+        width: 90%;
+        font-size: 22px;
+    }
+}
+
+/* -------------------------------- */
 @media screen and (max-width: 475px) {
+    /* HOME SECTION */
+
+    #home{
+        padding: 10px;
+    }
+
+    .caption{
+        width: 100%;
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width: 426px) {
+    /* HOME SECTION */
+    .caption{
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width: 321px) {
+    /* HOME SECTION */
+    .caption{
+        font-size: 14px;
+        padding: 8px;
+    }
 }
