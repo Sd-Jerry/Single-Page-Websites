@@ -152,6 +152,103 @@ body {
     transform: translate(-50%, -60%);
 }
 
+/* ---------- ABOUTUS SECTION ----------- */
+.wedding-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    font-family: 'Georgia', serif;
+    background-color: #fffaf6;
+    color: #222;
+}
+
+.text-content {
+    flex: 1 1 450px;
+}
+
+.text-content h3 {
+    font-style: italic;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.text-content h2 {
+    color: #f56c50;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.button-group button {
+    padding: 12px 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-details {
+    background-color: #fdf1e8;
+    border: 1px solid #f4d7c5;
+}
+
+.btn-details:hover {
+    background-color: #f8e5d7;
+}
+
+.image-container {
+    flex: 1 1 350px;
+    position: relative;
+    max-width: 450px;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.flower {
+    position: absolute;
+    width: 100px;
+}
+
+.flower-top {
+    top: -40px;
+    right: -30px;
+}
+
+.flower-bottom {
+    bottom: -30px;
+    left: -30px;
+}
+
+
 /* ---------- FOOTER SECTION ----------- */
 #footer {
     width: 100%;
