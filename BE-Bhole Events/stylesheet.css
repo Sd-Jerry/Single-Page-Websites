@@ -154,6 +154,7 @@ body {
 
 /* ---------- ABOUTUS SECTION ----------- */
 .wedding-section {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -161,19 +162,55 @@ body {
     gap: 40px;
     flex-wrap: wrap;
 
-    font-family: 'Georgia', serif;
-    background-color: #fffaf6;
-    color: #222;
+    font-family: "Nunito", sans-serif;
+    /* color: #222; */
+    color: #fff;
+    border: 2px solid blue;
+
+    background-image: url("./IMG/beautiful-spring-flowers-composition-with-copy-space.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.9;
 }
+
+/* .wedding-section::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("./IMG/beautiful-spring-flowers-composition-with-copy-space.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.wedding-section::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+} */
 
 .text-content {
     flex: 1 1 450px;
+    z-index: 2;
 }
 
 .text-content h3 {
     font-style: italic;
     color: #444;
     font-size: 1.1rem;
+    font-family: "Cinzel", sans-serif;
 }
 
 .text-content h1 {
@@ -181,12 +218,14 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     margin: 10px 0;
+    font-family: "Nunito", sans-serif;
 }
 
 .text-content h2 {
-    color: #f56c50;
+    color: white;
     font-size: 2rem;
     margin-bottom: 15px;
+    font-family: "Cinzel", sans-serif;
 }
 
 .text-content p {
@@ -200,6 +239,7 @@ body {
     margin-top: 30px;
     display: flex;
     gap: 20px;
+    z-index: 2;
 }
 
 .button-group button {
@@ -224,6 +264,9 @@ body {
     flex: 1 1 350px;
     position: relative;
     max-width: 450px;
+    /* border: 2px solid red; */
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    z-index: 2;
 }
 
 .main-img {
@@ -235,12 +278,12 @@ body {
 
 .flower {
     position: absolute;
-    width: 100px;
+    width: 135px;
 }
 
 .flower-top {
-    top: -40px;
-    right: -30px;
+    top: 0px;
+    right: -70px;
 }
 
 .flower-bottom {
