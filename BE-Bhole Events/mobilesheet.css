@@ -1,7 +1,8 @@
 /* -------------------------------- */
 @media screen and (max-width: 1024px) {
+
     /* HOME SECTION */
-    .caption{
+    .caption {
         width: 80%;
         font-size: 26px;
     }
@@ -75,50 +76,134 @@
     }
 
     /* HOME SECTION */
-    #home{
+    #home {
         height: 80vh;
         margin-top: 134px;
     }
 }
 
 /* -------------------------------- */
+@media screen and (max-width: 769px) {
+
+    /* ABOUTUS SECTION */
+    #wedding-section {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+}
+
+/* -------------------------------- */
 @media screen and (max-width: 575px) {
+
     /* HOME SECTION */
-    .caption{
+    .caption {
         width: 90%;
         font-size: 22px;
+    }
+
+    /* ABOUTUS SECTION */
+    .image-container {
+        max-width: 350px;
     }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 475px) {
-    /* HOME SECTION */
 
-    #home{
+    /* HOME SECTION */
+    #home {
         padding: 10px;
     }
 
-    .caption{
+    .caption {
         width: 100%;
         font-size: 18px;
         padding: 12px;
+    }
+
+    /* ABOUTUS SECTION */
+    #wedding-section {
+        padding: 30px 5%;
+    }
+
+    .image-container {
+        max-width: 300px;
+        flex: 1 1 305px;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .button-group {
+        justify-content: center;
     }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 426px) {
+
     /* HOME SECTION */
-    .caption{
+    .caption {
         font-size: 16px;
         padding: 10px;
+    }
+
+    /* ABOUTUS SECTION */
+    .image-container {
+        max-width: 250px;
+        flex: 1 1 255px;
+    }
+
+    .text-content h3 {
+        font-size: 1rem;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .text-content h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .button-group button {
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+/* -------------------------------- */
+@media screen and (max-width: 376px) {
+
+    /* ABOUTUS SECTION */
+    .text-content h3 {
+        font-size: 0.90rem;
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content h2 {
+        font-size: 2rem;
     }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 321px) {
-    /* HOME SECTION */
-    .caption{
+
+     /* HOME SECTION */
+    .caption {
         font-size: 14px;
         padding: 8px;
+    }
+
+    /* ABOUTUS SECTION */
+    .text-content h3 {
+        text-align: center;
     }
 }

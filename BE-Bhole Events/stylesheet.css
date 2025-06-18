@@ -154,20 +154,16 @@ body {
 
 /* ---------- ABOUTUS SECTION ----------- */
 #wedding-section {
-    height: 85vh;
     width: 100%;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 60px 10%;
     gap: 40px;
-    flex-wrap: wrap;
-
+    
     font-family: "Nunito", sans-serif;
     /* color: #fff; */
     color: #000;
-    border: 2px solid blue;
 
     background-image: url("./IMG/Abt-Bg.jpg");
     background-position: center;
@@ -205,7 +201,7 @@ body {
 .text-content p {
     font-size: 1rem;
     line-height: 1.6;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .button-group {
@@ -213,7 +209,6 @@ body {
     display: flex;
     gap: 20px;
     z-index: 5;
-    cursor: pointer;
 }
 
 .button-group button {
@@ -222,17 +217,22 @@ body {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn-details {
     background-color: #fdf1e8;
     border: 1px solid #f4d7c5;
+    transition: 0.3s ease-in;
 }
 
 .btn-details:hover {
-    background-color: red;
+    transform: scale(1.1);
+}
+
+.btn-details a{
+    text-decoration: none;
+    color: black;
 }
 
 .image-container {
@@ -249,6 +249,7 @@ body {
     object-fit: cover;
     mix-blend-mode: multiply;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
 }
 
 /* ---------- FOOTER SECTION ----------- */
