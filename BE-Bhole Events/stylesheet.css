@@ -259,8 +259,8 @@ body {
     width: 95%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 40px;
+    justify-content: center;
+    padding: 20px 50px;
     margin: 0 auto;
     flex-wrap: wrap;
     color: #000;
@@ -272,10 +272,10 @@ body {
     border: 2px solid red;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.s-container {
+    /* max-width: 1000px; */
     padding: 48px 24px;
+    border: 2px solid blue;
 }
 
 .top-section {
@@ -284,18 +284,22 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
+    padding: 5px;
+    border: 2px solid black;
 }
 
 .left-text {
-    max-width: 350px;
+    max-width: 400px;
     flex: 1 1 300px;
+    border: 2px solid skyblue;
 }
 
 .left-text p {
-    font-size: 14px;
+    font-size: 18px;
     margin: 0 0 8px 0;
-    color: #1a0a00;
-    font-weight: 400;
+    color: goldenrod;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
 }
 
 .left-text p span {
@@ -304,24 +308,25 @@ body {
 }
 
 .left-text h1 {
-    font-weight: 400;
     font-size: 56px;
     line-height: 1.1;
     margin: 0;
+    font-family: "Cinzel", sans-serif;
 }
 
 .right-text {
-    max-width: 300px;
+    max-width: 400px;
     flex: 1 1 250px;
-    font-size: 13px;
     line-height: 1.4;
     color: #4a3a36;
     text-align: right;
-    font-weight: 400;
+    border: 2px solid skyblue;
 }
 
 .right-text p {
     margin: 0 0 16px 0;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
 }
 
 .right-text .links {
@@ -332,28 +337,30 @@ body {
 }
 
 .right-text .links a {
-    color: #a52a2a;
+    color: #b8860b;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     gap: 4px;
     cursor: pointer;
     transition: text-decoration 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .right-text .links a:hover {
     text-decoration: underline;
+    color: gold;
 }
 
 .right-text .links a i {
     font-size: 10px;
 }
 
-
 .mySwiperServices {
     margin-top: 48px;
     padding-bottom: 24px;
+    border: 2px solid rebeccapurple;
 }
 
 .mySwiperServices .swiper-wrapper {
@@ -362,21 +369,22 @@ body {
 }
 
 .mySwiperServices .swiper-slide {
-    background: #fff;
-    border-radius: 16px;
+    /* background: #fff; */
     overflow: hidden;
-    width: 160px !important;
-    height: 220px;
+    width: 250px !important;
+    height: 250px;
     flex-shrink: 0;
     cursor: pointer;
     user-select: none;
+    border: 2px solid chartreuse;
 }
 
 .mySwiperServices .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 16px;
+    /* border-radius: 86% 14% 79% 21% / 19% 80% 20% 81% ; */
+    border-radius: 15% 85% 11% 89% / 100% 0% 100% 0%;
     display: block;
 }
 
@@ -386,42 +394,26 @@ body {
     left: 16px;
     font-size: 11px;
     font-weight: 700;
-    color: #b8860b;
-    max-width: 120px;
+    color: #fff;
+    width: 100%;
     line-height: 1.2;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
 }
 
-.mySwiperServices .card-label.dark {
-    color: #fff;
+.mySwiperServices .card-label a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin-right: 20px;
+    font-family: "Nunito", sans-serif;
 }
 
-.mySwiperServices .arrow-circle {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: #2f0a00;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
+.mySwiperServices .card-label i {
+    color: #b8860b;
+    font-size: 20px;
 }
 
-.mySwiperServices .arrow-circle.yellow {
-    background-color: #ffd600;
-}
-
-.mySwiperServices .arrow-circle i {
-    color: #fff;
-    font-size: 14px;
-}
-
-.mySwiperServices .arrow-circle.yellow i {
-    color: #1a0a00;
-}
 
 
 /* Responsive */
