@@ -240,7 +240,6 @@ body {
     flex: 1 1 350px;
     position: relative;
     max-width: 450px;
-    /* border: 2px solid red; */
     z-index: 2;
 }
 
@@ -255,13 +254,13 @@ body {
 
 /* ---------- OUR-SERVICE SECTION ----------- */
 #services {
-    height: 100vh;
+    height: 90vh;
     width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 50px;
-    margin: 0 auto;
+    margin: 15px auto;
     flex-wrap: wrap;
     color: #000;
 
@@ -269,13 +268,12 @@ body {
     background-position: center;
     background-size: cover;
     z-index: -1;
-    border: 2px solid red;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .s-container {
     /* max-width: 1000px; */
     padding: 48px 24px;
-    border: 2px solid blue;
 }
 
 .top-section {
@@ -285,13 +283,11 @@ body {
     align-items: flex-start;
     gap: 40px;
     padding: 5px;
-    border: 2px solid black;
 }
 
 .left-text {
     max-width: 400px;
     flex: 1 1 300px;
-    border: 2px solid skyblue;
 }
 
 .left-text p {
@@ -320,7 +316,6 @@ body {
     line-height: 1.4;
     color: #4a3a36;
     text-align: right;
-    border: 2px solid skyblue;
 }
 
 .right-text p {
@@ -360,7 +355,6 @@ body {
 .mySwiperServices {
     margin-top: 48px;
     padding-bottom: 24px;
-    border: 2px solid rebeccapurple;
 }
 
 .mySwiperServices .swiper-wrapper {
@@ -371,12 +365,13 @@ body {
 .mySwiperServices .swiper-slide {
     /* background: #fff; */
     overflow: hidden;
-    width: 250px !important;
     height: 250px;
+    width: auto;
+    max-width: 250px !important;
     flex-shrink: 0;
     cursor: pointer;
     user-select: none;
-    border: 2px solid chartreuse;
+    margin-bottom: 10px;
 }
 
 .mySwiperServices .swiper-slide img {
@@ -398,7 +393,6 @@ body {
     width: 100%;
     line-height: 1.2;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-    border: 1px solid white;
 }
 
 .mySwiperServices .card-label a {
@@ -413,29 +407,6 @@ body {
     color: #b8860b;
     font-size: 20px;
 }
-
-
-
-/* Responsive */
-/* @media (max-width: 768px) {
-      .top-section {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .right-text {
-        text-align: left;
-        max-width: 100%;
-      }
-
-      .left-text h1 {
-        font-size: 40px;
-      }
-
-      .swiper-slide {
-        width: 140px !important;
-        height: 200px;
-      } */
 
 /* ---------- FOOTER SECTION ----------- */
 #footer {

@@ -36,6 +36,11 @@ var swiperServices = new Swiper(".mySwiperServices", {
       spaceBetween: 24,
     },
   },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
 

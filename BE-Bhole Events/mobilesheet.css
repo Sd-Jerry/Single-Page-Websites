@@ -2,7 +2,7 @@
 @media screen and (max-width: 1024px) {
 
     /* HOME SECTION */
-    .caption {
+    .mySwiperHome .caption {
         width: 80%;
         font-size: 26px;
     }
@@ -80,6 +80,11 @@
         height: 80vh;
         margin-top: 134px;
     }
+
+    /* SERVICES SECTION */
+    .top-section {
+        justify-content: center;
+    }
 }
 
 /* -------------------------------- */
@@ -91,13 +96,39 @@
         flex-direction: column-reverse;
     }
 
+    /* SERVICES SECTION */
+    #services {
+        padding: 20px;
+    }
+
+    .s-container {
+        padding: 10px;
+    }
+
+    .top-section {
+        align-items: flex-start;
+    }
+
+    .right-text {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .left-text h1 {
+        font-size: 40px;
+    }
+
+    .mySwiperServices .swiper-slide {
+        width: 185px !important;
+        height: 220px;
+    }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 575px) {
 
     /* HOME SECTION */
-    .caption {
+    .mySwiperHome .caption {
         width: 90%;
         font-size: 22px;
     }
@@ -105,6 +136,19 @@
     /* ABOUTUS SECTION */
     .image-container {
         max-width: 350px;
+    }
+
+    /* SERVICES SECTION */
+    #services {
+        padding: 10px;
+    }
+
+    .top-section {
+        text-align: center;
+    }
+
+    .right-text .links {
+        justify-content: flex-start;
     }
 }
 
@@ -116,7 +160,7 @@
         padding: 10px;
     }
 
-    .caption {
+    .mySwiperHome .caption {
         width: 100%;
         font-size: 18px;
         padding: 12px;
@@ -139,13 +183,26 @@
     .button-group {
         justify-content: center;
     }
+
+    /* SERVICES SECTION */
+    .top-section {
+        gap: 20px;
+    }
+
+    .left-text h1 {
+        font-size: 35px;
+    }
+
+    .mySwiperServices .swiper-slide {
+        width: 192px !important;
+    }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 426px) {
 
     /* HOME SECTION */
-    .caption {
+    .mySwiperHome .caption {
         font-size: 16px;
         padding: 10px;
     }
@@ -191,13 +248,22 @@
     .text-content h2 {
         font-size: 2rem;
     }
+
+    /* SERVICES SECTION */
+    .s-container {
+        padding: 0px;
+    }
+
+    .left-text h1 {
+        font-size: 30px;
+    }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 321px) {
 
-     /* HOME SECTION */
-    .caption {
+    /* HOME SECTION */
+    .mySwiperHome .caption {
         font-size: 14px;
         padding: 8px;
     }
@@ -205,5 +271,22 @@
     /* ABOUTUS SECTION */
     .text-content h3 {
         text-align: center;
+    }
+
+    /* SERVICES SECTION */
+    .top-section {
+        padding: 0;
+    }
+
+    .left-text h1 {
+        font-size: 26px;
+    }
+
+    .right-text p {
+        font-size: 14px;
+    }
+
+    .right-text .links {
+        justify-content: space-between;
     }
 }
