@@ -84,22 +84,24 @@ body {
     width: 100%;
     padding: 10px 20px 20px;
     background-color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.swiper {
+.mySwiperHome {
     width: 100%;
     height: 100%;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.swiper-slide {
+.mySwiperHome .swiper-slide {
     position: relative;
     overflow: hidden;
 }
 
-
-.swiper-slide img {
+.mySwiperHome .swiper-slide img {
     width: 110%;
     height: 110%;
     object-fit: cover;
@@ -110,16 +112,14 @@ body {
 @keyframes kenburns {
     0% {
         transform: scale(1.1);
-        /* Start slightly zoomed in */
     }
 
     100% {
         transform: scale(1);
-        /* End at normal size (zoomed out) */
     }
 }
 
-.overlay {
+.mySwiperHome .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -129,7 +129,7 @@ body {
     z-index: 1;
 }
 
-.caption {
+.mySwiperHome .caption {
     position: absolute;
     top: 55%;
     left: 50%;
@@ -147,10 +147,11 @@ body {
     font-family: "Cinzel", sans-serif;
 }
 
-.swiper-slide-active .caption {
+.mySwiperHome .swiper-slide-active .caption {
     opacity: 1;
     transform: translate(-50%, -60%);
 }
+
 
 /* ---------- ABOUTUS SECTION ----------- */
 #wedding-section {
@@ -262,7 +263,6 @@ body {
     gap: 40px;
     margin: 0 auto;
     flex-wrap: wrap;
-
     color: #000;
 
     background-image: url("./IMG/62624.jpg");
@@ -273,119 +273,177 @@ body {
 }
 
 .container {
-    background-color: rgb(41, 56, 57);
-    color: #fff;
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    margin: 10px;
-    max-width: 400px;
-    min-width: 230px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
 }
 
-.container * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.45s ease;
-    transition: all0.45s ease;
-}
-
-.container::before,
-.container::after {
-    content: '';
-    background-color: rgba(46, 52, 64, 0.5);
-    border-top: 50px solid rgba(46, 52, 64, 0.5);
-    border-bottom: 50px solid rgba(46, 52, 64, 0.5);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    z-index: 1;
-    opacity: 0;
-}
-
-.container::before {
-    -webkit-transform: scaleY(2);
-    transform: scaleY(2);
-}
-
-.container::after {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-}
-
-.container img {
-    vertical-align: top;
-    max-width: 100%;
-    backface-visibility: hidden;
-}
-
-.container h3 {
-    font-size: 1em;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.container h3 span {
-    display: block;
-    font-weight: 700;
-}
-
-.container a {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 3;
-}
-
-.container:hover>img,
-.container.hover>img {
-    opacity: 0.7;
-}
-
-.container figcaption {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    align-items: center;
-    z-index: 1;
+.top-section {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.left-text {
+    max-width: 350px;
+    flex: 1 1 300px;
+}
+
+.left-text p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    color: #1a0a00;
+    font-weight: 400;
+}
+
+.left-text p span {
+    color: #a52a2a;
+    margin-right: 4px;
+}
+
+.left-text h1 {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.right-text {
+    max-width: 300px;
+    flex: 1 1 250px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #4a3a36;
+    text-align: right;
+    font-weight: 400;
+}
+
+.right-text p {
+    margin: 0 0 16px 0;
+}
+
+.right-text .links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    font-weight: 600;
+}
+
+.right-text .links a {
+    color: #a52a2a;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+}
+
+.right-text .links a:hover {
+    text-decoration: underline;
+}
+
+.right-text .links a i {
+    font-size: 10px;
+}
+
+
+.mySwiperServices {
+    margin-top: 48px;
+    padding-bottom: 24px;
+}
+
+.mySwiperServices .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.mySwiperServices .swiper-slide {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 160px !important;
+    height: 220px;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mySwiperServices .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+.mySwiperServices .card-label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #b8860b;
+    max-width: 120px;
+    line-height: 1.2;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+.mySwiperServices .card-label.dark {
+    color: #fff;
+}
+
+.mySwiperServices .arrow-circle {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #2f0a00;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    line-height: 1.1em;
-    opacity: 0;
-    z-index: 2;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
+    transition: background-color 0.3s ease;
 }
 
-.container:hover::before,
-.container.hover::before,
-.container:hover::after .container.hover::after {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
+.mySwiperServices .arrow-circle.yellow {
+    background-color: #ffd600;
 }
 
-.container:hover figcaption,
-.container.hover figcaption {
-    opacity: 1;
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
+.mySwiperServices .arrow-circle i {
+    color: #fff;
+    font-size: 14px;
 }
+
+.mySwiperServices .arrow-circle.yellow i {
+    color: #1a0a00;
+}
+
+
+/* Responsive */
+/* @media (max-width: 768px) {
+      .top-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .right-text {
+        text-align: left;
+        max-width: 100%;
+      }
+
+      .left-text h1 {
+        font-size: 40px;
+      }
+
+      .swiper-slide {
+        width: 140px !important;
+        height: 200px;
+      } */
 
 /* ---------- FOOTER SECTION ----------- */
 #footer {

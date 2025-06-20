@@ -1,15 +1,43 @@
-var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    effect: "fade",
-    fadeEffect: {
-        crossFade: true,
-    },
-    speed: 1500, // <<< Increase speed to slow down the fade (default is 300ms)
-    autoplay: {
-        delay: 4000, // Time between slides
-        disableOnInteraction: false,
-    },
+// HOME Section Swiper
+var swiperHome = new Swiper(".mySwiperHome", {
+  loop: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  speed: 1500,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
 });
+
+// SERVICES Section Swiper
+var swiperServices = new Swiper(".mySwiperServices", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  freeMode: true,
+  grabCursor: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 24,
+    },
+  },
+});
+
 
 // Our services List
 // 1- wedding planning
