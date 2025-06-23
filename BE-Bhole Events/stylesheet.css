@@ -360,10 +360,11 @@ body {
 .mySwiperServices .swiper-wrapper {
     display: flex;
     align-items: stretch;
+    padding: 10px;
 }
 
 .mySwiperServices .swiper-slide {
-    /* background: #fff; */
+    background: transparent;
     overflow: hidden;
     height: 250px;
     width: auto;
@@ -372,15 +373,28 @@ body {
     cursor: pointer;
     user-select: none;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 16px;
+}
+
+.mySwiperServices .swiper-slide:hover {
+    transform: scale(1.05);
 }
 
 .mySwiperServices .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-radius: 86% 14% 79% 21% / 19% 80% 20% 81% ; */
+    /* border-radius: 16px; */
     border-radius: 15% 85% 11% 89% / 100% 0% 100% 0%;
     display: block;
+    filter: brightness(0.7);
+    transition: filter 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mySwiperServices .swiper-slide img:hover {
+    filter: brightness(0.5);
 }
 
 .mySwiperServices .card-label {
@@ -395,18 +409,35 @@ body {
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
 }
 
-.mySwiperServices .card-label a {
-    text-decoration: none;
-    color: #000;
-    font-size: 15px;
-    margin-right: 20px;
+.mySwiperServices .card-label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: white;
     font-family: "Nunito", sans-serif;
 }
 
-.mySwiperServices .card-label i {
-    color: #b8860b;
-    font-size: 20px;
+.mySwiperServices .card-icon a {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    text-decoration: none;
+    background-color: #2a0000;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
+
+.mySwiperServices .card-icon a:hover {
+    background-color: #b8860b;
+}
+
 
 /* ---------- FOOTER SECTION ----------- */
 #footer {

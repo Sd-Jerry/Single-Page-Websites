@@ -150,6 +150,12 @@
     .right-text .links {
         justify-content: flex-start;
     }
+
+   .mySwiperServices .card-icon a {
+         width: 32px;
+         height: 32px;
+         font-size: 16px;
+     }
 }
 
 /* -------------------------------- */
