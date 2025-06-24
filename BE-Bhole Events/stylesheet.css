@@ -263,7 +263,6 @@ body {
     margin: 15px auto;
     flex-wrap: wrap;
     color: #000;
-
     background-image: url("./IMG/62624.jpg");
     background-position: center;
     background-size: cover;
@@ -401,19 +400,12 @@ body {
     position: absolute;
     bottom: 16px;
     left: 16px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     color: #fff;
     width: 100%;
     line-height: 1.2;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-}
-
-.mySwiperServices .card-label {
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    color: white;
     font-family: "Nunito", sans-serif;
 }
 
