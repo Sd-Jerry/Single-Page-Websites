@@ -200,7 +200,8 @@
     }
 
     .mySwiperServices .swiper-slide {
-        width: 192px !important;
+        width: 192px;
+        flex-shrink: 0;
     }
 }
 
