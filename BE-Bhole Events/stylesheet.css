@@ -430,6 +430,129 @@ body {
     background-color: #b8860b;
 }
 
+ /* ------ TESTINOMAL SECTION IS HERE----- --> */
+#testimonial-section {
+    margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f3f3;
+
+  padding: 60px 20px;
+  background: linear-gradient(rgba(255, 126, 43, 0.8), rgba(255, 126, 43, 0.8)), url('./IMG/') center/cover;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.testimonial-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 2px solid blue;
+}
+
+.testimonial-container h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.mySwiperTestinomal {
+  padding-bottom: 50px;
+  border: 2px solid purple;
+}
+
+.mySwiperTestinomal .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid yellow;
+}
+
+.mySwiperTestinomal .image-container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px;
+  border: 2px solid greenyellow;
+}
+
+.mySwiperTestinomal .image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.mySwiperTestinomal .circle-bg {
+  background-color: #ff7e2b;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: 1;
+}
+
+.mySwiperTestinomal .testimonial-content {
+  max-width: 500px;
+  border: 2px solid cornflowerblue;
+}
+
+.mySwiperTestinomal .quote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.mySwiperTestinomal .name {
+  font-weight: bold;
+  color: #ff7e2b;
+  margin-bottom: 3px;
+}
+
+.mySwiperTestinomal .role {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Swiper Buttons */
+.mySwiperTestinomal .swiper-button-next,
+.mySwiperTestinomal .swiper-button-prev {
+  background-color: #ff7e2b;
+  padding: 20px;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.mySwiperTestinomal.swiper-button-next::after,
+.mySwiperTestinomal.swiper-button-prev::after {
+  font-size: 16px;
+}
+
+/* Pagination */
+.mySwiperTestinomal .swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.mySwiperTestinomal .swiper-pagination-bullet-active {
+  background: #ff7e2b;
+}
+
 
 /* ---------- FOOTER SECTION ----------- */
 #footer {

@@ -151,11 +151,21 @@
         justify-content: flex-start;
     }
 
-   .mySwiperServices .card-icon a {
-         width: 32px;
-         height: 32px;
-         font-size: 16px;
-     }
+    .mySwiperServices .card-icon a {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    /* TESTIMONIAL SECTION */
+    .mySwiperTestinomal .testimonial-card {
+        text-align: center;
+    }
+
+    .mySwiperTestinomal .testimonial-content {
+        padding: 0 15px;
+    }
+
 }
 
 /* -------------------------------- */
