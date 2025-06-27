@@ -166,7 +166,8 @@ body {
     /* color: #fff; */
     color: #000;
 
-    background-image: url("./IMG/Abt-Bg.jpg");
+    /* background-image: url("./IMG/Abt-Bg.jpg"); */
+    background-image: url("./IMG/Light-yellow-BG.jpg");
     background-position: center;
     background-size: cover;
     z-index: -1;
@@ -430,127 +431,127 @@ body {
     background-color: #b8860b;
 }
 
- /* ------ TESTINOMAL SECTION IS HERE----- --> */
+/* ------ TESTINOMAL SECTION IS HERE----- --> */
 #testimonial-section {
     margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f3f3f3;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f3f3;
 
-  padding: 60px 20px;
-  background: linear-gradient(rgba(255, 126, 43, 0.8), rgba(255, 126, 43, 0.8)), url('./IMG/') center/cover;
-  display: flex;
-  justify-content: center;
-  border: 2px solid red;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(255, 126, 43, 0.8), rgba(255, 126, 43, 0.8)), url('./IMG/') center/cover;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
 }
 
 .testimonial-container {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 90%;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  border: 2px solid blue;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid blue;
 }
 
 .testimonial-container h2 {
-  font-size: 28px;
-  margin-bottom: 5px;
+    font-size: 28px;
+    margin-bottom: 5px;
 }
 
 .sub-title {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 30px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
 }
 
 .mySwiperTestinomal {
-  padding-bottom: 50px;
-  border: 2px solid purple;
+    padding-bottom: 50px;
+    border: 2px solid purple;
 }
 
 .mySwiperTestinomal .testimonial-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid yellow;
 }
 
 .mySwiperTestinomal .image-container {
-  position: relative;
-  width: 140px;
-  height: 140px;
-  margin-bottom: 20px;
-  border: 2px solid greenyellow;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 2px solid greenyellow;
 }
 
 .mySwiperTestinomal .image-container img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  position: relative;
-  z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
 }
 
 .mySwiperTestinomal .circle-bg {
-  background-color: #ff7e2b;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  z-index: 1;
+    background-color: #ff7e2b;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: 1;
 }
 
 .mySwiperTestinomal .testimonial-content {
-  max-width: 500px;
-  border: 2px solid cornflowerblue;
+    max-width: 500px;
+    border: 2px solid cornflowerblue;
 }
 
 .mySwiperTestinomal .quote {
-  font-style: italic;
-  color: #555;
-  margin-bottom: 15px;
-  font-size: 15px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 15px;
 }
 
 .mySwiperTestinomal .name {
-  font-weight: bold;
-  color: #ff7e2b;
-  margin-bottom: 3px;
+    font-weight: bold;
+    color: #ff7e2b;
+    margin-bottom: 3px;
 }
 
 .mySwiperTestinomal .role {
-  font-size: 13px;
-  color: #999;
+    font-size: 13px;
+    color: #999;
 }
 
 /* Swiper Buttons */
 .mySwiperTestinomal .swiper-button-next,
 .mySwiperTestinomal .swiper-button-prev {
-  background-color: #ff7e2b;
-  padding: 20px;
-  border-radius: 50%;
-  color: #fff;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    background-color: #ff7e2b;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .mySwiperTestinomal.swiper-button-next::after,
 .mySwiperTestinomal.swiper-button-prev::after {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 /* Pagination */
 .mySwiperTestinomal .swiper-pagination-bullet {
-  background: #ccc;
-  opacity: 1;
+    background: #ccc;
+    opacity: 1;
 }
 
 .mySwiperTestinomal .swiper-pagination-bullet-active {
-  background: #ff7e2b;
+    background: #ff7e2b;
 }
 
 
@@ -563,6 +564,79 @@ body {
     bottom: 0;
 }
 
+.footer-section {
+    width: 100%;
+    background-color: rgb(32, 30, 30);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.footer-item {
+    margin: 1rem;
+}
+
+.footer-item h2 {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.footer-item h2::after {
+    content: '';
+    width: 4rem;
+    height: 0.2rem;
+    background: gold;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+.footer-item p {
+    transition: all 0.2s linear;
+    margin-bottom: 0.6rem;
+}
+
+.footer-item p:hover {
+    transform: translateX(10px);
+}
+
+.footer-item a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    color: gold;
+}
+
+.footer-item ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item ul li {
+    list-style: none;
+}
+
+.Social ul li {
+    font-size: 1.5rem;
+    transition: all .2s linear;
+}
+
+.Social ul li:hover {
+    transform: scale(1.3);
+    transition: all .2s linear;
+}
+
+.Social img {
+    height: 100px;
+    margin-top: 20px;
+}
+
 .footer-bottom {
     max-width: 100%;
     display: flex;
@@ -573,7 +647,6 @@ body {
     background: #000;
     color: whitesmoke;
     padding: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-bottom p span {

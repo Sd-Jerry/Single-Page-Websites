@@ -274,6 +274,13 @@
     .left-text h1 {
         font-size: 30px;
     }
+
+    /* FOOTER SECTION */
+    .footer-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
 }
 
 /* -------------------------------- */
