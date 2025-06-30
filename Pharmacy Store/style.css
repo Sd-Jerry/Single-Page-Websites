@@ -79,7 +79,6 @@ body {
     padding: 0px 15px;
     font-size: 1.2rem;
     color: #A9C8F8;
-    /* color: black; */
     cursor: pointer;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
@@ -155,7 +154,6 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    /* darkens image */
     z-index: 1;
 }
 
@@ -170,8 +168,6 @@ body {
     font-weight: 700;
     text-align: center;
     padding: 12px 0px;
-    /* background: rgba(0, 0, 0, 0.3);  */
-    /* background: rgba(0, 139, 181, 0.225);    */
     border-radius: 8px;
     opacity: 0;
     z-index: 2;
@@ -373,6 +369,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.flip-card-back ul li{
+    list-style: none;
+    text-align: left;
+}
+
 .flip-card-front {
     background-color: #fff;
     color: black;
@@ -423,7 +424,6 @@ body {
 }
 
 .flip-card-back {
-    /* background-color: #333; */
     background-color: #0056b3;
     color: white;
     transform: rotateY(180deg);

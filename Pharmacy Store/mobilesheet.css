@@ -46,10 +46,11 @@
 
 /* -------------------------------- */
 @media screen and (max-width: 1024px) {
+
     /* about-us section */
     .left {
-    flex: 1;
-}
+        flex: 1;
+    }
 
     /* ----- FOOTER SECTION IS HERE ----- */
     .footer-main {
@@ -158,7 +159,7 @@
     .list {
         width: 100%;
         height: 35vh;
-        background-color: #190f0f;
+        background-color: #2563eb;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -234,7 +235,6 @@
     /* header section */
     .list {
         top: 7rem;
-        height: 48vh;
     }
 
     .nav-left img {
