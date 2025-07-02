@@ -204,10 +204,12 @@
         font-size: 25px;
     }
 
+    /* service section */
     .flip-card {
         max-width: 90vw;
     }
 
+    /* Why-choose section */
     .why-choose-section {
         flex-direction: column;
         padding: 30px 15px;

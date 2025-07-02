@@ -12,6 +12,8 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+
+// Service section Js
 const cards = document.querySelectorAll('.flip-card');
 
 cards.forEach(card => {
