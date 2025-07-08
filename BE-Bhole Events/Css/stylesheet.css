@@ -1,0 +1,655 @@
+/* ----- GOOGLE FONTS LINK ----- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+/* ---------- HEADER SECTION ----------- */
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    line-height: 3em;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.nav-left img {
+    width: 170px;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.list li {
+    list-style: none;
+    transition: ease-in-out 0.3s;
+}
+
+.list li a {
+    padding: 0px 15px;
+    font-size: 1.2rem;
+    color: goldenrod;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 600;
+}
+
+.list li:hover {
+    transform: translateY(-5px);
+}
+
+.list li a:hover {
+    color: black;
+}
+
+#check {
+    display: none;
+}
+
+.CheckBtn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: gold;
+    line-height: 80px;
+}
+
+/* ---------- HOME SECTION ----------- */
+#home {
+    height: 82vh;
+    width: 100%;
+    padding: 10px 20px 20px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mySwiperHome {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.mySwiperHome .swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.mySwiperHome .swiper-slide img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    animation: kenburns 12s ease-in-out infinite;
+}
+
+/* Ken Burns Effect Animation */
+@keyframes kenburns {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.mySwiperHome .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.mySwiperHome .caption {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 24px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 1s ease, transform 1s ease;
+    font-family: "Cinzel", sans-serif;
+}
+
+.mySwiperHome .swiper-slide-active .caption {
+    opacity: 1;
+    transform: translate(-50%, -60%);
+}
+
+
+/* ---------- ABOUTUS SECTION ----------- */
+#wedding-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+
+    font-family: "Nunito", sans-serif;
+    /* color: #fff; */
+    color: #000;
+
+    /* background-image: url("./IMG/Abt-Bg.jpg"); */
+    background-image: url("./IMG/Light-yellow-BG.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.text-content {
+    flex: 1 1 450px;
+    z-index: 2;
+}
+
+.text-content h3 {
+    font-style: italic;
+    font-size: 1.1rem;
+    font-family: "Cinzel", sans-serif;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    font-family: "Nunito", sans-serif;
+    color: goldenrod;
+}
+
+.text-content h2 {
+    color: goldenrod;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: "Cinzel", sans-serif;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    z-index: 5;
+}
+
+.button-group button {
+    padding: 12px 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-details {
+    background-color: #fdf1e8;
+    border: 1px solid #f4d7c5;
+    transition: 0.3s ease-in;
+}
+
+.btn-details:hover {
+    transform: scale(1.1);
+}
+
+.btn-details a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-container {
+    flex: 1 1 350px;
+    position: relative;
+    max-width: 450px;
+    z-index: 2;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+
+/* ---------- OUR-SERVICE SECTION ----------- */
+#services {
+    height: 90vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    margin: 15px auto;
+    flex-wrap: wrap;
+    color: #000;
+    background-image: url("./IMG/62624.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.s-container {
+    /* max-width: 1000px; */
+    padding: 48px 24px;
+}
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 5px;
+}
+
+.left-text {
+    max-width: 400px;
+    flex: 1 1 300px;
+}
+
+.left-text p {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    color: goldenrod;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+}
+
+.left-text p span {
+    color: #a52a2a;
+    margin-right: 4px;
+}
+
+.left-text h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin: 0;
+    font-family: "Cinzel", sans-serif;
+}
+
+.right-text {
+    max-width: 400px;
+    flex: 1 1 250px;
+    line-height: 1.4;
+    color: #4a3a36;
+    text-align: right;
+}
+
+.right-text p {
+    margin: 0 0 16px 0;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+}
+
+.right-text .links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    font-weight: 600;
+}
+
+.right-text .links a {
+    color: #b8860b;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.right-text .links a:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+.right-text .links a i {
+    font-size: 10px;
+}
+
+.mySwiperServices {
+    margin-top: 48px;
+    padding-bottom: 24px;
+}
+
+.mySwiperServices .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.mySwiperServices .swiper-slide {
+    background: transparent;
+    overflow: hidden;
+    height: 250px;
+    width: auto;
+    max-width: 250px !important;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 16px;
+}
+
+.mySwiperServices .swiper-slide:hover {
+    transform: scale(1.05);
+}
+
+.mySwiperServices .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 16px; */
+    border-radius: 15% 85% 11% 89% / 100% 0% 100% 0%;
+    display: block;
+    filter: brightness(0.7);
+    transition: filter 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mySwiperServices .swiper-slide img:hover {
+    filter: brightness(0.5);
+}
+
+.mySwiperServices .card-label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    line-height: 1.2;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    font-family: "Nunito", sans-serif;
+}
+
+.mySwiperServices .card-icon a {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    text-decoration: none;
+    background-color: #2a0000;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.mySwiperServices .card-icon a:hover {
+    background-color: #b8860b;
+}
+
+/* ------ TESTINOMAL SECTION IS HERE----- --> */
+#testimonial-section {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f3f3;
+
+    padding: 60px 20px;
+    background: linear-gradient(rgba(255, 126, 43, 0.8), rgba(255, 126, 43, 0.8)), url('./IMG/') center/cover;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.testimonial-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid blue;
+}
+
+.testimonial-container h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.mySwiperTestinomal {
+    padding-bottom: 50px;
+    border: 2px solid purple;
+}
+
+.mySwiperTestinomal .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid yellow;
+}
+
+.mySwiperTestinomal .image-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 2px solid greenyellow;
+}
+
+.mySwiperTestinomal .image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.mySwiperTestinomal .circle-bg {
+    background-color: #ff7e2b;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: 1;
+}
+
+.mySwiperTestinomal .testimonial-content {
+    max-width: 500px;
+    border: 2px solid cornflowerblue;
+}
+
+.mySwiperTestinomal .quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.mySwiperTestinomal .name {
+    font-weight: bold;
+    color: #ff7e2b;
+    margin-bottom: 3px;
+}
+
+.mySwiperTestinomal .role {
+    font-size: 13px;
+    color: #999;
+}
+
+/* Swiper Buttons */
+.mySwiperTestinomal .swiper-button-next,
+.mySwiperTestinomal .swiper-button-prev {
+    background-color: #ff7e2b;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.mySwiperTestinomal.swiper-button-next::after,
+.mySwiperTestinomal.swiper-button-prev::after {
+    font-size: 16px;
+}
+
+/* Pagination */
+.mySwiperTestinomal .swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+}
+
+.mySwiperTestinomal .swiper-pagination-bullet-active {
+    background: #ff7e2b;
+}
+
+
+/* ---------- FOOTER SECTION ----------- */
+#footer {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-section {
+    width: 100%;
+    background-color: rgb(32, 30, 30);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.footer-item {
+    margin: 1rem;
+}
+
+.footer-item h2 {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.footer-item h2::after {
+    content: '';
+    width: 4rem;
+    height: 0.2rem;
+    background: gold;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+.footer-item p {
+    transition: all 0.2s linear;
+    margin-bottom: 0.6rem;
+}
+
+.footer-item p:hover {
+    transform: translateX(10px);
+}
+
+.footer-item a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    color: gold;
+}
+
+.footer-item ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item ul li {
+    list-style: none;
+}
+
+.Social ul li {
+    font-size: 1.5rem;
+    transition: all .2s linear;
+}
+
+.Social ul li:hover {
+    transform: scale(1.3);
+    transition: all .2s linear;
+}
+
+.Social img {
+    height: 100px;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.875rem;
+    background: #000;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.footer-bottom p span {
+    color: gold;
+    font-weight: 500;
+}
