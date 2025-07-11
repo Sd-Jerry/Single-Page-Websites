@@ -166,8 +166,8 @@ body {
     /* color: #fff; */
     color: #000;
 
-    /* background-image: url("./IMG/Abt-Bg.jpg"); */
-    background-image: url("./IMG/Light-yellow-BG.jpg");
+    /* background-image: url("../IMG/Abt-Bg.jpg"); */
+    /* background-image: url("../IMG/Light-yellow-BG.jpg"); */
     background-position: center;
     background-size: cover;
     z-index: -1;
@@ -264,7 +264,7 @@ body {
     margin: 15px auto;
     flex-wrap: wrap;
     color: #000;
-    background-image: url("./IMG/62624.jpg");
+    background-image: url("../IMG/62624.jpg");
     background-position: center;
     background-size: cover;
     z-index: -1;
