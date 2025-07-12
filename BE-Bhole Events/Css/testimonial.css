@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* CONTAINER-1 CODE */
 .container-1 {
     position: relative;
     width: 100%;
@@ -16,7 +17,6 @@
     overflow: hidden;
     font-family: "Cinzel", sans-serif;
     font-weight: 500;
-
 }
 
 .background-image {
@@ -48,6 +48,15 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     white-space: nowrap;
     z-index: 2;
+}
+
+/* CONTAINER-2 CODE */
+.container-2{
+    height: 100vh;
+    width: 100%;
+    background: url("../IMG/benner_2.jpg");
+    background-position: center;
+    background-size: contain;
 }
 
 /* Responsive adjustments */
