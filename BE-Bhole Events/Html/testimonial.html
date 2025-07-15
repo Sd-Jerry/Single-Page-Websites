@@ -12,17 +12,139 @@
 <body>
     <main>
         <div class="container-1">
-            <img src="../IMG/caucasian-loving-couple-wearing-white-clothes-hugging-beach-wedding-photoshoot.jpg" alt="Couple Photo" loading="lazy" class="background-image" width="1920" height="1080" />
-                        <div class="overlay-bg"></div>
+            <img src="../IMG/caucasian-loving-couple-wearing-white-clothes-hugging-beach-wedding-photoshoot.jpg"
+                alt="Couple Photo" loading="lazy" class="background-image" width="1920" height="1080" />
+            <div class="overlay-bg"></div>
             <div class="overlay-text">TESTIMONIALS</div>
         </div>
 
         <div class="container-2">
-            
+            <div class="cards-wrapper">
+
+                <!-- Card-1 is here -->
+                <div class="sub-container-2">
+                    <!-- FRONT SIDE -->
+                    <div class="card-front">
+                        <img src="../IMG/sample-image.jpg" alt="Service" class="card-img" />
+                        <h2 class="card-title">Web Designs</h2>
+                        <button class="know-more-btn">Know More</button>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="content card-back">
+                        <h1>Web Designs</h1>
+                        <p>Choose your design for your Business from website, link is mentioned below you can check out
+                            through this link.</p>
+                    </div>
+                    <!-- Flap overlay -->
+                    <div class="flap"></div>
+                </div>
+
+                <!-- Card-2 is here -->
+                <div class="sub-container-2">
+                    <!-- FRONT SIDE -->
+                    <div class="card-front">
+                        <img src="../IMG/sample-image.jpg" alt="Service" class="card-img" />
+                        <h2 class="card-title">Web Designs</h2>
+                        <button class="know-more-btn">Know More</button>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="content card-back">
+                        <h1>Web Designs</h1>
+                        <p>Choose your design for your Business from website, link is mentioned below you can check out
+                            through this link.</p>
+                    </div>
+                    <!-- Flap overlay -->
+                    <div class="flap"></div>
+                </div>
+
+                <!-- Card-3 is here -->
+                <div class="sub-container-2">
+                    <!-- FRONT SIDE -->
+                    <div class="card-front">
+                        <img src="../IMG/sample-image.jpg" alt="Service" class="card-img" />
+                        <h2 class="card-title">Web Designs</h2>
+                        <button class="know-more-btn">Know More</button>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="content card-back">
+                        <h1>Web Designs</h1>
+                        <p>Choose your design for your Business from website, link is mentioned below you can check out
+                            through this link.</p>
+                    </div>
+                    <!-- Flap overlay -->
+                    <div class="flap"></div>
+                </div>
+
+                <!-- Card-4 is here -->
+                <div class="sub-container-2">
+                    <!-- FRONT SIDE -->
+                    <div class="card-front">
+                        <img src="../IMG/sample-image.jpg" alt="Service" class="card-img" />
+                        <h2 class="card-title">Web Designs</h2>
+                        <button class="know-more-btn">Know More</button>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="content card-back">
+                        <h1>Web Designs</h1>
+                        <p>Choose your design for your Business from website, link is mentioned below you can check out
+                            through this link.</p>
+                    </div>
+                    <!-- Flap overlay -->
+                    <div class="flap"></div>
+                </div>
+
+                <!-- Card-5 is here -->
+                <div class="sub-container-2">
+                    <!-- FRONT SIDE -->
+                    <div class="card-front">
+                        <img src="../IMG/sample-image.jpg" alt="Service" class="card-img" />
+                        <h2 class="card-title">Web Designs</h2>
+                        <button class="know-more-btn">Know More</button>
+                    </div>
+                    <!-- BACK SIDE -->
+                    <div class="content card-back">
+                        <h1>Web Designs</h1>
+                        <p>Choose your design for your Business from website, link is mentioned below you can check out
+                            through this link.</p>
+                    </div>
+                    <!-- Flap overlay -->
+                    <div class="flap"></div>
+                </div>
+
+            </div>
         </div>
 
-
     </main>
+
+    <script>
+
+        const cards = document.querySelectorAll(".sub-container-2");
+
+        cards.forEach((card) => {
+            const btn = card.querySelector(".know-more-btn");
+
+            btn.addEventListener("click", function (e) {
+                // Prevent the event from bubbling up
+                e.stopPropagation();
+
+                // First remove "flipped" class from all other cards
+                cards.forEach((c) => {
+                    if (c !== card) c.classList.remove("flipped");
+                });
+
+                // Toggle current card
+                card.classList.toggle("flipped");
+            });
+
+            // Also close card if user clicks outside the flipped one
+            document.addEventListener("click", function (e) {
+                if (!card.contains(e.target)) {
+                    card.classList.remove("flipped");
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
