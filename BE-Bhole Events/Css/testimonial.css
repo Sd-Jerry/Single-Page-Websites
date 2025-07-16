@@ -64,7 +64,7 @@
 
 .cards-wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -161,11 +161,6 @@
     .cards-wrapper {
         gap: 20px;
         padding: 20px 10px;
-    }
-
-    .sub-container-2 {
-        width: 100%;
-        max-width: 90%;
     }
 }
 
