@@ -1,5 +1,14 @@
 /* -------------------------------- */
 @media screen and (max-width: 1024px) {
+    /* ----- HEADER SECTION ----- */
+    .nav-left img{
+        width: 160px;
+    }
+
+    .list li a{
+        padding: 0 10px;
+        font-size: 1.1rem;
+    }
 
     /* HOME SECTION */
     .mySwiperHome .caption {
@@ -8,9 +17,14 @@
     }
 }
 
+@media screen and (max-width: 965px){
+    /* SERVICES SECTION */
+    .left-text h1{
+        font-size: 50px;
+    }
+}
 /* -------------------------------- */
-@media screen and (max-width: 905px) {
-
+@media screen and (max-width: 911px) {
     /* ----- HEADER SECTION ----- */
     .nav-left img {
         width: 150px;
@@ -19,10 +33,15 @@
     .list li a {
         font-size: 1rem;
     }
+
+    /* SERVICES SECTION */
+    .left-text h1{
+        font-size: 45px;
+    }
 }
 
 /* -------------------------------- */
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 844px) {
     body {
         overflow-x: hidden;
     }
@@ -46,10 +65,11 @@
 
     .list {
         width: 100%;
-        height: 50vh;
+        height: 55vh;
         background-color: goldenrod;
         text-align: center;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         position: absolute;
         top: 7.6rem;
@@ -82,13 +102,30 @@
     }
 
     /* SERVICES SECTION */
-    .top-section {
-        justify-content: center;
+    #services{
+        padding: 20px 30px;
     }
+
+    .s-container{
+        padding: 48px 0px;
+    }
+
+    .left-text h1{
+        font-size: 40px;
+    }
+
+    .right-text {
+        text-align: center;
+    }
+
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 769px) {
+    /* HOME SECTION */
+     .mySwiperHome .caption{
+        font-size: 24px;
+    }
 
     /* ABOUTUS SECTION */
     #wedding-section {
@@ -105,17 +142,12 @@
         padding: 10px;
     }
 
-    .top-section {
-        align-items: flex-start;
-    }
-
     .right-text {
-        text-align: left;
         max-width: 100%;
     }
 
     .left-text h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .mySwiperServices .swiper-slide {
