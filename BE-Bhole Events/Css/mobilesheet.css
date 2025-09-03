@@ -157,6 +157,23 @@
 }
 
 /* -------------------------------- */
+@media screen and (max-width: 695px) {
+    /* SERVICES SECTION */
+    #services{
+        height: 100vh;
+    }
+
+    .left-text{
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .right-text .links{
+        justify-content: center;
+    }
+}
+
+/* -------------------------------- */
 @media screen and (max-width: 575px) {
 
     /* HOME SECTION */
@@ -173,14 +190,6 @@
     /* SERVICES SECTION */
     #services {
         padding: 10px;
-    }
-
-    .top-section {
-        text-align: center;
-    }
-
-    .right-text .links {
-        justify-content: flex-start;
     }
 
     .mySwiperServices .card-icon a {
