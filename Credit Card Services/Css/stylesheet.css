@@ -1,0 +1,81 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: clip !important;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR */
+nav {
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid red;
+}
+
+.logo {
+    height: 110px;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+#check {
+    position: absolute;
+    opacity: 0;
+}
+
+.CheckBtn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: linear-gradient(to right, #654ea3, #eaafc8);
+    line-height: 80px;
+}
+
+/* NAV LINKS */
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    transition: all 0.3s ease-in;
+    border: 2px solid green;
+}
+
+.list li {
+    margin: 0 20px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.list li:hover {
+    transform: translateY(-5px);
+}
+
+.list li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.list li a:hover {
+    color: orange;
+}
+
+.list li a i {
+    margin-right: 10px;
+}

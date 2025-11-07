@@ -1,0 +1,74 @@
+/* RESPONSIVE DESIGN (FIXED) */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    nav {
+        min-height: 80px;
+    }
+
+    .logo {
+        height: 90px;
+    }
+}
+
+/* Mobile Navigation (Fully Fixed) */
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+
+    nav {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .CheckBtn {
+        display: block;
+        z-index: 1001;
+        margin-right: 80px;
+    }
+
+    .list {
+        position: fixed;
+        top: 95px;
+        right: 0;
+        width: 100vw;
+        height: 78vh;
+        background: linear-gradient(to right, #654ea3, #eaafc8);
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        transform: translateX(100vw);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    #check:checked~ul {
+        transform: translateX(0);
+    }
+
+    .list li {
+        margin: 0;
+        padding: 12px 0;
+    }
+
+    .list li a {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .list li:hover {
+        transform: none;
+    }
+}
+
+/* Small Mobile Screens */
+@media screen and (max-width: 425px) {
+    .logo {
+        height: 75px;
+    }
+}
