@@ -88,7 +88,7 @@ nav {
 
 /* HOME SECTION IS HERE */
 #home {
-    padding: 60px 0 20px;
+    padding: 60px 0 60px;
     background: #1b1938;
     color: #ddd;
     -webkit-font-smoothing: antialiased;
@@ -222,14 +222,14 @@ p {
     color: #ddd;
 }
 
-.user-rating-text a{
+.user-rating-text a {
     text-decoration: none;
     color: #8781a3;
 }
 
-.user-rating-text a:hover{
+.user-rating-text a:hover {
     font-weight: bold;
-    color: orange;
+    color: rgb(255, 192, 75)
 }
 
 /* Hero cards container */
@@ -263,6 +263,8 @@ p {
 }
 
 .card-front {
+    width: 320px;
+    height: 190px;
     background: #121019;
     color: #b2b0de;
     padding: 25px;
