@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 html,
@@ -404,7 +403,7 @@ p {
     color: #aaa7b9;
 }
 
-.stat {
+.stats {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;

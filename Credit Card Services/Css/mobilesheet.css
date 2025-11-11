@@ -1,6 +1,7 @@
 /* RESPONSIVE DESIGN (FIXED) */
 
 @media screen and (max-width: 1260px) {
+    /* Home - Card Section */
     .hero-cards {
         flex-wrap: wrap;
     }
@@ -8,8 +9,33 @@
 
 /* Tablets */
 @media screen and (max-width: 1024px) {
+    /* Header - Navbar */
     .logo {
         height: 100px;
+    }
+
+    .list li {
+        margin: 0 16px;
+    }
+
+    .list li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 923px) {
+    /* Header - Navbar */
+    .list li {
+        margin: 0 12px;
+    }
+
+    .list li a {
+        font-size: 14px;
+    }
+
+    /* Home - Hero Section */
+    .hero {
+        justify-content: center;
     }
 }
 
@@ -21,6 +47,7 @@
         overflow-x: hidden !important;
     }
 
+    /* Header - Navbar */
     .logo {
         height: 90px;
     }
@@ -72,9 +99,88 @@
     }
 }
 
+/* Mobile Screens */
+@media screen and (max-width: 475px) {
+    /* Home - Hero Section */
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    /* Home - Card Section */
+    .card {
+        height: 180px;
+        width: 305px;
+    }
+}
+
 /* Small Mobile Screens */
 @media screen and (max-width: 425px) {
+    /* Header - Navbar */
     .logo {
         height: 75px;
+    }
+
+    /* Home - Section */
+    #home{
+        padding: 30px 0px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-cards{
+        margin-top: 10px;
+    }
+
+    .card {
+        height: 175px;
+        width: 290px;
+    }
+
+    .disclaimer {
+        font-size: 0.60rem;
+    }
+
+    .stat-value {
+        font-size: 1.3rem;
+    }
+}
+
+/*Extra Small Mobile Screens */
+@media screen and (max-width: 375px) {
+    /* Home - Hero Section */
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text p {
+        font-size: 0.8rem;
+    }
+
+    .user-rating {
+        font-size: 0.6rem;
+    }
+
+    .card {
+        height: 160px;
+        width: 265px;
+    }
+
+    .card-front {
+        padding: 15px;
+    }
+
+    .card-back {
+        padding: 5px 15px;
+    }
+
+    .stats{
+        font-size: 1rem;
+        gap: 50px;
     }
 }
