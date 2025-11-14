@@ -18,7 +18,8 @@ body {
 nav {
     width: 100%;
     min-height: 90px;
-    background: #1b1938;
+    /* background: #1b1938; */
+    background: whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,8 +73,9 @@ nav {
 .list li a {
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
-    color: #6b6686;
+    font-weight: 600;
+    /* color: #6b6686; */
+    color: #121019;
     transition: color 0.3s ease;
 }
 
@@ -413,4 +415,125 @@ p {
     color: #b6abf7;
     font-size: 1.6rem;
     margin-bottom: 6px;
+}
+
+/*ABOUT US SECTION IS HERE */
+
+#about-us-section {
+    padding: 50px 50px 10px;
+    border: 2px solid red;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header with background image and overlay */
+.about-us-header {
+    background: url('../Imgs/guy-left-side-talking-colleagues-is-listening-him-group-young-freelancers-office-have-conversation-smiling.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+    position: relative;
+    border: 2px solid blue;
+}
+
+.about-us-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.about-us-header h1,
+.about-us-header p {
+    position: relative;
+    z-index: 2;
+}
+
+.about-us-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-us-header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* Content container */
+.about-us-content {
+    background-color: white;
+    max-width: 960px;
+    margin: -80px auto 40px auto;
+    /* Pull up to overlap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    position: relative;
+    z-index: 3;
+}
+
+/* Text Content Styling */
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+        font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+        font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.text-content .highlight {
+    font-weight: 700;
+    font-style: italic;
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 60%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column;
+        margin: 0 20px 40px 20px;
+        padding: 30px 20px;
+    }
+
+    .image-content {
+        margin-top: 30px;
+    }
 }
