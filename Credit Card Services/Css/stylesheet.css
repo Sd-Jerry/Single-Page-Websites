@@ -147,7 +147,6 @@ p {
 
 .btn-primary {
     margin-bottom: 40px;
-    color: #1b1938;
     border: none;
     padding: 14px 38px;
     border-radius: 20px;
@@ -160,6 +159,7 @@ p {
 
 .btn-primary a {
     text-decoration: none;
+    color: #121019;
 }
 
 .btn-primary:hover {
@@ -423,7 +423,7 @@ p {
     padding: 50px 50px 10px;
     border: 2px solid red;
     width: 100%;
-    background-color: #fff;
+   background: url('../Imgs/3433839.jpg') no-repeat center center/cover;
     color: #333;
     line-height: 1.6;
 }
@@ -466,18 +466,19 @@ p {
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    color: #fff;
 }
 
 /* Content container */
 .about-us-content {
-    background-color: white;
     max-width: 960px;
     margin: -80px auto 40px auto;
     /* Pull up to overlap */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
     display: flex;
-    padding: 40px;
-    gap: 40px;
+    padding: 25px;
+    gap: 20px;
     position: relative;
     z-index: 3;
 }
@@ -485,16 +486,17 @@ p {
 /* Text Content Styling */
 .text-content {
     flex: 1;
+    border: 2px solid gold;
 }
 
 .text-content h2 {
-        font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: normal;
     margin-bottom: 20px;
 }
 
 .text-content p {
-        font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     margin-bottom: 20px;
     font-size: 1rem;
@@ -508,6 +510,20 @@ p {
     color: #222;
     font-size: 1.1rem;
     margin-bottom: 20px;
+}
+
+.text-content .btn-primary {
+    margin-bottom: 0px;
+    background: #a499e6;
+    transition: 0.5 ease-out;
+}
+
+.text-content .btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.text-content .btn-primary a {
+    color: #fff;
 }
 
 /* Image styling */
