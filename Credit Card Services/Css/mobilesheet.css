@@ -97,6 +97,17 @@
     .list li:hover {
         transform: none;
     }
+
+    /* About Us Section */
+    .about-us-content {
+        flex-direction: column;
+        margin: 0 20px 40px 20px;
+        padding: 30px 20px;
+    }
+
+    .image-content {
+        margin-top: 30px;
+    }
 }
 
 /* Mobile Screens */
@@ -106,7 +117,7 @@
         font-size: 2.2rem;
     }
 
-    .hero-text p {
+    .hero-text p,.about-us-header p {
         font-size: 0.9rem;
     }
 
@@ -114,6 +125,23 @@
     .card {
         height: 180px;
         width: 305px;
+    }
+
+    /* About Us Section */
+    #about-us-section{
+        padding: 25px 20px 0px;
+    }
+
+    .about-us-header{
+        height: 250px;
+    }
+
+    .about-us-header h1{
+        font-size: 2.2rem;
+    }
+
+    .about-us-content{
+        margin: 0px 5px 25px 5px;
     }
 }
 
@@ -129,7 +157,8 @@
         padding: 30px 0px;
     }
 
-    .hero-text h1 {
+    .hero-text h1,
+    .about-us-header h1 {
         font-size: 2rem;
     }
 
@@ -149,16 +178,39 @@
     .stat-value {
         font-size: 1.3rem;
     }
+
+    /* About Us Section */
+    .about-us-header{
+        height: 200px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .text-content p{
+        font-size: 0.9rem;
+    }
+
+    .text-content .highlight{
+        font-size: 1rem;
+    }
+
+    .text-content .btn-primary{
+        padding: 12px 20px;
+    }
 }
 
 /*Extra Small Mobile Screens */
 @media screen and (max-width: 375px) {
     /* Home - Hero Section */
-    .hero-text h1 {
+    .hero-text h1,
+    .about-us-header h1 {
         font-size: 1.6rem;
     }
 
-    .hero-text p {
+    .hero-text p,
+    .text-content p{
         font-size: 0.8rem;
     }
 
@@ -182,5 +234,10 @@
     .stats{
         font-size: 1rem;
         gap: 50px;
+    }
+
+    /* About Us Section */
+    .about-us-header{
+        height: 180px;
     }
 }

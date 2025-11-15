@@ -423,7 +423,7 @@ p {
     padding: 50px 50px 10px;
     border: 2px solid red;
     width: 100%;
-   background: url('../Imgs/3433839.jpg') no-repeat center center/cover;
+   background: url('../Imgs/18106012.jpg') no-repeat center center/cover;
     color: #333;
     line-height: 1.6;
 }
@@ -515,7 +515,7 @@ p {
 .text-content .btn-primary {
     margin-bottom: 0px;
     background: #a499e6;
-    transition: 0.5 ease-out;
+    transition: 0.5s ease-out;
 }
 
 .text-content .btn-primary:hover {
@@ -539,17 +539,4 @@ p {
     height: auto;
     object-fit: cover;
     border-radius: 4px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .about-us-content {
-        flex-direction: column;
-        margin: 0 20px 40px 20px;
-        padding: 30px 20px;
-    }
-
-    .image-content {
-        margin-top: 30px;
-    }
 }
