@@ -47,12 +47,55 @@
     }
 
     .bt-paragraph {
-        grid-template-columns: 1fr; /* stack */
+        grid-template-columns: 1fr;
+        /* stack */
     }
 
     .b.para {
         padding: 22px 16px;
         font-size: 15px;
+    }
+
+    /* F A Q Section */
+    .faq-container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .faq-list,
+    .contact-card {
+        flex: none;
+        width: 100%;
+    }
+
+    .contact-card {
+        margin-top: 30px;
+        order: 2;
+    }
+
+    .contact-card img {
+        height: 270px;
+    }
+
+    .send-button {
+        width: 40%;
+    }
+
+    .faq-list {
+        order: 1;
+    }
+
+    .main-title {
+        font-size: 2rem;
+        padding-bottom: 5px;
+    }
+
+    .main-title::before {
+        font-size: 2.5rem;
     }
 }
 
@@ -135,19 +178,25 @@
         padding: 24px;
     }
 
-    .bt-paragraph{
+    .bt-paragraph {
         gap: 0px;
     }
 
-    .b-para{
+    .b-para {
         padding: 15px;
     }
 }
 
 @media (max-width: 600px) {
+
     /* Service Section */
     .benefits-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* F A Q Section */
+    .contact-card img {
+        height: 250px;
     }
 }
 
@@ -201,9 +250,22 @@
         margin-top: 40px;
     }
 
-    .b-para{
+    .b-para {
         font-size: 14px;
         padding: 10px;
+    }
+
+    /* F A Q Section */
+    .contact-card {
+        padding: 15px;
+    }
+
+    .contact-card img {
+        height: 200px;
+    }
+
+    .send-button {
+        width: 60%;
     }
 }
 
@@ -303,5 +365,20 @@
     /* About Us Section */
     .about-us-header {
         height: 180px;
+    }
+
+    /* F A Q Section */
+    .contact-card img {
+        height: 170px;
+    }
+
+    .send-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contact-card img {
+        height: 130px;
     }
 }

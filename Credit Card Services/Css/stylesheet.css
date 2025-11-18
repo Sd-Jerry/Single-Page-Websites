@@ -605,7 +605,7 @@ p {
     margin-bottom: 15px;
 }
 
-.icon i{
+.icon i {
     color: #eaafc8;
 }
 
@@ -620,7 +620,7 @@ p {
     font-size: 15px;
 }
 
- /* bottom paragraphs */
+/* bottom paragraphs */
 .bt-paragraph {
     margin-top: 60px;
     display: grid;
@@ -641,4 +641,202 @@ p {
     border-radius: 8px;
     /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.008));
     border: 1px solid rgba(255, 255, 255, 0.03); */
+}
+
+/* F A Q SECTION IS HERE */
+
+#faq {
+    min-height: 110vh;
+    background: url('../Imgs/3433839.jpg') no-repeat center center/cover;
+    /* background-color: #f8f9fa; */
+    color: #333;
+    line-height: 1.6;
+    border: 2px solid darkred;
+}
+
+/* Main Container */
+.faq-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+/* Header Styling */
+.faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a5568;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.subtitle {
+    color: #a499e6;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Content Wrapper (Two-Column Layout) */
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* FAQ List Styling (Left Column) */
+.faq-list {
+    flex: 2;
+    min-width: 0;
+    border: 2px solid red;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-family: "Inter", sans-serif;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f7fafc;
+}
+
+.toggle-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Creating the 'plus' icon using CSS */
+.toggle-icon::before,
+.toggle-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #a499e6;
+    /* Teal color */
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-icon::before {
+    width: 2px;
+    height: 16px;
+}
+
+.toggle-icon::after {
+    width: 16px;
+    height: 2px;
+}
+
+/* Icon state when open */
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg);
+    /* Rotates the plus sign into an 'X' or minus sign */
+}
+
+.faq-item.active .toggle-icon::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+    /* Keep the vertical bar as is, or remove for minus effect */
+}
+
+.faq-item.active .toggle-icon::after {
+    width: 16px;
+    /* Horizontal bar remains */
+}
+
+/* FAQ Answer Styling */
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    /* Starts hidden */
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    /* Adjust based on max content size */
+    padding: 10px 20px 20px 20px;
+}
+
+.faq-answer p {
+    font-size: 0.95rem;
+    color: #718096;
+    border-top: 1px solid #edf2f7;
+    padding-top: 15px;
+}
+
+/* Right Column: Contact Card Styling */
+.contact-card {
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 2px solid greenyellow;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-card img{
+    height: 250px;
+    border: 1px solid green;
+    margin-bottom: 20px;
+}
+
+.contact-card h2 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #718096;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.send-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a499e6;
+    /* Teal button color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 188, 212, 0.3);
+}
+
+.send-button:hover {
+    background-color: #00a4b7;
 }
