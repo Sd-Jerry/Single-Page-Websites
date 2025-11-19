@@ -840,3 +840,184 @@ p {
 .send-button:hover {
     background-color: #00a4b7;
 }
+
+/* -- FAQ SECTION START FROM HERE --> */
+#chooseus{
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #000;
+    background: #1b1938;
+    padding: 40px;
+}
+
+.choose-us-section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0px auto;
+    height: 600px;
+    border: 2px solid darkorange;
+}
+
+/* Left column */
+.left-column {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid red;
+}
+
+/* Common box style */
+.box {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.box h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.box p {
+    margin: 0;
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+/* Box 1 - dark green bg, white text */
+.box1 {
+    border: 2px solid red;
+    background-color: #a499e6;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box1 .icon-w i {
+    width: 28px;
+    height: 28px;
+    stroke: white;
+}
+
+/* Box 2 - light background */
+.box2 {
+    background-color: #f3f3f3;
+    color: #000;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box2 .icon-w i {
+    width: 28px;
+    height: 28px;
+    stroke: #000;
+}
+
+/* Center image */
+.center-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.center-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display: block;
+}
+
+/* Right column */
+.right-column {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+/* Top text - Why Choose Us */
+.top-text {
+    flex: 1;
+    background-color: #f6f6f6;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-text h2 {
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.top-text h2 strong {
+    font-weight: 700;
+}
+
+.top-text p {
+    margin: 0;
+    font-size: 1rem;
+    max-width: 320px;
+}
+
+/* Bottom boxes container */
+.bottom-boxes {
+    flex: 1;
+    display: flex;
+}
+
+/* Each bottom box */
+.bottom-boxes .box {
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 8px;
+}
+
+/* Box 3 - dark teal background */
+.box3 {
+    background-color: #a499e6;
+}
+
+.box3 .icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: white;
+}
+
+/* Box 4 - black background */
+.box4 {
+    background-color: #000;
+}
+
+.box4 .icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: white;
+}
+
+/* Icon styling */
+.icon {
+    margin-bottom: 12px;
+}
+
