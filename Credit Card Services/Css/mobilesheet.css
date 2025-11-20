@@ -1,12 +1,33 @@
-/* RESPONSIVE DESIGN (FIXED) */
+/* RESPONSIVE DESIGN */
 
+#chooseus{
+    
+    padding: 40px 0px;
+}
 @media screen and (max-width: 1260px) {
 
     /* Home - Card Section */
     .hero-cards {
         flex-wrap: wrap;
     }
+
+    /* Why Choose Us SECTION */
+    .right-column{
+        min-width: 460px;
+    }
 }
+
+    @media screen and (max-width: 1128px) {
+    /* Why Choose Us SECTION */
+        .right-column {
+            min-width: 370px;
+        }
+        
+        .top-text{
+            padding: 30px;
+        }
+
+    }
 
 /* Tablets */
 @media screen and (max-width: 1024px) {
@@ -97,6 +118,8 @@
     .main-title::before {
         font-size: 2.5rem;
     }
+
+    /* Why Choose Us Section */
 }
 
 /* Mobile Navigation (Fully Fixed) */
@@ -378,7 +401,49 @@
 }
 
 @media screen and (max-width: 375px) {
+    /* F A Q Section */
     .contact-card img {
         height: 130px;
     }
 }
+
+
+/* @media (max-width: 992px) {
+    .choose-us-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .center-image {
+        max-width: 550px;
+        height: 330px;
+    }
+} */
+
+/* Mobile — single column layout */
+/* @media (max-width: 600px) {
+
+    #chooseus {
+        padding: 20px;
+    }
+
+    .bottom-boxes {
+        flex-direction: column;
+    }
+
+    .top-text h2 {
+        font-size: 1.9rem;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .center-image {
+        height: 250px;
+    }
+} */

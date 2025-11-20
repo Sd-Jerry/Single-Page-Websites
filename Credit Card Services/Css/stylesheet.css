@@ -841,9 +841,8 @@ p {
     background-color: #00a4b7;
 }
 
-/* -- FAQ SECTION START FROM HERE --> */
+/* -- Why Choose Us SECTION START FROM HERE --> */
 #chooseus{
-    height: 100vh;
     font-family: 'Arial', sans-serif;
     color: #000;
     background: #1b1938;
@@ -852,7 +851,7 @@ p {
 
 .choose-us-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: 90%;
     margin: 0px auto;
     height: 600px;
@@ -977,6 +976,44 @@ p {
     max-width: 320px;
 }
 
+/* == GLASSMORPHISM BASE == */
+
+.box,
+.top-text {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: all 0.35s ease;
+}
+
+/* == HOVER EFFECTS == */
+
+.box:hover,
+.top-text:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* Icon pop-up hover */
+.icon-w i {
+    font-size: 28px;
+    transition: 0.35s ease;
+}
+
+.box:hover .icon-w i,
+.box4:hover .icon-w i,
+.box3:hover .icon-w i {
+    transform: scale(1.25);
+}
+
+/* == SMOOTH TRANSITION == */
+.box,
+.top-text {
+    transition: all 0.35s ease-in-out;
+}
+
 /* Bottom boxes container */
 .bottom-boxes {
     flex: 1;
@@ -1020,4 +1057,5 @@ p {
 .icon {
     margin-bottom: 12px;
 }
+
 
