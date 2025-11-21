@@ -927,7 +927,6 @@ p {
 .center-image {
     flex: 1;
     min-width: 300px;
-    max-width: 400px;
     position: relative;
     overflow: hidden;
 }
