@@ -1,8 +1,9 @@
 /* RESPONSIVE DESIGN */
 
-#chooseus{    
+#chooseus {
     padding: 40px 0px;
 }
+
 @media screen and (max-width: 1260px) {
 
     /* Home - Card Section */
@@ -11,22 +12,23 @@
     }
 
     /* Why Choose Us SECTION */
-    .right-column{
+    .right-column {
         min-width: 460px;
     }
 }
 
-    @media screen and (max-width: 1128px) {
-    /* Why Choose Us SECTION */
-        .right-column {
-            min-width: 370px;
-        }
-        
-        .top-text{
-            padding: 30px;
-        }
+@media screen and (max-width: 1128px) {
 
+    /* Why Choose Us SECTION */
+    .right-column {
+        min-width: 370px;
     }
+
+    .top-text {
+        padding: 30px;
+    }
+
+}
 
 /* Tablets */
 @media screen and (max-width: 1024px) {
@@ -51,7 +53,7 @@
         height: auto;
     }
 
-    .left-column{
+    .left-column {
         flex-direction: row;
     }
 }
@@ -218,7 +220,7 @@
     }
 
     /* Why Choose Us Section */
-    .left-column{
+    .left-column {
         flex-direction: column;
     }
 }
@@ -309,6 +311,10 @@
     }
 
     /* F A Q Section */
+    .faq-list {
+        height: 600px;
+    }
+
     .contact-card {
         padding: 15px;
     }
@@ -378,10 +384,15 @@
         padding: 12px 20px;
     }
 
+    /* F A Q Section */
+    .faq-list {
+        height: 625px;
+    }
+
     /* Why Choose Us Section */
     .right-column {
-            min-width: 250px;
-        }
+        min-width: 250px;
+    }
 }
 
 /*Extra Small Mobile Screens */
@@ -426,6 +437,14 @@
     }
 
     /* F A Q Section */
+    .faq-list {
+        height: 630px;
+    }
+
+    .faq-question {
+        padding: 15px 10px;
+    }
+
     .contact-card img {
         height: 170px;
     }
@@ -440,15 +459,17 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
+
     /* F A Q Section */
+    .faq-list {
+        height: 690px;
+    }
+
     .contact-card img {
         height: 130px;
     }
 }
 
 /* Mobile — single column layout */
-@media (max-width: 600px) {
-
-    
-}
+@media (max-width: 600px) {}

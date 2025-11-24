@@ -127,7 +127,7 @@ nav {
     font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+.hero-text h1 {
     font-size: 2.8rem;
     line-height: 1.1;
     font-weight: 700;
@@ -136,7 +136,7 @@ h1 {
     font-family: "Montserrat", sans-serif;
 }
 
-p {
+.hero-text p {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.6;
@@ -600,24 +600,26 @@ p {
     /* background-color: #2a284e; */
 }
 
-.icon {
+.benefit-card .icon {
     font-size: 26px;
     margin-bottom: 15px;
 }
 
-.icon i {
+.benefit-card .icon i {
     color: #eaafc8;
 }
 
-h3 {
+.benefit-card h3 {
     margin-bottom: 8px;
     font-size: 18px;
     font-weight: 600;
+    color: #fff;
 }
 
-p {
+.benefit-card p {
     opacity: 0.8;
     font-size: 15px;
+    color: #8781a3;
 }
 
 /* bottom paragraphs */
@@ -628,6 +630,7 @@ p {
     /* two columns */
     gap: 40px;
     align-items: start;
+    font-family: "Inter", sans-serif;
 }
 
 /* Individual quote style */
@@ -694,6 +697,7 @@ p {
 
 /* FAQ List Styling (Left Column) */
 .faq-list {
+    height: 570px;
     flex: 2;
     min-width: 0;
     border: 2px solid red;
@@ -843,7 +847,6 @@ p {
 
 /* -- Why Choose Us SECTION START FROM HERE --> */
 #chooseus{
-    font-family: 'Arial', sans-serif;
     color: #000;
     background: #1b1938;
     padding: 40px;
@@ -866,6 +869,7 @@ p {
     flex-direction: column;
     height: 100%;
     border: 2px solid red;
+    /* font-family: "Inter", sans-serif; */
 }
 
 /* Common box style */
@@ -874,6 +878,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .box h3 {
@@ -956,6 +961,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Inter", sans-serif;
+
 }
 
 .top-text h2 {
