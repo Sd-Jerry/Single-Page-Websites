@@ -32,7 +32,7 @@ nav {
 .logo {
     height: 110px;
     cursor: pointer;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 #check {
@@ -55,7 +55,7 @@ nav {
     justify-content: flex-end;
     list-style: none;
     transition: all 0.3s ease-in;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .list li {
@@ -63,7 +63,7 @@ nav {
     padding: 6px;
     border-radius: 5px;
     transition: all 0.3s ease;
-    border: 2px solid gold;
+    /* border: 2px solid gold; */
 }
 
 .list li:hover {
@@ -100,7 +100,7 @@ nav {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 20px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 .hero {
@@ -243,7 +243,7 @@ nav {
     position: relative;
     gap: 40px;
     margin-top: 40px;
-    border: 2px solid wheat;
+    /* border: 2px solid wheat; */
 }
 
 .hero-cards img {
@@ -260,7 +260,7 @@ nav {
     position: relative;
     font-family: 'Inter', sans-serif;
     box-shadow: 0 0 7px rgba(102, 91, 214, 0.3);
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
 }
 
 .card-front {
@@ -421,7 +421,7 @@ nav {
 
 #about-us-section {
     padding: 50px 50px 10px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     background: url('../Imgs/18106012.jpg') no-repeat center center/cover;
     color: #333;
@@ -436,7 +436,7 @@ nav {
     text-align: center;
     padding: 80px 20px 40px 20px;
     position: relative;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .about-us-header::before {
@@ -486,7 +486,7 @@ nav {
 /* Text Content Styling */
 .text-content {
     flex: 1;
-    border: 2px solid gold;
+    /* border: 2px solid gold; */
 }
 
 .text-content h2 {
@@ -547,14 +547,14 @@ nav {
     background: #1b1938;
     color: #ffffff;
     line-height: 1.6;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .benefits-section {
     max-width: 1200px;
     margin: auto;
     padding: 60px 20px 30px;
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
 }
 
 .section-badge {
@@ -654,7 +654,7 @@ nav {
     /* background-color: #f8f9fa; */
     color: #333;
     line-height: 1.6;
-    border: 2px solid darkred;
+    /* border: 2px solid darkred; */
 }
 
 /* Main Container */
@@ -662,7 +662,7 @@ nav {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 /* Header Styling */
@@ -700,7 +700,7 @@ nav {
     height: 570px;
     flex: 2;
     min-width: 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .faq-item {
@@ -804,14 +804,14 @@ nav {
     border-radius: 12px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     text-align: center;
-    border: 2px solid greenyellow;
     font-family: "Montserrat", sans-serif;
+    /* border: 2px solid greenyellow; */
 }
 
 .contact-card img{
     height: 250px;
-    border: 1px solid green;
     margin-bottom: 20px;
+    /* border: 1px solid green; */
 }
 
 .contact-card h2 {
@@ -858,7 +858,7 @@ nav {
     max-width: 90%;
     margin: 0px auto;
     height: 600px;
-    border: 2px solid darkorange;
+    /* border: 2px solid darkorange; */
 }
 
 /* Left column */
@@ -868,8 +868,7 @@ nav {
     display: flex;
     flex-direction: column;
     height: 100%;
-    border: 2px solid red;
-    /* font-family: "Inter", sans-serif; */
+    /* border: 2px solid red; */
 }
 
 /* Common box style */
@@ -897,7 +896,7 @@ nav {
 
 /* Box 1 - dark green bg, white text */
 .box1 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: #a499e6;
     color: #fff;
     flex: 1;
@@ -950,7 +949,7 @@ nav {
     display: flex;
     flex-direction: column;
     height: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 /* Top text - Why Choose Us */
@@ -962,7 +961,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     font-family: "Inter", sans-serif;
-
 }
 
 .top-text h2 {
@@ -993,13 +991,13 @@ nav {
 }
 
 /* == HOVER EFFECTS == */
-
 .box:hover,
 .top-text:hover {
     transform: translateY(-6px);
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    color: #fff;
 }
 
 /* Icon pop-up hover */
@@ -1063,5 +1061,3 @@ nav {
 .icon {
     margin-bottom: 12px;
 }
-
-
