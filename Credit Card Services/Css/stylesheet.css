@@ -1063,49 +1063,79 @@ nav {
 }
 
 /* <!-- TESTIMONIALS SECTION START FROM HERE --> */
-
 #testimonials {
-    max-width: 1400px;
-    margin: auto;
+    height: 100vh;
     padding: 40px 20px;
-
-    font-family: Arial, sans-serif;
-    background: #dce7d5;
+    background: url('../Imgs/18106012.jpg') no-repeat center center / cover;
     border: 2px solid red;
 }
 
-.testimonial-header {
-    text-align: center;
-    margin-bottom: 40px;
+.t-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid purple;
 }
 
-.testimonial-header h2 {
+.testimonial-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid yellow;
+}
+
+.testimonial-header .left-t h2 {
     font-size: 32px;
     margin-bottom: 10px;
     color: #1c2d23;
 }
 
-.testimonial-header p {
+.testimonial-header .left-t p {
     max-width: 700px;
     margin: auto;
     font-size: 15px;
-    color: #415242;
+    color: #1b1938;
+    border: 2px solid green;
+}
+
+/* Right-t Button */
+.testimonial-header .right-t button {
+    width: 150px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #a499e6;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.testimonial-header .right-t button a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Swiper Cards */
 .testimonial-card {
-    background: #e4efdf;
-    padding: 30px;
-    margin-bottom: 60px;
-    border-radius: 14px;
-    text-align: left;
-    min-height: 350px;
+    background: #a499e6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-bottom: 70px;
+    border-radius: 14px;
+    text-align: left;
+    min-height: 350px;
     transition: 0.4s ease;
     transform: translateY(0);
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    /* border: 1px solid #1b1938; */
     border: 2px solid blue;
 }
 
@@ -1113,6 +1143,13 @@ nav {
 .testimonial-card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
 }
 
 /* Fade-in Animation */
@@ -1143,40 +1180,113 @@ nav {
     border: 3px solid white;
 }
 
-/* Buttons */
-.testimonial-card button {
-    width: 120px;
-    padding: 10px 0;
-    border: none;
-    border-radius: 25px;
-    background: #0F3E21;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
 .testimonial-card button:hover {
     opacity: 0.8;
 }
 
 /* Pagination Styling */
 .swiper-pagination-bullet {
-    background: #0F3E21 !important;
+    background: #8d7fd6 !important;
     width: 10px;
     height: 10px;
 }
 
 .swiper-pagination-bullet-active {
-    background: #244d33 !important;
+    background: #8d7fd6 !important;
 }
 
-/* Responsive */
-/* @media (max-width: 768px) {
+/* ===========================
+   RESPONSIVE – TESTIMONIALS
+   =========================== */
+
+/* Tablets & Large Phones */
+@media (max-width: 992px) {
+
+    #testimonials {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .testimonial-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .testimonial-header .left-t p {
+        max-width: 90%;
+    }
+
     .testimonial-card {
+        min-height: 320px;
+        padding: 25px;
+    }
+}
+
+/* Mobile Landscape & Small Tablets */
+@media (max-width: 768px) {
+
+    #testimonials {
+        padding: 50px 20px;
+    }
+
+    .testimonial-card {
+        padding: 22px;
         min-height: 300px;
     }
 
-    .testimonial-header h2 {
+    .testimonial-card p {
+        font-size: 14px;
+    }
+
+    .testimonial-card h4 {
+        font-size: 15px;
+    }
+
+    .person-img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    .testimonial-header .left-t h2 {
         font-size: 26px;
     }
-} */
+
+    .testimonial-header .left-t p {
+        font-size: 14px;
+    }
+
+    .testimonial-card {
+        min-height: 280px;
+        padding: 18px;
+        margin-bottom: 40px;
+    }
+
+    .person-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+    }
+}
+
+/* Extra Small Phones (iPhone SE, older devices) */
+@media (max-width: 360px) {
+
+    .testimonial-header .left-t h2 {
+        font-size: 22px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+        min-height: 260px;
+    }
+
+}

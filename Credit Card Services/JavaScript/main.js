@@ -56,19 +56,24 @@ var swiper = new Swiper(".testimonialSwiper", {
     slidesPerView: 4,
     spaceBetween: 25,
     loop: true,
+    speed: 800,
+    
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+
     autoplay: {
-        delay: 2500,
+        delay: 2600,
         disableOnInteraction: false,
     },
+
     breakpoints: {
-        1200: { slidesPerView: 4 },
+        1400: { slidesPerView: 4 },
         992: { slidesPerView: 3 },
         768: { slidesPerView: 2 },
-        480: { slidesPerView: 1.2 },
+        480: { slidesPerView: 1.3 },
         0: { slidesPerView: 1 }
     }
 });
+
