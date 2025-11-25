@@ -50,3 +50,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// TESTIMONIALS SECTION JS
+var swiper = new Swiper(".testimonialSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 25,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        1200: { slidesPerView: 4 },
+        992: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1.2 },
+        0: { slidesPerView: 1 }
+    }
+});
