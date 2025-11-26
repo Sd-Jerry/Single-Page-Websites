@@ -1064,17 +1064,17 @@ nav {
 
 /* <!-- TESTIMONIALS SECTION START FROM HERE --> */
 #testimonials {
-    height: 100vh;
-    padding: 40px 20px;
+    padding: 55px 20px;
     background: url('../Imgs/18106012.jpg') no-repeat center center / cover;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .t-container {
     max-width: 1400px;
     margin: auto;
     padding: 20px;
-    border: 2px solid purple;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* border: 2px solid purple; */
 }
 
 .testimonial-header {
@@ -1084,7 +1084,7 @@ nav {
     flex-wrap: wrap;
     margin-bottom: 50px;
     font-family: 'Inter', sans-serif;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .testimonial-header .left-t h2 {
@@ -1098,19 +1098,24 @@ nav {
     margin: auto;
     font-size: 15px;
     color: #1b1938;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 /* Right-t Button */
 .testimonial-header .right-t button {
-    width: 150px;
-    padding: 10px 25px;
+    margin-bottom: 40px;
     border: none;
-    border-radius: 10px;
-    background: #a499e6;
-    color: #fff;
+    padding: 14px 38px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
     cursor: pointer;
-    transition: 0.3s ease;
+    background-color: #a499e6;
+    transition: 0.5s ease-out;
+}
+
+.testimonial-header .right-t button:hover{
+    transform: translateY(-3px);
 }
 
 .testimonial-header .right-t button a {
@@ -1135,19 +1140,20 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: white;
     font-family: "Montserrat", sans-serif;
-    /* border: 1px solid #1b1938; */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 /* Hover Effects */
 .testimonial-card:hover {
+    cursor: pointer;
+    background-color: #b6abf7;
     transform: translateY(-10px);
     box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-card a{
     text-decoration: none;
-    color: white;
+    color: #2d2055;
     text-align: center;
     font-size: 25px;
 }
@@ -1172,16 +1178,22 @@ nav {
 
 /* Person Image Circle */
 .person-img {
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit:cover;
     margin-bottom: 15px;
-    border: 3px solid white;
+    border: 3px solid #c9c1f4;
 }
 
-.testimonial-card button:hover {
-    opacity: 0.8;
+.testimonial-card h3{
+    color: #2d2055;
+    margin-bottom: 5px;
+}
+
+.testimonial-card p {
+    color: #e4e1f7;
+    margin-bottom: 5px;
 }
 
 /* Pagination Styling */
@@ -1193,100 +1205,4 @@ nav {
 
 .swiper-pagination-bullet-active {
     background: #8d7fd6 !important;
-}
-
-/* ===========================
-   RESPONSIVE – TESTIMONIALS
-   =========================== */
-
-/* Tablets & Large Phones */
-@media (max-width: 992px) {
-
-    #testimonials {
-        height: auto;
-        padding: 60px 20px;
-    }
-
-    .testimonial-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .testimonial-header .left-t p {
-        max-width: 90%;
-    }
-
-    .testimonial-card {
-        min-height: 320px;
-        padding: 25px;
-    }
-}
-
-/* Mobile Landscape & Small Tablets */
-@media (max-width: 768px) {
-
-    #testimonials {
-        padding: 50px 20px;
-    }
-
-    .testimonial-card {
-        padding: 22px;
-        min-height: 300px;
-    }
-
-    .testimonial-card p {
-        font-size: 14px;
-    }
-
-    .testimonial-card h4 {
-        font-size: 15px;
-    }
-
-    .person-img {
-        width: 55px;
-        height: 55px;
-    }
-}
-
-/* Small Phones */
-@media (max-width: 480px) {
-
-    .testimonial-header .left-t h2 {
-        font-size: 26px;
-    }
-
-    .testimonial-header .left-t p {
-        font-size: 14px;
-    }
-
-    .testimonial-card {
-        min-height: 280px;
-        padding: 18px;
-        margin-bottom: 40px;
-    }
-
-    .person-img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .swiper-pagination-bullet {
-        width: 8px !important;
-        height: 8px !important;
-    }
-}
-
-/* Extra Small Phones (iPhone SE, older devices) */
-@media (max-width: 360px) {
-
-    .testimonial-header .left-t h2 {
-        font-size: 22px;
-    }
-
-    .testimonial-card {
-        padding: 15px;
-        min-height: 260px;
-    }
-
 }
