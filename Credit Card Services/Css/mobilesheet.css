@@ -461,6 +461,13 @@
         font-size: 1.5rem;
     }
 
+    /* FOOTER SECTION */
+    .footer-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+
 }
 
 /* Small Mobile Screens */

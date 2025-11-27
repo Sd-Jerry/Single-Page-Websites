@@ -11,6 +11,7 @@
     --accent-purple: #8a2be2;
     --accent-pink: #f06292;
     --border-color: rgba(255, 255, 255, 0.1);
+    --button-color: #a499e6;
 }
 
 * {
@@ -26,12 +27,17 @@ body {
     scroll-behavior: smooth;
 }
 
+header {
+    background-color: var(--dark-bg);
+}
+
 /* NAVIGATION BAR */
 nav {
     width: 100%;
     min-height: 90px;
     /* background: #1b1938; */
-    background: whitesmoke;
+    /* background: whitesmoke; */
+    background: radial-gradient(circle at center top, rgba(138, 43, 226, 0.1), transparent 70%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +62,7 @@ nav {
     display: none;
     cursor: pointer;
     font-size: 30px;
-    color: linear-gradient(to right, #654ea3, #eaafc8);
+    color: var(--button-color);
     line-height: 80px;
 }
 
@@ -87,12 +93,12 @@ nav {
     font-size: 18px;
     font-weight: 600;
     /* color: #6b6686; */
-    color: #121019;
+    color: #b6abf7;
     transition: color 0.3s ease;
 }
 
 .list li a:hover {
-    color: #b6abf7;
+    color: #c9c1f4;
 }
 
 .list li a i {
@@ -102,8 +108,8 @@ nav {
 /* HOME SECTION IS HERE */
 #home {
     padding: 80px 0px;
-    background: #1b1938;
-    /* background: radial-gradient(circle at center top, rgba(138, 43, 226, 0.1)); */
+    /* background: #1b1938; */
+    background-color: var(--dark-bg);
     color: #ddd;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -176,7 +182,7 @@ nav {
 }
 
 .btn-primary:hover {
-    background: #a499e6;
+    background: var(--button-color);
 }
 
 .user-rating {
@@ -239,11 +245,12 @@ nav {
 .user-rating-text a {
     text-decoration: none;
     color: #8781a3;
+    transition: all 0.3s ease-in;
 }
 
 .user-rating-text a:hover {
-    font-weight: bold;
-    color: rgb(255, 192, 75)
+    color: var(--button-color);
+    text-decoration: underline;
 }
 
 /* Hero cards container */
@@ -527,12 +534,13 @@ nav {
 
 .text-content .btn-primary {
     margin-bottom: 0px;
-    background: #a499e6;
+    background: var(--button-color);
     transition: 0.5s ease-out;
 }
 
 .text-content .btn-primary:hover {
     transform: translateY(-3px);
+    background-color: #2a284e;
 }
 
 .text-content .btn-primary a {
@@ -557,7 +565,8 @@ nav {
 /* SERVICE SECTION IS HERE */
 #services {
     /* background: #0e0e0e; */
-    background: #1b1938;
+    /* background: #1b1938; */
+    background-color: var(--dark-bg);
     color: #ffffff;
     line-height: 1.6;
     /* border: 2px solid yellow; */
@@ -567,6 +576,7 @@ nav {
     max-width: 1200px;
     margin: auto;
     padding: 60px 20px 30px;
+    background: radial-gradient(circle at center top, rgba(138, 43, 226, 0.1), transparent 70%);
     /* border: 2px solid yellowgreen; */
 }
 
@@ -619,7 +629,7 @@ nav {
 }
 
 .benefit-card .icon i {
-    color: #eaafc8;
+    color: var(--button-color);
 }
 
 .benefit-card h3 {
@@ -683,19 +693,20 @@ nav {
     text-align: center;
     margin-bottom: 40px;
     font-family: "Montserrat", sans-serif;
+    background-color: transparent;
 }
 
 .main-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #4a5568;
+    color: #000;
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
 }
 
 .subtitle {
-    color: #a499e6;
+    color: #4a5568;
     font-weight: bold;
     font-size: 0.9rem;
     margin-top: 5px;
@@ -754,7 +765,7 @@ nav {
 .toggle-icon::after {
     content: '';
     position: absolute;
-    background-color: #a499e6;
+    background-color: var(--button-color);
     /* Teal color */
     border-radius: 2px;
     top: 50%;
@@ -842,7 +853,7 @@ nav {
 .send-button {
     width: 100%;
     padding: 12px;
-    background-color: #a499e6;
+    background-color: var(--button-color);
     /* Teal button color */
     color: white;
     border: none;
@@ -851,17 +862,17 @@ nav {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 188, 212, 0.3);
 }
 
 .send-button:hover {
-    background-color: #00a4b7;
+    background-color: #2d2055;
 }
 
 /* -- Why Choose Us SECTION START FROM HERE --> */
 #chooseus {
     color: #000;
-    background: #1b1938;
+    /* background: #1b1938; */
+    background-color: var(--dark-bg);
     padding: 40px;
 }
 
@@ -871,6 +882,7 @@ nav {
     max-width: 90%;
     margin: 0px auto;
     height: 600px;
+    background: radial-gradient(circle at center top, rgba(138, 43, 226, 0.1), transparent 70%);
     /* border: 2px solid darkorange; */
 }
 
@@ -910,7 +922,7 @@ nav {
 /* Box 1 - dark green bg, white text */
 .box1 {
     /* border: 2px solid red; */
-    background-color: #a499e6;
+    background-color: var(--button-color);
     color: #fff;
     flex: 1;
     display: flex;
@@ -1050,7 +1062,7 @@ nav {
 
 /* Box 3 - dark teal background */
 .box3 {
-    background-color: #a499e6;
+    background-color: var(--button-color);
 }
 
 .box3 .icon svg {
@@ -1123,12 +1135,13 @@ nav {
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    background-color: #a499e6;
+    background-color: var(--button-color);
     transition: 0.5s ease-out;
 }
 
 .testimonial-header .right-t button:hover {
     transform: translateY(-3px);
+    background-color: #2a284e;
 }
 
 .testimonial-header .right-t button a {
@@ -1138,7 +1151,7 @@ nav {
 
 /* Swiper Cards */
 .testimonial-card {
-    background: #a499e6;
+    background: var(--button-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1282,7 +1295,7 @@ nav {
 }
 
 .tagline {
-    color: var(--accent-purple);
+    color: var(--button-color);
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -1317,7 +1330,8 @@ nav {
 }
 
 .detail-item .icon {
-    color: var(--accent-purple);
+    /* color: var(--accent-purple); */
+    color: var(--button-color);
     font-size: 1.3rem;
     margin-bottom: 8px;
 }
@@ -1419,15 +1433,15 @@ nav {
     letter-spacing: 1px;
     cursor: pointer;
     color: var(--primary-text);
-    background: linear-gradient(90deg, var(--accent-purple) 0%, var(--accent-pink) 100%);
+    /* background: linear-gradient(90deg, var(--accent-purple) 0%, var(--accent-pink) 100%); */
+    background-color: var(--button-color);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-top: 30px;
-    box-shadow: 0 4px 15px rgba(240, 98, 146, 0.4);
 }
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(240, 98, 146, 0.6);
+    background-color: #2b2750;
 }
 
 .submit-btn i {
@@ -1487,4 +1501,105 @@ nav {
     to {
         opacity: 1;
     }
+}
+
+/* ---------- FOOTER SECTION ----------- */
+#footer {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+    background-color: var(--dark-bg);
+}
+
+.footer-section {
+    width: 100%;
+    /* background-color:  */
+    background: radial-gradient(circle at center top, rgba(138, 43, 226, 0.1), transparent 70%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.footer-item {
+    margin: 1rem;
+}
+
+.footer-item h2 {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.footer-item h2::after {
+    content: '';
+    width: 4rem;
+    height: 0.2rem;
+    background: gold;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+.footer-item p {
+    transition: all 0.2s linear;
+    margin-bottom: 0.6rem;
+}
+
+.footer-item p:hover {
+    transform: translatey(-5px);
+}
+
+.footer-item a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    color: var(--button-color);
+}
+
+.footer-item ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item ul li {
+    list-style: none;
+}
+
+.Social ul li {
+    font-size: 1.5rem;
+    transition: all .2s linear;
+}
+
+.Social ul li:hover {
+    transform: scale(1.3);
+    transition: all .2s linear;
+}
+
+.Social img {
+    height: 100px;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.875rem;
+    background: #000;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.footer-bottom p span {
+    color: var(--button-color);
+    font-weight: 500;
 }
