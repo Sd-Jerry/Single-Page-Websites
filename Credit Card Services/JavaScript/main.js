@@ -2,19 +2,19 @@
 const cards = document.querySelectorAll(".benefit-card");
 
 cards.forEach(card => {
-    card.addEventListener("mousemove", (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
-        card.style.background = `
+    card.style.background = `
             radial-gradient(circle at ${x}px ${y}px, #1c1c1c, #121212)
         `;
-    });
+  });
 
-    card.addEventListener("mouseleave", () => {
-        card.style.background = "#2a284e";
-    });
+  card.addEventListener("mouseleave", () => {
+    card.style.background = "#2a284e";
+  });
 });
 
 // F A Q Section JS
@@ -53,27 +53,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // TESTIMONIALS SECTION JS
 var swiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 4,
-    spaceBetween: 25,
-    loop: true,
-    speed: 800,
-    
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+  slidesPerView: 4,
+  spaceBetween: 25,
+  loop: true,
+  speed: 800,
 
-    autoplay: {
-        delay: 2600,
-        disableOnInteraction: false,
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-    breakpoints: {
-        1400: { slidesPerView: 4 },
-        992: { slidesPerView: 3 },
-        768: { slidesPerView: 2 },
-        480: { slidesPerView: 1.3 },
-        0: { slidesPerView: 1 }
-    }
+  autoplay: {
+    delay: 2600,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    1400: { slidesPerView: 4 },
+    992: { slidesPerView: 3 },
+    768: { slidesPerView: 2 },
+    480: { slidesPerView: 1.3 },
+    0: { slidesPerView: 1 }
+  }
+});
+
+// CONTACT US FORM JS
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // stop default submit
+
+  // Show modal
+  document.getElementById("successModal").style.display = "flex";
+
+  // Send form data manually to FormSubmit
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData
+  })
+    .then(() => {
+      // After 3 seconds → close popup only (NO REDIRECT)
+      setTimeout(() => {
+        document.getElementById("successModal").style.display = "none";
+        form.reset(); // optional: clears the form after submit
+      }, 3000);
+    })
+    .catch(() => {
+      alert("Error! Please try again.");
+    });
 });
 
