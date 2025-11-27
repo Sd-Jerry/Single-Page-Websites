@@ -1223,30 +1223,24 @@ nav {
 /* <!-- CONTACT US FORM SECTION START FROM HERE --> */
 
 #contact-form-NGE {
-    border: 2px solid white;
     font-family: 'Inter', sans-serif;
     background-color: var(--dark-bg);
     color: var(--primary-text);
     min-height: 100vh;
     line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    /* border: 2px solid white; */
 }
 
 /* --- Global Header Section --- */
 .page-header {
     text-align: center;
-    padding: 80px 20px 60px;
+    padding: 40px 20px;
     background: radial-gradient(circle at center top, rgba(138, 43, 226, 0.1), transparent 70%);
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .page-header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -1259,25 +1253,32 @@ nav {
 }
 
 /* --- Main Content Layout --- */
+
+.container-c {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 2px solid gold; */
+}
+
 .content-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding-bottom: 80px;
+    /* border: 2px solid red; */
 }
 
 .contact-info-section,
 .contact-form-section {
-    padding: 20px;
+    padding: 10px;
     flex: 1 1 45%;
-    /* Default flex basis for desktop */
     min-width: 300px;
-    /* Minimum width before wrapping */
+    /* border: 2px solid beige; */
 }
 
 /* --- Left Column (Contact Info) --- */
 .contact-info-section {
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .tagline {
@@ -1306,7 +1307,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .detail-item {
@@ -1331,24 +1332,6 @@ nav {
     font-size: 0.95rem;
     color: var(--secondary-text);
 }
-
-.social-media p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.social-links a {
-    color: var(--primary-text);
-    font-size: 1.3rem;
-    margin-right: 15px;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--accent-pink);
-}
-
 
 /* --- Right Column (Contact Form) --- */
 .contact-form-section {
