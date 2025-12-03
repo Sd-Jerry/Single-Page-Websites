@@ -1,30 +1,43 @@
 /* * GLOBAL RESET * */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-   
-body {
-    /* background: #f8f8f8; */
-    color: #333;
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
 /* Header Section */
 .terms-header {
-    /* background: linear-gradient(135deg, #4a3ede, #6a5de8); */
-    background-color: #10061e;
+    background: url('../Imgs/Terms\ N\ C\ Bg.webp') no-repeat center center/cover;
+    height: 300px;
     color: white;
-    padding: 60px 20px;
     text-align: center;
+    padding: 80px 20px 40px 20px;
+    position: relative;
+    /* border: 2px solid blue; */
+}
+
+.terms-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
 .terms-header h1 {
     font-size: 42px;
     margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 
 .terms-header p {
@@ -33,15 +46,14 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-.terms-section{
-    border: 2px solid red;
+.terms-header h1,
+.terms-header p {
+    position: relative;
+    z-index: 2;
 }
 
-/* Container */
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;    
+.terms-section {
+    border: 2px solid red;
 }
 
 /* Terms Box */
@@ -50,14 +62,14 @@ body {
     padding: 25px 30px;
     margin: 20px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
     font-family: "Inter", sans-serif;
 }
 
 .terms-box:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .terms-box h2 {
@@ -86,6 +98,7 @@ body {
     .terms-header h1 {
         font-size: 30px;
     }
+
     .terms-box {
         padding: 20px;
     }

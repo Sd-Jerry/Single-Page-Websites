@@ -1,0 +1,105 @@
+/* * GLOBAL RESET * */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.privacy-header {
+    background: url('../Imgs/Privacy\ Policy\ Bg.webp') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+    position: relative;
+    /* border: 2px solid blue; */
+}
+
+.privacy-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.privacy-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.privacy-header p {
+    font-size: 18px;
+    opacity: 0.9;
+    font-family: "Inter", sans-serif;
+}
+
+.privacy-header h1,
+.privacy-header p {
+    position: relative;
+    z-index: 2;
+}
+
+.privacy-section {
+    border: 2px solid red;
+}
+
+/* Terms Box */
+.privacy-box {
+    background: white;
+    padding: 25px 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    font-family: "Inter", sans-serif;
+}
+
+.privacy-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.privacy-box h2 {
+    margin-bottom: 10px;
+    color: #4a3ede;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* List */
+.privacy-box ul {
+    padding-left: 20px;
+}
+
+.privacy-box ul li {
+    margin-bottom: 6px;
+}
+
+/* Contact Info */
+.contact-info {
+    border-left: 4px solid #4a3ede;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .privacy-header h1 {
+        font-size: 30px;
+    }
+
+    .privacy-box {
+        padding: 20px;
+    }
+}
