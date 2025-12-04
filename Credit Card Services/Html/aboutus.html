@@ -16,42 +16,43 @@
     <meta name="language" content="English">
     <meta name="author" content="Nagraj Enterprise">
 
-    <!-- Canonical URL -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://www.nagrajenterprise.com/about-us">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="About Us | Nagraj Enterprise – Credit Card Swiping Services">
     <meta property="og:description"
-        content="Discover Nagraj Enterprise and our secure, fast, and low-cost credit card swiping services with instant cash access. Trusted across the city and expanding to Saurashtra.">
+        content="Secure, fast and low-cost credit card swiping services with instant cash access.">
     <meta property="og:url" content="https://www.nagrajenterprise.com/about-us">
     <meta property="og:site_name" content="Nagraj Enterprise">
-
     <meta property="og:image" content="https://www.nagrajenterprise.com/images/about-og.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Us | Nagraj Enterprise – Credit Card Swiping Services">
     <meta name="twitter:description"
-        content="Fast, secure and hassle-free credit card swiping services with instant cash access and low interest rates. Learn more about Nagraj Enterprise.">
+        content="Fast, secure and hassle-free credit card swiping services with instant cash access.">
     <meta name="twitter:image" content="https://www.nagrajenterprise.com/images/about-og.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="https://www.nagrajenterprise.com/images/favicon.png" type="image/png">
 
-    <!-- Css Link -->
-     <link rel="stylesheet" href="../Css/aboutus.css">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Css/aboutus.css">
 </head>
 
 <body>
-    <section id="about-section">
 
-        <!-- Top Dark Section -->
-        <div class="about-header">
+    <!-- ✅ Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="/">Home</a> <span>›</span> <span>About Us</span>
+    </nav>
+
+    <main id="about-section">
+
+        <!-- ✅ HEADER SECTION -->
+        <header class="about-header">
             <div class="header-content">
                 <h1>Your Trusted Partner for Credit Card Swiping & Instant Cash Solutions</h1>
                 <p>
@@ -59,50 +60,46 @@
                     growth and operational excellence.
                 </p>
             </div>
-        </div>
+        </header>
 
-        <!-- Team Image Grid (Overlapping) -->
-        <div class="team-grid-container">
+        <!-- ✅ TEAM GRID -->
+        <section class="team-grid-container">
             <div class="team-grid">
-                <!-- Placeholder images are used here. Replace with your actual team images. -->
-                <div class="team-member">
-                    <img src="../Imgs/About-Us/Abt us-1.jpg"
-                        alt="Portrait of a smiling woman holding a tablet.">
-                </div>
-                <div class="team-member">
-                    <img src="../Imgs/About-Us/Abt us-2.jpg"
-                        alt="Two colleagues discussing a project at a table.">
-                </div>
-                <div class="team-member">
-                    <img src="../Imgs/About-Us/Abt us-3.jpg"
-                        alt="Portrait of a woman wearing a safety vest and helmet.">
-                </div>
-            </div>
-        </div>
 
-        <!-- Bottom Light Content Section -->
-        <div class="story-section">
+                <figure class="team-member">
+                    <img src="../Imgs/About-Us/Abt us-1.jpg" alt="Team member portrait">
+                </figure>
+
+                <figure class="team-member">
+                    <img src="../Imgs/About-Us/Abt us-2.jpg" alt="Team members working together">
+                </figure>
+
+                <figure class="team-member">
+                    <img src="../Imgs/About-Us/Abt us-3.jpg" alt="Professional team member at work">
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- ✅ ABOUT STORY CONTENT -->
+        <section class="story-section">
             <div class="story-content">
-                <div class="acella-label">About Nagraj Enterprise</div>
+
+                <span class="acella-label">About Nagraj Enterprise</span>
 
                 <p>
                     Nagraj Enterprise is a leading provider of credit card swiping services, offering instant cash
-                    access, low interest rates, and complete convenience for customers across the city. Our service
-                    allows you to withdraw money from your credit card and transfer it directly to your bank
-                    account—fast, secure, and without any complicated process or long waiting lines.
+                    access, low interest rates, and complete convenience across the city.
                 </p>
 
                 <p>
-                    We aim to redefine the way you use your credit card, giving you full control over your billing
-                    cycle, cash flow, and financial flexibility. Whether it’s an emergency expense, medical bill, urgent
-                    payment, or simply bridging a cash gap until your next salary—we’ve got you covered with instant
-                    liquidity whenever you need it.
+                    We aim to redefine the way you use your credit card—giving you full control over your billing
+                    cycle, cash flow, and financial flexibility.
                 </p>
 
                 <p>
                     Our focus is to grow responsibly—first building strong trust locally, and then expanding across
-                    Saurashtra step-by-step. With customer satisfaction as our top priority, Nagraj Enterprise ensures
-                    transparent charges, secure transactions, and a smooth experience every time.
+                    Saurashtra step-by-step.
                 </p>
 
                 <p>
@@ -111,8 +108,7 @@
                 </p>
 
                 <div class="service-list">
-                    <strong>— Along with credit card swiping, we also provide a range of financial services,
-                        including:</strong>
+                    <strong>— Our Financial Services:</strong>
                     <ul>
                         <li>CMS (Cash Management Services)</li>
                         <li>Credit Card Money Withdrawal</li>
@@ -120,11 +116,41 @@
                         <li>All Types of Loan Assistance</li>
                     </ul>
                 </div>
+
             </div>
+        </section>
+        <button class="dark-toggle">🌙 Dark</button>
+    </main>
 
-        </div>
+    <script>
+        /* ✅ SCROLL ANIMATION */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        });
 
-    </section>
+        document.querySelectorAll(".team-member, .story-content").forEach(el => {
+            observer.observe(el);
+        });
+
+        /* ✅ DARK MODE */
+        const toggle = document.querySelector(".dark-toggle");
+        if (toggle) {
+            toggle.onclick = () => {
+                document.body.classList.toggle("dark-mode");
+                localStorage.setItem("theme",
+                    document.body.classList.contains("dark-mode") ? "dark" : "light"
+                );
+            };
+        }
+
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
 
 </body>
 

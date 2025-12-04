@@ -1,145 +1,249 @@
- /* GLOBAL RESET */
- @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* ================================
+   ✅ GLOBAL RESET & VARIABLES
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap');
 
- :root {
-     --dark-bg: #10061e;
-     --light-cream: #f8f8f8;
-     --text-white: #ffffff;
-     --text-dark: #333333;
-     --accent-green: #00a896;
-     /* Using a mock accent color */
- }
+:root {
+    --dark-bg: #10061e;
+    --light-cream: #f8f8f8;
+    --text-white: #ffffff;
+    --text-dark: #333333;
+    --accent-green: #00a896;
+    --accent-purple: #4a3ede;
+    --border-color: #dddddd;
+}
 
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+/* ✅ DARK MODE VARIABLES */
+body.dark-mode {
+    --dark-bg: #ffffff;
+    --light-cream: #0f0f14;
+    --text-white: #111111;
+    --text-dark: #eeeeee;
+    --border-color: #2e2e3a;
+}
 
- #about-section {
-     background-color: var(--light-cream);
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- /* --- Main Dark Header Section --- */
- .about-header {
-     background-color: var(--dark-bg);
-     color: var(--text-white);
-     padding: 4rem 1rem 0;
-     text-align: center;
-     font-family: "Montserrat", sans-serif;
- }
+body {
+    background: var(--light-cream);
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
 
- .header-content {
-     max-width: 900px;
-     margin: 0 auto;
-     padding-bottom: 3rem;
- }
+/* ================================
+   ✅ BREADCRUMB
+================================ */
+.breadcrumb {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 14px;
+}
 
- .header-content h1 {
-     font-size: clamp(2rem, 5vw, 3em);
-     font-weight: 700;
-     line-height: 1.2;
-     margin-bottom: 1rem;
- }
+.breadcrumb a {
+    color: var(--accent-purple);
+    text-decoration: none;
+}
 
- .header-content p {
-     font-size: clamp(0.9rem, 2vw, 1.1rem);
-     opacity: 0.8;
-     max-width: 600px;
-     margin: 0.5rem auto 0;
- }
+.breadcrumb span {
+    color: gray;
+}
 
- /* --- Team Grid Section --- */
- .team-grid-container {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 1rem;
-     transform: translateY(4rem);
- }
+/* ================================
+   ✅ ABOUT HEADER
+================================ */
+.about-header {
+    background-color: var(--dark-bg);
+    color: var(--text-white);
+    padding: 4rem 1rem 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
 
- .team-grid {
-     display: flex;
-     flex-direction: column;
-     gap: 1.5rem;
- }
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
 
- .team-member {
-     flex: 1;
-     min-height: 400px;
-     background-color: var(--text-white);
-     border-radius: 12px;
-     overflow: hidden;
-     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
- }
+.header-content h1 {
+    font-size: clamp(2rem, 5vw, 3em);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
 
- .team-member img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     display: block;
- }
+.header-content p {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 0.5rem auto 0;
+}
 
- /* --- Lower Story Section --- */
- .story-section {
-     background-color: var(--dark-bg);
-     padding: 6rem 1rem 4rem;
-     font-family: 'Inter', sans-serif;
- }
+/* ================================
+   ✅ TEAM GRID
+================================ */
+.team-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    transform: translateY(4rem);
+}
 
- .story-content {
-     max-width: 900px;
-     margin: 0 auto;
-     /* background-color: var(--light-cream); */
-     color: var(--light-cream);
- }
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
- .acella-label {
-     display: flex;
-     align-items: center;
-     font-size: 0.85rem;
-     font-weight: 600;
-     text-transform: uppercase;
-     letter-spacing: 0.5px;
-     margin-bottom: 1.5rem;
-     font-family: "Montserrat", sans-serif;
- }
+.team-member {
+    flex: 1;
+    min-height: 400px;
+    background-color: var(--text-white);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
 
- .acella-label::before {
-     content: '';
-     display: block;
-     width: 8px;
-     height: 8px;
-     background-color: var(--dark-bg);
-     border-radius: 50%;
-     margin-right: 0.75rem;
- }
+/* ✅ SCROLL ANIMATION BASE */
+.team-member,
+.story-content {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.7s ease;
+}
 
- .story-content p {
-     padding: 15px 0;
-     /* border: 2px solid yellow; */
- }
+.team-member.show,
+.story-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
- .story-content p,
- strong,
- ul li {
-     font-size: clamp(1rem, 2vw, 1.2rem);
-     line-height: 1.6;
-     font-weight: 500;
-     margin: 0;
- }
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
 
- /* --- Desktop/Tablet Responsiveness (768px and up) --- */
- @media (min-width: 768px) {
-     .team-grid {
-         flex-direction: row;
-     }
- }
+.team-member:hover img {
+    transform: scale(1.05);
+}
 
- /* Optional: Smoother image hover effect */
- .team-member img {
-     transition: transform 0.3s ease;
- }
+/* ================================
+   ✅ STORY SECTION
+================================ */
+.story-section {
+    background-color: var(--dark-bg);
+    padding: 6rem 1rem 4rem;
+}
 
- .team-member:hover img {
-     transform: scale(1.03);
- }
+.story-content {
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--light-cream);
+}
+
+.acella-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.acella-label::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    margin-right: 0.75rem;
+}
+
+.story-content p,
+.story-content strong,
+.story-content ul li {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.7;
+    padding: 10px 0;
+}
+
+/* ================================
+   ✅ DARK MODE BUTTON OPTIONAL
+================================ */
+.dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--accent-purple);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================================
+   ✅ PRINT FRIENDLY A4
+================================ */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    .breadcrumb,
+    .about-header {
+        display: none;
+    }
+
+    .story-section {
+        background: white !important;
+        padding: 2rem;
+    }
+
+    .team-grid-container {
+        transform: none;
+    }
+
+    .team-grid {
+        flex-direction: row;
+    }
+
+    .team-member {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+}
+
+/* ================================
+   ✅ RESPONSIVE
+================================ */
+@media (min-width: 768px) {
+    .team-grid {
+        flex-direction: row;
+    }
+
+    .story-section{
+        padding: 6rem 2rem 4rem;
+    }
+}
+
+@media (min-width: 320px) {
+    .story-section{
+        padding: 6rem 3rem 4rem;
+    }
+}
