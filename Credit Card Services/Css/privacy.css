@@ -1,4 +1,4 @@
-/* * GLOBAL RESET * */
+/* ===== GLOBAL RESET ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -7,22 +7,50 @@
     box-sizing: border-box;
 }
 
-/* Container */
+/* ===== BODY DEFAULT ===== */
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+    line-height: 1.65;
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+    background: #f1f2ff;
+    padding: 12px 0;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: #4a3ede;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb span {
+    margin: 0 6px;
+    color: #555;
+}
+
+
+/* ===== CONTAINER ===== */
 .container {
     max-width: 900px;
     margin: auto;
     padding: 20px;
 }
 
-/* Header Section */
+/* ===== HEADER SECTION ===== */
 .privacy-header {
-    background: url('../Imgs/Privacy\ Policy\ Bg.webp') no-repeat center center/cover;
-    height: 300px;
+    background: url('../Imgs/Privacy\ Policy\ Bg.webp') no-repeat center center / cover;
+    min-height: 300px;
     color: white;
     text-align: center;
-    padding: 80px 20px 40px 20px;
+    padding: 80px 20px 40px;
     position: relative;
-    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
 }
 
 .privacy-header::before {
@@ -33,38 +61,36 @@
     z-index: 1;
 }
 
+.privacy-header .container {
+    position: relative;
+    z-index: 2;
+}
+
 .privacy-header h1 {
     font-size: 42px;
     margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
-    color: white;
+    color: #ffffff;
 }
 
 .privacy-header p {
     font-size: 18px;
     opacity: 0.9;
-    font-family: "Inter", sans-serif;
 }
 
-.privacy-header h1,
-.privacy-header p {
-    position: relative;
-    z-index: 2;
-}
-
+/* ===== MAIN SECTION ===== */
 .privacy-section {
-    border: 2px solid red;
+    padding: 40px 0;
 }
 
-/* Terms Box */
+/* ===== PRIVACY BOX ===== */
 .privacy-box {
-    background: white;
+    background: #ffffff;
     padding: 25px 30px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
-    font-family: "Inter", sans-serif;
 }
 
 .privacy-box:hover {
@@ -72,34 +98,146 @@
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
+/* ===== HEADINGS ===== */
 .privacy-box h2 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #4a3ede;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
 }
 
-/* List */
+/* ===== TEXT SPACING ===== */
+.privacy-box p {
+    margin-bottom: 12px;
+    color: #444;
+    font-size: 15.5px;
+}
+
+/* ===== LIST ===== */
 .privacy-box ul {
-    padding-left: 20px;
+    margin: 10px 0 15px;
+    padding-left: 22px;
 }
 
 .privacy-box ul li {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
-/* Contact Info */
+/* ===== CONTACT INFO BOX ===== */
 .contact-info {
     border-left: 4px solid #4a3ede;
+    background: #f5f6ff;
 }
 
-/* Responsive */
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #0f1220;
+    color: #eaeaf0;
+}
+
+body.dark-mode .privacy-box {
+    background: #161a35;
+    color: #eaeaf0;
+}
+
+body.dark-mode .privacy-box p {
+    color: #a8ddff;
+}
+
+body.dark-mode h2 {
+    color: #a7a4ff;
+}
+
+body.dark-mode .contact-info {
+    background: #1c2048;
+}
+
+body.dark-mode .breadcrumb {
+    background: #1a1d3c;
+}
+
+body.dark-mode .breadcrumb span,
+body.dark-mode .breadcrumb a {
+    color: #d2d3ff;
+}
+
+.dark-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #4a3ede;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.privacy-box {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.6s ease;
+}
+
+.privacy-box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== PRINT (A4 FORMAT) ===== */
+@media print {
+
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 13px;
+    }
+
+    .privacy-header,
+    .breadcrumb,
+    .dark-toggle {
+        display: none !important;
+    }
+
+    .privacy-box {
+        box-shadow: none;
+        border: 1px solid #000;
+        page-break-inside: avoid;
+    }
+
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+}
+
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
+
+    .container {
+        padding: 16px;
+    }
+
+    .privacy-header {
+        padding: 60px 16px 35px;
+    }
+
     .privacy-header h1 {
-        font-size: 30px;
+        font-size: 28px;
+    }
+
+    .privacy-header p {
+        font-size: 15px;
     }
 
     .privacy-box {
         padding: 20px;
+    }
+
+    .privacy-box h2 {
+        font-size: 20px;
     }
 }
