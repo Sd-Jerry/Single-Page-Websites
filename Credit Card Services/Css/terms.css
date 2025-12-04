@@ -15,24 +15,24 @@ body {
     line-height: 1.65;
 }
 
-/* ===== BREADCRUMB ===== */
+/* ================================
+   ✅ BREADCRUMB
+================================ */
 .breadcrumb {
-    background: #f1f2ff;
-    padding: 12px 0;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px 15px;
     font-size: 14px;
 }
 
 .breadcrumb a {
-    color: #4a3ede;
+    color: var(--accent-purple);
     text-decoration: none;
-    font-weight: 500;
 }
 
 .breadcrumb span {
-    margin: 0 6px;
-    color: #555;
+    color: gray;
 }
-
 
 /* ===== CONTAINER ===== */
 .container {
@@ -162,16 +162,16 @@ body.dark-mode .breadcrumb a {
 }
 
 .dark-toggle {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 200px;
     right: 20px;
-    background: #4a3ede;
-    color: #fff;
+    background: var(--accent-purple);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
     border: none;
-    padding: 8px 14px;
-    border-radius: 20px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 2000;
 }
 
 /* ===== SCROLL ANIMATION ===== */
@@ -213,8 +213,13 @@ body.dark-mode .breadcrumb a {
     }
 }
 
-
 /* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .breadcrumb {
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 600px) {
 
     .container {

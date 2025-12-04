@@ -107,7 +107,7 @@ body {
     background-color: var(--text-white);
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* ✅ SCROLL ANIMATION BASE */
@@ -182,7 +182,7 @@ body {
 ================================ */
 .dark-toggle {
     position: fixed;
-    top: 20px;
+    top: 200px;
     right: 20px;
     background: var(--accent-purple);
     color: white;
@@ -190,7 +190,9 @@ body {
     border-radius: 30px;
     border: none;
     cursor: pointer;
+    z-index: 2000;
 }
+
 
 /* ================================
    ✅ PRINT FRIENDLY A4
@@ -232,18 +234,27 @@ body {
 /* ================================
    ✅ RESPONSIVE
 ================================ */
-@media (min-width: 768px) {
-    .team-grid {
-        flex-direction: row;
-    }
-
-    .story-section{
-        padding: 6rem 2rem 4rem;
-    }
+/* ✅ MOBILE ONLY (0px → 767px) */
+@media (max-width: 767px) {
+  .breadcrumb {
+    margin-top: 120px;
+  }
 }
 
+/* ✅ TABLET & DESKTOP (768px → infinity) */
+@media (min-width: 768px) {
+  .team-grid {
+    flex-direction: row;
+  }
+
+  .story-section {
+    padding: 6rem 2rem 4rem;
+  }
+}
+
+/* ✅ EXTRA SMALL DEVICES (320px → up) */
 @media (min-width: 320px) {
-    .story-section{
-        padding: 6rem 3rem 4rem;
-    }
+  .story-section {
+    padding: 6rem 3rem 4rem;
+  }
 }

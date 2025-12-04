@@ -105,6 +105,15 @@ nav {
     margin-right: 10px;
 }
 
+/* DESKTOP STICKY FIX */
+/* .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} */
+
+
 /* HOME SECTION IS HERE */
 #home {
     padding: 80px 0px;
