@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --dark-bg: #10061e;
+    --primary-text: #ffffff;
+    --secondary-text: #b0a0c7;
+    --button-color: #a499e6;
+}
+
+#footer {
+    width: 100%;
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+    background-color: var(--dark-bg);
+}
+
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.875rem;
+    background: #000;
+    color: whitesmoke;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-bottom p span {
+    color: var(--button-color);
+    font-weight: 500;
+}

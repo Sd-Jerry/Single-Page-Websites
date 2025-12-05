@@ -1,6 +1,25 @@
 /* ===== GLOBAL RESET ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --dark-bg: #10061e;
+    --light-cream: #f8f8f8;
+    --text-white: #ffffff;
+    --text-dark: #333333;
+    --accent-green: #00a896;
+    --accent-purple: #8a2be2;
+    --border-color: #dddddd;
+}
+
+/* ✅ DARK MODE VARIABLES */
+body.dark-mode {
+    /* --dark-bg: #ffffff; */
+    --light-cream: #0f0f14;
+    --text-white: #111111;
+    --text-dark: #eeeeee;
+    --border-color: #2e2e3a;
+}
+
 * {
     margin: 0;
     padding: 0;

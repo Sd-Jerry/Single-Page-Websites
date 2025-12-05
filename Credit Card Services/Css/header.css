@@ -31,6 +31,38 @@ header {
     background-color: var(--dark-bg);
 }
 
+/* ✅ SMOOTH STICKY HEADER BASE */
+.main-header {
+  width: 100%;
+  position: relative;
+  transition: transform 0.35s ease, background-color 0.35s ease, box-shadow 0.35s ease;
+  z-index: 1000;
+  will-change: transform;
+}
+
+/* ✅ STICKY ACTIVE STATE */
+.main-header.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-bg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  animation: smoothSticky 0.35s ease forwards;
+}
+
+/* ✅ SMOOTH SLIDE + FADE ANIMATION */
+@keyframes smoothSticky {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 /* NAVIGATION BAR */
 nav {
     width: 100%;

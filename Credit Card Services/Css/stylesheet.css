@@ -1490,6 +1490,40 @@ nav {
     margin-bottom: 10px;
 }
 
+.success-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;   /* ✅ VERY IMPORTANT */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.success-box {
+  background: #111;
+  padding: 30px 40px;
+  border-radius: 14px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(164,153,230,0.6);
+}
+
+.check-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #7CFC98;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 @keyframes popup {
     0% {
         transform: scale(0.6);

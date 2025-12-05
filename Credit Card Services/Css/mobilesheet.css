@@ -1,5 +1,4 @@
 /* RESPONSIVE DESIGN */
-
 #chooseus {
     padding: 40px 0px;
 }
@@ -229,7 +228,7 @@
         right: 0;
         width: 100vw;
         height: 70vh;
-         background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
         color: #fff;
         flex-direction: column;
         justify-content: center;
@@ -259,7 +258,7 @@
     }
 
     /* Home Section */
-    #home{
+    #home {
         margin-top: 128px;
     }
 
