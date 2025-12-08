@@ -78,29 +78,54 @@ var swiper = new Swiper(".testimonialSwiper", {
 });
 
 // CONTACT US FORM JS
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // stop default submit
+// document.getElementById("contactForm").addEventListener("submit", function (e) {
+//   e.preventDefault(); // stop default submit
 
-  // Show modal
-  document.getElementById("successModal").style.display = "flex";
+//   // Show modal
+//   document.getElementById("successModal").style.display = "flex";
 
-  // Send form data manually to FormSubmit
-  const form = e.target;
-  const formData = new FormData(form);
+//   // Send form data manually to FormSubmit
+//   const form = e.target;
+//   const formData = new FormData(form);
 
-  fetch(form.action, {
-    method: "POST",
-    body: formData
-  })
-    .then(() => {
-      // After 3 seconds → close popup only (NO REDIRECT)
-      setTimeout(() => {
-        document.getElementById("successModal").style.display = "none";
-        form.reset(); // optional: clears the form after submit
-      }, 3000);
+//   fetch(form.action, {
+//     method: "POST",
+//     body: formData
+//   })
+//     .then(() => {
+//       // After 3 seconds → close popup only (NO REDIRECT)
+//       setTimeout(() => {
+//         document.getElementById("successModal").style.display = "none";
+//         form.reset(); // optional: clears the form after submit
+//       }, 3000);
+//     })
+//     .catch(() => {
+//       alert("Error! Please try again.");
+//     });
+// });
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    document.getElementById("successModal").style.display = "flex";
+
+    const formData = new FormData(contactForm);
+
+    fetch(contactForm.action, {
+      method: "POST",
+      body: formData
     })
-    .catch(() => {
-      alert("Error! Please try again.");
-    });
-});
-
+      .then(() => {
+        setTimeout(() => {
+          document.getElementById("successModal").style.display = "none";
+          contactForm.reset();
+        }, 3000);
+      })
+      .catch(() => {
+        alert("Error! Please try again.");
+      });
+  });
+}

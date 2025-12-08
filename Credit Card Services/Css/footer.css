@@ -15,7 +15,7 @@
     background-color: var(--dark-bg);
 }
 
-.footer-bottom {
+.footer-btm {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.footer-bottom p span {
+.footer-btm p span {
     color: var(--button-color);
     font-weight: 500;
 }
