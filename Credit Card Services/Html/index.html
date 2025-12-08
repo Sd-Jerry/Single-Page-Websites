@@ -537,6 +537,9 @@
                         </div>
 
                         <form id="contactForm" action="https://formsubmit.co/sarthakd82@gmail.com" method="POST">
+                            <!-- ✅ Anti-Spam Honeypot -->
+                            <input type="text" name="_honey" style="display:none">
+
 
                             <!-- REQUIRED HIDDEN FIELDS FOR FORMSUBMIT -->
                             <!-- Disable Captcha -->
@@ -583,6 +586,12 @@
 
                             <p id="formStatus" style="text-align: center; margin-top: 15px; color: var(--accent-pink);">
                             </p>
+
+                            <!-- ✅ Loading Spinner -->
+                            <div id="formLoader" class="form-loader" style="display: none;">
+                                <div class="spinner"></div>
+                                <p>Sending your message...</p>
+                            </div>
 
                         </form>
 

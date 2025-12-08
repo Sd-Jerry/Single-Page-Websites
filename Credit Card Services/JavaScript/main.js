@@ -104,13 +104,22 @@ var swiper = new Swiper(".testimonialSwiper", {
 //     });
 // });
 
+let lastSubmitTime = 0;
+
 const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    document.getElementById("successModal").style.display = "flex";
+    const now = Date.now();
+    if (now - lastSubmitTime < 10000) {
+      alert("Please wait 10 seconds before submitting again.");
+      return;
+    }
+    lastSubmitTime = now;
+
+    document.getElementById("formLoader").style.display = "block";
 
     const formData = new FormData(contactForm);
 
@@ -119,13 +128,19 @@ if (contactForm) {
       body: formData
     })
       .then(() => {
+        document.getElementById("formLoader").style.display = "none";
+        document.getElementById("successModal").style.display = "flex";
+
         setTimeout(() => {
           document.getElementById("successModal").style.display = "none";
           contactForm.reset();
         }, 3000);
       })
       .catch(() => {
+        document.getElementById("formLoader").style.display = "none";
         alert("Error! Please try again.");
       });
   });
 }
+
+
