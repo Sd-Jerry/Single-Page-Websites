@@ -171,11 +171,6 @@
         font-size: 2.2rem;
     }
 
-    .details-grid {
-        grid-template-columns: 1fr;
-        /* Stack details vertically on smaller screens */
-    }
-
     .contact-form-section {
         order: 1;
         /* Move form above info on mobile */

@@ -13,15 +13,6 @@
     --border-color: #dddddd;
 }
 
-/* ✅ DARK MODE VARIABLES */
-body.dark-mode {
-    --dark-bg: #ffffff;
-    --light-cream: #0f0f14;
-    --text-white: #111111;
-    --text-dark: #eeeeee;
-    --border-color: #2e2e3a;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -178,22 +169,6 @@ body {
 }
 
 /* ================================
-   ✅ DARK MODE BUTTON OPTIONAL
-================================ */
-.dark-toggle {
-    position: fixed;
-    top: 200px;
-    right: 20px;
-    background: var(--accent-purple);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    z-index: 2000;
-}
-
-/* ================================
    ✅ PRINT FRIENDLY A4
 ================================ */
 @media print {
@@ -236,7 +211,7 @@ body {
 /* ✅ MOBILE ONLY (0px → 767px) */
 @media (max-width: 767px) {
   .breadcrumb {
-    margin-top: 120px;
+    margin-top: 20px;
   }
 }
 

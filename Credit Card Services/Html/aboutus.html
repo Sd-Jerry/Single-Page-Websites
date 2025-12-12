@@ -50,83 +50,84 @@
     <!-- Header is Here -->
     <div id="header"></div>
 
-    <!-- ✅ Breadcrumb -->
-    <div class="breadcrumb">
-        <a href="/">Home</a> <span>›</span> <span>About Us</span>
-    </div>
+    <div class="about-page">
 
-    <main id="about-section">
+        <!-- ✅ Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="/">Home</a> <span>›</span> <span>About Us</span>
+        </div>
 
-        <!-- ✅ HEADER SECTION -->
-        <header class="about-header">
-            <div class="header-content">
-                <h1>Your Trusted Partner for Credit Card Swiping & Instant Cash Solutions</h1>
-                <p>
-                    With years of experience across various industries, our dedicated team is committed to driving
-                    growth and operational excellence.
-                </p>
-            </div>
-        </header>
-
-        <!-- ✅ TEAM GRID -->
-        <section class="team-grid-container">
-            <div class="team-grid">
-
-                <figure class="team-member">
-                    <img src="../Imgs/About-Us/Abt us-1.jpg" alt="Team member portrait">
-                </figure>
-
-                <figure class="team-member">
-                    <img src="../Imgs/About-Us/Abt us-2.jpg" alt="Team members working together">
-                </figure>
-
-                <figure class="team-member">
-                    <img src="../Imgs/About-Us/Abt us-3.jpg" alt="Professional team member at work">
-                </figure>
-
-            </div>
-        </section>
-
-        <!-- ✅ ABOUT STORY CONTENT -->
-        <section class="story-section">
-            <div class="story-content">
-
-                <span class="acella-label">About Nagraj Enterprise</span>
-
-                <p>
-                    Nagraj Enterprise is a leading provider of credit card swiping services, offering instant cash
-                    access, low interest rates, and complete convenience across the city.
-                </p>
-
-                <p>
-                    We aim to redefine the way you use your credit card—giving you full control over your billing
-                    cycle, cash flow, and financial flexibility.
-                </p>
-
-                <p>
-                    Our focus is to grow responsibly—first building strong trust locally, and then expanding across
-                    Saurashtra step-by-step.
-                </p>
-
-                <p>
-                    At Nagraj Enterprise, we believe in delivering reliable, fast, and customer-friendly solutions—
-                    making financial access easy for everyone.
-                </p>
-
-                <div class="service-list">
-                    <strong>— Our Financial Services:</strong>
-                    <ul>
-                        <li>CMS (Cash Management Services)</li>
-                        <li>Credit Card Money Withdrawal</li>
-                        <li>Credit Card Bill Payments</li>
-                        <li>All Types of Loan Assistance</li>
-                    </ul>
+        <main>
+            <!-- ✅ HEADER SECTION -->
+            <header class="about-header">
+                <div class="header-content">
+                    <h1>Your Trusted Partner for Credit Card Swiping & Instant Cash Solutions</h1>
+                    <p>
+                        With years of experience across various industries, our dedicated team is committed to driving
+                        growth and operational excellence.
+                    </p>
                 </div>
+            </header>
 
-            </div>
-        </section>
-                <button class="dark-toggle" onclick="toggleDarkMode()">Dark Mode🌙</button>
-    </main>
+            <!-- ✅ TEAM GRID -->
+            <section class="team-grid-container">
+                <div class="team-grid">
+
+                    <figure class="team-member">
+                        <img src="../Imgs/About-Us/Abt us-1.jpg" alt="Team member portrait">
+                    </figure>
+
+                    <figure class="team-member">
+                        <img src="../Imgs/About-Us/Abt us-2.jpg" alt="Team members working together">
+                    </figure>
+
+                    <figure class="team-member">
+                        <img src="../Imgs/About-Us/Abt us-3.jpg" alt="Professional team member at work">
+                    </figure>
+
+                </div>
+            </section>
+
+            <!-- ✅ ABOUT STORY CONTENT -->
+            <section class="story-section">
+                <div class="story-content">
+
+                    <span class="acella-label">About Nagraj Enterprise</span>
+
+                    <p>
+                        Nagraj Enterprise is a leading provider of credit card swiping services, offering instant cash
+                        access, low interest rates, and complete convenience across the city.
+                    </p>
+
+                    <p>
+                        We aim to redefine the way you use your credit card—giving you full control over your billing
+                        cycle, cash flow, and financial flexibility.
+                    </p>
+
+                    <p>
+                        Our focus is to grow responsibly—first building strong trust locally, and then expanding across
+                        Saurashtra step-by-step.
+                    </p>
+
+                    <p>
+                        At Nagraj Enterprise, we believe in delivering reliable, fast, and customer-friendly solutions—
+                        making financial access easy for everyone.
+                    </p>
+
+                    <div class="service-list">
+                        <strong>— Our Financial Services:</strong>
+                        <ul>
+                            <li>CMS (Cash Management Services)</li>
+                            <li>Credit Card Money Withdrawal</li>
+                            <li>Credit Card Bill Payments</li>
+                            <li>All Types of Loan Assistance</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
 
     <!-- Footer is Here -->
     <div id="footer"></div>
@@ -145,20 +146,6 @@
             observer.observe(el);
         });
 
-        /* ✅ DARK MODE */
-        const toggle = document.querySelector(".dark-toggle");
-        if (toggle) {
-            toggle.onclick = () => {
-                document.body.classList.toggle("dark-mode");
-                localStorage.setItem("theme",
-                    document.body.classList.contains("dark-mode") ? "dark" : "light"
-                );
-            };
-        }
-
-        if (localStorage.getItem("theme") === "dark") {
-            document.body.classList.add("dark-mode");
-        }
     </script>
 
     <script src="../JavaScript/layout.js"></script>

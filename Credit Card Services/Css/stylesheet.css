@@ -1358,6 +1358,7 @@ nav {
 
 /* --- Right Column (Contact Form) --- */
 .contact-form-section {
+    height: 720px;
     background-color: var(--card-bg);
     border-radius: 12px;
     padding: 40px;
