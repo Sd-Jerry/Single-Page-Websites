@@ -331,6 +331,10 @@
         height: 250px;
     }
 
+    .faq-container {
+        padding: 10px 10px 40px;
+    }
+
     /* Why Choose Us Section */
     #chooseus {
         padding: 20px;
