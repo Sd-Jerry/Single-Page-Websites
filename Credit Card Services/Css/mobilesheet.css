@@ -312,6 +312,11 @@
         width: 55px;
         height: 55px;
     }
+
+    /* BANK-WW SECTION*/
+    .bank-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
@@ -629,6 +634,17 @@
     .testimonial-card {
         padding: 15px;
         min-height: 260px;
+    }
+
+    /* BANK-WW SECTION*/
+    .bank-column {
+        min-width: 100%;
+        padding: 10px 5px;
+    }
+
+    .bank-card {
+        padding: 10px;
+        min-height: 200px;
     }
 }
 

@@ -77,7 +77,6 @@ var swiper = new Swiper(".testimonialSwiper", {
   }
 });
 
-// CONTACT US FORM JS
 // document.getElementById("contactForm").addEventListener("submit", function (e) {
 //   e.preventDefault(); // stop default submit
 
@@ -104,6 +103,7 @@ var swiper = new Swiper(".testimonialSwiper", {
 //     });
 // });
 
+// CONTACT US FORM JS
 let lastSubmitTime = 0;
 
 const contactForm = document.getElementById("contactForm");
@@ -143,4 +143,39 @@ if (contactForm) {
   });
 }
 
+// BANK-WW SECTION JS
+// Government Sector Slider
+const govSwiper = new Swiper('.gov-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  observer: true,
+  observeParents: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.gov-pagination',
+    clickable: true,
+  },
+  grabCursor: true,
+});
 
+// Private Sector Slider
+const pvtSwiper = new Swiper('.pvt-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  observer: true,
+  observeParents: true,
+  autoplay: {
+    delay: 2400,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.pvt-pagination',
+    clickable: true,
+  },
+  grabCursor: true,
+});
