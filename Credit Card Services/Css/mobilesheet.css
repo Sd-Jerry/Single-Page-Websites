@@ -533,6 +533,10 @@
         height: 100px;
     }
 
+    .list{
+        top: 112px;
+    }
+
     /* Home - Section */
     #home {
         padding: 30px 0px;

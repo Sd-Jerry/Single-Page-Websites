@@ -199,10 +199,10 @@ nav {
 
     .list {
         position: fixed;
-        top: 135px;
+        top: 100px;
         right: 0;
         width: 100vw;
-        height: 70vh;
+        height: 74vh;
         background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
         color: #fff;
         flex-direction: column;
