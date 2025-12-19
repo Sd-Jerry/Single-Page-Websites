@@ -1843,3 +1843,129 @@ nav {
     color: var(--button-color);
     font-weight: 500;
 }
+
+/* SCROLL ON TOP IS HERE */
+#scroll-on-top {
+    background-color: #1b1938;
+    color: var(--button-color);
+    padding: 9px;
+    border-radius: 9px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 6.5rem;
+    right: 1.9rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    cursor: pointer;
+}
+
+#scroll-on-top span i {
+    transition: transform 0.3s ease;
+}
+
+#scroll-on-top span i:hover {
+    transform: scale(1.2);
+    color: #665bd6;
+}
+
+/* WHATSAPP BUTTON IS HERE */
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 38px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    /* Starting shadow */
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    animation: whatsapp-pulse 2s infinite;
+}
+
+@keyframes whatsapp-pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        /* The "ring" expanding outwards */
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-sticky:hover {
+    animation: none;
+    /* Stops pulsing when the user is about to click */
+    transform: scale(1.1);
+    background-color: #128c7e;
+}
+
+/* Icon size within the button */
+.whatsapp-sticky img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Hover Effect */
+.whatsapp-sticky:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* 1. The Notification Badge (Red Circle) */
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff3b30;
+    /* Notification Red */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-text {
+    position: absolute;
+    right: 75px;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    white-space: nowrap;
+    opacity: 0;
+    /* Hidden by default */
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(10px);
+}

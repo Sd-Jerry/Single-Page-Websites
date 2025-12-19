@@ -179,3 +179,9 @@ const pvtSwiper = new Swiper('.pvt-swiper', {
   },
   grabCursor: true,
 });
+
+// SCROLL ON TOP
+function scrolltop() {
+  let b = window.document;
+  b = location.href = '#home';
+}

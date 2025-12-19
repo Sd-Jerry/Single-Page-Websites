@@ -317,6 +317,24 @@
     .bank-grid {
         grid-template-columns: 1fr;
     }
+
+    /* WHATSAPP BUTTON IS HERE */
+    .whatsapp-sticky {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-sticky img {
+        width: 32px;
+        height: 32px;
+    }
+
+    #scroll-on-top {
+        bottom: 5.5rem;
+        right: 1.5rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -486,6 +504,24 @@
         flex-direction: column;
         justify-content: flex-start;
         padding-left: 2rem;
+    }
+
+    /* SCROLL ON TOP IS HERE */
+    #scroll-on-top {
+        bottom: 5rem;
+        right: 1rem;
+    }
+
+    /* WHATSAPP BUTTON IS HERE */
+    .whatsapp-sticky {
+        right: 12px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .whatsapp-sticky img {
+        width: 30px;
+        height: 30px;
     }
 }
 
