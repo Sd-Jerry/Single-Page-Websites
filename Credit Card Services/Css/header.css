@@ -80,7 +80,7 @@ nav {
 }
 
 .logo {
-    height: clamp(90px, 12vw, 160px);
+    height: clamp(90px, 12vw, 125px);
     cursor: pointer;
 }
 

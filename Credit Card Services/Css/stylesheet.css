@@ -1,19 +1,21 @@
 /* GLOBAL RESET */
+/* --- 1. SETTINGS & VARIABLES --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --dark-bg: #10061e;
-    /* Deep purple/black background */
     --card-bg: #1c102a;
-    /* Slightly lighter card background */
     --primary-text: #ffffff;
     --secondary-text: #b0a0c7;
     --accent-purple: #8a2be2;
     --accent-pink: #f06292;
     --border-color: rgba(255, 255, 255, 0.1);
     --button-color: #a499e6;
+    --nav-height: 90px;
+    /* Added this to help with mobile menu positioning */
 }
 
+/* --- 2. GLOBAL RESET --- */
 * {
     margin: 0;
     padding: 0;
@@ -23,39 +25,41 @@
 html,
 body {
     width: 100%;
-    overflow-x: clip !important;
+    overflow-x: hidden;
     scroll-behavior: smooth;
-}
-
-header {
     background-color: var(--dark-bg);
 }
 
-/* NAVIGATION BAR */
+/* --- 3. HEADER & NAV DESKTOP --- */
+/* .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--dark-bg);
+} */
+
 nav {
     width: 100%;
-    min-height: 90px;
-    /* background: #1b1938; */
-    /* background: whitesmoke; */
+    min-height: var(--nav-height);
     background: radial-gradient(circle at center top, rgba(138, 43, 226, 0.1), transparent 70%);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
     border-bottom: 1px solid #2a284e;
-    padding: 20px 0 0 0;
+    padding: 10px 20px;
     font-family: "Montserrat", sans-serif;
 }
 
 .logo {
-    height: 160px;
+    height: 125px;
     cursor: pointer;
-    /* border: 2px solid blue; */
+    transition: transform 0.3s ease;
 }
 
 #check {
-    position: absolute;
-    opacity: 0;
+    display: none;
+    /* Cleaner than opacity: 0 */
 }
 
 .CheckBtn {
@@ -63,25 +67,19 @@ nav {
     cursor: pointer;
     font-size: 30px;
     color: var(--button-color);
-    line-height: 80px;
 }
 
 /* NAV LINKS */
 .list {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     list-style: none;
-    transition: all 0.3s ease-in;
-    /* border: 2px solid green; */
 }
 
 .list li {
     margin: 0 20px;
-    padding: 6px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    /* border: 2px solid gold; */
+    padding: 5px;
+    transition: transform 0.3s ease;
 }
 
 .list li:hover {
@@ -92,27 +90,13 @@ nav {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    /* color: #6b6686; */
     color: #b6abf7;
     transition: color 0.3s ease;
 }
 
 .list li a:hover {
-    color: #c9c1f4;
+    color: #ffffff;
 }
-
-.list li a i {
-    margin-right: 10px;
-}
-
-/* DESKTOP STICKY FIX */
-/* .sticky {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-} */
-
 
 /* HOME SECTION IS HERE */
 #home {

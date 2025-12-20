@@ -38,11 +38,7 @@
     }
 
     .list li {
-        margin: 0 16px;
-    }
-
-    .list li a {
-        font-size: 16px;
+        margin: 0 12px;
     }
 
     /* Why Choose Us Section */
@@ -60,10 +56,6 @@
 @media screen and (max-width: 923px) {
 
     /* Header - Navbar */
-    .list li {
-        margin: 0 12px;
-    }
-
     .list li a {
         font-size: 14px;
     }
@@ -533,7 +525,7 @@
         height: 100px;
     }
 
-    .list{
+    .list {
         top: 112px;
     }
 
