@@ -159,8 +159,8 @@
         padding-top: 20px;
     }
 
-    .page-header h1 {
-        font-size: 2.2rem;
+    .page-header h2 {
+        font-size: 2.1rem;
     }
 
     .contact-form-section {
@@ -386,7 +386,7 @@
 
     /* Home - Hero Section */
     .hero-text h1 {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
 
     .hero-text p,
@@ -409,8 +409,9 @@
         height: 250px;
     }
 
-    .about-us-header h1 {
-        font-size: 2.2rem;
+    .about-us-header h2 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
     }
 
     .about-us-content {
@@ -437,11 +438,16 @@
     }
 
     /* F A Q Section */
+    .faq-header .main-title {
+        font-size: 1.6rem;
+    }
+
     .faq-list {
         height: 600px;
     }
 
     .contact-card {
+        margin-top: 0;
         padding: 15px;
     }
 
@@ -479,8 +485,8 @@
     }
 
     /* Contact-Us Form Section */
-    .page-header h1 {
-        font-size: 2rem;
+    .page-header h2 {
+        font-size: 1.8rem;
     }
 
     .info-title {
@@ -535,9 +541,8 @@
         margin-top: 110px;
     }
 
-    .hero-text h1,
-    .about-us-header h1 {
-        font-size: 2rem;
+    .hero-text h1 {
+        font-size: 1.4rem;
     }
 
     .hero-cards {
@@ -562,6 +567,10 @@
         height: 200px;
     }
 
+    .about-us-header h2 {
+        font-size: 1.2rem;
+    }
+
     .text-content {
         text-align: center;
     }
@@ -579,6 +588,10 @@
     }
 
     /* F A Q Section */
+    .faq-header .main-title {
+        font-size: 1.4rem;
+    }
+
     .faq-list {
         height: 625px;
     }
@@ -603,9 +616,8 @@
 @media screen and (max-width: 375px) {
 
     /* Home - Hero Section */
-    .hero-text h1,
-    .about-us-header h1 {
-        font-size: 1.6rem;
+    .hero-text h1 {
+        font-size: 1.2rem;
     }
 
     .hero-text p,
@@ -686,7 +698,17 @@
 
 @media screen and (max-width: 320px) {
 
+    /* about section */
+    .about-us-header h2 {
+        font-size: 1rem;
+    }
+
     /* F A Q Section */
+
+    .faq-header .main-title {
+        font-size: 1.2rem;
+    }
+
     .faq-list {
         height: 690px;
     }
@@ -696,7 +718,10 @@
     }
 
     /* Contact-Us Form Section  */
-    .page-header h1,
+    .page-header h2 {
+        font-size: 1.5rem;
+    }
+
     .info-title {
         font-size: 1.5rem;
     }

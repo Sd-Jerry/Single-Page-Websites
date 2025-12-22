@@ -77,32 +77,6 @@ var swiper = new Swiper(".testimonialSwiper", {
   }
 });
 
-// document.getElementById("contactForm").addEventListener("submit", function (e) {
-//   e.preventDefault(); // stop default submit
-
-//   // Show modal
-//   document.getElementById("successModal").style.display = "flex";
-
-//   // Send form data manually to FormSubmit
-//   const form = e.target;
-//   const formData = new FormData(form);
-
-//   fetch(form.action, {
-//     method: "POST",
-//     body: formData
-//   })
-//     .then(() => {
-//       // After 3 seconds → close popup only (NO REDIRECT)
-//       setTimeout(() => {
-//         document.getElementById("successModal").style.display = "none";
-//         form.reset(); // optional: clears the form after submit
-//       }, 3000);
-//     })
-//     .catch(() => {
-//       alert("Error! Please try again.");
-//     });
-// });
-
 // CONTACT US FORM JS
 let lastSubmitTime = 0;
 

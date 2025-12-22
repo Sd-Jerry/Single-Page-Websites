@@ -140,7 +140,7 @@ nav {
 }
 
 .hero-text h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     line-height: 1.1;
     font-weight: 700;
     margin: 0 0 15px;
@@ -301,7 +301,6 @@ nav {
 }
 
 /* Card front texts */
-
 .card-front .card-number {
     font-size: 1.2rem;
     margin-bottom: 5px;
@@ -431,7 +430,6 @@ nav {
 }
 
 /*ABOUT US SECTION IS HERE */
-
 #about-us-section {
     padding: 50px 50px 10px;
     /* border: 2px solid red; */
@@ -460,16 +458,16 @@ nav {
     z-index: 1;
 }
 
-.about-us-header h1,
+.about-us-header h2,
 .about-us-header p {
     position: relative;
     z-index: 2;
 }
 
-.about-us-header h1 {
-    font-size: 3rem;
+.about-us-header h2 {
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -667,7 +665,6 @@ nav {
 #faq {
     min-height: 110vh;
     background: url('../Imgs/3433839.jpg') no-repeat center center/cover;
-    /* background-color: #f8f9fa; */
     color: #333;
     line-height: 1.6;
     /* border: 2px solid darkred; */
@@ -689,7 +686,7 @@ nav {
     background-color: transparent;
 }
 
-.main-title {
+.faq-header .main-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: #000;
@@ -1403,8 +1400,8 @@ nav {
     /* border: 2px solid green; */
 }
 
-.page-header h1 {
-    font-size: 2.5rem;
+.page-header h2 {
+    font-size: 2.3rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -1417,7 +1414,6 @@ nav {
 }
 
 /* --- Main Content Layout --- */
-
 .container-c {
     max-width: 1400px;
     margin: 0 auto;
