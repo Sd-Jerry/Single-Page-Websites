@@ -49,6 +49,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Mobile CSS -->
     <link rel="stylesheet" href="../Css/mobilesheet.css" media="screen and (max-width: 1300px)">
 </head>
@@ -56,7 +59,7 @@
 
 <body>
     <!-- NAVBAR SECTION START FROM HERE -->
-    <header class="sticky">
+    <header class="sticky" data-aos="fade-down">
         <nav aria-label="Main navigation">
             <a href="#home">
                 <img src="../Imgs/Logos/Main-Logo.png" class="logo" alt="NR Company Logo">
@@ -109,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero-cards">
+                <div class="hero-cards" data-aos="flip-up">
                     <div class="card card-front">
                         <div class="chip"></div>
                         <div class="card-number">NIKHIL S. JOSHI</div>
@@ -135,7 +138,7 @@
                     </div>
                 </div>
             </section>
-            <section class="stats container">
+            <section class="stats container" data-aos="fade-up">
                 <div class="stat">
                     <div class="stat-value">+16K</div>
                     <div class="stat-label">Users</div>
@@ -1030,6 +1033,13 @@
 
     <!-- ✅ Main-JS link -->
     <script src="../JavaScript/main.js" defer></script>
+
+    <!-- ✅ AOS Animation link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script type="application/ld+json">
 {
