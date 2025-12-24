@@ -434,7 +434,7 @@ nav {
     padding: 50px 50px 10px;
     /* border: 2px solid red; */
     width: 100%;
-    background: url('../Imgs/18106012.jpg') no-repeat center center/cover;
+    background: url('../Imgs//Main\ page\ bg-1.jpg') no-repeat center center/cover;
     color: #333;
     line-height: 1.6;
 }
@@ -661,10 +661,9 @@ nav {
 }
 
 /* F A Q SECTION IS HERE */
-
 #faq {
     min-height: 110vh;
-    background: url('../Imgs/3433839.jpg') no-repeat center center/cover;
+    background: url('../Imgs/Main\ page\ bg-2.jpg') no-repeat center center/cover;
     color: #333;
     line-height: 1.6;
     /* border: 2px solid darkred; */
@@ -1238,7 +1237,7 @@ nav {
 /* <!-- TESTIMONIALS SECTION START FROM HERE --> */
 #testimonials {
     padding: 55px 20px;
-    background: url('../Imgs/18106012.jpg') no-repeat center center / cover;
+    background: url('../Imgs/Main\ page\ bg-1.jpg') no-repeat center center / cover;
     /* border: 2px solid red; */
 }
 
