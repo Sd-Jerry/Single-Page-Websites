@@ -1872,6 +1872,14 @@ nav {
     transition: transform 0.3s ease;
     text-decoration: none;
     animation: whatsapp-pulse 2s infinite;
+
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.whatsapp-sticky.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @keyframes whatsapp-pulse {

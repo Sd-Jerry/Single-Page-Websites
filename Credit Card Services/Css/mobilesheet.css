@@ -342,7 +342,7 @@
     }
 
     .faq-container {
-        padding: 10px 10px 40px;
+        padding: 10px 10px 30px;
     }
 
     /* Why Choose Us Section */
@@ -378,6 +378,14 @@
     .form-grid {
         grid-template-columns: 1fr;
         /* Stack form fields vertically on small mobile */
+    }
+}
+
+@media (max-width: 522px) {
+
+    /* F A Q Section */
+    .faq-container {
+        padding: 10px 10px 65px;
     }
 }
 
@@ -609,6 +617,15 @@
 
     .page-header p {
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+
+    /* F A Q Section */
+    .faq-container {
+        padding: 10px 10px 120px;
+        margin: 10px;
     }
 }
 

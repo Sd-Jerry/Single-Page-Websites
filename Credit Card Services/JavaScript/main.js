@@ -159,3 +159,11 @@ function scrolltop() {
   let b = window.document;
   b = location.href = '#home';
 }
+
+// Whatsapp.sticky Delay Js
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const waButton = document.querySelector('.whatsapp-sticky');
+        waButton.classList.add('show');
+    }, 3000); // 3000ms = 3 seconds delay
+});
