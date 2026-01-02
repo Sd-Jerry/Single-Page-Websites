@@ -29,5 +29,4 @@ Happy coding! 🌐✨
 👉The Burger House Website-- https://sd-jerry.github.io/Single-Page-Websites/The%20Burger%20House%20Website     
 👉AMD Ryzen Website-- https://sd-jerry.github.io/Single-Page-Websites/AMD%20Ryzen%20Website   
 👉Pharmacy Store Website-- Coming Soon     
-👉BE-Bhole Events Website-- https://sd-jerry.github.io/Single-Page-Websites/BE-Bhole%20Events/Html     
-👉 Credit Crad Website-- https://sd-jerry.github.io/Single-Page-Websites/Credit%20Card%20Services/Html     
+👉BE-Bhole Events Website-- https://sd-jerry.github.io/Single-Page-Websites/BE-Bhole%20Events/Html        
