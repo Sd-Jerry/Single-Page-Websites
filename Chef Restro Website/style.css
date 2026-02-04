@@ -295,124 +295,124 @@ body {
     border: 2px solid green;
 }
 
-        .container-serv {
-            /* max-width: 1200px; */
-            /* margin: 0 auto; */
-            padding: 20px;  
-            border: 2px solid red;
-        }
-        
-        /* Header Section */
-        .serv-header {
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
-        
-        .serv-header h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            line-height: 1;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-        }
-        
-        .serv-header h1 span {
-            display: block;
-            font-size: 1.8rem;
-            font-weight: 400;
-            letter-spacing: 8px;
-            margin-top: 5px;
-        }
-        
-        .serv-header p {
-            font-size: 1.1rem;
-            max-width: 720px;
-            margin: 0 auto;
-            color: #666;
-            font-style: italic;
-            position: relative;
-            padding: 0 20px;
-        }
-        
-        
-        /* Menu Cards Section */
-        .menu-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-        
-        .menu-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-            width: 300px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .menu-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .menu-image {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .menu-content {
-            padding: 25px;
-        }
-        
-        .menu-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .menu-description {
-            font-size: 1.05rem;
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        
-        .menu-author {
-            display: flex;
-            align-items: center;
-            padding-top: 15px;
-            border-top: 1px dashed #ddd;
-        }
-        
-        .author-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #e6e6e6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 12px;
-            font-weight: bold;
-            color: #555;
-        }
-        
-        .author-name {
-            font-weight: 600;
-            color: #333;
-        }
+.container-serv {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    padding: 20px;
+    border: 2px solid red;
+}
+
+/* Header Section */
+.serv-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.serv-header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: goldenrod;
+}
+
+.serv-header h1 span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 8px;
+    margin-top: 5px;
+}
+
+.serv-header p {
+    font-size: 1.1rem;
+    max-width: 720px;
+    margin: 0 auto;
+    color: #666;
+    font-style: italic;
+    position: relative;
+    padding: 0 20px;
+}
 
 
+/* Menu Cards Section */
+.menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.menu-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.menu-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-content {
+    padding: 25px;
+}
+
+.menu-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-description {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.menu-author {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 12px;
+}
 
 /* CONTACT-US SECTION IS HERE */
 .contact-container {
