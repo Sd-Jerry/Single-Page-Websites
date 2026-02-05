@@ -31,23 +31,14 @@
 }
 
 /* ----- SERVICE SECTION IS HERE ------ */
-.left-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-}
-
-.right-part p {
-    font-size: 18px;
-    font-weight: normal;
+.menu-card {
+    width: 320px;
 }
 
 /* CONTACT-US SECTION IS HERE */
 .contact-box {
     width: 80%;
 }
-
 
 @media screen and (max-width: 769px) {
 
@@ -89,7 +80,6 @@
     }
 
     /* Home section is here  */
-
     #home {
         margin-top: 10px;
         flex-direction: column;
@@ -184,6 +174,25 @@
     }
 
     /* Service section is here */
+    .serv-header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+
+    .serv-header h1 span {
+        font-size: 1.4rem;
+        letter-spacing: 5px;
+    }
+
+    .menu-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .serv-header p:before,
+    .serv-header p:after {
+        width: 40px;
+    }
 
     /* Contact-US section is here */
     .contact-box {
@@ -209,6 +218,7 @@
 
 @media screen and (max-width: 475px) {
 
+    /* ------ Header is here ------ */
     .logo img {
         height: 75px;
     }
@@ -217,6 +227,7 @@
         font-size: 1.5rem;
     }
 
+    /* ------ Home Section is here ------ */
     #home {
         margin-top: 15px;
     }
@@ -226,11 +237,7 @@
         font-size: 25px;
     }
 
-    .heading {
-        font-size: 25px;
-        margin-bottom: 15px;
-    }
-
+    /* ------ About us Section is here ------ */
     .about-head p strong {
         font-size: 15px;
     }
@@ -245,6 +252,7 @@
         line-height: 25px;
     }
 
+    /* ------ Our Chef Section is here ------ */
     #chef {
         margin-top: 30px;
     }
@@ -257,29 +265,47 @@
         font-size: 15px;
     }
 
-    .partner-item img {
-        width: 140px;
+    /* Service section is here */
+    .serv-header h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
     }
 
-    .partners-abt h4 {
-        font-size: 18px;
-        margin: 10px;
+    .serv-header h1 span {
+        font-size: 1.1rem;
+        letter-spacing: 3px;
     }
 
-    .left-part .d-block {
-        height: 100px;
+    .serv-header p {
+        font-size: 1rem;
+        padding: 0 10px;
     }
 
-    .partBtn {
+    .serv-header p:before,
+    .serv-header p:after {
+        width: 20px;
+    }
+
+    .menu-content {
+        padding: 20px;
+    }
+
+    .menu-title {
+        font-size: 1rem;
+    }
+
+    .menu-description {
+        font-size: 1rem;
+    }
+
+    /* Contact Us section is here */
+     .partBtn {
         width: 110px;
         padding: 8px;
         font-size: 13px;
     }
 
-    .social ul {
-        justify-content: space-evenly;
-    }
-
+    /* Footer section is here */
     .footer-item h2 {
         font-size: 22px;
     }
@@ -299,10 +325,21 @@
     .footer-section {
         flex-wrap: wrap;
     }
+
+    .social ul {
+        justify-content: space-evenly;
+    }
+
+    /* Utility Class */
+    .heading {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 376px) {
 
+    /* ------ Header is here ------ */
     .h-list {
         height: 55vh;
         top: 6.6rem;
@@ -324,6 +361,7 @@
         font-size: 25px;
     }
 
+    /* ------ Home Section is here ------ */
     .left-home .col-red p {
         font-size: 14px;
     }
@@ -336,11 +374,7 @@
         font-size: 12px;
     }
 
-    .heading {
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-
+    /* ------ Our Chef Section is here ------ */
     .chef-sub-contain {
         padding: 0px;
     }
@@ -357,15 +391,25 @@
         font-size: 12px;
     }
 
-    .partner-item img {
-        width: 110px;
+    /* ------ Contact Us Section is here ------ */
+    .contact-box h2 {
+        font-size: 20px;
     }
 
-    .right-part p {
+    .contact-box p {
         font-size: 14px;
-        margin: 1rem 0;
+        padding-right: 15px;
     }
 
+    label {
+        font-size: 16px;
+    }
+
+    placeholder {
+        font-size: 10px;
+    }
+
+    /* ------ Footer Section is here ------ */
     .footer-item h2 {
         font-size: 18px;
     }
@@ -385,20 +429,9 @@
         width: 32px;
     }
 
-    .contact-box h2 {
-        font-size: 20px;
-    }
-
-    .contact-box p {
-        font-size: 14px;
-        padding-right: 15px;
-    }
-
-    label {
-        font-size: 16px;
-    }
-
-    placeholder {
-        font-size: 10px;
+    /* Utility Class */
+    .heading {
+        font-size: 22px;
+        margin-bottom: 10px;
     }
 }

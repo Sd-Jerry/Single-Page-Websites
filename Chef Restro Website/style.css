@@ -13,6 +13,7 @@ body {
     width: 100vw;
 }
 
+/* HEADER SECTION IS START FROM HERE */
 #navbar {
     width: 100%;
     display: flex;
@@ -292,14 +293,12 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
-    border: 2px solid green;
 }
 
 .container-serv {
     /* max-width: 1200px; */
     /* margin: 0 auto; */
     padding: 20px;
-    border: 2px solid red;
 }
 
 /* Header Section */
@@ -311,12 +310,12 @@ body {
 
 .serv-header h1 {
     font-size: 3.5rem;
+    color: goldenrod;
     font-weight: 800;
     letter-spacing: 5px;
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 15px;
-    color: goldenrod;
 }
 
 .serv-header h1 span {
@@ -336,7 +335,6 @@ body {
     position: relative;
     padding: 0 20px;
 }
-
 
 /* Menu Cards Section */
 .menu-section {
@@ -424,7 +422,7 @@ body {
     width: 63%;
     margin: 50px auto;
     font-family: 'Poppins', sans-serif;
-    padding-left: 40px;
+    padding: 15px 0px 0px 40px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #fff;
     border-radius: 10px;
@@ -473,6 +471,21 @@ label {
     border: none;
     outline: none;
     border-bottom: 1px solid #ccc;
+}
+
+.partBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin: 15px 0px;
+    background-color: #ffd07e;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s linear;
 }
 
 /* #FOOTER SECTION IS HERE */
