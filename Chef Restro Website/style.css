@@ -427,12 +427,12 @@ body {
     color: #ffd07e;
 
     position: relative;
-    padding: 60px 0 100px 0;
+    padding: 0px 0 100px 0;
     overflow: hidden;
 }
 
 .delv-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -488,7 +488,7 @@ body {
 }
 
 .hero-img {
-    width: 120%; /* Makes it pop out slightly */
+    width: 40%; /* Makes it pop out slightly */
     transform: translateX(10%);
 }
 
@@ -508,7 +508,7 @@ body {
     border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: #333;
     transition: transform 0.3s;
     cursor: pointer;
@@ -520,8 +520,8 @@ body {
 
 .cat-card .icon-delv {
     background: var(--primary-color);
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -531,8 +531,8 @@ body {
 }
 
 .cat-card .icon-delv img{
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
 }
 
 .cat-card span {
