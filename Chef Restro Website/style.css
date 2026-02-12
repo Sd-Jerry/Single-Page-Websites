@@ -429,12 +429,14 @@ body {
     position: relative;
     padding: 0px 0 100px 0;
     overflow: hidden;
+    border: 2px solid rebeccapurple;
 }
 
 .delv-container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
+    border: 2px solid red;
 }
 
 .hero-content {
@@ -442,12 +444,14 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 70vh;
+    border: 2px solid blue;
 }
 
 /* Text Side */
 .text-side {
     flex: 1;
     z-index: 2;
+    border: 2px solid greenyellow;
 }
 
 .text-side h1 {
@@ -472,7 +476,7 @@ body {
 .btn-read-more {
     background-color: #ffd07e;
     color: #000;
-    padding: 15px 40px;
+    padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 50px;
@@ -484,11 +488,12 @@ body {
 .image-side {
     flex: 1;
     position: relative;
-    text-align: right;
+    text-align: center;
+    border: 2px solid yellow;
 }
 
 .hero-img {
-    width: 40%; /* Makes it pop out slightly */
+    width: 60%; /* Makes it pop out slightly */
     transform: translateX(10%);
 }
 
@@ -504,7 +509,7 @@ body {
 
 .cat-card {
     background: #fdf5e6;
-    padding: 25px;
+    padding: 15px;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -519,20 +524,12 @@ body {
 }
 
 .cat-card .icon-delv {
-    background: var(--primary-color);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin-right: 15px;
+    border: 2px solid blueviolet;
 }
 
 .cat-card .icon-delv img{
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 65px;
 }
 
 .cat-card span {
