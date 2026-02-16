@@ -413,15 +413,7 @@ body {
 }
 
 /* DELIVERY PARTNER SECTION IS HERE */
-:root {
-    --primary-color: #ffcc00;
-    --dark-bg: #1a1d23;
-    --text-light: #ffffff;
-    --text-gray: #a0a0a0;
-}
-
 #hero-section {
-    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(235 232 229);
     color: #ffd07e;
@@ -429,14 +421,12 @@ body {
     position: relative;
     padding: 0px 0 100px 0;
     overflow: hidden;
-    border: 2px solid rebeccapurple;
 }
 
 .delv-container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
-    border: 2px solid red;
 }
 
 .hero-content {
@@ -444,14 +434,12 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 70vh;
-    border: 2px solid blue;
 }
 
 /* Text Side */
 .text-side {
     flex: 1;
     z-index: 2;
-    border: 2px solid greenyellow;
 }
 
 .text-side h1 {
@@ -479,7 +467,7 @@ body {
     padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 50px;
+    border-radius: 15px;
     display: inline-block;
     transition: 0.3s;
 }
@@ -489,11 +477,10 @@ body {
     flex: 1;
     position: relative;
     text-align: center;
-    border: 2px solid yellow;
 }
 
 .hero-img {
-    width: 60%; /* Makes it pop out slightly */
+    width: 60%;
     transform: translateX(10%);
 }
 
@@ -502,7 +489,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-top: -50px; /* Overlaps the hero section */
+    margin-top: -50px;
     z-index: 5;
     position: relative;
 }
@@ -521,10 +508,6 @@ body {
 
 .cat-card:hover {
     transform: translateY(-10px);
-}
-
-.cat-card .icon-delv {
-    border: 2px solid blueviolet;
 }
 
 .cat-card .icon-delv img{
@@ -722,7 +705,7 @@ footer .footerPara {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin: 15px;
 }
 
 .sub-head {

@@ -35,6 +35,16 @@
     width: 320px;
 }
 
+/* ----- DELIVERY SECTION IS HERE ------ */
+.text-side h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-img {
+        width: 80%; 
+        transform: translateX(0); 
+    }
+
 /* CONTACT-US SECTION IS HERE */
 .contact-box {
     width: 80%;
@@ -194,6 +204,35 @@
         width: 40px;
     }
 
+/* ----- DELIVERY SECTION IS HERE ------ */
+    #hero-section {
+        padding: 50px 0; 
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .text-side p {
+        margin: 0 auto 30px auto; 
+    }
+
+    .image-side {
+        margin-top: 40px; 
+    }
+
+    .hero-img {
+        width: 100%;
+        transform: none;
+    }
+
+    .category-bar {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+    }
+
     /* Contact-US section is here */
     .contact-box {
         width: 85%;
@@ -296,6 +335,23 @@
 
     .menu-description {
         font-size: 1rem;
+    }
+
+/* ----- DELIVERY SECTION IS HERE ------ */
+    .text-side h1 {
+        font-size: 2.2rem;
+    }
+
+    .btn-read-more{
+        font-size: 15px;
+    }
+
+    .category-bar {
+        grid-template-columns: 1fr;
+    }
+    
+    .cat-card {
+        gap: 15px;
     }
 
     /* Contact Us section is here */
