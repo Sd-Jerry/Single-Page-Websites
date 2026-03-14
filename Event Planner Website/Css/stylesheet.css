@@ -26,7 +26,8 @@ body {
 }
 
 .nav-left img {
-    width: 170px;
+    margin: 25px 0 0 20px;
+    height: 55px;
     cursor: pointer;
 }
 
