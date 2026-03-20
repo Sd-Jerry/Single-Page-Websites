@@ -1,0 +1,77 @@
+/* --- GLOBAL RESET --- */
+:root {
+    --button-color: gold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: var(--dark-bg); */
+}
+
+/* --- HEADER & NAV DESKTOP --- */
+nav {
+    width: 100%;
+    min-height: 90px;
+  background: linear-gradient(to right, #ffdde1a1, #ee9ca7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #2a284e;
+    padding: 0px 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#check {
+    display: none;
+}
+
+.CheckBtn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--button-color);
+}
+
+/* NAV LINKS */
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.list li {
+    margin: 0 20px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.list li:hover {
+    transform: translateY(-5px);
+}
+
+.list li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #28282B;
+    transition: color 0.3s ease;
+}
+
+.list li a:hover {
+    color: #ffffff;
+}

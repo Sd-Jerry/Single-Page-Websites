@@ -1,0 +1,123 @@
+/* Tablets */
+@media screen and (max-width: 1024px) {
+
+    /* HEADER SECTION */
+    .logo {
+        height: 100px;
+    }
+
+    .list li {
+        margin: 0 12px;
+    }
+}
+
+@media screen and (max-width: 923px) {
+
+    /* HEADER SECTION */
+    .list li a {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Navigation (Fully Fixed) */
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+
+    /* STICKY SECTION */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #10061e;
+        z-index: 1000;
+        transition: top 0.3s;
+    }
+
+    /* HEADER SECTION */
+    .logo {
+        height: 120px;
+    }
+
+    nav {
+        position: relative;
+        overflow-x: hidden;
+        padding: 10px 0 0 0;
+        justify-content: space-around;
+    }
+
+    .CheckBtn {
+        display: block;
+        z-index: 1001;
+    }
+
+    .list {
+        position: fixed;
+        top: 135px;
+        right: 0;
+        width: 100vw;
+        height: 70vh;
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        transform: translateX(100vw);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    #check:checked~ul {
+        transform: translateX(0);
+    }
+
+    .list li {
+        margin: 0;
+        padding: 12px 0;
+    }
+
+    .list li a {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .list li:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 475px) {}
+
+/* Small Mobile Screens */
+@media screen and (max-width: 425px) {
+
+    /* HEADER SECTION */
+    .logo {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    /* HEADER SECTION */
+    .cg-list {
+        height: 55vh;
+        top: 6.6rem;
+    }
+
+    .h-list li a {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .checkBtn {
+        font-size: 25px;
+    }
+}

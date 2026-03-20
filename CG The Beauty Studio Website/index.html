@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./stylesheet.css">
 
     <!-- MOBILE SHEET -->
-    <link rel="stylesheet" media="screen and (max-width: 1025px)" href="./mobilesheet.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="./mobilesheet.css">
 
     <!-- AOS ANIMATION LIBRARY -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -25,24 +25,25 @@
 </head>
 <body>
     <!-- ---HEADER SECTION--- -->
-     <header>
-        <nav id="navbar">
-            <div class="logo">
-                <img src="#" alt="C&G The Beauty Studio Logo">
-            </div>
-            <div class="right-nav">
-                <input type="checkbox" name="check" id="check">
-                <label for="check" class="checkBtn">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                </label>
-                <ul class="h-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
+     <header class="sticky">
+        <nav aria-label="Main navigation">
+            <a href="#home">
+                <img src="./Imgs/C&G WO Bg.png" class="logo" alt="C&G The Beauty Studio Logo">
+            </a>
+
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="CheckBtn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </label>
+
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 </body>
