@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+/* HEADER SECTION IS START FROM HERE */
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-nav {
+    margin-right: 50px;
+}
+
+.h-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-list li {
+    list-style: none;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 6px 10px;
+    transition: all 0.3s linear;
+}
+
+.h-list li a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.h-list li:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid goldenrod;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 120px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+/* CHECK BTN IS HERE */
+#check {
+    display: none;
+}
+
+.checkBtn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ffd07e;
+    line-height: 80px;
+}
