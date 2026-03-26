@@ -1,7 +1,21 @@
 /* --- GLOBAL RESET --- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
     --button-color: gold;
 }
+
+/* h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+body, p {
+  font-family: 'Montserrat', sans-serif;
+} */
 
 * {
     margin: 0;
@@ -21,11 +35,11 @@ body {
 nav {
     width: 100%;
     min-height: 90px;
-  background: linear-gradient(to right, #ffdde1a1, #ee9ca7);
+   /* background: linear-gradient(to right, #e9e4f0, #d3cce3); */
+    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #2a284e;
     padding: 0px 20px;
     font-family: "Montserrat", sans-serif;
 }
@@ -68,10 +82,15 @@ nav {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    color: #28282B;
+    color: #795f42;
     transition: color 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+      text-transform: uppercase;
 }
 
 .list li a:hover {
-    color: #ffffff;
+    color: #C5A47E;
+    border-bottom: 1px solid #795f42;
 }
