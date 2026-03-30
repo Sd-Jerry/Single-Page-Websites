@@ -35,7 +35,7 @@ body {
 nav {
     width: 100%;
     min-height: 90px;
-   /* background: linear-gradient(to right, #e9e4f0, #d3cce3); */
+    /* background: linear-gradient(to right, #e9e4f0, #d3cce3); */
     background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
     display: flex;
     justify-content: space-around;
@@ -87,10 +87,42 @@ nav {
     font-family: 'Cormorant Garamond', serif;
     letter-spacing: 1.5px;
     font-weight: bold;
-      text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .list li a:hover {
     color: #C5A47E;
     border-bottom: 1px solid #795f42;
+}
+
+/* <!-- ---HOME SECTION--- --> */
+
+#h-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+    url('./Imgs/home-img.png') center center / cover no-repeat;
+  padding: 20px 8%;
+  border: 2px solid red;
+}
+
+.h-content {
+  margin-top: 10%;
+  max-width: 620px;
+  color: black;
+  border: 2px solid blue;
+}
+
+.h-content h1 {
+  font-size: clamp(2.5rem, 6vw, 70px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.h-content p {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  line-height: 1.6;
 }
