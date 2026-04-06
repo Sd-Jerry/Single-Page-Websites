@@ -16,7 +16,7 @@
         height: 135px;
     }
 
-    .list{
+    .list {
         padding-left: 0px;
     }
 }
@@ -24,7 +24,7 @@
 @media screen and (max-width: 923px) {
 
     /* HEADER SECTION */
-    nav{
+    nav {
         padding: 0;
     }
 
@@ -61,6 +61,7 @@
         overflow-x: hidden;
         padding: 10px 0 0 0;
         justify-content: space-around;
+        border-bottom: 1px solid #795f42;
     }
 
     .CheckBtn {
@@ -70,12 +71,11 @@
 
     .list {
         position: fixed;
-        top: 135px;
+        top: 131px;
         right: 0;
         width: 100vw;
         height: 70vh;
-        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-        color: #fff;
+        background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -96,7 +96,7 @@
 
     .list li a {
         font-size: 18px;
-        color: #fff;
+        color: #795f42;
     }
 
     .list li:hover {
@@ -121,6 +121,17 @@
 
     .h-content h2 {
         margin-bottom: 15px;
+    }
+
+    /* ABOUT-US SECTION */
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding: 30px;
+        text-align: center;
+        left: 0;
     }
 }
 
@@ -150,6 +161,23 @@
     .button-5 {
         width: 90%;
     }
+
+    /* ABOUT-US SECTION */
+    #about-section {
+        padding: 50px 5%;
+    }
+
+    .about-content h2 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .about-btn {
+        width: 100%;
+    }
 }
 
 /* Small Mobile Screens */
@@ -158,6 +186,12 @@
     /* HEADER SECTION */
     .logo {
         height: 100px;
+    }
+
+    /* HOME SECTION */
+    #h-container {
+        height: 90vh;
+        margin-top: 110px;
     }
 }
 
