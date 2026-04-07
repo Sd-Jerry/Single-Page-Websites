@@ -19,6 +19,11 @@
     .list {
         padding-left: 0px;
     }
+
+    /* OUR-SERVICES SECTION */
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 923px) {
@@ -133,6 +138,11 @@
         text-align: center;
         left: 0;
     }
+
+    /* OUR-SERVICES SECTION */
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Mobile Navigation (Fully Fixed) */
@@ -177,6 +187,16 @@
 
     .about-btn {
         width: 100%;
+    }
+
+    /* OUR-SERVICES SECTION */
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-img {
+        width: 130px;
+        height: 130px;
     }
 }
 
