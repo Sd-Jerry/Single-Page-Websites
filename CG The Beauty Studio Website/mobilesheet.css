@@ -26,6 +26,15 @@
     }
 }
 
+@media screen and (max-width: 984px) {
+
+    /* F A Q SECTION */
+    .faq-list {
+        /* height: 650px; */
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 923px) {
 
     /* HEADER SECTION */
@@ -35,6 +44,35 @@
 
     .list li a {
         font-size: 14px;
+    }
+
+    /* F A Q SECTION */
+    .faq-container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .faq-list,
+    .contact-card {
+        flex: none;
+        width: 100%;
+    }
+
+    .contact-card {
+        order: 2;
+    }
+
+    .contact-card img {
+        height: 270px;
+    }
+
+    .faq-list {
+        order: 1;
+        /* height: 555px; */
     }
 }
 
@@ -117,7 +155,7 @@
         padding: 30px 5%;
         background:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-            url('./Imgs/home-img.png') center/cover no-repeat;
+            url('./Imgs/home-img.webp') center/cover no-repeat;
     }
 
     .h-content {
@@ -142,6 +180,34 @@
     /* OUR-SERVICES SECTION */
     .services-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* F A Q Section */
+    .faq-container {
+        padding: 10px 10px 65px;
+    }
+
+    /* .faq-list {
+        height: 590px;
+    } */
+}
+
+@media screen and (max-width: 535px) {
+
+    /* F A Q Section */
+    /* .faq-list {
+        height: 640px;
+    } */
+
+    .contact-card {
+        padding: 10px;
+    }
+
+    .contact-card img {
+        height: 250px;
     }
 }
 
@@ -198,6 +264,21 @@
         width: 130px;
         height: 130px;
     }
+
+    /* F A Q Section */
+    .faq-item.active .faq-answer {
+        padding: 10px;
+    }
+
+    .contact-card {
+        margin-top: 0;
+        padding: 15px;
+    }
+
+    .contact-card img {
+        height: 200px;
+    }
+
 }
 
 /* Small Mobile Screens */
@@ -212,6 +293,15 @@
     #h-container {
         height: 90vh;
         margin-top: 110px;
+    }
+
+    /* F A Q Section */
+    /* .faq-list {
+        height: 700px;
+    } */
+
+    .contact-card {
+        padding: 10px;
     }
 }
 
@@ -234,4 +324,27 @@
     .checkBtn {
         font-size: 25px;
     }
+
+    /* F A Q Section */
+    .faq-question {
+        padding: 15px 10px;
+    }
+
+    .contact-card img {
+        height: 170px;
+    }
+
+    .send-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+
+    /* .faq-list{
+        height: auto;
+    } */
+            .contact-card img {
+            height: 150px;
+        }
 }
