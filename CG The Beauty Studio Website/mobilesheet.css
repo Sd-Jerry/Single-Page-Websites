@@ -24,6 +24,15 @@
     .services-container {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* WHY CHOOSE US SECTION */
+    .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 984px) {
@@ -180,6 +189,28 @@
     /* OUR-SERVICES SECTION */
     .services-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* WHY CHOOSE US SECTION */
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .why-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .why-card {
+        text-align: center;
+    }
+
+    .why-card p {
+        max-width: 100%;
     }
 }
 
@@ -344,7 +375,7 @@
     /* .faq-list{
         height: auto;
     } */
-            .contact-card img {
-            height: 150px;
-        }
+    .contact-card img {
+        height: 150px;
+    }
 }

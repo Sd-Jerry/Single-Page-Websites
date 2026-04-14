@@ -31,3 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// WHY CHOOSE US SECTION
