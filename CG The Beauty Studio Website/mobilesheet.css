@@ -190,6 +190,16 @@
     .services-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* TESTIMONIAL SECTION */
+    .testimonial-container {
+    flex-direction: column;
+  }
+
+  .testimonial-right {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -309,6 +319,15 @@
     .contact-card img {
         height: 200px;
     }
+
+    /* TESTIMONIAL SECTION */
+    .testimonial-left {
+    text-align: center;
+  }
+
+  .t-btn {
+    width: 100%;
+  }
 
 }
 

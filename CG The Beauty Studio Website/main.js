@@ -32,4 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// WHY CHOOSE US SECTION
+// TESTIMONIAL SECTION
+const swiper = new Swiper(".testimonialSwiper", {
+  direction: "vertical",
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 3000,
+  freeMode: true,
+  freeModeMomentum: false,
+});

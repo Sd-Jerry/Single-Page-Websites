@@ -524,7 +524,7 @@ nav {
 .why-section {
   padding: 70px 8%;
   /* background: #f9f6f3; */
-  background: #eae4df;;
+  background: #eae4df;
   /* border: 2px solid red; */
 }
 
@@ -580,11 +580,91 @@ nav {
   font-size: 18px;
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
-font-weight: 600;
+  font-weight: 600;
 }
 
 .why-card p {
   font-size: 14px;
   color: #666;
   line-height: 1.6;
+}
+
+/* <!-- ---TESTIMONIAL SECTION--- --> */
+
+.testimonial-section {
+  padding: 100px 8%;
+  background: #f8f5f2;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* LEFT */
+.testimonial-left {
+  flex: 1;
+}
+
+.testimonial-left h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  margin-bottom: 20px;
+}
+
+.testimonial-left p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.t-btn {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #ff7a18, #af002d);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.testimonial-right {
+  flex: 1;
+  height: 400px;
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+/* IMPORTANT */
+.testimonialSwiper {
+  height: 100%;
+}
+
+.swiper-wrapper {
+  height: 100%;
+}
+
+/* CARD */
+.testimonial-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.testimonial-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.testimonial-card h4 {
+  margin-bottom: 5px;
+}
+
+.testimonial-card p {
+  font-size: 13px;
+  color: #555;
 }
