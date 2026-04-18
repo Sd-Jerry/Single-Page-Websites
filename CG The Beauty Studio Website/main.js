@@ -38,11 +38,21 @@ const swiper = new Swiper(".testimonialSwiper", {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 20,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  speed: 3000,
-  freeMode: true,
-  freeModeMomentum: false,
+  speed: 600,
+
+  scrollbar: {
+  el: ".swiper-scrollbar",
+  draggable: true,
+},
+
+  // REMOVE autoplay
+  // REMOVE freeMode
+
+  mousewheel: true,   // scroll with mouse
+  grabCursor: true,   // shows grab cursor
+
+//   navigation: {
+//   nextEl: ".swiper-button-next",
+//   prevEl: ".swiper-button-prev",
+// },
 });
