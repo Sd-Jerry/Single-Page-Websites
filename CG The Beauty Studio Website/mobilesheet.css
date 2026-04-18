@@ -27,12 +27,12 @@
 
     /* WHY CHOOSE US SECTION */
     .why-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  .why-title {
-    text-align: center;
-  }
+    .why-title {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 984px) {
@@ -193,13 +193,13 @@
 
     /* TESTIMONIAL SECTION */
     .testimonial-container {
-    flex-direction: column;
-  }
+        flex-direction: column;
+    }
 
-  .testimonial-right {
-    width: 100%;
-    height: 300px;
-  }
+    .testimonial-right {
+        width: 100%;
+        height: 300px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -322,12 +322,12 @@
 
     /* TESTIMONIAL SECTION */
     .testimonial-left {
-    text-align: center;
-  }
+        text-align: center;
+    }
 
-  .t-btn {
-    width: 100%;
-  }
+    .t-btn {
+        width: 100%;
+    }
 
 }
 

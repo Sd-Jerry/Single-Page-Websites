@@ -33,26 +33,65 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // TESTIMONIAL SECTION
+
+// const swiper = new Swiper(".testimonialSwiper", {
+//   direction: "vertical",
+//   loop: true,
+//   slidesPerView: 3,
+//   spaceBetween: 20,
+
+//   centeredSlides: true,
+
+//   speed: 600,
+
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     draggable: true,
+//   },
+
+//   grabCursor: true,
+
+//   touchRatio: 1,
+//   touchAngle: 45,
+//   simulateTouch: true,
+
+//   mousewheel: {
+//     forceToAxis: true,
+//     sensitivity: 1,
+//   },
+
+//   resistanceRatio: 0.85,
+//   threshold: 5,
+// });
+
 const swiper = new Swiper(".testimonialSwiper", {
   direction: "vertical",
   loop: true,
   slidesPerView: 3,
   spaceBetween: 20,
-  speed: 600,
+
+  centeredSlides: true,
+  slideToClickedSlide: true,
+
+  speed: 500,
 
   scrollbar: {
-  el: ".swiper-scrollbar",
-  draggable: true,
-},
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
 
-  // REMOVE autoplay
-  // REMOVE freeMode
+  grabCursor: true,
 
-  mousewheel: true,   // scroll with mouse
-  grabCursor: true,   // shows grab cursor
+  // ✅ Snap behavior
+  watchSlidesProgress: true,
+  watchSlidesVisibility: true,
 
-//   navigation: {
-//   nextEl: ".swiper-button-next",
-//   prevEl: ".swiper-button-prev",
-// },
+  mousewheel: {
+    forceToAxis: true,
+    sensitivity: 1,
+    releaseOnEdges: true,
+  },
+
+  touchRatio: 1,
+  threshold: 5,
 });
