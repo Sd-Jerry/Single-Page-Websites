@@ -194,11 +194,16 @@
     /* TESTIMONIAL SECTION */
     .testimonial-container {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-img img {
+        margin: 0 auto;
     }
 
     .testimonial-right {
         width: 100%;
-        height: 300px;
+        height: 350px;
     }
 }
 
@@ -321,12 +326,20 @@
     }
 
     /* TESTIMONIAL SECTION */
-    .testimonial-left {
-        text-align: center;
+    .testimonial-section {
+        padding: 60px 5%;
     }
 
-    .t-btn {
-        width: 100%;
+    .testimonial-left h2 {
+        font-size: 24px;
+    }
+
+    .testimonial-left p {
+        font-size: 14px;
+    }
+
+    .testimonial-img img {
+        max-width: 280px;
     }
 
 }
