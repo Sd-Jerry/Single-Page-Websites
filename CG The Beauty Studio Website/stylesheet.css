@@ -533,7 +533,6 @@ nav {
   font-weight: bolder;
   margin-bottom: 60px;
   font-family: 'Cormorant Garamond', serif;
-
 }
 
 /* Grid */
@@ -620,12 +619,16 @@ nav {
 .testimonial-left h2 {
   font-size: clamp(28px, 4vw, 42px);
   margin-bottom: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight:900;
+  border: 2px solid red;
 }
 
 .testimonial-left p {
   margin-bottom: 25px;
   color: #666;
   line-height: 1.6;
+  border: 2px solid green;
 }
 
 /* IMAGE */
@@ -639,6 +642,7 @@ nav {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
+  cursor: pointer;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   transition: 0.4s ease;
 }
