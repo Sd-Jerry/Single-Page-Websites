@@ -30,4 +30,4 @@ Happy coding! 🌐✨
 👉AMD Ryzen Website-- https://sd-jerry.github.io/Single-Page-Websites/AMD%20Ryzen%20Website   
 👉Pharmacy Store Website-- Coming Soon     
 👉Event Planner Website-- Coming Soon       
-👉C&G The Beauty Studio Website-- Coming Soon
+👉C&G The Beauty Studio Website-- https://sd-jerry.github.io/Single-Page-Websites/CG%20The%20Beauty%20Studio%20Website
