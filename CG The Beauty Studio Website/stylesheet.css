@@ -595,14 +595,6 @@ nav {
   background: #f8f5f2;
 }
 
-/* .testimonial-section::before {
-  content: "✨";
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  font-size: 30px;
-} */
-
 .testimonial-container {
   display: flex;
   align-items: center;
@@ -621,14 +613,14 @@ nav {
   margin-bottom: 20px;
   font-family: 'Cormorant Garamond', serif;
   font-weight:900;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .testimonial-left p {
   margin-bottom: 25px;
   color: #666;
   line-height: 1.6;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 /* IMAGE */
@@ -663,10 +655,6 @@ nav {
 .testimonialSwiper {
   height: 100%;
   padding: 20px 0;
-}
-
-.swiper-wrapper {
-  height: 100%;
 }
 
 .swiper-slide {
