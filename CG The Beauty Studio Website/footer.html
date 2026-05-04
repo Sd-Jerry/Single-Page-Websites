@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Footer Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --salmon: #f4a99a;
+      --dark: #1e1e1e;
+      --dark-mid: #252525;
+      --white: #ffffff;
+      --white-dim: rgba(255,255,255,0.55);
+      --white-faint: rgba(255,255,255,0.15);
+      --accent: #f4a99a;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f0f0;
+    }
+
+    /* ── CTA SECTION ── */
+    .cta-section {
+      background-color: var(--salmon);
+      position: relative;
+      overflow: hidden;
+      padding: 80px 40px 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 340px;
+    }
+
+    /* Monstera leaf — left */
+    .leaf-left, .leaf-right {
+      position: absolute;
+      pointer-events: none;
+    }
+    .leaf-left { top: -10px; left: -20px; width: 200px; opacity: 0.85; }
+    .leaf-right { bottom: -20px; right: -10px; width: 240px; opacity: 0.85; }
+
+    .cta-section svg.monstera path {
+      fill: none;
+      stroke: #1a1a1a;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .cta-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 400;
+      color: #1a1a1a;
+      line-height: 1.35;
+      max-width: 640px;
+      margin-bottom: 32px;
+      letter-spacing: 0.01em;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #1a1a1a;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 36px;
+      border: 2px solid #1a1a1a;
+      transition: background 0.25s, color 0.25s;
+      cursor: pointer;
+    }
+    .cta-btn:hover { background: transparent; color: #1a1a1a; }
+
+    .cta-note {
+      margin-top: 18px;
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: #1a1a1a;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background-color: var(--dark);
+      padding: 60px 40px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      color: var(--white);
+      letter-spacing: 0.02em;
+      margin-bottom: 28px;
+      text-decoration: none;
+    }
+
+    /* Primary nav */
+    .footer-nav-primary {
+      display: flex;
+      gap: clamp(20px, 4vw, 52px);
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .footer-nav-primary a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-nav-primary a:hover { color: var(--accent); }
+
+    /* Divider */
+    .footer-divider {
+      width: 100%;
+      max-width: 700px;
+      height: 1px;
+      background: var(--white-faint);
+      margin: 4px 0 24px;
+    }
+
+    /* Secondary nav */
+    .footer-nav-secondary {
+      display: flex;
+      gap: clamp(12px, 2.5vw, 32px);
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .footer-nav-secondary a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-nav-secondary a:hover { color: var(--white); }
+
+    /* Social icons */
+    .footer-social {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+    .social-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #2e2e2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.22s, transform 0.22s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .social-btn:hover { background: var(--accent); transform: translateY(-3px); }
+    .social-btn svg { width: 16px; height: 16px; fill: var(--white); }
+
+    /* Legal row */
+    .footer-legal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .footer-legal-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .footer-legal-links a {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: var(--white-dim);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+    }
+    .footer-legal-links a:hover { color: var(--white); }
+    .footer-copyright {
+      font-size: 0.68rem;
+      font-weight: 300;
+      color: var(--white-dim);
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .cta-section { padding: 70px 24px 90px; }
+      .leaf-left { width: 130px; }
+      .leaf-right { width: 160px; }
+      footer { padding: 48px 20px 28px; }
+      .footer-nav-secondary { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── CTA SECTION ── -->
+<section class="cta-section">
+
+  <!-- Left monstera leaf -->
+  <div class="leaf-left">
+    <svg class="monstera" viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg">
+      <path d="M110,240 C80,200 20,180 30,120 C40,60 90,40 110,30
+               C90,60 70,100 80,140 C90,170 120,180 110,240Z
+               M110,30 C130,50 160,40 175,70 C190,100 170,140 150,160
+               C170,130 175,100 160,80 C145,60 110,30 110,30Z
+               M80,140 C60,130 40,150 50,170 C58,185 78,182 80,140Z
+               M150,160 C170,155 190,168 185,185 C180,200 160,195 150,160Z
+               M110,30 L110,240"/>
+    </svg>
+  </div>
+
+  <!-- Right monstera leaf -->
+  <div class="leaf-right">
+    <svg class="monstera" viewBox="0 0 260 300" xmlns="http://www.w3.org/2000/svg">
+      <path d="M130,280 C95,240 25,215 35,145 C48,70 105,45 130,30
+               C105,70 80,115 92,165 C104,205 138,215 130,280Z
+               M130,30 C158,55 195,45 212,82 C230,120 207,168 183,192
+               C205,158 212,118 195,93 C178,68 130,30 130,30Z
+               M92,165 C68,153 44,175 56,200 C66,220 90,216 92,165Z
+               M183,192 C207,186 228,202 222,222 C216,240 192,234 183,192Z
+               M130,30 L130,280
+               M75,200 C85,210 100,208 95,220
+               M185,90 C198,98 200,115 192,120"/>
+    </svg>
+  </div>
+
+  <h2 class="cta-heading">Effortlessly access relevant, high-quality content exactly when you need it</h2>
+  <a href="#" class="cta-btn">Get Started</a>
+  <p class="cta-note">The media plan is 100% free.</p>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <a href="#" class="footer-logo">Flaunter</a>
+
+  <nav class="footer-nav-primary" aria-label="Primary footer navigation">
+    <a href="#">Brands</a>
+    <a href="#">Media</a>
+    <a href="#">PR Agencies</a>
+  </nav>
+
+  <div class="footer-divider"></div>
+
+  <nav class="footer-nav-secondary" aria-label="Secondary footer navigation">
+    <a href="#">Brand Directory</a>
+    <a href="#">Case Studies</a>
+    <a href="#">Blog</a>
+    <a href="#">Pricing</a>
+    <a href="#">FAQ</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="footer-social">
+    <!-- Facebook -->
+    <a href="#" class="social-btn" aria-label="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <!-- Twitter / X -->
+    <a href="#" class="social-btn" aria-label="Twitter">
+      <svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+    </a>
+    <!-- Pinterest -->
+    <a href="#" class="social-btn" aria-label="Pinterest">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.852 0 1.265.64 1.265 1.408 0 .858-.546 2.141-.828 3.33-.236.995.499 1.806 1.476 1.806 1.771 0 3.132-1.867 3.132-4.562 0-2.386-1.714-4.054-4.161-4.054-2.834 0-4.498 2.126-4.498 4.324 0 .856.33 1.773.741 2.275a.3.3 0 0 1 .069.284c-.076.312-.243.995-.276 1.134-.044.183-.145.222-.334.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.966-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+    </a>
+    <!-- LinkedIn -->
+    <a href="#" class="social-btn" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <!-- Instagram -->
+    <a href="#" class="social-btn" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg>
+    </a>
+  </div>
+
+  <div class="footer-legal">
+    <div class="footer-legal-links">
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p class="footer-copyright">Copyright &copy; 2024 YourBrand, Ltd. All rights reserved. Site credit.</p>
+  </div>
+</footer>
+
+</body>
+</html>
