@@ -47,7 +47,7 @@
 @media screen and (max-width: 923px) {
 
     /* HEADER SECTION */
-    nav {
+    .nav-header-links {
         padding: 0;
     }
 
@@ -108,7 +108,7 @@
         height: 120px;
     }
 
-    nav {
+    .nav-header-links {
         position: relative;
         overflow-x: hidden;
         padding: 10px 0 0 0;
