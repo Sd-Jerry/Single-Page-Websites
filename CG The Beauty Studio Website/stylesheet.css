@@ -45,7 +45,6 @@ body {
 .nav-header-links {
   width: 100%;
   min-height: 90px;
-  /* background: linear-gradient(to right, #e9e4f0, #d3cce3); */
   background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
   display: flex;
   justify-content: space-around;
@@ -126,7 +125,7 @@ body {
 .h-content h1 {
   font-size: 20px;
   letter-spacing: 1.5px;
-  color: var(--button-color);
+  color: var(--salmon);
 }
 
 .h-content h2 {
@@ -147,57 +146,42 @@ body {
 
 /* Button */
 .button-5 {
-  align-items: center;
-  background-clip: padding-box;
-  background: var(--button-color);
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
+  display: inline-block;
+  background: var(--salmon);
   color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
   font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-}
-
-.button-5:hover,
-.button-5:focus {
-  background: #a8845c;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  border: none;
+  outline: none;
+  padding: 16px 36px;
+  transition: background 0.25s, color 0.25s;
+  cursor: pointer;
 }
 
 .button-5:hover {
-  transform: translateY(-1px);
+  background: var(--white);
+  color: #1a1a1a;
 }
 
 /* --- ABOUT-US SECTION --- */
 
 #about-section {
   padding: 50px 5%;
-  background: #f5f2ef;
+  background: var(--salmon);
 }
 
 #about-section h1 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 35px;
+  color: #1a1a1a;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 800;
+  letter-spacing: 0.01em;
 }
 
 .about-container {
@@ -224,9 +208,9 @@ body {
   position: relative;
   left: -60px;
   flex: 1;
-  background: #eae4df;
   padding: 50px;
   border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .about-content h2 {
@@ -238,24 +222,20 @@ body {
 .about-content p {
   font-size: 15px;
   line-height: 1.7;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
 }
 
 /* Button */
-.about-btn {
-  margin-top: 20px;
-  padding: 12px 28px;
-  border: none;
-  background: #c5a47e;
-  color: white;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s;
+.about-content .button-5{
+  background: #1a1a1a;
+  border: 2px solid #1a1a1a;
 }
 
-.about-btn:hover {
-  background: #a8845c;
+.about-content .button-5:hover{
+  background: transparent;
+  color: #1a1a1a;
 }
 
 /* --- OUR-SERVICES SECTION --- */
@@ -807,7 +787,7 @@ body {
 /* ── FOOTER ── */
 footer {
   background-color: var(--dark);
-  padding: 60px 40px 36px;
+  padding: 60px 40px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -906,10 +886,9 @@ footer {
   transform: translateY(-3px);
 }
 
-.social-btn svg {
-  width: 16px;
-  height: 16px;
-  fill: var(--white);
+.social-btn i {
+  font-size: 20px;
+  color: white;
 }
 
 /* Legal row */
@@ -941,11 +920,12 @@ footer {
 }
 
 .footer-copyright {
-  font-size: 0.68rem;
+  font-size: 0.80rem;
   font-weight: 300;
   color: var(--white-dim);
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 /* ── RESPONSIVE ── */

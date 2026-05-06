@@ -33,50 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // TESTIMONIAL SECTION
-// const swiper = new Swiper(".testimonialSwiper", {
-//   direction: "vertical",
-//   loop: true,
-//   slidesPerView: 1.2,
-//   spaceBetween: 20,
-
-//   centeredSlides: true,
-//   slideToClickedSlide: true,
-
-//   speed: 500,
-
-//   scrollbar: {
-//     el: ".swiper-scrollbar",
-//     draggable: true,
-//   },
-
-//   grabCursor: true,
-
-//   // ✅ Snap behavior
-//   watchSlidesProgress: true,
-//   watchSlidesVisibility: true,
-
-//   mousewheel: {
-//     forceToAxis: true,
-//     sensitivity: 1,
-//     releaseOnEdges: true,
-//   },
-
-//   touchRatio: 1,
-//   threshold: 5,
-
-//   breakpoints: {
-//   0: {
-//     direction: "horizontal",
-//     slidesPerView: 1.2,
-//     centeredSlides: true,
-//   },
-//   768: {
-//     direction: "vertical",
-//     slidesPerView: 3,
-//   }
-//   }
-// });
-
 const swiper = new Swiper(".testimonialSwiper", {
   loop: true,
   spaceBetween: 20,
