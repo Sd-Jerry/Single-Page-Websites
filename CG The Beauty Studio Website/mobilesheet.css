@@ -197,7 +197,7 @@
         gap: 30px;
     }
 
-    .testimonial-section{
+    .testimonial-section {
         padding: 50px 5%;
     }
 
@@ -226,26 +226,35 @@
 
 @media (max-width: 767px) {
 
-  .testimonial-right {
-    height: auto;
-    overflow: visible;
-  }
+    .testimonial-right {
+        height: auto;
+        overflow: visible;
+    }
 
-  .testimonialSwiper {
-    height: auto;
-  }
+    .testimonialSwiper {
+        height: auto;
+    }
 
-  .swiper-wrapper {
-    height: auto !important;
-  }
+    .swiper-wrapper {
+        height: auto !important;
+    }
 
-  .swiper-slide {
-    width: 85% !important;
-  }
+    .swiper-slide {
+        width: 85% !important;
+    }
 
 }
 
 @media (max-width: 600px) {
+
+    /* OUR-SERVICES SECTION */
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-footer {
+        font-size: 15px;
+    }
 
     /* WHY CHOOSE US SECTION */
     .why-grid {
@@ -404,6 +413,7 @@
     .contact-card {
         padding: 10px;
     }
+
 }
 
 @media screen and (max-width: 376px) {
