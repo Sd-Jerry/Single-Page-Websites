@@ -55,6 +55,24 @@
         font-size: 14px;
     }
 
+    /* ABOUT-US SECTION */
+    .about-container {
+        flex-direction: column;
+        border-radius: 16px;
+    }
+
+    .about-image {
+        min-height: 280px;
+    }
+
+    .about-content {
+        padding: 36px 28px;
+    }
+
+    .abt-stats {
+        gap: 10px;
+    }
+
     /* F A Q SECTION */
     .faq-container {
         margin: 20px;
@@ -286,6 +304,24 @@
     /* .faq-list {
         height: 590px;
     } */
+
+    /* ABOUT-US SECTION */
+    #about-section h1 {
+        font-size: 30px;
+    }
+
+    .about-content {
+        padding: 28px 20px;
+    }
+
+    .abt-stats {
+        flex-direction: column;
+    }
+
+    .about-content .button-5 {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 535px) {
