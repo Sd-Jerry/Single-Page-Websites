@@ -40,7 +40,7 @@ const swiper = new Swiper(".testimonialSwiper", {
   mousewheel: {
     forceToAxis: true,
     sensitivity: 1,
-    releaseOnEdges: true,
+    releaseOnEdges: true, 
   },
 
   breakpoints: {

@@ -77,6 +77,66 @@
     .why-title {
         font-size: clamp(40px, 10vw, 80px);
     }
+
+    /* TESTIMONIAL SECTION */
+    /* .testi-container {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .testi-right {
+        width: 100%;
+        height: 220px;
+    }
+
+    .testi-img-wrap img {
+        max-width: 100%;
+    } */
+
+    .testi-container {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .testi-left {
+        width: 100%;
+    }
+
+    .testi-img-wrap img {
+        max-width: 100%;
+    }
+
+    /* Switch to horizontal slider and give it enough height */
+    .testi-right {
+        width: 100%;
+        height: 160px;
+        /* enough for 1 horizontal card */
+        overflow: hidden;
+    }
+
+    /* Remove top/bottom fade masks — not needed in horizontal mode */
+    .testi-right::before,
+    .testi-right::after {
+        display: none;
+    }
+
+    .testimonialSwiper {
+        height: 100%;
+        padding: 8px 4px;
+    }
+
+    /* Keep slides fully visible in horizontal mode */
+    .swiper-slide {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+    }
+
+    .swiper-slide-active,
+    .swiper-slide-prev,
+    .swiper-slide-next {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+    }
 }
 
 /* Tablets */
@@ -186,7 +246,7 @@
     }
 
     /* TESTIMONIAL SECTION */
-    .testimonial-container {
+    /* .testimonial-container {
         flex-direction: column;
         gap: 30px;
     }
@@ -215,10 +275,50 @@
 
     .swiper-wrapper {
         height: 100%;
+    } */
+
+    .testi-section {
+        padding: 50px 5% 60px;
+    }
+
+    .testi-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .testi-right {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .testi-right::before,
+    .testi-right::after {
+        display: none;
+    }
+
+    .swiper-slide {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+        width: 85% !important;
+    }
+
+    .testimonialSwiper {
+        height: 100%;
+    }
+
+    /* Active card still gets the salmon highlight */
+    .swiper-slide-active .testimonial-card {
+        border-color: var(--salmon-mid);
+        box-shadow: 0 10px 32px rgba(244, 169, 154, 0.22);
+    }
+
+    .swiper-slide-active .testimonial-card::before {
+        transform: scaleX(1);
     }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     .testimonial-right {
         height: auto;
@@ -297,6 +397,36 @@
     .why-section {
         padding: 50px 5% 60px;
     }
+
+    /* TESTIMONIAL SECTION */
+    /* .testi-section {
+        padding: 50px 5% 60px;
+    }
+
+    .testi-right {
+        height: 200px;
+    } */
+
+    .testi-section {
+        padding: 44px 5% 56px;
+    }
+
+    .testi-left h2 {
+        font-size: 26px;
+    }
+
+    .testi-left>p {
+        font-size: 13px;
+    }
+
+    .testi-right {
+        height: 140px;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        width: 88% !important;
+    }
 }
 
 /* Mobile Navigation (Fully Fixed) */
@@ -354,7 +484,7 @@
     }
 
     /* TESTIMONIAL SECTION */
-    .testimonial-section {
+    /* .testimonial-section {
         padding: 60px 5%;
     }
 
@@ -368,7 +498,7 @@
 
     .testimonial-img img {
         max-width: 280px;
-    }
+    } */
 
 }
 
@@ -384,6 +514,44 @@
     #h-container {
         height: 90vh;
         margin-top: 110px;
+    }
+
+    /* TESTIMONIAL SECTION */
+    .testi-section {
+        padding: 40px 4% 50px;
+    }
+
+    .testi-left h2 {
+        font-size: 22px;
+    }
+
+    .testi-stars-badge p {
+        font-size: 11px;
+    }
+
+    .testi-right {
+        height: 130px;
+    }
+
+    .swiper-slide {
+        width: 92% !important;
+    }
+
+    .testimonial-card {
+        padding: 14px 16px;
+    }
+
+    .testi-avatar img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .testimonial-card h4 {
+        font-size: 15px;
+    }
+
+    .testimonial-card p {
+        font-size: 12px;
     }
 
 }
