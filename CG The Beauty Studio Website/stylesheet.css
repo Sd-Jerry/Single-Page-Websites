@@ -1252,10 +1252,12 @@ body {
 .testi-section::before {
   content: '';
   position: absolute;
-  top: -80px; left: -80px;
-  width: 320px; height: 320px;
+  top: -80px;
+  left: -80px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(244,169,154,0.13) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(244, 169, 154, 0.13) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -1263,10 +1265,12 @@ body {
 .testi-section::after {
   content: '';
   position: absolute;
-  bottom: -60px; right: -60px;
-  width: 260px; height: 260px;
+  bottom: -60px;
+  right: -60px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(247,196,186,0.16) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(247, 196, 186, 0.16) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -1352,7 +1356,7 @@ body {
 }
 
 /* Description */
-.testi-left > p {
+.testi-left>p {
   font-size: 14px;
   font-weight: 300;
   color: #9a7060;
@@ -1396,7 +1400,8 @@ body {
 .testi-right::after {
   content: '';
   position: absolute;
-  left: 0; right: 0;
+  left: 0;
+  right: 0;
   height: 60px;
   z-index: 2;
   pointer-events: none;
@@ -1466,7 +1471,9 @@ body {
 .testimonial-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 3px;
   background: linear-gradient(90deg, var(--salmon-mid), var(--salmon));
   transform: scaleX(0);
@@ -1552,172 +1559,6 @@ body {
   float: left;
   margin-right: 4px;
   margin-top: 4px;
-}
-
-/* ══════════════════════════════════════
-   RESPONSIVE
-══════════════════════════════════════ */
-/* ═══════════════════════════════════════
-   TESTIMONIAL — RESPONSIVE (FIXED)
-   Replace your old responsive blocks with this
-═══════════════════════════════════════ */
-
-/* ── TABLET: 768px – 923px ── */
-@media screen and (max-width: 923px) {
-
-  .testi-container {
-    flex-direction: column;
-    gap: 36px;
-  }
-
-  .testi-left {
-    width: 100%;
-  }
-
-  .testi-img-wrap img {
-    max-width: 100%;
-  }
-
-  /* Switch to horizontal slider and give it enough height */
-  .testi-right {
-    width: 100%;
-    height: 160px;        /* enough for 1 horizontal card */
-    overflow: hidden;
-  }
-
-  /* Remove top/bottom fade masks — not needed in horizontal mode */
-  .testi-right::before,
-  .testi-right::after {
-    display: none;
-  }
-
-  .testimonialSwiper {
-    height: 100%;
-    padding: 8px 4px;
-  }
-
-  /* Keep slides fully visible in horizontal mode */
-  .swiper-slide {
-    opacity: 1 !important;
-    transform: scale(1) !important;
-  }
-
-  .swiper-slide-active,
-  .swiper-slide-prev,
-  .swiper-slide-next {
-    opacity: 1 !important;
-    transform: scale(1) !important;
-  }
-}
-
-/* ── SMALL TABLET: up to 768px ── */
-@media screen and (max-width: 768px) {
-
-  .testi-section {
-    padding: 50px 5% 60px;
-  }
-
-  .testi-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .testi-right {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-  }
-
-  .testi-right::before,
-  .testi-right::after {
-    display: none;
-  }
-
-  .swiper-slide {
-    opacity: 1 !important;
-    transform: scale(1) !important;
-    width: 85% !important;
-  }
-
-  .testimonialSwiper {
-    height: 100%;
-  }
-
-  /* Active card still gets the salmon highlight */
-  .swiper-slide-active .testimonial-card {
-    border-color: var(--salmon-mid);
-    box-shadow: 0 10px 32px rgba(244, 169, 154, 0.22);
-  }
-
-  .swiper-slide-active .testimonial-card::before {
-    transform: scaleX(1);
-  }
-}
-
-/* ── MOBILE: up to 550px ── */
-@media screen and (max-width: 550px) {
-
-  .testi-section {
-    padding: 44px 5% 56px;
-  }
-
-  .testi-left h2 {
-    font-size: 26px;
-  }
-
-  .testi-left > p {
-    font-size: 13px;
-  }
-
-  .testi-right {
-    height: 140px;
-    overflow: hidden;
-  }
-
-  .swiper-slide {
-    width: 88% !important;
-  }
-}
-
-/* ── SMALL MOBILE: up to 400px ── */
-@media screen and (max-width: 400px) {
-
-  .testi-section {
-    padding: 40px 4% 50px;
-  }
-
-  .testi-left h2 {
-    font-size: 22px;
-  }
-
-  .testi-stars-badge p {
-    font-size: 11px;
-  }
-
-  .testi-right {
-    height: 130px;
-  }
-
-  .swiper-slide {
-    width: 92% !important;
-  }
-
-  .testimonial-card {
-    padding: 14px 16px;
-  }
-
-  .testi-avatar img {
-    width: 42px;
-    height: 42px;
-  }
-
-  .testimonial-card h4 {
-    font-size: 15px;
-  }
-
-  .testimonial-card p {
-    font-size: 12px;
-  }
 }
 
 /* FOOTER SECTION IS HERE */

@@ -25,9 +25,49 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // TESTIMONIAL SECTION
+// const swiper = new Swiper(".testimonialSwiper", {
+//   loop: true,
+//   spaceBetween: 20,
+//   speed: 500,
+//   centeredSlides: true,
+//   grabCursor: true,
+
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     draggable: true,
+//   },
+
+//   mousewheel: {
+//     forceToAxis: true,
+//     sensitivity: 1,
+//     releaseOnEdges: true, 
+//   },
+
+//   breakpoints: {
+
+//     // 📱 MOBILE (Horizontal)
+//     0: {
+//       direction: "horizontal",
+//       slidesPerView: 1.2,
+//     },
+
+//     // 💻 TABLET + DESKTOP (Vertical)
+//     768: {
+//       direction: "vertical",
+//       slidesPerView: 3,
+//     }
+//   }
+// });
+
+// ═══════════════════════════════════════
+//  TESTIMONIAL SWIPER  —  Care & Glow (FIXED)
+//  Key fix: breakpoint at 924 matches CSS exactly
+//  so direction switches correctly at every width
+// ═══════════════════════════════════════
+
 const swiper = new Swiper(".testimonialSwiper", {
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 16,
   speed: 500,
   centeredSlides: true,
   grabCursor: true,
@@ -40,21 +80,26 @@ const swiper = new Swiper(".testimonialSwiper", {
   mousewheel: {
     forceToAxis: true,
     sensitivity: 1,
-    releaseOnEdges: true, 
+    releaseOnEdges: true,
   },
 
   breakpoints: {
 
-    // 📱 MOBILE (Horizontal)
+    // Mobile & Tablet (up to 923px) — HORIZONTAL
     0: {
       direction: "horizontal",
-      slidesPerView: 1.2,
+      slidesPerView: 1.15,
+      spaceBetween: 16,
+      centeredSlides: true,
     },
 
-    // 💻 TABLET + DESKTOP (Vertical)
-    768: {
+    // Desktop (924px+) — VERTICAL
+    924: {
       direction: "vertical",
       slidesPerView: 3,
-    }
-  }
+      spaceBetween: 20,
+      centeredSlides: true,
+    },
+
+  },
 });
