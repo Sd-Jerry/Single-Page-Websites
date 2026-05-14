@@ -1,18 +1,6 @@
 /* --- GLOBAL RESET --- */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* h1, h2 {
-  font-family: 'Playfair Display', serif;
-}
-
-h3, h4 {
-  font-family: 'Cormorant Garamond', serif;
-}
-
-body, p {
-  font-family: 'Montserrat', sans-serif;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -21,9 +9,6 @@ body, p {
 }
 
 :root {
-  --button-color: #c5a47e;
-  --hover-color: #a8845c;
-
   --salmon: #f4a99a;
   --salmon-light: #fdf0ed;
   --salmon-mid: #f7c4ba;
@@ -48,7 +33,7 @@ body {
 .nav-header-links {
   width: 100%;
   min-height: 90px;
-  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  background: var(--salmon-light);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -70,7 +55,7 @@ body {
   display: none;
   cursor: pointer;
   font-size: 30px;
-  color: var(--button-color);
+  color: var(--salmon-dark);
 }
 
 /* NAV LINKS */
@@ -94,7 +79,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  color: #795f42;
+  color: var(--salmon-dark);
   transition: color 0.3s ease;
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: 1.5px;
@@ -103,7 +88,7 @@ body {
 }
 
 .list li a:hover {
-  color: #C5A47E;
+  color: var(--salmon-deep);
   border-bottom: 1px solid #795f42;
 }
 
@@ -145,29 +130,6 @@ body {
   letter-spacing: 1px;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
-}
-
-/* Button */
-.button-5 {
-  display: inline-block;
-  background: var(--salmon);
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  padding: 16px 36px;
-  transition: background 0.25s, color 0.25s;
-  cursor: pointer;
-}
-
-.button-5:hover {
-  background: var(--white);
-  color: #1a1a1a;
 }
 
 /* --- ABOUT-US SECTION --- */
@@ -473,26 +435,6 @@ body {
   text-transform: uppercase;
 }
 
-/* ── BUTTON ── */
-.about-content .button-5 {
-  display: inline-block;
-  align-self: flex-start;
-  padding: 13px 34px;
-  position: relative;
-  z-index: 1;
-  background: #1a1a1a;
-  border: 2px solid #1a1a1a;
-}
-
-.about-content .button-5:hover {
-  background: transparent;
-  color: #1a1a1a;
-}
-
-.about-content .button-5:active {
-  transform: translateY(0);
-}
-
 /* --- OUR-SERVICES SECTION --- */
 
 #services-section {
@@ -669,13 +611,6 @@ body {
   margin: 0 auto 30px;
   line-height: 1.7;
 }
-
-#services-section .button-5:hover {
-  background: transparent;
-  border: 2px solid var(--accent);
-  color: var(--salmon);
-}
-
 
 /* <!-- ---F A Q SECTION--- --> ═══════════════════════════════════════ */
 
@@ -941,15 +876,6 @@ body {
   position: relative;
 }
 
-/* Top gradient band */
-/* .contact-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--salmon-mid), var(--salmon), var(--salmon-dark));
-} */
-
 .contact-card img {
   width: 100%;
   height: 220px;
@@ -1003,26 +929,6 @@ body {
   border-radius: 50%;
   background: var(--salmon);
   flex-shrink: 0;
-}
-
-/* ── BUTTON ── */
-.contact-card-body .button-5 {
-  display: inline-block;
-  align-self: flex-start;
-  padding: 13px 34px;
-  position: relative;
-  z-index: 1;
-  background: #1a1a1a;
-  border: 2px solid #1a1a1a;
-}
-
-.contact-card-body .button-5:hover {
-  background: transparent;
-  color: #1a1a1a;
-}
-
-.about-btn:active {
-  transform: translateY(0);
 }
 
 /* <!-- ---WHY CHOOSE US SECTION--- --> */
@@ -1617,27 +1523,6 @@ body {
   letter-spacing: 0.01em;
 }
 
-.cta-btn {
-  display: inline-block;
-  background: #1a1a1a;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 16px 36px;
-  border: 2px solid #1a1a1a;
-  transition: background 0.25s, color 0.25s;
-  cursor: pointer;
-}
-
-.cta-btn:hover {
-  background: transparent;
-  color: #1a1a1a;
-}
-
 .cta-note {
   margin-top: 18px;
   font-size: 0.82rem;
@@ -1811,4 +1696,55 @@ footer {
   .footer-nav-secondary {
     gap: 10px;
   }
+}
+
+/* universal class */
+/* Button-5 */
+.button-5 {
+  display: inline-block;
+  background: var(--salmon);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--accent);
+  padding: 16px 36px;
+  transition: background 0.25s, color 0.25s;
+  cursor: pointer;
+}
+
+.button-5:hover {
+  background: var(--white);
+  color: #1a1a1a;
+}
+
+/* Button-6 */
+.button-6 {
+  display: inline-block;
+  padding: 13px 34px;
+  position: relative;
+  z-index: 1;
+  background: #1a1a1a;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.25s, color 0.25s;
+  cursor: pointer;
+  border: 2px solid #1a1a1a;
+}
+
+.button-6:hover {
+  background: transparent;
+  color: #1a1a1a;
+}
+
+.button-6:active {
+  transform: translateY(0);
 }
