@@ -1,15 +1,15 @@
 :root {
-  --salmon: #f4a99a;
-  --salmon-light: #fdf0ed;
-  --salmon-mid: #f7c4ba;
-  --salmon-dark: #c46f5e;
-  --salmon-deep: #8b3d30;
-  --dark: #1e1e1e;
-  --dark-mid: #252525;
-  --white: #ffffff;
-  --white-dim: rgba(255, 255, 255, 0.55);
-  --white-faint: rgba(255, 255, 255, 0.15);
-  --accent: #f4a99a;
+    --salmon: #f4a99a;
+    --salmon-light: #fdf0ed;
+    --salmon-mid: #f7c4ba;
+    --salmon-dark: #c46f5e;
+    --salmon-deep: #8b3d30;
+    --dark: #1e1e1e;
+    --dark-mid: #252525;
+    --white: #ffffff;
+    --white-dim: rgba(255, 255, 255, 0.55);
+    --white-faint: rgba(255, 255, 255, 0.15);
+    --accent: #f4a99a;
 }
 
 /* Large screens */
@@ -327,6 +327,15 @@
         transform: scaleX(1);
     }
 
+    /* CTA SECTION */
+    .leaf-left {
+        width: 100px;
+        left: 0px;
+    }
+
+    .leaf-right {
+        width: 160px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -339,6 +348,28 @@
     .section-footer {
         font-size: 15px;
     }
+
+    /* CTS SECTION */
+    .cta-section {
+        padding: 70px 24px 90px;
+    }
+
+    .leaf-left {
+        width: 60px;
+    }
+
+    .leaf-right {
+        width: 130px;
+    }
+
+    footer {
+        padding: 48px 20px 28px;
+    }
+
+    .footer-nav-secondary {
+        gap: 10px;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -372,11 +403,6 @@
 
     .abt-stats {
         flex-direction: column;
-    }
-
-    .about-content .button-5 {
-        width: 100%;
-        text-align: center;
     }
 
     /* WHY CHOOSE US SECTION */
@@ -436,12 +462,12 @@
         letter-spacing: 1px;
     }
 
-    .h-content p {
-        font-size: 14px;
+    .h-content h2 {
+        font-size: 30px;
     }
 
-    .button-5 {
-        width: 90%;
+    .h-content p {
+        font-size: 14px;
     }
 
     /* ABOUT-US SECTION */
@@ -457,10 +483,6 @@
         font-size: 14px;
     }
 
-    .about-btn {
-        width: 100%;
-    }
-
     /* OUR-SERVICES SECTION */
     .services-container {
         grid-template-columns: 1fr;
@@ -469,6 +491,16 @@
     .service-img {
         width: 130px;
         height: 130px;
+    }
+
+    /* CTA SECTION */
+    .leaf-right {
+        width: 100px;
+    }
+
+    /* UNIVERSAL CLASS */
+    .button-5 {
+        width: 90%;
     }
 }
 
@@ -480,7 +512,7 @@
         height: 100px;
     }
 
-    .list{
+    .list {
         top: 111px;
     }
 

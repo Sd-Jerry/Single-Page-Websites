@@ -1677,25 +1677,7 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
-  .cta-section {
-    padding: 70px 24px 90px;
-  }
-
-  .leaf-left {
-    width: 130px;
-  }
-
-  .leaf-right {
-    width: 160px;
-  }
-
-  footer {
-    padding: 48px 20px 28px;
-  }
-
-  .footer-nav-secondary {
-    gap: 10px;
-  }
+  
 }
 
 /* universal class */
