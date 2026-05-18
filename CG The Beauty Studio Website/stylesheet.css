@@ -1,6 +1,4 @@
 /* --- GLOBAL RESET --- */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -1676,9 +1674,7 @@ footer {
 }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 600px) {
-  
-}
+@media (max-width: 600px) {}
 
 /* universal class */
 /* Button-5 */
@@ -1694,13 +1690,15 @@ footer {
   text-decoration: none;
   border: 2px solid var(--accent);
   padding: 16px 36px;
-  transition: background 0.25s, color 0.25s;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
   cursor: pointer;
+  text-align: center;
 }
 
 .button-5:hover {
   background: var(--white);
   color: #1a1a1a;
+  border-color: var(--accent);
 }
 
 /* Button-6 */
@@ -1708,6 +1706,7 @@ footer {
   display: inline-block;
   padding: 13px 34px;
   position: relative;
+  text-align: center;
   z-index: 1;
   background: #1a1a1a;
   color: #fff;
@@ -1729,4 +1728,32 @@ footer {
 
 .button-6:active {
   transform: translateY(0);
+}
+
+/* SCROLL ON TOP IS HERE */
+#scroll-on-top {
+  background-color: var(--salmon-dark);
+  color: var(--salmon-light);
+  padding: 9px;
+  border-radius: 9px;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 6.5rem;
+  right: 1.9rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  cursor: pointer;
+}
+
+#scroll-on-top span i {
+  transition: transform 0.3s ease;
+}
+
+#scroll-on-top span i:hover {
+  transform: scale(1.2);
+  color: var(--salmon-deep);
 }

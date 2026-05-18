@@ -25,46 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // TESTIMONIAL SECTION
-// const swiper = new Swiper(".testimonialSwiper", {
-//   loop: true,
-//   spaceBetween: 20,
-//   speed: 500,
-//   centeredSlides: true,
-//   grabCursor: true,
-
-//   scrollbar: {
-//     el: ".swiper-scrollbar",
-//     draggable: true,
-//   },
-
-//   mousewheel: {
-//     forceToAxis: true,
-//     sensitivity: 1,
-//     releaseOnEdges: true, 
-//   },
-
-//   breakpoints: {
-
-//     // 📱 MOBILE (Horizontal)
-//     0: {
-//       direction: "horizontal",
-//       slidesPerView: 1.2,
-//     },
-
-//     // 💻 TABLET + DESKTOP (Vertical)
-//     768: {
-//       direction: "vertical",
-//       slidesPerView: 3,
-//     }
-//   }
-// });
-
-// ═══════════════════════════════════════
-//  TESTIMONIAL SWIPER  —  Care & Glow (FIXED)
-//  Key fix: breakpoint at 924 matches CSS exactly
-//  so direction switches correctly at every width
-// ═══════════════════════════════════════
-
 const swiper = new Swiper(".testimonialSwiper", {
   loop: true,
   spaceBetween: 16,
@@ -103,3 +63,9 @@ const swiper = new Swiper(".testimonialSwiper", {
 
   },
 });
+
+// SCROLL ON TOP
+function scrolltop() {
+  let b = window.document;
+  b = location.href = '#sticky-h';
+}
