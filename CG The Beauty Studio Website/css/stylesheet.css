@@ -97,7 +97,7 @@ body {
   min-height: 80vh;
   background:
     linear-gradient(to right, rgba(0, 0, 0, 0.3) 45%, rgba(0, 0, 0, 0.1) 55%),
-    url('./Imgs/home-img.webp') center center / cover no-repeat;
+    url('../Imgs/home-img.webp') center center / cover no-repeat;
   padding: 20px 8%;
 }
 
