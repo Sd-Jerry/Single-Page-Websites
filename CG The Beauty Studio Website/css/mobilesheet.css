@@ -12,20 +12,20 @@
     --accent: #f4a99a;
 }
 
-/* Large screens */
+
+/* <═══════════ LARGE SCREEN WITH MAX-WIDTH 1160PX ═══════════> */
 @media screen and (max-width: 1160px) {
 
-    /* HEADER SECTION */
+    /* < HEADER SECTION ══════> */
     .list li {
         margin: 0 10px;
     }
-
 }
 
-/* Laptop screen */
+/* <═══════════ LAPTOP SCREEN WITH MAX-WIDTH 1024PX ═══════════> */
 @media screen and (max-width: 1024px) {
 
-    /* HEADER SECTION */
+    /* < HEADER SECTION ══════> */
     .logo {
         height: 135px;
     }
@@ -34,23 +34,25 @@
         padding-left: 0px;
     }
 
-    /* OUR-SERVICES SECTION */
+    /* < OUR SERVICE SECTION ══════> */
     .services-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
+/* <═══════════  MAX-WIDTH 970PX ═══════════> */
 @media screen and (max-width: 970px) {
 
-    /* HEADER SECTION */
+    /* < HEADER SECTION ══════> */
     .list li a {
         font-size: 16px;
     }
 }
 
+/* <═══════════  MAX-WIDTH 923PX ═══════════> */
 @media screen and (max-width: 923px) {
 
-    /* HEADER SECTION */
+    /* < HEADER SECTION ══════> */
     .nav-header-links {
         padding: 0;
     }
@@ -63,7 +65,7 @@
         font-size: 14px;
     }
 
-    /* ABOUT-US SECTION */
+    /* < ABOUT US SECTION ══════> */
     .about-container {
         flex-direction: column;
         border-radius: 16px;
@@ -81,7 +83,7 @@
         gap: 10px;
     }
 
-    /* F A Q SECTION */
+    /* < F A Q SECTION ══════> */
     .content-wrapper {
         flex-direction: column;
     }
@@ -94,7 +96,7 @@
         width: 100%;
     }
 
-    /* WHY CHOOSE US SECTION */
+    /* < WHY CHOOSE US SECTION ══════> */
     .why-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -103,7 +105,7 @@
         font-size: clamp(40px, 10vw, 80px);
     }
 
-    /* TESTIMONIAL SECTION */
+    /* < TESTIMONIAL SECTION ══════> */
     .testi-container {
         flex-direction: column;
         gap: 36px;
@@ -117,7 +119,7 @@
         max-width: 100%;
     }
 
-    /* Right column — auto height so cards are never clipped */
+    /* Right column */
     .testi-right {
         width: 100%;
         height: auto !important;
@@ -163,7 +165,8 @@
     }
 }
 
-/* Tablets */
+/* <═══════════ TABLET SCREEN WITH MAX-WIDTH 768PX ═══════════> */
+
 @media screen and (max-width: 768px) {
 
     html,
@@ -171,7 +174,7 @@
         overflow-x: hidden !important;
     }
 
-    /* STICKY SECTION */
+    /* < STICKY IS HERE ══════> */
     .sticky {
         position: fixed;
         top: 0;
@@ -181,7 +184,7 @@
         transition: top 0.3s;
     }
 
-    /* HEADER SECTION */
+    /* < HEADER SECTION ══════> */
     .logo {
         height: 120px;
     }
@@ -233,7 +236,7 @@
         transform: none;
     }
 
-    /* HOME SECTION */
+    /* < HOME SECTION ══════> */
     #h-container {
         margin-top: 130px;
         display: flex;
@@ -242,7 +245,7 @@
         padding: 30px 5%;
         background:
             linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-            url('./Imgs/home-img.webp') center/cover no-repeat;
+            url('../Imgs/home-img.webp') center/cover no-repeat;
     }
 
     .h-content {
@@ -253,7 +256,7 @@
         margin-bottom: 15px;
     }
 
-    /* ABOUT-US SECTION */
+    /* < ABOUT US SECTION ══════> */
     .about-container {
         flex-direction: column;
     }
@@ -264,12 +267,12 @@
         left: 0;
     }
 
-    /* OUR-SERVICES SECTION */
+    /* < OUR SERVICE SECTION ══════> */
     .services-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* TESTIMONIAL SECTION */
+    /* < TESTIMONIAL SECTION ══════> */
     .testi-section {
         padding: 50px 5% 60px;
     }
@@ -294,7 +297,6 @@
         height: auto !important;
         overflow: visible !important;
         padding-bottom: 24px;
-        /* room for scrollbar */
     }
 
     .testimonialSwiper .swiper-wrapper {
@@ -327,7 +329,7 @@
         transform: scaleX(1);
     }
 
-    /* CTA SECTION */
+    /* < C T A SECTION ══════> */
     .leaf-left {
         width: 100px;
         left: 0px;
@@ -337,13 +339,13 @@
         width: 160px;
     }
 
-    /* SCROLL ON TOP */
+    /* < SCROLL ON TOP IS HERE ══════> */
     #scroll-on-top {
         bottom: 5.5rem;
         right: 1.5rem;
     }
 
-    /* WHATSAPP BUTTON IS HERE */
+    /* < WHATSAPP BUTTON IS HERE ══════> */
     .whatsapp-sticky {
         width: 50px;
         height: 50px;

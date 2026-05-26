@@ -1,4 +1,4 @@
-/* --- GLOBAL RESET --- */
+/* <═══════════ GLOBAL RESET ═══════════> */
 * {
   margin: 0;
   padding: 0;
@@ -24,10 +24,9 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  /* background-color: var(--dark-bg); */
 }
 
-/* --- HEADER & NAV DESKTOP --- */
+/* <═══════════ HEADER & NAV DESKTOP ═══════════> */
 .nav-header-links {
   width: 100%;
   min-height: 90px;
@@ -90,8 +89,7 @@ body {
   border-bottom: 1px solid #795f42;
 }
 
-/* <!-- ---HOME SECTION--- --> */
-
+/* <═══════════ HOME SECTION ═══════════> */
 #h-container {
   width: 100%;
   min-height: 80vh;
@@ -130,7 +128,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* --- ABOUT-US SECTION --- */
+/* <═══════════ ABOUT US SECTION ═══════════> */
 
 #about-section {
   padding: 70px 5% 80px;
@@ -433,7 +431,7 @@ body {
   text-transform: uppercase;
 }
 
-/* --- OUR-SERVICES SECTION --- */
+/* <═══════════ OUR SERVICE SECTION ═══════════> */
 
 #services-section {
   padding: 70px 6% 60px;
@@ -610,7 +608,7 @@ body {
   line-height: 1.7;
 }
 
-/* <!-- ---F A Q SECTION--- --> ═══════════════════════════════════════ */
+/* <!═══════════ F A Q SECTION ═══════════>  */
 
 /* ── SECTION ── */
 #faq {
@@ -929,7 +927,7 @@ body {
   flex-shrink: 0;
 }
 
-/* <!-- ---WHY CHOOSE US SECTION--- --> */
+/* <═══════════ WHY CHOOSE US SECTION ═══════════> */
 
 .why-section {
   background: #faf6f4;
@@ -1142,7 +1140,7 @@ body {
   margin: 0;
 }
 
-/* <!-- ---TESTIMONIAL SECTION--- --> */
+/* <═══════════ TESTIMONIAL SECTION ═══════════> */
 
 .testi-section {
   background: var(--salmon-light);
@@ -1190,9 +1188,8 @@ body {
   margin: 0 auto;
 }
 
-/* ══════════════════════════════════════
-   LEFT COLUMN
-══════════════════════════════════════ */
+
+/* LEFT COLUMN */
 .testi-left {
   flex: 1;
 }
@@ -1288,9 +1285,8 @@ body {
   transform: translateY(-6px);
 }
 
-/* ══════════════════════════════════════
-   RIGHT COLUMN (SWIPER)
-══════════════════════════════════════ */
+
+/* RIGHT COLUMN (SWIPER) */
 .testi-right {
   flex: 1;
   height: 420px;
@@ -1465,9 +1461,7 @@ body {
   margin-top: 4px;
 }
 
-/* FOOTER SECTION IS HERE */
-
-/* ── CTA SECTION ── */
+/* <═══════════ C T A SECTION ═══════════> */
 .cta-section {
   background-color: var(--salmon);
   position: relative;
@@ -1529,7 +1523,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* ── FOOTER ── */
+/* <═══════════ FOOTER SECTION ═══════════> */
 footer {
   background-color: var(--dark);
   padding: 60px 40px 10px;
@@ -1673,10 +1667,7 @@ footer {
   margin-bottom: 0px;
 }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 600px) {}
-
-/* universal class */
+/* <═══════════ UNIVERSAL CLASS ═══════════> */
 /* Button-5 */
 .button-5 {
   display: inline-block;
@@ -1730,7 +1721,7 @@ footer {
   transform: translateY(0);
 }
 
-/* SCROLL ON TOP IS HERE */
+/* <═══════════ SCROLL ON TOP IS HERE ═══════════> */
 #scroll-on-top {
   background-color: var(--salmon-dark);
   color: var(--salmon-light);
@@ -1758,7 +1749,7 @@ footer {
   color: var(--salmon-deep);
 }
 
-/* WHATSAPP BUTTON IS HERE */
+/* <═══════════ WHATSAPP BUTTON IS HERE ═══════════> */
 .whatsapp-sticky {
   position: fixed;
   bottom: 38px;
