@@ -359,9 +359,10 @@
     }
 }
 
+/* <═══════════ MAX-WIDTH 600PX ═══════════> */
 @media screen and (max-width: 600px) {
 
-    /* OUR-SERVICES SECTION */
+    /* < OUR SERVICE SECTION ══════> */
     .section-title {
         font-size: 28px;
     }
@@ -370,7 +371,7 @@
         font-size: 15px;
     }
 
-    /* CTS SECTION */
+    /* < C T A SECTION ══════> */
     .cta-section {
         padding: 70px 24px 90px;
     }
@@ -383,6 +384,7 @@
         width: 130px;
     }
 
+    /* < FOOTER SECTION ══════> */
     footer {
         padding: 48px 20px 28px;
     }
@@ -390,12 +392,25 @@
     .footer-nav-secondary {
         gap: 10px;
     }
-
 }
 
+/* <═══════════ MAX-WIDTH 550PX ═══════════> */
 @media screen and (max-width: 550px) {
 
-    /* F A Q Section */
+    /* < ABOUT US SECTION ══════> */
+    #about-section h1 {
+        font-size: 30px;
+    }
+
+    .about-content {
+        padding: 28px 20px;
+    }
+
+    .abt-stats {
+        flex-direction: column;
+    }
+
+    /* < F A Q SECTION ══════> */
     .main-title-faq {
         font-size: 28px;
     }
@@ -413,20 +428,7 @@
         width: 100%;
     }
 
-    /* ABOUT-US SECTION */
-    #about-section h1 {
-        font-size: 30px;
-    }
-
-    .about-content {
-        padding: 28px 20px;
-    }
-
-    .abt-stats {
-        flex-direction: column;
-    }
-
-    /* WHY CHOOSE US SECTION */
+    /* < WHY CHOOSE US SECTION ══════> */
     .why-grid {
         grid-template-columns: 1fr;
     }
@@ -435,7 +437,7 @@
         padding: 50px 5% 60px;
     }
 
-    /* TESTIMONIAL SECTION */
+    /* < TESTIMONIAL SECTION ══════> */
     .testi-section {
         padding: 44px 5% 56px;
     }
@@ -464,12 +466,12 @@
     }
 }
 
-/* Mobile Navigation (Fully Fixed) */
+/* <═══════════ MOBILE SCREEN WITH MAX-WIDTH 475PX ═══════════> */
+
 @media screen and (max-width: 475px) {
 
-    /* HOME SECTION */
+    /* < HOME SECTION ══════> */
     #h-container {
-        /* min-height: 90vh; */
         padding: 20px 5%;
         text-align: center;
         justify-content: center;
@@ -491,7 +493,7 @@
         font-size: 14px;
     }
 
-    /* ABOUT-US SECTION */
+    /* < ABOUT US SECTION ══════> */
     #about-section {
         padding: 50px 5%;
     }
@@ -504,7 +506,7 @@
         font-size: 14px;
     }
 
-    /* OUR-SERVICES SECTION */
+    /* < OUR SERVICE SECTION ══════> */
     .services-container {
         grid-template-columns: 1fr;
     }
@@ -514,7 +516,7 @@
         height: 130px;
     }
 
-    /* CTA SECTION */
+    /* < C T A SECTION ══════> */
     .leaf-right {
         width: 100px;
     }
@@ -524,13 +526,13 @@
         width: 90%;
     }
 
-    /* SCROLL ON TOP IS HERE */
+    /* < SCROLL ON TOP IS HERE ══════> */
     #scroll-on-top {
         bottom: 5rem;
         right: 1rem;
     }
 
-    /* WHATSAPP BUTTON IS HERE */
+    /* < WHATSAPP BUTTON IS HERE ══════> */
     .whatsapp-sticky {
         right: 12px;
         height: 40px;
@@ -543,10 +545,11 @@
     }
 }
 
-/* Small Mobile Screens */
+/* <═══════════ SMALL MOBILE SCREEN WITH MAX-WIDTH 425PX ═══════════> */
+
 @media screen and (max-width: 425px) {
 
-    /* HEADER SECTION */
+    /* < HEADER SECTION ══════> */
     .logo {
         height: 100px;
     }
@@ -555,13 +558,13 @@
         top: 111px;
     }
 
-    /* HOME SECTION */
+    /* < HOME SECTION ══════> */
     #h-container {
         height: 90vh;
         margin-top: 110px;
     }
 
-    /* TESTIMONIAL SECTION */
+    /* < TESTIMONIAL SECTION ══════> */
     .testi-section {
         padding: 40px 4% 50px;
     }
@@ -602,9 +605,10 @@
     }
 }
 
+/* <═══════════ MAX-WIDTH 376PX ═══════════> */
 @media screen and (max-width: 376px) {
 
-    /* HEADER SECTION */
+    /* < HEADER SECTION ══════> */
     .cg-list {
         height: 55vh;
         top: 6.6rem;

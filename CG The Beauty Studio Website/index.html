@@ -49,7 +49,7 @@
     <header class="sticky" id="sticky-h">
         <nav aria-label="Main navigation" class="nav-header-links">
             <a href="#h-container">
-                <img src="./Imgs/C&G WO Bg.png" class="logo" alt="C&G The Beauty Studio Logo">
+                <img src="./Imgs/logos/C&G WO Bg.png" class="logo" alt="C&G The Beauty Studio Logo">
             </a>
 
             <input type="checkbox" name="check" id="check">
@@ -71,7 +71,7 @@
     <main>
         <!-- <═══════════ HOME SECTION ═══════════> -->
         <section id="h-container">
-            <div class="h-content">
+            <div class="h-content" data-aos="zoom-in">
                 <h1>Where Beauty Meets Elegance</h1>
                 <h2>"Care & Glow - The Beauty Studio"</h2>
                 <p>Where your natural beauty is celebrated, offering flawless beauty care experience from Skin, Hair to
@@ -101,7 +101,7 @@
             </div>
 
             <!-- Main Layout -->
-            <div class="about-container">
+            <div class="about-container" data-aos="zoom-in-down">
 
                 <!-- Image -->
                 <div class="about-image">
@@ -757,6 +757,13 @@
 
     <!-- ✅ Main-JS link -->
     <script src="./js/main.js" defer></script>
+
+    <!-- ✅ AOS Animation link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
