@@ -1,0 +1,628 @@
+:root {
+    --salmon: #f4a99a;
+    --salmon-light: #fdf0ed;
+    --salmon-mid: #f7c4ba;
+    --salmon-dark: #c46f5e;
+    --salmon-deep: #8b3d30;
+    --dark: #1e1e1e;
+    --dark-mid: #252525;
+    --white: #ffffff;
+    --white-dim: rgba(255, 255, 255, 0.55);
+    --white-faint: rgba(255, 255, 255, 0.15);
+    --accent: #f4a99a;
+}
+
+
+/* <═══════════ LARGE SCREEN WITH MAX-WIDTH 1160PX ═══════════> */
+@media screen and (max-width: 1160px) {
+
+    /* < HEADER SECTION ══════> */
+    .list li {
+        margin: 0 10px;
+    }
+}
+
+/* <═══════════ LAPTOP SCREEN WITH MAX-WIDTH 1024PX ═══════════> */
+@media screen and (max-width: 1024px) {
+
+    /* < HEADER SECTION ══════> */
+    .logo {
+        height: 135px;
+    }
+
+    .list {
+        padding-left: 0px;
+    }
+
+    /* < OUR SERVICE SECTION ══════> */
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* <═══════════  MAX-WIDTH 970PX ═══════════> */
+@media screen and (max-width: 970px) {
+
+    /* < HEADER SECTION ══════> */
+    .list li a {
+        font-size: 16px;
+    }
+}
+
+/* <═══════════  MAX-WIDTH 923PX ═══════════> */
+@media screen and (max-width: 923px) {
+
+    /* < HEADER SECTION ══════> */
+    .nav-header-links {
+        padding: 0;
+    }
+
+    .list li {
+        margin: 0 5px;
+    }
+
+    .list li a {
+        font-size: 14px;
+    }
+
+    /* < ABOUT US SECTION ══════> */
+    .about-container {
+        flex-direction: column;
+        border-radius: 16px;
+    }
+
+    .about-image {
+        min-height: 280px;
+    }
+
+    .about-content {
+        padding: 36px 28px;
+    }
+
+    .abt-stats {
+        gap: 10px;
+    }
+
+    /* < F A Q SECTION ══════> */
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .faq-list {
+        height: auto;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    /* < WHY CHOOSE US SECTION ══════> */
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-title {
+        font-size: clamp(40px, 10vw, 80px);
+    }
+
+    /* < TESTIMONIAL SECTION ══════> */
+    .testi-container {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .testi-left {
+        width: 100%;
+    }
+
+    .testi-img-wrap img {
+        max-width: 100%;
+    }
+
+    /* Right column */
+    .testi-right {
+        width: 100%;
+        height: auto !important;
+        min-height: 140px;
+        overflow: visible !important;
+    }
+
+    /* Kill the fade masks — useless in horizontal mode */
+    .testi-right::before,
+    .testi-right::after {
+        display: none !important;
+    }
+
+    /* Let swiper size itself naturally */
+    .testimonialSwiper {
+        height: auto !important;
+        padding: 8px 0 20px;
+        overflow: visible !important;
+    }
+
+    /* Swiper inner wrapper must also be visible */
+    .testimonialSwiper .swiper-wrapper {
+        height: auto !important;
+    }
+
+    /* All slides fully visible in horizontal mode */
+    .swiper-slide {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+        height: auto !important;
+    }
+
+    .swiper-slide-active,
+    .swiper-slide-prev,
+    .swiper-slide-next {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+    }
+
+    /* Cards take full slide height */
+    .testimonial-card {
+        height: auto !important;
+    }
+}
+
+/* <═══════════ TABLET SCREEN WITH MAX-WIDTH 768PX ═══════════> */
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+
+    /* < STICKY IS HERE ══════> */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #10061e;
+        z-index: 1000;
+        transition: top 0.3s;
+    }
+
+    /* < HEADER SECTION ══════> */
+    .logo {
+        height: 120px;
+    }
+
+    .nav-header-links {
+        position: relative;
+        overflow-x: hidden;
+        padding: 10px 0 0 0;
+        justify-content: space-around;
+        border-bottom: 1px solid var(--salmon-mid);
+    }
+
+    .CheckBtn {
+        display: block;
+        z-index: 1001;
+    }
+
+    .list {
+        position: fixed;
+        top: 131px;
+        right: 0;
+        width: 100vw;
+        height: 70vh;
+        background: var(--salmon-light);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        transform: translateX(100vw);
+        transition: transform 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    #check:checked~ul {
+        transform: translateX(0);
+    }
+
+    .list li {
+        margin: 0;
+        padding: 12px 0;
+    }
+
+    .list li a {
+        font-size: 18px;
+        color: var(--salmon-deep);
+    }
+
+    .list li:hover {
+        transform: none;
+    }
+
+    /* < HOME SECTION ══════> */
+    #h-container {
+        margin-top: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 5%;
+        background:
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+            url('../Imgs/home-img.webp') center/cover no-repeat;
+    }
+
+    .h-content {
+        max-width: 100%;
+    }
+
+    .h-content h2 {
+        margin-bottom: 15px;
+    }
+
+    /* < ABOUT US SECTION ══════> */
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding: 30px;
+        text-align: center;
+        left: 0;
+    }
+
+    /* < OUR SERVICE SECTION ══════> */
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* < TESTIMONIAL SECTION ══════> */
+    .testi-section {
+        padding: 50px 5% 60px;
+    }
+
+    .testi-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .testi-right {
+        width: 100%;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .testi-right::before,
+    .testi-right::after {
+        display: none !important;
+    }
+
+    .testimonialSwiper {
+        height: auto !important;
+        overflow: visible !important;
+        padding-bottom: 24px;
+    }
+
+    .testimonialSwiper .swiper-wrapper {
+        height: auto !important;
+    }
+
+    .swiper-slide {
+        opacity: 1 !important;
+        transform: scale(1) !important;
+        width: 82% !important;
+        height: auto !important;
+    }
+
+    /* Salmon scrollbar stays visible */
+    .swiper-scrollbar {
+        display: block !important;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+    }
+
+    /* Active card highlight still works */
+    .swiper-slide-active .testimonial-card {
+        border-color: var(--salmon-mid);
+        box-shadow: 0 10px 32px rgba(244, 169, 154, 0.22);
+    }
+
+    .swiper-slide-active .testimonial-card::before {
+        transform: scaleX(1);
+    }
+
+    /* < C T A SECTION ══════> */
+    .leaf-left {
+        width: 100px;
+        left: 0px;
+    }
+
+    .leaf-right {
+        width: 160px;
+    }
+
+    /* < SCROLL ON TOP IS HERE ══════> */
+    #scroll-on-top {
+        bottom: 5.5rem;
+        right: 1.5rem;
+    }
+
+    /* < WHATSAPP BUTTON IS HERE ══════> */
+    .whatsapp-sticky {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-sticky img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* <═══════════ MAX-WIDTH 600PX ═══════════> */
+@media screen and (max-width: 600px) {
+
+    /* < OUR SERVICE SECTION ══════> */
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-footer {
+        font-size: 15px;
+    }
+
+    /* < C T A SECTION ══════> */
+    .cta-section {
+        padding: 70px 24px 90px;
+    }
+
+    .leaf-left {
+        width: 60px;
+    }
+
+    .leaf-right {
+        width: 130px;
+    }
+
+    /* < FOOTER SECTION ══════> */
+    footer {
+        padding: 48px 20px 28px;
+    }
+
+    .footer-nav-secondary {
+        gap: 10px;
+    }
+}
+
+/* <═══════════ MAX-WIDTH 550PX ═══════════> */
+@media screen and (max-width: 550px) {
+
+    /* < ABOUT US SECTION ══════> */
+    #about-section h1 {
+        font-size: 30px;
+    }
+
+    .about-content {
+        padding: 28px 20px;
+    }
+
+    .abt-stats {
+        flex-direction: column;
+    }
+
+    /* < F A Q SECTION ══════> */
+    .main-title-faq {
+        font-size: 28px;
+    }
+
+    .faq-question {
+        font-size: 0.88rem;
+        padding: 16px 16px;
+    }
+
+    .contact-card-body {
+        padding: 20px 20px 28px;
+    }
+
+    .about-btn {
+        width: 100%;
+    }
+
+    /* < WHY CHOOSE US SECTION ══════> */
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-section {
+        padding: 50px 5% 60px;
+    }
+
+    /* < TESTIMONIAL SECTION ══════> */
+    .testi-section {
+        padding: 44px 5% 56px;
+    }
+
+    .testi-left h2 {
+        font-size: 26px;
+    }
+
+    .testi-left>p {
+        font-size: 13px;
+    }
+
+    .testi-right {
+        width: 100%;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .swiper-slide {
+        width: 88% !important;
+        height: auto !important;
+    }
+
+    .testimonial-card {
+        padding: 16px;
+    }
+}
+
+/* <═══════════ MOBILE SCREEN WITH MAX-WIDTH 475PX ═══════════> */
+
+@media screen and (max-width: 475px) {
+
+    /* < HOME SECTION ══════> */
+    #h-container {
+        padding: 20px 5%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .h-content {
+        margin: 0 auto;
+    }
+
+    .h-content h1 {
+        letter-spacing: 1px;
+    }
+
+    .h-content h2 {
+        font-size: 30px;
+    }
+
+    .h-content p {
+        font-size: 14px;
+    }
+
+    /* < ABOUT US SECTION ══════> */
+    #about-section {
+        padding: 50px 5%;
+    }
+
+    .about-content h2 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    /* < OUR SERVICE SECTION ══════> */
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* < C T A SECTION ══════> */
+    .leaf-right {
+        width: 100px;
+    }
+
+    /* UNIVERSAL CLASS */
+    .button-5 {
+        width: 90%;
+    }
+
+    /* < SCROLL ON TOP IS HERE ══════> */
+    #scroll-on-top {
+        bottom: 5rem;
+        right: 1rem;
+    }
+
+    /* < WHATSAPP BUTTON IS HERE ══════> */
+    .whatsapp-sticky {
+        right: 12px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .whatsapp-sticky img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* <═══════════ SMALL MOBILE SCREEN WITH MAX-WIDTH 425PX ═══════════> */
+
+@media screen and (max-width: 425px) {
+
+    /* < HEADER SECTION ══════> */
+    .logo {
+        height: 100px;
+    }
+
+    .list {
+        top: 111px;
+    }
+
+    /* < HOME SECTION ══════> */
+    #h-container {
+        height: 90vh;
+        margin-top: 110px;
+    }
+
+    /* < TESTIMONIAL SECTION ══════> */
+    .testi-section {
+        padding: 40px 4% 50px;
+    }
+
+    .testi-left h2 {
+        font-size: 22px;
+    }
+
+    .testi-stars-badge p {
+        font-size: 11px;
+    }
+
+    .testi-right {
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .swiper-slide {
+        width: 92% !important;
+        height: auto !important;
+    }
+
+    .testimonial-card {
+        padding: 14px 16px;
+    }
+
+    .testi-avatar img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .testimonial-card h4 {
+        font-size: 15px;
+    }
+
+    .testimonial-card p {
+        font-size: 12px;
+    }
+}
+
+/* <═══════════ MAX-WIDTH 376PX ═══════════> */
+@media screen and (max-width: 376px) {
+
+    /* < HEADER SECTION ══════> */
+    .cg-list {
+        height: 55vh;
+        top: 6.6rem;
+    }
+
+    .h-list li a {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .checkBtn {
+        font-size: 25px;
+    }
+}
