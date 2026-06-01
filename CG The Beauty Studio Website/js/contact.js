@@ -1,7 +1,7 @@
 // ── EMAILJS CONFIG ── Replace these 3 values ──
-  const EMAILJS_PUBLIC_KEY  = 'ZgcTFO9T-nRcvFclo';
-  const EMAILJS_SERVICE_ID  = 'service_jxyup4s';
-  const EMAILJS_TEMPLATE_ID = 'template_dehc0e4';
+  const EMAILJS_PUBLIC_KEY  = 'CbtjmyQTUC_VYbflo';
+  const EMAILJS_SERVICE_ID  = 'service_psq2xvm';
+  const EMAILJS_TEMPLATE_ID = 'template_1fq5ilf';
 
   // ── INIT ──
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
@@ -119,4 +119,4 @@
   document.getElementById('consent').addEventListener('change', () => document.getElementById('consentErr').classList.remove('show-err'));
   document.querySelectorAll('input[name="time"]').forEach(r =>
     r.addEventListener('change', () => document.getElementById('timeErr').classList.remove('show-err'))
-  );
+);
