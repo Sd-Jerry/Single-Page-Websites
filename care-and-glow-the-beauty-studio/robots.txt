@@ -1,4 +1,4 @@
-User-agent: *
+Sitemap: User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://care-and-glow-the-beauty-studio.vercel.app/sitemap.xml
