@@ -1,5 +1,5 @@
 {
-  "name": "Care & Glow - The Beauty Studio",
+  "name": "Care & Glow - The Beauty Studio ",
   "short_name": "C&G-The Beauty Studio",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#d1c9c9",
-  "background_color": "#c46f5e",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
