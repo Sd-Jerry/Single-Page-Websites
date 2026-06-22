@@ -66,8 +66,10 @@ const swiper = new Swiper(".testimonialSwiper", {
 
 // SCROLL ON TOP
 function scrolltop() {
-  let b = window.document;
-  b = location.href = '#sticky-h';
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 // Whatsapp.sticky Delay Js

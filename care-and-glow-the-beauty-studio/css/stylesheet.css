@@ -1736,8 +1736,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 200;
+  z-index: 2001;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 #scroll-on-top span i {
