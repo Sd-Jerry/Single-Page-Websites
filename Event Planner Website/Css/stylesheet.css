@@ -21,19 +21,19 @@ body {
     justify-content: space-around;
     align-content: center;
     line-height: 3em;
-    padding-top: 10px;
     background-color: white;
 }
 
-.nav-left{
+.nav-left {
     margin: 30px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid red;
 }
 
 .nav-left img {
-    height: 50px;
+    height: 80px;
     cursor: pointer;
 }
 
@@ -41,6 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid green;
 }
 
 .list {
@@ -55,13 +56,11 @@ body {
 }
 
 .list li a {
-    padding: 0px 15px;
+    padding: 0px 20px;
     font-size: 1.2rem;
     color: goldenrod;
     cursor: pointer;
     text-decoration: none;
-    /* font-family: "Cinzel", sans-serif;
-    font-family: "Cormorant", sans-serif; */
     font-family: "Garamond", sans-serif;
     font-weight: 600;
 }
@@ -320,7 +319,7 @@ body {
     font-family: "Cinzel", sans-serif;
 }
 
-.left-text h1 span{
+.left-text h1 span {
     font-size: 30px;
 }
 
