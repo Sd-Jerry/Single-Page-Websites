@@ -1,30 +1,33 @@
 /* -------------------------------- */
 @media screen and (max-width: 1024px) {
+
     /* ----- HEADER SECTION ----- */
-    .nav-left img{
+    .nav-left img {
         width: 160px;
     }
 
-    .list li a{
+    .list li a {
         padding: 0 10px;
         font-size: 1.1rem;
     }
 
     /* HOME SECTION */
-    .mySwiperHome .caption {
-        width: 80%;
-        font-size: 26px;
+    #home {
+        height: 75vh;
     }
 }
 
-@media screen and (max-width: 965px){
+@media screen and (max-width: 965px) {
+
     /* SERVICES SECTION */
-    .left-text h1{
+    .left-text h1 {
         font-size: 50px;
     }
 }
+
 /* -------------------------------- */
 @media screen and (max-width: 911px) {
+
     /* ----- HEADER SECTION ----- */
     .nav-left img {
         width: 150px;
@@ -35,7 +38,7 @@
     }
 
     /* SERVICES SECTION */
-    .left-text h1{
+    .left-text h1 {
         font-size: 45px;
     }
 }
@@ -95,42 +98,53 @@
         left: 0%;
     }
 
-    /* HOME SECTION */
-    #home {
-        height: 80vh;
-        margin-top: 134px;
-    }
-
-    /* SERVICES SECTION */
-    #services{
-        padding: 20px 30px;
-    }
-
-    .s-container{
-        padding: 48px 0px;
-    }
-
-    .left-text h1{
-        font-size: 40px;
-    }
-
-    .right-text {
-        text-align: center;
-    }
-
 }
 
 /* -------------------------------- */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
+
     /* HOME SECTION */
-     .mySwiperHome .caption{
-        font-size: 24px;
+    #home {
+        height: 65vh;
+        min-height: 450px;
+    }
+
+    .mySwiperHome .swiper-button-next,
+    .mySwiperHome .swiper-button-prev {
+        display: none;
+        /* arrows clutter small screens, swipe gesture is enough */
+    }
+
+    .mySwiperHome .caption {
+        width: 92%;
     }
 
     /* ABOUTUS SECTION */
     #wedding-section {
         flex-wrap: wrap;
         flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .section-tag {
+        padding-left: 0;
+    }
+
+    .section-tag::before {
+        display: none;
+    }
+
+    .text-content p {
+        margin: 0 auto;
+    }
+
+    .stats-row {
+        justify-content: center;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: center;
     }
 
     /* SERVICES SECTION */
@@ -158,17 +172,18 @@
 
 /* -------------------------------- */
 @media screen and (max-width: 695px) {
+
     /* SERVICES SECTION */
-    #services{
+    #services {
         height: 100vh;
     }
 
-    .left-text{
+    .left-text {
         min-width: 100%;
         text-align: center;
     }
 
-    .right-text .links{
+    .right-text .links {
         justify-content: center;
     }
 }
@@ -176,15 +191,9 @@
 /* -------------------------------- */
 @media screen and (max-width: 575px) {
 
-    /* HOME SECTION */
-    .mySwiperHome .caption {
-        width: 90%;
-        font-size: 22px;
-    }
-
     /* ABOUTUS SECTION */
     .image-container {
-        max-width: 350px;
+        max-width: 320px;
     }
 
     /* SERVICES SECTION */
@@ -214,7 +223,12 @@
 
     /* HOME SECTION */
     #home {
-        padding: 10px;
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    .mySwiperHome .hero-btn {
+        padding: 10px 24px;
     }
 
     .mySwiperHome .caption {
@@ -226,19 +240,16 @@
     /* ABOUTUS SECTION */
     #wedding-section {
         padding: 30px 5%;
+        gap: 30px;
     }
 
     .image-container {
-        max-width: 300px;
-        flex: 1 1 305px;
+        max-width: 270px;
+        flex: 1 1 280px;
     }
 
-    .text-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .button-group {
-        justify-content: center;
+    .stats-row {
+        gap: 24px;
     }
 
     /* SERVICES SECTION */
@@ -257,55 +268,10 @@
 }
 
 /* -------------------------------- */
-@media screen and (max-width: 426px) {
-
-    /* HOME SECTION */
-    .mySwiperHome .caption {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    /* ABOUTUS SECTION */
-    .image-container {
-        max-width: 250px;
-        flex: 1 1 255px;
-    }
-
-    .text-content h3 {
-        font-size: 1rem;
-    }
-
-    .text-content h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .text-content h2 {
-        font-size: 1.3rem;
-        text-align: center;
-    }
-
-    .button-group button {
-        padding: 12px 20px;
-        font-size: 0.85rem;
-    }
-}
+@media screen and (max-width: 426px) {}
 
 /* -------------------------------- */
 @media screen and (max-width: 376px) {
-
-    /* ABOUTUS SECTION */
-    .text-content h3 {
-        font-size: 0.90rem;
-    }
-
-    .text-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .text-content h2 {
-        font-size: 2rem;
-    }
 
     /* SERVICES SECTION */
     .s-container {
@@ -326,17 +292,6 @@
 
 /* -------------------------------- */
 @media screen and (max-width: 321px) {
-
-    /* HOME SECTION */
-    .mySwiperHome .caption {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    /* ABOUTUS SECTION */
-    .text-content h3 {
-        text-align: center;
-    }
 
     /* SERVICES SECTION */
     .top-section {

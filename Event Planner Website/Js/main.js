@@ -10,6 +10,14 @@ var swiperHome = new Swiper(".mySwiperHome", {
     delay: 4000,
     disableOnInteraction: false,
   },
+  pagination: {
+    el: ".mySwiperHome .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".mySwiperHome .swiper-button-next",
+    prevEl: ".mySwiperHome .swiper-button-prev",
+  },
 });
 
 // SERVICES Section Swiper

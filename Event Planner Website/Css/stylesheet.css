@@ -86,10 +86,10 @@ body {
 
 /* ---------- HOME SECTION ----------- */
 #home {
-    height: 85vh;
+    min-height: 60vh;
+    height: 90vh;
+    max-height: 900px;
     width: 100%;
-    padding: 10px 20px 20px;
-    background-color: white;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -98,8 +98,6 @@ body {
 .mySwiperHome {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .mySwiperHome .swiper-slide {
@@ -111,53 +109,124 @@ body {
     width: 110%;
     height: 110%;
     object-fit: cover;
-    animation: kenburns 12s ease-in-out infinite;
+    object-position: center;
+    animation: kenburns 8s ease-in-out infinite alternate;
 }
 
-/* Ken Burns Effect Animation */
 @keyframes kenburns {
     0% {
-        transform: scale(1.1);
+        transform: scale(1);
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1.12);
     }
 }
 
+/* Gradient overlay - looks more premium than flat black */
 .mySwiperHome .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.45) 50%,
+            rgba(0, 0, 0, 0.7) 100%);
     z-index: 1;
 }
 
 .mySwiperHome .caption {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     color: #fff;
-    font-size: 28px;
-    font-weight: 700;
     text-align: center;
-    padding: 12px 24px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    opacity: 0;
     z-index: 2;
-    transition: opacity 1s ease, transform 1s ease;
-    font-family: "Cinzel", sans-serif;
+    width: min(90%, 800px);
+    padding: 0 16px;
+    opacity: 0;
+    transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
 .mySwiperHome .swiper-slide-active .caption {
     opacity: 1;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
 }
 
+.mySwiperHome .caption h1 {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: clamp(22px, 4vw, 44px);
+    line-height: 1.3;
+    margin-bottom: 14px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mySwiperHome .caption p {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(13px, 1.6vw, 17px);
+    line-height: 1.6;
+    margin-bottom: 22px;
+    opacity: 0.95;
+}
+
+.mySwiperHome .hero-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    color: #fff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: clamp(13px, 1.4vw, 15px);
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+.mySwiperHome .hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.55);
+}
+
+/* Navigation arrows */
+.mySwiperHome .swiper-button-next,
+.mySwiperHome .swiper-button-prev {
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    transition: background 0.3s ease;
+}
+
+.mySwiperHome .swiper-button-next:hover,
+.mySwiperHome .swiper-button-prev:hover {
+    background: rgba(212, 175, 55, 0.7);
+}
+
+.mySwiperHome .swiper-button-next::after,
+.mySwiperHome .swiper-button-prev::after {
+    font-size: 18px;
+}
+
+/* Pagination dots */
+.mySwiperHome .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    opacity: 0.6;
+}
+
+.mySwiperHome .swiper-pagination-bullet-active {
+    background: #d4af37;
+    opacity: 1;
+    width: 28px;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
 
 /* ---------- ABOUTUS SECTION ----------- */
 #wedding-section {
@@ -165,18 +234,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 10%;
+    padding: clamp(50px, 8vw, 100px) clamp(5%, 8vw, 10%);
     gap: 40px;
-
+    position: relative;
     font-family: "Nunito", sans-serif;
-    /* color: #fff; */
-    color: #000;
+    color: #2b2b2b;
+    background: radial-gradient(circle at 80% 20%, #fdf6ec 0%, #ffffff 60%);
+    overflow: hidden;
+}
 
-    /* background-image: url("../IMG/Abt-Bg.jpg"); */
-    /* background-image: url("../IMG/Light-yellow-BG.jpg"); */
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
+/* Soft decorative background blob */
+#wedding-section::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
 }
 
 .text-content {
@@ -184,80 +261,148 @@ body {
     z-index: 2;
 }
 
-.text-content h3 {
+.section-tag {
+    display: inline-block;
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: #b8860b;
+    position: relative;
+    padding-left: 28px;
     font-family: "Nunito", sans-serif;
+}
+
+.section-tag::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #d4af37;
 }
 
 .text-content h1 {
-    font-family: "Cinzel", sans-serif;
-    font-size: 3rem;
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
     font-weight: 700;
-    letter-spacing: 2px;
-    margin: 10px 0;
-    color: goldenrod;
+    letter-spacing: 1.5px;
+    margin: 12px 0 4px;
+    background: linear-gradient(135deg, #d4af37, #8a6d1d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .text-content h2 {
-    color: goldenrod;
-    font-size: 2rem;
-    margin-bottom: 15px;
+    color: #b8860b;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    margin-bottom: 18px;
     font-family: "Nunito", sans-serif;
+    font-weight: 600;
 }
 
 .text-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    letter-spacing: 1.5px;
+    font-size: clamp(0.92rem, 1.3vw, 1rem);
+    line-height: 1.75;
+    letter-spacing: 0.4px;
     max-width: 600px;
+    color: #4a4a4a;
+}
+
+/* Stats row */
+.stats-row {
+    display: flex;
+    gap: clamp(20px, 4vw, 45px);
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.stat-item h3 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    color: #d4af37;
+    margin-bottom: 4px;
+}
+
+.stat-item p {
+    font-size: 0.85rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .button-group {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-    z-index: 5;
-}
-
-.button-group button {
-    padding: 12px 25px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 35px;
 }
 
 .btn-details {
-    background-color: #fdf1e8;
-    border: 1px solid #f4d7c5;
-    transition: 0.3s ease-in;
+    display: inline-block;
+    padding: 14px 34px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-details:hover {
-    transform: scale(1.1);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 26px rgba(212, 175, 55, 0.5);
 }
 
-.btn-details a {
-    text-decoration: none;
-    color: black;
-}
-
+/* Image container with decorative ring */
 .image-container {
     flex: 1 1 350px;
     position: relative;
     max-width: 450px;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-ring {
+    position: absolute;
+    width: 92%;
+    height: 92%;
+    border: 2px dashed rgba(212, 175, 55, 0.5);
+    border-radius: 50%;
+    animation: spin 30s linear infinite;
+    z-index: 1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .main-img {
     width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
-    mix-blend-mode: multiply;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    z-index: 2;
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.18),
+        0 8px 20px rgba(0, 0, 0, 0.1),
+        0 0 0 8px #ffffff;
     cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.main-img:hover {
+    transform: scale(1.03);
 }
 
 /* ---------- OUR-SERVICE SECTION ----------- */
@@ -271,7 +416,7 @@ body {
     margin: 15px auto;
     flex-wrap: wrap;
     color: #000;
-    background-image: url("../IMG/62624.jpg");
+    background-image: url("../imgs/62624.jpg");
     background-position: center;
     background-size: cover;
     z-index: -1;
