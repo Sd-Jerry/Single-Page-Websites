@@ -23,13 +23,15 @@ var swiperHome = new Swiper(".mySwiperHome", {
 // SERVICES Section Swiper
 var swiperServices = new Swiper(".mySwiperServices", {
   slidesPerView: "auto",
-  centeredSlides: false,
-  spaceBetween: 24,
-  freeMode: true,
+  spaceBetween: 20,
   grabCursor: true,
-
+  freeMode: true,
+  navigation: {
+    nextEl: ".mySwiperServices .swiper-button-next",
+    prevEl: ".mySwiperServices .swiper-button-prev",
+  },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".mySwiperServices .swiper-pagination",
     clickable: true,
   },
 });
