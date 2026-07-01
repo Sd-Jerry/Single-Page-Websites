@@ -692,6 +692,291 @@ body {
     transition: width 0.3s ease;
 }
 
+/* ---------- WHY CHOOSE US SECTION ----------- */
+#why-choose-us {
+    width: 100%;
+    padding: clamp(60px, 9vw, 100px) clamp(5%, 8vw, 100px);
+    background: #fdfaf4;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top gold separator line */
+#why-choose-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+/* Soft background accent blobs */
+#why-choose-us::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.wcu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* ----- HEADER ----- */
+.wcu-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto clamp(40px, 6vw, 64px);
+}
+
+.wcu-tag {
+    display: inline-block;
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.85rem, 1.4vw, 1rem);
+    font-weight: 700;
+    color: #d4af37;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.wcu-header h1 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.9rem, 4.5vw, 3rem);
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.25;
+    margin: 0 0 16px;
+}
+
+.wcu-header h1 em {
+    font-style: normal;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.wcu-header>p {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+    color: #666;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* ----- GRID ----- */
+.wcu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(16px, 2.5vw, 26px);
+    margin-bottom: clamp(40px, 6vw, 56px);
+}
+
+/* ----- CARD ----- */
+.wcu-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: clamp(24px, 3vw, 36px);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+    /* Scroll reveal — starts hidden */
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.wcu-card.wcu-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.55s ease, transform 0.55s ease, box-shadow 0.35s ease;
+}
+
+/* Gold sweep line on hover */
+.wcu-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #d4af37, #b8860b);
+    transition: width 0.42s ease;
+}
+
+.wcu-card:hover::before {
+    width: 100%;
+}
+
+.wcu-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- ICON ----- */
+.wcu-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 11, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: background 0.35s ease;
+}
+
+.wcu-card:hover .wcu-icon {
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+}
+
+.wcu-icon i {
+    font-size: 22px;
+    color: #d4af37;
+    transition: color 0.3s ease;
+}
+
+.wcu-card:hover .wcu-icon i {
+    color: #fff;
+}
+
+/* ----- CARD TEXT ----- */
+.wcu-card h3 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(0.92rem, 1.4vw, 1.08rem);
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 12px;
+    line-height: 1.35;
+}
+
+.wcu-card>p {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+    color: #666;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* ----- HIGHLIGHT CARD (dark) ----- */
+.wcu-card--highlight {
+    background: linear-gradient(150deg, #1c1505, #2c2005);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.wcu-card--highlight::before {
+    background: linear-gradient(90deg, #d4af37, #f5c842);
+}
+
+.wcu-card--highlight:hover {
+    box-shadow: 0 18px 40px rgba(212, 175, 55, 0.18);
+}
+
+.wcu-card--highlight .wcu-icon {
+    background: rgba(212, 175, 55, 0.15);
+}
+
+.wcu-card--highlight:hover .wcu-icon {
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+}
+
+.wcu-card--highlight h3 {
+    color: #fff;
+}
+
+.wcu-card--highlight>p {
+    color: #b8a070;
+}
+
+.wcu-badge {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 16px;
+    background: rgba(212, 175, 55, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #d4af37;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+/* ----- BOTTOM CTA ----- */
+.wcu-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(20px, 4vw, 36px);
+    flex-wrap: wrap;
+    padding-top: 8px;
+}
+
+.wcu-cta>p {
+    font-family: "Cinzel", serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #2b2b2b;
+    margin: 0;
+}
+
+.wcu-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    color: #fff;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.88rem, 1.3vw, 0.98rem);
+    border-radius: 50px;
+    box-shadow: 0 8px 22px rgba(212, 175, 55, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wcu-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(212, 175, 55, 0.5);
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 1024px) {
+    .wcu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #why-choose-us {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+}
+
+@media (max-width: 560px) {
+    .wcu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wcu-cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+}
+
 /* ------ TESTINOMAL SECTION IS HERE----- --> */
 #testimonial-section {
     margin: 0;

@@ -36,6 +36,26 @@ var swiperServices = new Swiper(".mySwiperServices", {
   },
 });
 
+// WHY CHOOSE US — scroll-triggered card reveal
+const wcuCards = document.querySelectorAll(".wcu-card");
+
+const wcuObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        // Staggered delay per card
+        setTimeout(() => {
+          entry.target.classList.add("wcu-visible");
+        }, i * 100);
+        wcuObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+wcuCards.forEach((card) => wcuObserver.observe(card));
+
 // TESTINOMAL Section Swiper
 const swiper = new Swiper(".mySwiperTestinomal", {
   slidesPerView: 1,
