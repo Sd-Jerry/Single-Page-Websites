@@ -56,17 +56,41 @@ const wcuObserver = new IntersectionObserver(
 
 wcuCards.forEach((card) => wcuObserver.observe(card));
 
-// TESTINOMAL Section Swiper
-const swiper = new Swiper(".mySwiperTestinomal", {
+// TESTIMONIALS Section Swiper
+var swiperTesti = new Swiper(".mySwiperTesti", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 24,
+  centeredSlides: true,
   loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".mySwiperTesti .swiper-button-next",
+    prevEl: ".mySwiperTesti .swiper-button-prev",
+  },
+  pagination: {
+    el: ".mySwiperTesti .swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 22,
+    },
+    1024: {
+      slidesPerView: 2.5,
+      spaceBetween: 26,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+    },
   },
 });

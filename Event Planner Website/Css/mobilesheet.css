@@ -21,6 +21,30 @@
         width: 230px !important;
         height: 290px;
     }
+
+    /* WCU SECTION */
+    .wcu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* TESTI SECTION */
+    .mySwiperTesti .swiper-button-next,
+    .mySwiperTesti .swiper-button-prev {
+        display: none;
+    }
+
+    /* CONTACT SECTION */
+    .contact-body {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-cta-card {
+        order: 1;
+    }
+
+    .contact-info-col {
+        order: 2;
+    }
 }
 
 /* -------------------------------- */
@@ -164,6 +188,29 @@
     .mySwiperServices .swiper-button-prev {
         display: none;
     }
+
+    /* WCU SECTION */
+    #why-choose-us {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+
+    /* TESTI SECTION */
+    #testimonials {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+
+    .mySwiperTesti {
+        padding: 16px 4px 50px !important;
+    }
+
+    /* CONTACT SECTION */
+    #contact {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+
+    .cta-deco-ring {
+        display: none;
+    }
 }
 
 /* -------------------------------- */
@@ -183,6 +230,16 @@
         padding: 0 15px;
     }
 
+    /* WCU SECTION */
+    .wcu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wcu-cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
 }
 
 /* -------------------------------- */
@@ -230,6 +287,26 @@
         align-items: flex-start;
         gap: 10px;
     }
+
+    /* TESTI SECTION */
+    .testi-bg-quote {
+        font-size: 160px;
+        top: -10px;
+    }
+
+    .testi-top {
+        gap: 12px;
+    }
+
+    .testi-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* CONTACT SECTION */
+    .contact-info-card:hover {
+        transform: none;
+    }
 }
 
 /* -------------------------------- */
@@ -247,6 +324,4 @@
 }
 
 /* -------------------------------- */
-@media screen and (max-width: 321px) {
-
-}
+@media screen and (max-width: 321px) {}
