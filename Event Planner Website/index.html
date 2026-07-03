@@ -753,21 +753,11 @@
                     </div>
 
                     <div class="showreel-wrapper">
-                        <!-- OPTION A: YouTube embed (recommended) -->
-                        <!-- Replace YOUR_YOUTUBE_VIDEO_ID with your actual video ID -->
-
-                        <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BOG_CbEDhag?si=97CrdbkDtfBbcAw2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-
-                        <!-- OPTION B: Self-hosted video (uncomment if not using YouTube) -->
-                        
-                <video controls poster="./imgs/events/showreel-poster.webp" preload="auto">
-                    <source src="./videos/bl-events-showreel.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-               
-
-                        <!-- YouTube IFrame API loads the player here -->
-                        <div id="blEventsPlayer"></div>
+                        <video id="showreel-video" controls muted playsinline
+                            poster="./imgs/events/showreel-poster.webp" preload="none">
+                            <source src="./videos/bl-events-showreel.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div class="showreel-caption">
@@ -787,7 +777,7 @@
                     <!-- Card 1 -->
                     <a href="./events.html" class="event-card">
                         <div class="event-card-thumb">
-                            <img src="#" alt="Wedding Event" loading="lazy" />
+                            <img src="./imgs/events/event-card1.webp" alt="Wedding Event" loading="lazy" />
                             <div class="event-card-overlay">
                                 <div class="event-play-btn">
                                     <i class="fa-solid fa-play"></i>
@@ -804,7 +794,7 @@
                     <!-- Card 2 -->
                     <a href="./events.html" class="event-card">
                         <div class="event-card-thumb">
-                            <img src="./imgs/events/corporate-preview.webp" alt="Corporate Event" loading="lazy" />
+                            <img src="./imgs/events/event-card2.webp" alt="Corporate Event" loading="lazy" />
                             <div class="event-card-overlay">
                                 <div class="event-play-btn">
                                     <i class="fa-solid fa-play"></i>

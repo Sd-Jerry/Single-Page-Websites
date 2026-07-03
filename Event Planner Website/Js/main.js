@@ -94,3 +94,39 @@ var swiperTesti = new Swiper(".mySwiperTesti", {
     },
   },
 });
+
+// EVENT Section
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("showreel-video");
+  const eventsSection = document.getElementById("events");
+
+  // Configuration for when to trigger the video
+  const observerOptions = {
+    root: null, // Watch the browser screen viewport
+    rootMargin: "0px",
+    threshold: 0.3 // 0.3 means play as soon as 30% of the #events section rolls onto the screen
+  };
+
+  const handleIntersect = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Play the video when the section comes into view
+        video.play().catch(error => {
+          // If a browser still blocks it, this prevents your script from crashing
+          console.log("Autoplay context: interaction required or muted missing.", error);
+        });
+      } else {
+        // Optional: Pause the video if they scroll past it to save user CPU/Battery
+        video.pause();
+      }
+    });
+  };
+
+  // Initialize the observer
+  const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+  // Safely check if elements exist before observing
+  if (eventsSection && video) {
+    observer.observe(eventsSection);
+  }
+});
