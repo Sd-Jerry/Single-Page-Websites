@@ -1336,7 +1336,7 @@ body {
     color: transparent;
 }
 
-.contact-header > p {
+.contact-header>p {
     font-family: "Nunito", sans-serif;
     font-size: clamp(0.9rem, 1.4vw, 1.05rem);
     color: #666;
@@ -1422,7 +1422,7 @@ body {
     color: transparent;
 }
 
-.contact-cta-card > .cta-card-inner > p {
+.contact-cta-card>.cta-card-inner>p {
     font-family: "Nunito", sans-serif;
     font-size: clamp(0.88rem, 1.3vw, 0.97rem);
     color: #9a8a72;
@@ -1492,7 +1492,7 @@ body {
     padding: clamp(16px, 2.2vw, 22px) clamp(18px, 2.5vw, 26px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
     transition: border-color 0.35s ease, transform 0.35s ease,
-                box-shadow 0.35s ease;
+        box-shadow 0.35s ease;
     position: relative;
     overflow: hidden;
 }
@@ -1524,7 +1524,7 @@ body {
     height: 46px;
     border-radius: 12px;
     background: linear-gradient(135deg, rgba(212, 175, 55, 0.15),
-                rgba(184, 134, 11, 0.08));
+            rgba(184, 134, 11, 0.08));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1588,6 +1588,492 @@ body {
     color: #4a4a4a;
     margin: 0;
     line-height: 1.5;
+}
+
+/* ---------- EVENTS SECTION ----------- */
+#events {
+    width: 100%;
+    padding: clamp(60px, 9vw, 100px) clamp(5%, 8vw, 100px);
+    background: linear-gradient(160deg, #0e0e0e 0%, #1a1508 55%, #0e0e0e 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top gold separator */
+#events::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+/* Bottom right gold blob */
+#events::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    right: -60px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* ----- HEADER ----- */
+.events-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto clamp(40px, 6vw, 60px);
+}
+
+.events-tag {
+    display: inline-block;
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.85rem, 1.4vw, 1rem);
+    font-weight: 700;
+    color: #d4af37;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.events-header h1 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.9rem, 4.5vw, 3rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.25;
+    margin: 0 0 16px;
+}
+
+.events-header h1 em {
+    font-style: normal;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.events-header>p {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+    color: #9a8a72;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* ----- SHOWREEL ----- */
+.events-showreel {
+    margin-bottom: clamp(44px, 6vw, 64px);
+}
+
+.showreel-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.showreel-label i {
+    font-size: 16px;
+}
+
+.showreel-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    box-shadow:
+        0 0 0 1px rgba(212, 175, 55, 0.1),
+        0 30px 80px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background: #111;
+}
+
+.showreel-wrapper iframe,
+.showreel-wrapper video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+
+.showreel-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.82rem;
+    color: #5a4a30;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.showreel-caption i {
+    color: #d4af37;
+    font-size: 13px;
+}
+
+/* ----- PREVIEW LABEL ----- */
+.events-preview-label {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: clamp(22px, 3.5vw, 32px);
+}
+
+.events-preview-label span {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.events-divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.4), transparent);
+}
+
+/* ----- EVENTS GRID ----- */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(14px, 2vw, 22px);
+    margin-bottom: clamp(36px, 5vw, 50px);
+}
+
+/* ----- EVENT CARD ----- */
+.event-card {
+    text-decoration: none;
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.12);
+    transition: transform 0.35s ease, border-color 0.35s ease,
+        box-shadow 0.35s ease;
+    position: relative;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* Thumbnail area */
+.event-card-thumb {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+}
+
+.event-card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease, filter 0.4s ease;
+    filter: brightness(0.75);
+}
+
+.event-card:hover .event-card-thumb img {
+    transform: scale(1.07);
+    filter: brightness(0.5);
+}
+
+/* Hover overlay */
+.event-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.event-card:hover .event-card-overlay {
+    opacity: 1;
+}
+
+/* Play button */
+.event-play-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.5);
+    transform: scale(0.7);
+    transition: transform 0.35s ease;
+}
+
+.event-card:hover .event-play-btn {
+    transform: scale(1);
+}
+
+.event-play-btn i {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 3px;
+}
+
+/* Event type badge */
+.event-card-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    padding: 3px 12px;
+    border-radius: 50px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+/* Card info */
+.event-card-info {
+    padding: clamp(12px, 2vw, 18px) clamp(14px, 2.2vw, 20px);
+}
+
+.event-card-info h4 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(0.82rem, 1.2vw, 0.95rem);
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 6px;
+    line-height: 1.35;
+}
+
+.event-card-info p {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.78rem;
+    color: #6a5a40;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.event-card-info p i {
+    color: #d4af37;
+    font-size: 11px;
+}
+
+/* ----- VIEW ALL CARD ----- */
+.event-card--viewall {
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px dashed rgba(212, 175, 55, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    aspect-ratio: unset;
+}
+
+.event-card--viewall:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-style: solid;
+}
+
+.viewall-inner {
+    text-align: center;
+    padding: clamp(20px, 3vw, 32px);
+}
+
+.viewall-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    transition: background 0.35s ease;
+}
+
+.event-card--viewall:hover .viewall-icon {
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    border-color: transparent;
+}
+
+.viewall-icon i {
+    font-size: 22px;
+    color: #d4af37;
+    transition: color 0.3s ease;
+}
+
+.event-card--viewall:hover .viewall-icon i {
+    color: #fff;
+}
+
+.viewall-inner h4 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(0.9rem, 1.4vw, 1rem);
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 8px;
+}
+
+.viewall-inner>p {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.8rem;
+    color: #6a5a40;
+    line-height: 1.5;
+    margin: 0 0 16px;
+}
+
+.viewall-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #d4af37;
+    transition: gap 0.3s ease;
+}
+
+.event-card--viewall:hover .viewall-arrow {
+    gap: 12px;
+}
+
+/* ----- BOTTOM CTA ----- */
+.events-cta {
+    text-align: center;
+}
+
+.events-gallery-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    background: transparent;
+    border: 1.5px solid rgba(212, 175, 55, 0.5);
+    color: #d4af37;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.9rem, 1.3vw, 1rem);
+    border-radius: 50px;
+    transition: background 0.35s ease, border-color 0.35s ease,
+        color 0.35s ease, transform 0.3s ease, box-shadow 0.35s ease;
+    letter-spacing: 0.3px;
+}
+
+.events-gallery-btn:hover {
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    border-color: transparent;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.4);
+}
+
+.events-gallery-btn i {
+    font-size: 16px;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 1024px) {
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-card--viewall {
+        grid-column: span 2;
+        min-height: 140px;
+    }
+
+    .viewall-inner {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    .viewall-icon {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .viewall-inner>p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #events {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card--viewall {
+        grid-column: span 1;
+        min-height: 150px;
+    }
+
+    .viewall-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .viewall-icon {
+        margin: 0 auto;
+    }
+
+    /* Always show overlay on touch devices */
+    .event-card-overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .event-play-btn {
+        transform: scale(0.85);
+    }
 }
 
 /* ---------- FOOTER SECTION ----------- */
