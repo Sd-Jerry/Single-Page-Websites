@@ -16,6 +16,19 @@
         height: 75vh;
     }
 
+    /* ABOUT SECTION */
+    .abt-container {
+        gap: clamp(30px, 5vw, 50px);
+    }
+
+    .abt-visual {
+        max-width: 320px;
+    }
+
+    .abt-reel-frame {
+        width: 220px;
+    }
+
     /* SERVICES SECTION */
     .mySwiperServices .swiper-slide {
         width: 230px !important;
@@ -44,6 +57,59 @@
 
     .contact-info-col {
         order: 2;
+    }
+
+    /* EVENT SECTION */
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-card--viewall {
+        grid-column: span 2;
+        min-height: 140px;
+    }
+
+    .viewall-inner {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    .viewall-icon {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .viewall-inner>p {
+        margin-bottom: 0;
+    }
+
+    /* BLOG SECTION */
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card--featured .blog-card-thumb {
+        aspect-ratio: 16 / 8;
+    }
+
+    .blog-side-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-direction: unset;
+    }
+
+    .blog-card--small {
+        flex-direction: column;
+    }
+
+    .blog-card--small .blog-card-thumb-link,
+    .blog-card--small .blog-card-thumb {
+        width: 100%;
+        height: 160px;
+        min-height: unset;
     }
 }
 
@@ -136,32 +202,53 @@
         width: 92%;
     }
 
-    /* ABOUTUS SECTION */
+    /* ABOUT SECTION */
     #wedding-section {
-        flex-wrap: wrap;
+        padding: clamp(50px, 8vw, 70px) 6%;
+    }
+
+    .abt-container {
         flex-direction: column-reverse;
+        align-items: center;
         text-align: center;
     }
 
-    .section-tag {
+    .abt-tag {
         padding-left: 0;
     }
 
-    .section-tag::before {
+    .abt-tag::before {
         display: none;
     }
 
-    .text-content p {
-        margin: 0 auto;
+    .abt-text>p {
+        margin: 0 auto 28px;
     }
 
-    .stats-row {
+    .abt-stats {
         justify-content: center;
     }
 
-    .button-group {
-        display: flex;
-        justify-content: center;
+    .abt-visual {
+        max-width: 280px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .abt-reel-frame {
+        width: 200px;
+    }
+
+    .abt-float-badge {
+        top: -14px;
+        left: -10px;
+    }
+
+    .abt-float-card {
+        bottom: -14px;
+        right: -10px;
+        min-width: 140px;
+        padding: 10px 12px;
     }
 
     /* SERVICES SECTION */
@@ -211,15 +298,55 @@
     .cta-deco-ring {
         display: none;
     }
+
+    /* EVENT SECTION */
+    #events {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    /* BLOG SECTION */
+    #blog {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+
+    .blog-side-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card--small {
+        flex-direction: row;
+    }
+
+    .blog-card--small .blog-card-thumb-link,
+    .blog-card--small .blog-card-thumb {
+        width: 120px;
+        height: 100%;
+        min-height: 100px;
+    }
+
+    .blog-bottom-row {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card--horizontal {
+        flex-direction: column;
+    }
+
+    .blog-card--horizontal .blog-card-thumb-link,
+    .blog-card--horizontal .blog-card-thumb {
+        width: 100%;
+        height: 200px;
+        min-height: unset;
+    }
 }
 
 /* -------------------------------- */
 @media screen and (max-width: 575px) {
-
-    /* ABOUTUS SECTION */
-    .image-container {
-        max-width: 320px;
-    }
 
     /* TESTIMONIAL SECTION */
     .mySwiperTestinomal .testimonial-card {
@@ -243,6 +370,39 @@
 }
 
 /* -------------------------------- */
+@media (max-width: 540px) {
+
+    /* EVENT SECTION */
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card--viewall {
+        grid-column: span 1;
+        min-height: 150px;
+    }
+
+    .viewall-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .viewall-icon {
+        margin: 0 auto;
+    }
+
+    /* Always show overlay on touch devices */
+    .event-card-overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .event-play-btn {
+        transform: scale(0.85);
+    }
+}
+
+/* -------------------------------- */
 @media screen and (max-width: 475px) {
 
     /* HOME SECTION */
@@ -261,19 +421,18 @@
         padding: 12px;
     }
 
-    /* ABOUTUS SECTION */
-    #wedding-section {
-        padding: 30px 5%;
-        gap: 30px;
+    /* ABOUT SECTION */
+    .abt-reel-frame {
+        width: 180px;
     }
 
-    .image-container {
-        max-width: 270px;
-        flex: 1 1 280px;
+    .abt-float-badge {
+        font-size: 0.7rem;
+        padding: 6px 12px;
     }
 
-    .stats-row {
-        gap: 24px;
+    .abt-float-card {
+        min-width: 130px;
     }
 
     /* SERVICES SECTION */
@@ -306,6 +465,17 @@
     /* CONTACT SECTION */
     .contact-info-card:hover {
         transform: none;
+    }
+
+    /* BLOG SECTION */
+    .blog-card--small {
+        flex-direction: column;
+    }
+
+    .blog-card--small .blog-card-thumb-link,
+    .blog-card--small .blog-card-thumb {
+        width: 100%;
+        height: 170px;
     }
 }
 
