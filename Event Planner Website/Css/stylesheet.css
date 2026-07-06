@@ -2351,7 +2351,7 @@ body {
 .blog-side-grid {
     display: flex;
     flex-direction: column;
-    gap: clamp(14px, 2vw, 20px);
+    gap: clamp(50px, 2vw, 20px);
 }
 
 /* ----- SMALL CARD ----- */
