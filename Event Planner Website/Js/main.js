@@ -130,3 +130,22 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(eventsSection);
   }
 });
+
+// BLOG SECTION — scroll-triggered card reveal
+const blogCards = document.querySelectorAll(".blog-card");
+
+const blogObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("blog-visible");
+        }, i * 90);
+        blogObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 }
+);
+
+blogCards.forEach((card) => blogObserver.observe(card));
