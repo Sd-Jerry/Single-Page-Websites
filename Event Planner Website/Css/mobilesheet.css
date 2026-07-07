@@ -40,25 +40,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* TESTI SECTION */
-    .mySwiperTesti .swiper-button-next,
-    .mySwiperTesti .swiper-button-prev {
-        display: none;
-    }
-
-    /* CONTACT SECTION */
-    .contact-body {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-cta-card {
-        order: 1;
-    }
-
-    .contact-info-col {
-        order: 2;
-    }
-
     /* EVENT SECTION */
     .events-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -84,6 +65,25 @@
 
     .viewall-inner>p {
         margin-bottom: 0;
+    }
+
+    /* TESTI SECTION */
+    .mySwiperTesti .swiper-button-next,
+    .mySwiperTesti .swiper-button-prev {
+        display: none;
+    }
+
+    /* CONTACT SECTION */
+    .contact-body {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-cta-card {
+        order: 1;
+    }
+
+    .contact-info-col {
+        order: 2;
     }
 
     /* BLOG SECTION */
@@ -281,6 +281,16 @@
         padding: clamp(40px, 8vw, 60px) 6%;
     }
 
+    /* EVENT SECTION */
+    #events {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
     /* TESTI SECTION */
     #testimonials {
         padding: clamp(40px, 8vw, 60px) 6%;
@@ -297,16 +307,6 @@
 
     .cta-deco-ring {
         display: none;
-    }
-
-    /* EVENT SECTION */
-    #events {
-        padding: clamp(40px, 8vw, 60px) 6%;
-    }
-
-    .events-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
     }
 
     /* BLOG SECTION */
