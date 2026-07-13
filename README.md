@@ -27,6 +27,6 @@ Happy coding! 🌐✨
 ## Project Links
 👉Chef Restro Website-- https://sd-jerry.github.io/Single-Page-Websites/Chef%20Restro%20Website     
 👉The Burger House Website-- https://sd-jerry.github.io/Single-Page-Websites/The%20Burger%20House%20Website     
-👉AMD Ryzen Website-- https://sd-jerry.github.io/Single-Page-Websites/AMD%20Ryzen%20Website   
-👉Pharmacy Store Website-- Coming Soon     
-👉Event Planner Website-- Coming Soon       
+👉AMD Ryzen Website-- https://sd-jerry.github.io/Single-Page-Websites/AMD%20Ryzen%20Website  
+👉Event Planner Website {BUILDING⏳}-- https://sd-jerry.github.io/Single-Page-Websites/event-planner
+👉Pharmacy Store Website-- Coming Soon            
