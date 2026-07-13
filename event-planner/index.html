@@ -22,29 +22,69 @@
 
     <head>
         <!-- ----- HEADER SECTION IS HERE ---- -->
-        <header class="sticky">
+        <header id="site-header">
             <nav id="navbar">
 
-                <div class="nav-left">
-                    <img src="./imgs/icons/bl-logo-wocrp-bg.png" alt="BL Events Logo">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <a href="./index.html">
+                        <img src="./imgs/icons/bl-events-logo-white.svg" alt="BL Events Logo" />
+                    </a>
                 </div>
 
-                <div class="nav-right">
-                    <input type="checkbox" name="check" id="check">
-                    <label for="check" class="CheckBtn">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </label>
-                    <ul class="list">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">TESTIMONIALS</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#">EVENTS</a></li>
-                        <li><a href="#">BLOG</a></li>
-                    </ul>
+                <!-- Desktop Nav Links -->
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#wedding-section" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Right Side -->
+                <div class="nav-actions">
+                    <a href="#contact" class="nav-cta">
+                        Book Event <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <!-- Hamburger -->
+                    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
+
             </nav>
+
+            <!-- Mobile Drawer -->
+            <div class="nav-drawer" id="navDrawer">
+                <ul class="drawer-list">
+                    <li><a href="#home" class="drawer-link">Home</a></li>
+                    <li><a href="#wedding-section" class="drawer-link">About Us</a></li>
+                    <li><a href="#services" class="drawer-link">Services</a></li>
+                    <li><a href="#testimonials" class="drawer-link">Testimonials</a></li>
+                    <li><a href="#events" class="drawer-link">Events</a></li>
+                    <li><a href="#blog" class="drawer-link">Blog</a></li>
+                    <li><a href="#contact" class="drawer-link">Contact Us</a></li>
+                </ul>
+                <a href="#contact" class="drawer-cta">
+                    <i class="fa-solid fa-calendar-check"></i> Book Your Event
+                </a>
+                <div class="drawer-contact">
+                    <a href="tel:+919876543210">
+                        <i class="fa-solid fa-phone"></i> +91 98765 43210
+                    </a>
+                    <a href="mailto:hello@blevents.in">
+                        <i class="fa-solid fa-envelope"></i> hello@blevents.in
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Backdrop -->
+            <div class="nav-backdrop" id="navBackdrop"></div>
+
         </header>
     </head>
 
@@ -162,7 +202,7 @@
                         </div>
                     </div>
 
-                    <a href="./about.html" class="abt-btn">
+                    <a href="./aboutus.html" class="abt-btn">
                         More About Us
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -929,7 +969,7 @@
             </div>
         </section>
 
-        
+
 
         <!-- ---------- BLOG SECTION ----------- -->
         <section id="blog">

@@ -1,3 +1,80 @@
+// ---- NAVBAR — BL Events ----
+const siteHeader = document.getElementById("site-header");
+const hamburger = document.getElementById("navHamburger");
+const drawer = document.getElementById("navDrawer");
+const backdrop = document.getElementById("navBackdrop");
+const drawerLinks = document.querySelectorAll(".drawer-link, .drawer-cta");
+const navLinks = document.querySelectorAll(".nav-link");
+
+// 1. Transparent / scrolled state
+function handleNavScroll() {
+  if (window.scrollY > 50) {
+    siteHeader.classList.add("nav-scrolled");
+    siteHeader.classList.remove("nav-top");
+  } else {
+    siteHeader.classList.add("nav-top");
+    siteHeader.classList.remove("nav-scrolled");
+  }
+}
+
+window.addEventListener("scroll", handleNavScroll, { passive: true });
+handleNavScroll(); // run on load
+
+// 2. Hamburger toggle
+function openDrawer() {
+  drawer.classList.add("open");
+  backdrop.classList.add("open");
+  hamburger.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeDrawer() {
+  drawer.classList.remove("open");
+  backdrop.classList.remove("open");
+  hamburger.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+hamburger.addEventListener("click", () => {
+  drawer.classList.contains("open") ? closeDrawer() : openDrawer();
+});
+
+backdrop.addEventListener("click", closeDrawer);
+
+// Close drawer when a link is clicked
+drawerLinks.forEach(link => {
+  link.addEventListener("click", closeDrawer);
+});
+
+// 3. Active link on scroll (IntersectionObserver)
+const sections = document.querySelectorAll("section[id]");
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Remove active from all
+        navLinks.forEach(l => l.classList.remove("active"));
+        // Add active to matching nav link
+        const id = entry.target.getAttribute("id");
+        const matching = document.querySelector(`.nav-link[href="#${id}"]`);
+        if (matching) matching.classList.add("active");
+      }
+    });
+  },
+  {
+    threshold: 0.35,
+    rootMargin: "-80px 0px 0px 0px",
+  }
+);
+
+sections.forEach(section => sectionObserver.observe(section));
+
+// 4. Close drawer on Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeDrawer();
+});
+
 // HOME Section Swiper
 var swiperHome = new Swiper(".mySwiperHome", {
   loop: true,

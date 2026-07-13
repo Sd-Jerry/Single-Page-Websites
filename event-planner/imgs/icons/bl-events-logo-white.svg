@@ -1,0 +1,58 @@
+<svg viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3d98b"/>
+      <stop offset="45%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="goldGradSoft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- ===== MONOGRAM ===== -->
+  <g filter="url(#softShadow)">
+    <!-- swirl ring (echoes the loop of the L) -->
+    <path d="M 170 60
+             A 105 105 0 1 1 88 245"
+          fill="none" stroke="white" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- shooting star burst, top-left -->
+    <path d="M 55 95
+             L 68 55
+             L 78 88
+             L 118 78
+             L 82 100
+             L 90 138
+             L 68 108
+             L 32 118
+             Z"
+          fill="white"/>
+
+    <!-- small sparkles -->
+    <path d="M 150 45 L 156 60 L 171 66 L 156 72 L 150 87 L 144 72 L 129 66 L 144 60 Z" fill="white"/>
+    <path d="M 205 95 L 209 105 L 219 109 L 209 113 L 205 123 L 201 113 L 191 109 L 201 105 Z" fill="white"/>
+    <circle cx="185" cy="130" r="4" fill="white"/>
+
+    <!-- B and L monogram -->
+    <text x="95" y="230" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" font-size="150" fill="white">B</text>
+    <text x="175" y="235" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="150" fill="white">L</text>
+  </g>
+
+  <!-- ===== WORDMARK ===== -->
+  <g font-family="Arial, 'Helvetica Neue', sans-serif" font-weight="800" fill="white">
+    <text x="360" y="140" font-size="90" letter-spacing="4">BL</text>
+    <text x="360" y="235" font-size="90" letter-spacing="6">EVENTS</text>
+  </g>
+
+  <!-- gold divider -->
+  <rect x="362" y="255" width="560" height="3" fill="white"/>
+
+  <!-- tagline -->
+  <text x="362" y="285" font-family="Arial, sans-serif" font-weight="600" font-size="22"
+        letter-spacing="4" fill="white">CELEBRATION | INNOVATION | MEMORIES</text>
+</svg>
