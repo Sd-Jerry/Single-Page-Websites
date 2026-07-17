@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Events — BL Events | Rajkot, Gujarat</title>
+    <meta name="description"
+        content="Explore BL Events' portfolio — weddings, corporate galas, live concerts, cultural festivals and more across Saurashtra and Gujarat." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./Css/events.css">
+    <!-- Link your JS here with 'defer' -->
+    <script src="./Js/events.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================ -->
+    <header id="site-header">
+        <nav id="navbar">
+            <div class="nav-logo">
+                <a href="./index.html">
+                    <img src="./imgs/icons/bl-events-logo-white.svg" alt="BL Events Logo" />
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="./index.html#home" class="nav-link">Home</a></li>
+                <li><a href="./index.html#wedding-section" class="nav-link">About Us</a></li>
+                <li><a href="./index.html#services" class="nav-link">Services</a></li>
+                <li><a href="./index.html#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="./index.html#events" class="nav-link active">Events</a></li>
+                <li><a href="./index.html#blog" class="nav-link">Blog</a></li>
+                <li><a href="./index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="./index.html#contact" class="nav-cta">Book Event <i class="fa-solid fa-arrow-right"></i></a>
+                <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-drawer" id="navDrawer">
+            <ul class="drawer-list">
+                <li><a href="./index.html#home" class="drawer-link">Home</a></li>
+                <li><a href="./index.html#wedding-section" class="drawer-link">About Us</a></li>
+                <li><a href="./index.html#services" class="drawer-link">Services</a></li>
+                <li><a href="./index.html#testimonials" class="drawer-link">Testimonials</a></li>
+                <li><a href="./index.html#events" class="drawer-link">Events</a></li>
+                <li><a href="./index.html#blog" class="drawer-link">Blog</a></li>
+                <li><a href="./index.html#contact" class="drawer-link">Contact Us</a></li>
+            </ul>
+            <a href="./index.html#contact" class="drawer-cta"><i class="fa-solid fa-calendar-check"></i> Book Your
+                Event</a>
+            <div class="drawer-contact">
+                <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+                <a href="mailto:hello@blevents.in"><i class="fa-solid fa-envelope"></i> hello@blevents.in</a>
+            </div>
+        </div>
+        <div class="nav-backdrop" id="navBackdrop"></div>
+    </header>
+
+    <!-- ================================
+         HERO
+    ================================ -->
+    <section class="ev-hero">
+        <div class="ev-hero-bg"></div>
+        <div class="ev-hero-content">
+            <div class="hero-breadcrumb">
+                <span>Home</span>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Our Events</span>
+            </div>
+            <h1>Moments We've <br /><em>Brought to Life</em></h1>
+            <p>Every event in our portfolio is a story of passion, precision, and unforgettable celebration. Browse our
+                work — from royal weddings to electrifying live concerts across Gujarat.</p>
+
+            <div class="ev-hero-stats">
+                <div class="ev-hero-stat">
+                    <h3>250+</h3>
+                    <p>Events Done</p>
+                </div>
+                <div class="ev-hero-stat">
+                    <h3>10+</h3>
+                    <p>Years Active</p>
+                </div>
+                <div class="ev-hero-stat">
+                    <h3>30+</h3>
+                    <p>Cities Covered</p>
+                </div>
+                <div class="ev-hero-stat">
+                    <h3>98%</h3>
+                    <p>Client Rating</p>
+                </div>
+            </div>
+
+            <div class="ev-hero-btns">
+                <a href="#gallery" class="ev-btn-primary">Explore Gallery <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="./index.html#contact" class="ev-btn-ghost"><i class="fa-solid fa-calendar-check"></i> Book Your
+                    Event</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         FILTER TABS
+    ================================ -->
+    <div class="filter-section">
+        <div class="filter-inner">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fa-solid fa-grip"></i> All Events
+            </button>
+            <button class="filter-btn" data-filter="wedding">
+                <i class="fa-solid fa-rings-wedding"></i> Weddings
+            </button>
+            <button class="filter-btn" data-filter="corporate">
+                <i class="fa-solid fa-briefcase"></i> Corporate
+            </button>
+            <button class="filter-btn" data-filter="liveshow">
+                <i class="fa-solid fa-music"></i> Live Shows
+            </button>
+            <button class="filter-btn" data-filter="cultural">
+                <i class="fa-solid fa-masks-theater"></i> Cultural
+            </button>
+            <button class="filter-btn" data-filter="birthday">
+                <i class="fa-solid fa-cake-candles"></i> Birthdays
+            </button>
+            <button class="filter-btn" data-filter="branding">
+                <i class="fa-solid fa-bullhorn"></i> Branding
+            </button>
+            <button class="filter-btn" data-filter="exhibition">
+                <i class="fa-solid fa-store"></i> Exhibition
+            </button>
+        </div>
+    </div>
+
+    <!-- ================================
+         FEATURED GALLERY
+    ================================ -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-inner">
+            <div class="gallery-header reveal">
+                <div class="gallery-header-text">
+                    <span class="section-tag">/ Featured Events</span>
+                    <h2>Our Most <em>Celebrated</em> Moments</h2>
+                    <p>A curated selection of BL Events' finest work — spanning weddings, shows, and grand celebrations
+                        across Gujarat.</p>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+
+                <!-- Card 1 — Featured large -->
+                <div class="ev-card" data-category="wedding">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/wedding-featured.webp" alt="Grand Wedding Reception" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Wedding</span>
+                        <div class="ev-card-info">
+                            <h4>Sharma — Mehta Grand Wedding Reception</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Rajkot, Gujarat &nbsp;·&nbsp; <i
+                                    class="fa-solid fa-users"></i> 800 Guests</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="ev-card" data-category="corporate">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/corporate-gala.webp" alt="Corporate Gala" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Corporate</span>
+                        <div class="ev-card-info">
+                            <h4>Annual Leadership Gala 2024</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Ahmedabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="ev-card" data-category="liveshow">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/liveshow.webp" alt="Live Music Night" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Live Show</span>
+                        <div class="ev-card-info">
+                            <h4>Sargam Musical Night 2024</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Vadodara &nbsp;·&nbsp; <i
+                                    class="fa-solid fa-users"></i> 5,000+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="ev-card" data-category="cultural">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/navratri.webp" alt="Navratri Festival" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Cultural</span>
+                        <div class="ev-card-info">
+                            <h4>Navratri Grand Festival</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Junagadh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 — Span 2 cols -->
+                <div class="ev-card" data-category="branding">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/brand-launch.webp" alt="Brand Launch Event" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Branding</span>
+                        <div class="ev-card-info">
+                            <h4>Luxury Brand Activation Campaign — Rajkot City</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Rajkot &nbsp;·&nbsp; <i
+                                    class="fa-solid fa-users"></i> 2,000+ Visitors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="ev-card" data-category="birthday">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/birthday-gala.webp" alt="Birthday Party" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Birthday</span>
+                        <div class="ev-card-info">
+                            <h4>Royal 50th Birthday Celebration</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Surat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="ev-card" data-category="wedding">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/wedding-decor.webp" alt="Wedding Décor" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Wedding</span>
+                        <div class="ev-card-info">
+                            <h4>Floral Palace Wedding — Jamnagar</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Jamnagar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="ev-card" data-category="exhibition">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/trade-show.webp" alt="Trade Show" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Exhibition</span>
+                        <div class="ev-card-info">
+                            <h4>Gujarat Trade Expo 2024</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Gandhinagar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 — Featured large -->
+                <div class="ev-card" data-category="liveshow">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/concert-night.webp" alt="Concert Night" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Live Show</span>
+                        <div class="ev-card-info">
+                            <h4>Bollywood Night Live — Rajkot Arena 2023</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Rajkot &nbsp;·&nbsp; <i
+                                    class="fa-solid fa-users"></i> 8,000+ Attended</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="ev-card" data-category="corporate">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/award-night.webp" alt="Award Night" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Corporate</span>
+                        <div class="ev-card-info">
+                            <h4>Industry Excellence Award Night</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Surat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="ev-card" data-category="cultural">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/cultural-program.webp" alt="Cultural Program" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Cultural</span>
+                        <div class="ev-card-info">
+                            <h4>Ram Navami Community Program</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Rajkot</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="ev-card" data-category="birthday">
+                    <div class="ev-card-thumb">
+                        <img src="./imgs/events/kids-birthday.webp" alt="Kids Birthday" loading="lazy" />
+                    </div>
+                    <div class="ev-card-overlay">
+                        <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
+                        <span class="ev-card-badge">Birthday</span>
+                        <div class="ev-card-info">
+                            <h4>Enchanted Garden Kids Birthday</h4>
+                            <p><i class="fa-solid fa-location-dot"></i> Rajkot</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         SHOWREEL VIDEO
+    ================================ -->
+    <section class="showreel-section">
+        <div class="showreel-inner">
+            <div class="showreel-header reveal">
+                <span class="section-tag">/ Official Showreel</span>
+                <h2>Watch BL Events <em>In Action</em></h2>
+                <p>Two minutes of our finest moments — weddings, concerts, festivals, and corporate events captured in
+                    one cinematic highlight reel.</p>
+            </div>
+            <div class="showreel-label reveal">
+                <i class="fa-solid fa-circle-play"></i>
+                BL Events — Official Highlight Reel 2024
+            </div>
+            <div class="showreel-frame reveal" id="showreelWrapper">
+                <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
+                <iframe id="showreelIframe"
+                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&modestbranding=1&color=white"
+                    title="BL Events Highlight Reel 2024" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen loading="lazy">
+                </iframe>
+            </div>
+            <div class="showreel-caption reveal">
+                <i class="fa-solid fa-film"></i>
+                250+ Events &nbsp;·&nbsp; 10+ Years &nbsp;·&nbsp; Across Gujarat
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         WEDDING EVENTS SCROLL ROW
+    ================================ -->
+    <section class="cat-section cat-dark">
+        <div class="cat-inner">
+            <div class="cat-header reveal">
+                <div>
+                    <span class="section-tag">/ Wedding Events</span>
+                    <h2>Royal <em>Wedding</em> Portfolio</h2>
+                </div>
+                <a href="./index.html#contact" class="cat-view-all">Enquire Now <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="cat-scroll">
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/w1.webp" alt="Wedding 1" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Patel — Desai Wedding</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Rajkot</span>
+                            <span><i class="fa-solid fa-users"></i> 600 Guests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/w2.webp" alt="Wedding 2" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Joshi — Shah Wedding</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Jamnagar</span>
+                            <span><i class="fa-solid fa-users"></i> 400 Guests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/w3.webp" alt="Wedding 3" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Mehta — Trivedi Wedding</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Ahmedabad</span>
+                            <span><i class="fa-solid fa-users"></i> 1000 Guests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/w4.webp" alt="Wedding 4" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Rathod — Bhatt Wedding</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Surat</span>
+                            <span><i class="fa-solid fa-users"></i> 500 Guests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/w5.webp" alt="Wedding 5" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Gohil — Solanki Wedding</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Bhavnagar</span>
+                            <span><i class="fa-solid fa-users"></i> 350 Guests</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         LIVE SHOWS SCROLL ROW
+    ================================ -->
+    <section class="cat-section cat-light">
+        <div class="cat-inner">
+            <div class="cat-header reveal">
+                <div>
+                    <span class="section-tag">/ Live Shows</span>
+                    <h2>Electrifying <em>Live</em> Events</h2>
+                </div>
+                <a href="./index.html#contact" class="cat-view-all">Book Show <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="cat-scroll">
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/ls1.webp" alt="Live Show 1" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Sargam Musical Night</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Vadodara</span>
+                            <span><i class="fa-solid fa-users"></i> 5,000+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/ls2.webp" alt="Live Show 2" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Bollywood Live — Rajkot Arena</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Rajkot</span>
+                            <span><i class="fa-solid fa-users"></i> 8,000+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/ls3.webp" alt="Live Show 3" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Folk Fusion Night</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Junagadh</span>
+                            <span><i class="fa-solid fa-users"></i> 3,000+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/ls4.webp" alt="Live Show 4" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Comedy & Music Evening</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Surat</span>
+                            <span><i class="fa-solid fa-users"></i> 2,500+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat-card">
+                    <div class="cat-card-thumb">
+                        <img src="./imgs/events/ls5.webp" alt="Live Show 5" loading="lazy" />
+                        <div class="cat-card-overlay"></div>
+                    </div>
+                    <div class="cat-card-body">
+                        <h4>Sufi Sangeet Sandhya</h4>
+                        <div class="cat-card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Ahmedabad</span>
+                            <span><i class="fa-solid fa-users"></i> 4,000+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         BEHIND THE SCENES
+    ================================ -->
+    <section class="bts-section">
+        <div class="bts-inner">
+            <div class="bts-header reveal">
+                <span class="section-tag">/ Behind The Scenes</span>
+                <h2>The Magic That <em>Happens Before</em> The Magic</h2>
+                <p>Great events don't just happen — they're built. A glimpse into the preparation, setup, and teamwork
+                    that goes into every BL Events celebration.</p>
+            </div>
+            <div class="bts-grid">
+                <div class="bts-item reveal">
+                    <div class="bts-thumb"><img src="./imgs/events/bts-setup.webp" alt="Stage Setup" loading="lazy" />
+                    </div>
+                    <div class="bts-caption"><i class="fa-solid fa-circle-dot"></i> Stage & Lighting Setup — Sargam
+                        Night, Vadodara</div>
+                </div>
+                <div class="bts-item reveal">
+                    <div class="bts-thumb"><img src="./imgs/events/bts-decor.webp" alt="Décor Team" loading="lazy" />
+                    </div>
+                    <div class="bts-caption"><i class="fa-solid fa-circle-dot"></i> Floral Décor Team at Work</div>
+                </div>
+                <div class="bts-item reveal">
+                    <div class="bts-thumb"><img src="./imgs/events/bts-sound.webp" alt="Sound Check" loading="lazy" />
+                    </div>
+                    <div class="bts-caption"><i class="fa-solid fa-circle-dot"></i> Sound Check & AV Testing</div>
+                </div>
+                <div class="bts-item reveal">
+                    <div class="bts-thumb"><img src="./imgs/events/bts-team.webp" alt="BL Events Team" loading="lazy" />
+                    </div>
+                    <div class="bts-caption"><i class="fa-solid fa-circle-dot"></i> The BL Events Team — Pre-Event
+                        Briefing</div>
+                </div>
+                <div class="bts-item reveal">
+                    <div class="bts-thumb"><img src="./imgs/events/bts-mandap.webp" alt="Mandap Setup" loading="lazy" />
+                    </div>
+                    <div class="bts-caption"><i class="fa-solid fa-circle-dot"></i> Grand Mandap Assembly — Rajkot
+                        Wedding</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         HOW WE EXECUTE
+    ================================ -->
+    <section class="exec-section">
+        <div class="exec-inner">
+            <div class="exec-header reveal">
+                <span class="section-tag">/ Our Execution Standard</span>
+                <h2>Why Every BL Events Show <em>Runs Flawlessly</em></h2>
+                <p>Behind every seamless event is a rigorous system — built over 10 years of live experience across
+                    Gujarat.</p>
+            </div>
+            <div class="exec-grid">
+
+                <div class="exec-card reveal">
+                    <div class="exec-num">01</div>
+                    <div class="exec-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                    <h4>Pre-Event Planning</h4>
+                    <p>Every event starts with a detailed project plan — timelines, vendor assignments, layout
+                        blueprints, and contingency protocols documented weeks in advance.</p>
+                </div>
+
+                <div class="exec-card reveal">
+                    <div class="exec-num">02</div>
+                    <div class="exec-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h4>Dedicated Coordinator</h4>
+                    <p>Each event gets a personal coordinator — your single point of contact who knows every detail and
+                        is reachable 24/7 in the lead-up to your event.</p>
+                </div>
+
+                <div class="exec-card reveal">
+                    <div class="exec-num">03</div>
+                    <div class="exec-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h4>Trusted Vendor Network</h4>
+                    <p>We work exclusively with Gujarat's most reliable decorators, caterers, AV specialists, and
+                        artists — all pre-vetted and contractually bound.</p>
+                </div>
+
+                <div class="exec-card reveal">
+                    <div class="exec-num">04</div>
+                    <div class="exec-icon"><i class="fa-solid fa-walkie-talkie"></i></div>
+                    <h4>On-Day Ground Team</h4>
+                    <p>A dedicated on-ground team with radio communication manages every zone of your event — stage,
+                        entry, catering, décor — in real-time.</p>
+                </div>
+
+                <div class="exec-card reveal">
+                    <div class="exec-num">05</div>
+                    <div class="exec-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Contingency Protocol</h4>
+                    <p>Weather backups, power contingencies, crowd safety plans — we anticipate every "what if" so your
+                        event never misses a beat.</p>
+                </div>
+
+                <div class="exec-card reveal">
+                    <div class="exec-num">06</div>
+                    <div class="exec-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                    <h4>Post-Event Reporting</h4>
+                    <p>For corporate and exhibition clients, we deliver a detailed post-event report with footfall
+                        analytics, media coverage, and audience feedback.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         UPCOMING EVENTS
+    ================================ -->
+    <section class="upcoming-section">
+        <div class="upcoming-inner">
+            <div class="upcoming-header reveal">
+                <span class="section-tag">/ Coming Up</span>
+                <h2>Upcoming <em>BL Events</em> Dates</h2>
+                <p>Stay tuned — here are some exciting events on our calendar. Reach out to enquire about availability
+                    and packages.</p>
+            </div>
+            <div class="upcoming-grid">
+
+                <div class="upcoming-card reveal">
+                    <div class="upcoming-thumb">
+                        <img src="./imgs/events/upcoming-wedding.webp" alt="Upcoming Wedding" loading="lazy" />
+                        <span class="upcoming-ribbon">Upcoming</span>
+                    </div>
+                    <div class="upcoming-body">
+                        <div class="upcoming-date"><i class="fa-regular fa-calendar"></i> August 2025</div>
+                        <h4>Grand Wedding Reception</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Rajkot, Gujarat</p>
+                    </div>
+                </div>
+
+                <div class="upcoming-card reveal">
+                    <div class="upcoming-thumb">
+                        <img src="./imgs/events/upcoming-concert.webp" alt="Upcoming Concert" loading="lazy" />
+                        <span class="upcoming-ribbon">Upcoming</span>
+                    </div>
+                    <div class="upcoming-body">
+                        <div class="upcoming-date"><i class="fa-regular fa-calendar"></i> September 2025</div>
+                        <h4>Musical Evening — Rajkot Open Air</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Rajkot, Gujarat</p>
+                    </div>
+                </div>
+
+                <div class="upcoming-card reveal">
+                    <div class="upcoming-thumb">
+                        <img src="./imgs/events/upcoming-navratri.webp" alt="Navratri 2025" loading="lazy" />
+                        <span class="upcoming-ribbon">Upcoming</span>
+                    </div>
+                    <div class="upcoming-body">
+                        <div class="upcoming-date"><i class="fa-regular fa-calendar"></i> October 2025</div>
+                        <h4>Navratri Grand Festival 2025</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Junagadh, Gujarat</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         CTA BANNER
+    ================================ -->
+    <section class="ev-cta">
+        <div class="ev-cta-deco">BL EVENTS</div>
+        <div class="ev-cta-inner reveal">
+            <span class="section-tag">/ Let's Make History Together</span>
+            <h2>Your Event. Our <em>Masterpiece.</em></h2>
+            <p>Whether it's a 50-person intimate gathering or a 10,000-seat concert — BL Events brings the same passion,
+                precision, and dedication to every project. Let's start planning yours today.</p>
+            <div class="ev-cta-btns">
+                <a href="./index.html#contact" class="ev-btn-primary">
+                    Book Free Consultation <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="tel:+919876543210" class="ev-btn-ghost">
+                    <i class="fa-solid fa-phone"></i> +91 98765 43210
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER STRIP -->
+    <div class="ev-footer">
+        <p>© 2025 BL Events. All rights reserved. Rajkot, Gujarat.</p>
+        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i> Back to Main Site</a>
+    </div>
+
+</body>
+
+</html>
