@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — BL Events | Rajkot, Gujarat</title>
+    <meta name="description"
+        content="Get in touch with BL Events — book a free consultation for weddings, corporate events, live shows and more across Gujarat. Call, email or fill our inquiry form." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./Css/contact.css">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Link your JS here with 'defer' -->
+    <script src="./Js/contact.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================================
+         NAVBAR
+    ================================ -->
+    <header id="site-header">
+        <nav id="navbar">
+            <div class="nav-logo">
+                <a href="./index.html">
+                    <img src="./imgs/icons/bl-events-logo-gold.svg" alt="BL Events Logo" />
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="./index.html#home" class="nav-link">Home</a></li>
+                <li><a href="./index.html#wedding-section" class="nav-link">About Us</a></li>
+                <li><a href="./index.html#services" class="nav-link">Services</a></li>
+                <li><a href="./index.html#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="./index.html#events" class="nav-link">Events</a></li>
+                <li><a href="./index.html#blog" class="nav-link">Blog</a></li>
+                <li><a href="./index.html#contact" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#inquiry" class="nav-cta">Book Event <i class="fa-solid fa-arrow-right"></i></a>
+                <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-drawer" id="navDrawer">
+            <ul class="drawer-list">
+                <li><a href="./index.html#home" class="drawer-link">Home</a></li>
+                <li><a href="./index.html#wedding-section" class="drawer-link">About Us</a></li>
+                <li><a href="./index.html#services" class="drawer-link">Services</a></li>
+                <li><a href="./index.html#testimonials" class="drawer-link">Testimonials</a></li>
+                <li><a href="./index.html#events" class="drawer-link">Events</a></li>
+                <li><a href="./index.html#blog" class="drawer-link">Blog</a></li>
+                <li><a href="./index.html#contact" class="drawer-link">Contact Us</a></li>
+            </ul>
+            <a href="#inquiry" class="drawer-cta"><i class="fa-solid fa-calendar-check"></i> Book Your Event</a>
+            <div class="drawer-contact">
+                <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+                <a href="mailto:hello@blevents.in"><i class="fa-solid fa-envelope"></i> hello@blevents.in</a>
+            </div>
+        </div>
+        <div class="nav-backdrop" id="navBackdrop"></div>
+    </header>
+
+    <!-- ================================
+         HERO
+    ================================ -->
+    <section class="ct-hero">
+        <div class="ct-hero-bg"></div>
+        <div class="ct-hero-content">
+            <div class="hero-breadcrumb">
+                <span>Home</span>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Contact Us</span>
+            </div>
+            <h1>Let's Create Something <em>Extraordinary</em></h1>
+            <p>Every great event begins with a single conversation. Tell us your vision — we'll handle everything else
+                with precision, passion, and elegance. Reach out today for a free consultation.</p>
+        </div>
+    </section>
+
+    <!-- ================================
+         QUICK CONTACT STRIP
+    ================================ -->
+    <div class="quick-strip">
+        <div class="quick-inner">
+            <div class="quick-item">
+                <div class="quick-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="quick-text">
+                    <span>Call Us Anytime</span>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                </div>
+            </div>
+            <div class="quick-item">
+                <div class="quick-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="quick-text">
+                    <span>Alternate Number</span>
+                    <a href="tel:+919876543211">+91 98765 43211</a>
+                </div>
+            </div>
+            <div class="quick-item">
+                <div class="quick-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="quick-text">
+                    <span>Email Us</span>
+                    <a href="mailto:hello@blevents.in">hello@blevents.in</a>
+                </div>
+            </div>
+            <div class="quick-item">
+                <div class="quick-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="quick-text">
+                    <span>WhatsApp</span>
+                    <a href="https://wa.me/919876543210" target="_blank">Chat With Us</a>
+                </div>
+            </div>
+            <div class="quick-item">
+                <div class="quick-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="quick-text">
+                    <span>Working Hours</span>
+                    <p>Mon–Sat · 9 AM – 7 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================
+         MAIN CONTACT SECTION
+    ================================ -->
+    <section class="contact-main" id="inquiry">
+        <div class="contact-main-inner">
+
+            <!-- LEFT — Info Column -->
+            <div class="contact-info-col reveal">
+
+                <div class="contact-info-header">
+                    <span class="section-tag">/ Get In Touch</span>
+                    <h2>We're Here to <em>Plan With You</em></h2>
+                    <p>Whether you have a clear vision or just an idea — our team is here to guide you from the first
+                        call to the final farewell. Reach out anytime.</p>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-card-text">
+                            <span>Phone</span>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                            <a href="tel:+919876543211">+91 98765 43211</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-card-text">
+                            <span>Email</span>
+                            <a href="mailto:hello@blevents.in">hello@blevents.in</a>
+                            <a href="mailto:bookings@blevents.in">bookings@blevents.in</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-card-text">
+                            <span>Office Address</span>
+                            <address>BL Events, 2nd Floor, Shree Complex,<br />Kalawad Road, Rajkot —
+                                360005,<br />Gujarat, India.</address>
+                        </div>
+                    </div>
+                    <div class="info-card info-card--hours">
+                        <div class="info-card-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="info-card-text">
+                            <span>Working Hours</span>
+                            <p>Mon – Sat &nbsp;|&nbsp; 9:00 AM – 7:00 PM</p>
+                            <p>Sunday &nbsp;|&nbsp; By Appointment Only</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="info-card-text">
+                            <span>WhatsApp</span>
+                            <a href="https://wa.me/919876543210" target="_blank">Chat Directly on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <p>Follow BL Events</p>
+                    <div class="social-row">
+                        <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT — Inquiry Form -->
+            <div class="inquiry-form-wrap reveal" id="formWrapper">
+                <div class="form-deco-ring form-deco-ring-1"></div>
+                <div class="form-deco-ring form-deco-ring-2"></div>
+
+                <div class="form-header">
+                    <h3>Event <em>Inquiry Form</em></h3>
+                    <p>Fill in the details below and our team will reach out within 24 hours with a customised proposal
+                        — free, no commitment.</p>
+                </div>
+
+                <!-- Step indicators -->
+                <div class="form-steps" id="formSteps">
+                    <div class="form-step active" id="step-ind-1">
+                        <div class="step-num">1</div> <span>Your Details</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="form-step" id="step-ind-2">
+                        <div class="step-num">2</div> <span>Event Info</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="form-step" id="step-ind-3">
+                        <div class="step-num">3</div> <span>Requirements</span>
+                    </div>
+                </div>
+
+                <!-- THE FORM -->
+                <form id="inquiryForm" novalidate>
+
+                    <!-- =====================
+                         STEP 1 — Your Details
+                    ===================== -->
+                    <div class="form-panel active" id="panel-1">
+
+                        <div class="field-row">
+                            <div class="form-group">
+                                <label>Full Name <span class="required">*</span></label>
+                                <input type="text" class="form-input" id="fullName" name="fullName"
+                                    placeholder="e.g. Priya Sharma" autocomplete="name" />
+                                <span class="field-error" id="err-fullName">Please enter your full name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number <span class="required">*</span></label>
+                                <input type="tel" class="form-input" id="phone" name="phone"
+                                    placeholder="+91 98765 43210" autocomplete="tel" />
+                                <span class="field-error" id="err-phone">Enter a valid 10-digit mobile number.</span>
+                            </div>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="form-group">
+                                <label>Email Address <span class="required">*</span></label>
+                                <input type="email" class="form-input" id="email" name="email"
+                                    placeholder="you@example.com" autocomplete="email" />
+                                <span class="field-error" id="err-email">Please enter a valid email address.</span>
+                            </div>
+                            <div class="form-group">
+                                <label>WhatsApp Number</label>
+                                <input type="tel" class="form-input" id="whatsapp" name="whatsapp"
+                                    placeholder="Same as phone or different" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Your City / Location <span class="required">*</span></label>
+                            <input type="text" class="form-input" id="city" name="city"
+                                placeholder="e.g. Rajkot, Ahmedabad, Surat..." />
+                            <span class="field-error" id="err-city">Please enter your city.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>How Did You Hear About Us?</label>
+                            <div class="source-grid" id="sourceGrid">
+                                <span class="source-chip" data-val="Google"><i class="fa-brands fa-google"></i>
+                                    Google</span>
+                                <span class="source-chip" data-val="Instagram"><i class="fa-brands fa-instagram"></i>
+                                    Instagram</span>
+                                <span class="source-chip" data-val="Facebook"><i class="fa-brands fa-facebook-f"></i>
+                                    Facebook</span>
+                                <span class="source-chip" data-val="YouTube"><i class="fa-brands fa-youtube"></i>
+                                    YouTube</span>
+                                <span class="source-chip" data-val="Friend / Family"><i
+                                        class="fa-solid fa-user-group"></i> Friend / Family</span>
+                                <span class="source-chip" data-val="Just Dial"><i class="fa-solid fa-phone-volume"></i>
+                                    Just Dial</span>
+                                <span class="source-chip" data-val="Past Client"><i class="fa-solid fa-heart"></i> Past
+                                    Client</span>
+                                <span class="source-chip" data-val="Other"><i class="fa-solid fa-ellipsis"></i>
+                                    Other</span>
+                            </div>
+                            <input type="hidden" id="hearAbout" name="hearAbout" />
+                        </div>
+
+                        <div class="form-nav">
+                            <button type="button" class="btn-prev" disabled><i class="fa-solid fa-arrow-left"></i>
+                                Back</button>
+                            <button type="button" class="btn-next" onclick="nextStep(1)">Next — Event Info <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- =====================
+                         STEP 2 — Event Info
+                    ===================== -->
+                    <div class="form-panel" id="panel-2">
+
+                        <div class="form-group">
+                            <label>Services Required <span class="required">*</span></label>
+                            <div class="service-grid" id="serviceGrid">
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Wedding Planning" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-children"></i> Wedding Planning
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Social Events" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-users"></i> Social Events
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Promotional Activity / Branding" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-bullhorn"></i> Promotional / Branding
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Corporate Gathering" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-briefcase"></i> Corporate Gathering
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Musical Events & Live Stage Shows" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-music"></i> Musical Events & Live Shows
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Cultural Events" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-masks-theater"></i> Cultural Events
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Photography & Cinematography" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-camera"></i> Photography & Cinematography
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Birthday Parties" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-cake-candles"></i> Birthday Parties
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Celebrity Management" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-star"></i> Celebrity Management
+                                </label>
+                                <label class="service-check-label">
+                                    <input type="checkbox" name="services" value="Exhibition & Trade Show" />
+                                    <span class="check-dot"></span>
+                                    <i class="fa-solid fa-store"></i> Exhibition & Trade Show
+                                </label>
+                            </div>
+                            <span class="field-error" id="err-services">Please select at least one service.</span>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="form-group">
+                                <label>Event Date <span class="required">*</span></label>
+                                <input type="date" class="form-input" id="eventDate" name="eventDate" />
+                                <span class="field-error" id="err-eventDate">Please select your event date.</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Event Location</label>
+                                <input type="text" class="form-input" id="eventLocation" name="eventLocation"
+                                    placeholder="Venue city / area" />
+                            </div>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="form-group">
+                                <label>Expected Guests</label>
+                                <div class="select-wrap">
+                                    <select class="form-select" id="guestCount" name="guestCount">
+                                        <option value="" disabled selected>Select range</option>
+                                        <option>Below 50</option>
+                                        <option>50 – 100</option>
+                                        <option>100 – 250</option>
+                                        <option>250 – 500</option>
+                                        <option>500 – 1000</option>
+                                        <option>1000 – 2500</option>
+                                        <option>2500 – 5000</option>
+                                        <option>5000+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Event Venue Type</label>
+                                <div class="select-wrap">
+                                    <select class="form-select" id="venueType" name="venueType">
+                                        <option value="" disabled selected>Select type</option>
+                                        <option>Banquet Hall</option>
+                                        <option>Outdoor / Garden</option>
+                                        <option>Hotel / Resort</option>
+                                        <option>Open Ground</option>
+                                        <option>Farmhouse</option>
+                                        <option>Beach / Riverside</option>
+                                        <option>Convention Centre</option>
+                                        <option>Online / Virtual</option>
+                                        <option>Not decided yet</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-nav">
+                            <button type="button" class="btn-prev" onclick="prevStep(2)"><i
+                                    class="fa-solid fa-arrow-left"></i> Back</button>
+                            <button type="button" class="btn-next" onclick="nextStep(2)">Next — Requirements <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- =====================
+                         STEP 3 — Requirements
+                    ===================== -->
+                    <div class="form-panel" id="panel-3">
+
+                        <div class="form-group">
+                            <label>Approximate Budget</label>
+                            <div class="budget-display">
+                                <span>₹<span id="budgetVal">1,00,000</span></span>
+                                <span style="font-size:0.75rem;color:#5a4a30;font-weight:600;">Drag to adjust</span>
+                            </div>
+                            <input type="range" id="budgetSlider" min="0" max="100" value="20" style="--pct:20%"
+                                oninput="updateBudget(this)" />
+                            <div class="budget-label-row">
+                                <span>₹25,000</span>
+                                <span>₹5,00,000</span>
+                                <span>₹25,00,000+</span>
+                            </div>
+                            <input type="hidden" id="budget" name="budget" value="₹1,00,000" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Preferred Contact Time</label>
+                            <div class="select-wrap">
+                                <select class="form-select" id="contactTime" name="contactTime">
+                                    <option value="" disabled selected>When should we call you?</option>
+                                    <option>Morning (9 AM – 12 PM)</option>
+                                    <option>Afternoon (12 PM – 4 PM)</option>
+                                    <option>Evening (4 PM – 7 PM)</option>
+                                    <option>Anytime</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Rate Your Excitement <i class="fa-regular fa-face-grin-stars"
+                                    style="color:var(--gold);margin-left:4px;"></i></label>
+                            <div class="form-star-row" id="excitementStars">
+                                <span class="form-star" data-val="1"><i class="fa-solid fa-star"></i></span>
+                                <span class="form-star" data-val="2"><i class="fa-solid fa-star"></i></span>
+                                <span class="form-star" data-val="3"><i class="fa-solid fa-star"></i></span>
+                                <span class="form-star" data-val="4"><i class="fa-solid fa-star"></i></span>
+                                <span class="form-star" data-val="5"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <input type="hidden" id="excitement" name="excitement" value="0" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tell Us About Your Event <span class="required">*</span></label>
+                            <textarea class="form-textarea" id="message" name="message"
+                                placeholder="Describe your vision, theme ideas, special requests, or anything else you'd like us to know about your event..."></textarea>
+                            <span class="field-error" id="err-message">Please add a brief description of your
+                                event.</span>
+                        </div>
+
+                        <div class="form-nav">
+                            <button type="button" class="btn-prev" onclick="prevStep(3)"><i
+                                    class="fa-solid fa-arrow-left"></i> Back</button>
+                            <button type="submit" class="btn-submit" id="submitBtn">
+                                <div class="spinner"></div>
+                                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send My Inquiry</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!-- SUCCESS MESSAGE -->
+                <div class="form-success" id="formSuccess">
+                    <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+                    <h4>Inquiry Sent Successfully!</h4>
+                    <p>Thank you for reaching out to BL Events. Our team will review your inquiry and contact you within
+                        <strong style="color:var(--gold);">24 hours</strong> with a personalised proposal. Check your
+                        email inbox for a confirmation.</p>
+                    <button class="btn-new-inquiry" id="newInquiryBtn">
+                        <i class="fa-solid fa-plus"></i> Submit Another Inquiry
+                    </button>
+                </div>
+
+                <div class="form-note">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Your details are secure and will never be shared. Free consultation · No commitment required.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================
+         MAP SECTION
+    ================================ -->
+    <section class="map-section">
+        <div class="map-inner">
+            <div class="map-header reveal">
+                <div class="map-header-text">
+                    <span class="section-tag">/ Find Us</span>
+                    <h2>Visit Our <em>Rajkot Office</em></h2>
+                    <p>We're based in the heart of Rajkot — walk in, no appointment needed during working hours.</p>
+                </div>
+                <a href="https://maps.google.com/?q=Kalawad+Road+Rajkot+Gujarat" target="_blank" class="map-directions">
+                    <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                </a>
+            </div>
+            <div class="map-frame reveal">
+                <!-- Replace with your actual Google Maps embed URL -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29574.04820699786!2d70.7259!3d22.3039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c98ac71cdf0f%3A0x76dd15cfbe93ad3b!2sKalawad%20Rd%2C%20Rajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         FAQ STRIP
+    ================================ -->
+    <section class="faq-strip">
+        <div class="faq-inner">
+            <div class="faq-header reveal">
+                <span class="section-tag">/ Quick Answers</span>
+                <h2>Common <em>Questions</em></h2>
+                <p>Before you reach out, here are answers to the questions we get asked most often.</p>
+            </div>
+            <div class="faq-grid">
+
+                <div class="faq-item reveal">
+                    <div class="faq-q">
+                        <h4>How far in advance should I book BL Events?</h4>
+                        <div class="faq-arrow"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>We recommend booking at least 3–6 months in advance for weddings and large events. For
+                            corporate events and birthday parties, 4–6 weeks is usually sufficient. However, we can
+                            accommodate urgent bookings depending on availability — reach out and we'll let you know.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-q">
+                        <h4>Do you manage events outside Rajkot?</h4>
+                        <div class="faq-arrow"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>Absolutely. BL Events covers all 33 districts of Gujarat and all 11 cities of Saurashtra. We
+                            also take outstation events across India on request. Our on-ground coordinators travel with
+                            the team to ensure seamless execution anywhere.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-q">
+                        <h4>Is the initial consultation free?</h4>
+                        <div class="faq-arrow"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>Yes — completely free. Our first consultation involves understanding your vision,
+                            requirements, and budget. We then prepare a customised proposal within 48 hours at no charge
+                            and with no commitment on your part.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-q">
+                        <h4>Can we customise our event package?</h4>
+                        <div class="faq-arrow"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>Every BL Events package is fully customisable. We don't believe in one-size-fits-all. Tell us
+                            your vision, your budget, and your must-haves — and we'll design a proposal that fits
+                            perfectly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-q">
+                        <h4>What's the minimum budget to work with BL Events?</h4>
+                        <div class="faq-arrow"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>There's no fixed minimum — we work with budgets of all sizes. Small intimate gatherings and
+                            large-scale concerts both receive the same level of care and professionalism. Tell us your
+                            budget and we'll tell you exactly what's possible.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-q">
+                        <h4>Do you handle photography and décor together?</h4>
+                        <div class="faq-arrow"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>Yes — BL Events is a full-service agency. We have an in-house photography and cinematography
+                            team alongside our décor specialists, so you don't need to coordinate multiple vendors.
+                            Everything is handled by one team, ensuring perfect sync on your event day.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-q">
+                        <h4>How do I get a quote or proposal?</h4>
+                        <div class="faq-arrow"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>Simply fill out the inquiry form above or call us directly. Once we understand your
+                            requirements, our team prepares a detailed, itemised proposal within 48 hours — completely
+                            free with no obligation to proceed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-q">
+                        <h4>Do you do celebrity bookings and live shows?</h4>
+                        <div class="faq-arrow"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-a">
+                        <p>Yes. Our Celebrity Management division has organized events with Bollywood artists, regional
+                            folk stars, motivational speakers, and more. We handle artist booking, contracts, travel,
+                            hospitality, and on-day coordination end to end.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         CTA BANNER
+    ================================ -->
+    <section class="ct-cta">
+        <div class="ct-cta-deco">BL EVENTS</div>
+        <div class="ct-cta-inner reveal">
+            <span class="section-tag">/ One Step Away</span>
+            <h2>Your Dream Event is <em>One Call Away</em></h2>
+            <p>Whether you're ready to book or just exploring — our team is here to help, guide, and inspire. Reach out
+                today and let's start building something extraordinary together.</p>
+            <div class="ct-cta-btns">
+                <a href="#inquiry" class="ct-btn-primary">Fill Inquiry Form <i class="fa-solid fa-arrow-up"></i></a>
+                <a href="tel:+919876543210" class="ct-btn-ghost"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER STRIP -->
+    <div class="ct-footer">
+        <p>© 2025 BL Events. All rights reserved. Rajkot, Gujarat.</p>
+        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i> Back to Main Site</a>
+    </div>
+
+</body>
+
+</html>
