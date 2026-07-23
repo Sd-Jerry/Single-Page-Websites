@@ -226,3 +226,19 @@ const blogObserver = new IntersectionObserver(
 );
 
 blogCards.forEach((card) => blogObserver.observe(card));
+
+// SCROLL ON TOP
+function scrolltop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+// Whatsapp.sticky Delay Js
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const waButton = document.querySelector('.whatsapp-sticky');
+        waButton.classList.add('show');
+    }, 3000); // 3000ms = 3 seconds delay
+});

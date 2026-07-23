@@ -340,6 +340,25 @@
         height: 200px;
         min-height: unset;
     }
+
+    /* < SCROLL ON TOP */
+    #scroll-on-top {
+        bottom: 5.5rem;
+        right: 1.5rem;
+    }
+
+    /* < WHATSAPP BUTTON */
+    .whatsapp-sticky {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-sticky img {
+        width: 32px;
+        height: 32px;
+    }
 }
 
 /* -------------------------------- */
@@ -483,6 +502,24 @@
     .blog-card--small .blog-card-thumb {
         width: 100%;
         height: 170px;
+    }
+
+    /* < SCROLL ON TOP */
+    #scroll-on-top {
+        bottom: 5rem;
+        right: 1rem;
+    }
+
+    /* < WHATSAPP BUTTON */
+    .whatsapp-sticky {
+        right: 12px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .whatsapp-sticky img {
+        width: 30px;
+        height: 30px;
     }
 }
 
