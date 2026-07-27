@@ -143,6 +143,11 @@
     .list li a {
         font-size: 1rem;
     }
+
+    /* F A Q SECTION */
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* -------------------------------- */
@@ -295,6 +300,26 @@
 
     .mySwiperTesti {
         padding: 16px 4px 50px !important;
+    }
+
+    /* F A Q SECTION */
+    #faq {
+        padding: clamp(40px, 8vw, 60px) 6%;
+    }
+
+    .faq-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .faq-cta-btns {
+        width: 100%;
+    }
+
+    .faq-btn-call,
+    .faq-btn-form {
+        flex: 1;
+        justify-content: center;
     }
 
     /* CONTACT SECTION */
@@ -486,6 +511,17 @@
     .testi-avatar {
         width: 50px;
         height: 50px;
+    }
+
+    /* F A Q SECTION */
+    .faq-cta-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .faq-bg-text {
+        letter-spacing: 5px;
     }
 
     /* CONTACT SECTION */

@@ -172,6 +172,29 @@ var swiperTesti = new Swiper(".mySwiperTesti", {
   },
 });
 
+// ---- FAQ ACCORDION ----
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const btn = item.querySelector(".faq-question");
+
+  btn.addEventListener("click", () => {
+    const isOpen = item.classList.contains("open");
+
+    // Close all other open items
+    faqItems.forEach(i => {
+      i.classList.remove("open");
+      i.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+    });
+
+    // Toggle clicked item
+    if (!isOpen) {
+      item.classList.add("open");
+      btn.setAttribute("aria-expanded", "true");
+    }
+  });
+});
+
 // EVENT Section
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.getElementById("showreel-video");
@@ -237,8 +260,8 @@ function scrolltop() {
 
 // Whatsapp.sticky Delay Js
 window.addEventListener('load', () => {
-    setTimeout(() => {
-        const waButton = document.querySelector('.whatsapp-sticky');
-        waButton.classList.add('show');
-    }, 3000); // 3000ms = 3 seconds delay
+  setTimeout(() => {
+    const waButton = document.querySelector('.whatsapp-sticky');
+    waButton.classList.add('show');
+  }, 3000); // 3000ms = 3 seconds delay
 });
