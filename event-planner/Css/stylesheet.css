@@ -3238,96 +3238,666 @@ body {
         box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
-/* ---------- FOOTER SECTION ----------- */
-#footer {
+/* ========================================
+   FOOTER SECTION
+======================================== */
+#site-footer {
     width: 100%;
     position: relative;
-    bottom: 0;
+    background: #0a0a0a;
+    overflow: hidden;
 }
 
-.footer-section {
+/* ---- Top separator ---- */
+.footer-sep-top {
     width: 100%;
-    background-color: rgb(32, 30, 30);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 1rem 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
 }
 
-.footer-item {
-    margin: 1rem;
-}
-
-.footer-item h2 {
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-.footer-item h2::after {
-    content: '';
-    width: 4rem;
-    height: 0.2rem;
-    background: gold;
+/* ---- Background glow blobs ---- */
+#site-footer::before {
+    content: "";
     position: absolute;
-    top: 2.5rem;
-    left: 0;
+    top: 80px;
+    left: -80px;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
-.footer-item p {
-    transition: all 0.2s linear;
-    margin-bottom: 0.6rem;
+#site-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 120px;
+    right: -60px;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
-.footer-item p:hover {
-    transform: translateX(10px);
+/* ====================================
+   NEWSLETTER BANNER
+==================================== */
+.footer-newsletter {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(184, 134, 11, 0.05));
+    border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+    padding: clamp(24px, 3.5vw, 36px) clamp(5%, 8vw, 100px);
 }
 
-.footer-item a {
+.footer-newsletter-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(20px, 4vw, 40px);
+    flex-wrap: wrap;
+}
+
+.fnl-text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.fnl-text>i {
+    font-size: clamp(24px, 3.5vw, 32px);
+    color: #d4af37;
+    flex-shrink: 0;
+}
+
+.fnl-text h3 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.fnl-text p {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.78rem, 1.1vw, 0.86rem);
+    color: #6a5a40;
+    margin: 0;
+}
+
+.fnl-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 480px;
+}
+
+.fnl-input-wrap {
+    flex: 1;
+    position: relative;
+    min-width: 200px;
+}
+
+.fnl-input-wrap i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(212, 175, 55, 0.45);
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.fnl-input-wrap input {
+    width: 100%;
+    padding: 13px 16px 13px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.fnl-input-wrap input::placeholder {
+    color: #4a3a20;
+}
+
+.fnl-input-wrap input:focus {
+    border-color: rgba(212, 175, 55, 0.5);
+    background: rgba(212, 175, 55, 0.07);
+}
+
+.fnl-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 26px;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    border-radius: 50px;
+    border: none;
     cursor: pointer;
-    color: #fff;
+    white-space: nowrap;
+    box-shadow: 0 6px 16px rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fnl-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(212, 175, 55, 0.45);
+}
+
+.fnl-btn i {
+    transition: transform 0.3s ease;
+}
+
+.fnl-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* Success state */
+.fnl-btn.subscribed {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.35);
+    pointer-events: none;
+}
+
+/* ====================================
+   FOOTER BODY
+==================================== */
+.footer-body {
+    padding: clamp(50px, 7vw, 80px) clamp(5%, 8vw, 100px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.footer-body-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.7fr 0.9fr 1fr;
+    gap: clamp(28px, 4vw, 48px);
+    align-items: start;
+}
+
+/* ---- Column shared ---- */
+.footer-col-title {
+    font-family: "Cinzel", serif;
+    font-size: clamp(0.85rem, 1.2vw, 0.96rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.footer-col-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 36px;
+    height: 2px;
+    background: linear-gradient(90deg, #d4af37, transparent);
+    border-radius: 2px;
+}
+
+/* ---- Brand column ---- */
+.footer-logo img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.footer-tagline {
+    font-family: "Cinzel", serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #d4af37;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.footer-about {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.84rem, 1.15vw, 0.92rem);
+    color: #6a5a40;
+    line-height: 1.75;
+    margin-bottom: 22px;
+}
+
+/* Trust badges */
+.footer-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+}
+
+.footer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 13px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: #9a8a72;
+}
+
+.footer-badge i {
+    font-size: 11px;
+    color: #d4af37;
+}
+
+/* Social icons */
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-social {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9a8a72;
+    font-size: 15px;
+    transition: background 0.3s ease, border-color 0.3s ease,
+        color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social:hover {
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    border-color: transparent;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ---- Links columns ---- */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.82rem, 1.15vw, 0.9rem);
+    font-weight: 600;
+    color: #6a5a40;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    position: relative;
     text-decoration: none;
 }
 
-.footer-item a:hover {
-    color: gold;
+.footer-links li a i {
+    font-size: 9px;
+    color: rgba(212, 175, 55, 0.4);
+    transition: color 0.3s ease, transform 0.3s ease;
+    flex-shrink: 0;
 }
 
-.footer-item ul {
+.footer-links li a:hover {
+    color: #d4af37;
+    padding-left: 4px;
+}
+
+.footer-links li a:hover i {
+    color: #d4af37;
+    transform: translateX(2px);
+}
+
+/* ---- Contact column ---- */
+.footer-contact-list {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 22px;
 }
 
-.footer-item ul li {
-    list-style: none;
-}
-
-.Social ul li {
-    font-size: 1.5rem;
-    transition: all .2s linear;
-}
-
-.Social ul li:hover {
-    transform: scale(1.3);
-    transition: all .2s linear;
-}
-
-.footer-bottom {
-    max-width: 100%;
+.footer-contact-item {
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.footer-contact-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    flex-shrink: 0;
+    background: rgba(212, 175, 55, 0.1);
+    display: flex;
     align-items: center;
-    text-align: center;
-    font-size: 0.875rem;
-    background: #000;
-    color: whitesmoke;
-    padding: 10px;
+    justify-content: center;
+    transition: background 0.3s ease;
 }
 
-.footer-bottom p span {
-    color: gold;
-    font-weight: 500;
+.footer-contact-item:hover .footer-contact-icon {
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+}
+
+.footer-contact-icon i {
+    font-size: 14px;
+    color: #d4af37;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-item:hover .footer-contact-icon i {
+    color: #ffffff;
+}
+
+.footer-contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer-contact-text span {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-contact-text a,
+.footer-contact-text p,
+.footer-contact-text address {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.8rem, 1.1vw, 0.87rem);
+    font-weight: 600;
+    color: #6a5a40;
+    line-height: 1.6;
+    margin: 0;
+    font-style: normal;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-text a:hover {
+    color: #d4af37;
+}
+
+/* WhatsApp CTA */
+.footer-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 22px;
+    width: 100%;
+    justify-content: center;
+    background: rgba(37, 211, 102, 0.1);
+    border: 1px solid rgba(37, 211, 102, 0.3);
+    border-radius: 50px;
+    color: #25d366;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 0.86rem;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-whatsapp-btn i {
+    font-size: 18px;
+}
+
+.footer-whatsapp-btn:hover {
+    background: rgba(37, 211, 102, 0.18);
+    border-color: rgba(37, 211, 102, 0.5);
+    transform: translateY(-2px);
+}
+
+/* ====================================
+   COVERAGE STRIP
+==================================== */
+.footer-coverage {
+    padding: clamp(14px, 2vw, 18px) clamp(5%, 8vw, 100px);
+    background: rgba(212, 175, 55, 0.04);
+    border-top: 1px solid rgba(212, 175, 55, 0.08);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+}
+
+.footer-coverage-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-coverage-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.footer-coverage-label i {
+    font-size: 13px;
+}
+
+.footer-cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.footer-cities span {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: #5a4a30;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.footer-cities span:hover {
+    color: #d4af37;
+}
+
+.footer-cities-more {
+    font-weight: 700 !important;
+    color: rgba(212, 175, 55, 0.6) !important;
+    font-style: italic;
+}
+
+/* Dot separator between cities */
+.footer-cities span:not(:last-child)::after {
+    content: "·";
+    margin-left: 8px;
+    color: rgba(212, 175, 55, 0.2);
+}
+
+/* ====================================
+   BOTTOM BAR
+==================================== */
+.footer-bottom {
+    padding: clamp(16px, 2.5vw, 22px) clamp(5%, 8vw, 100px);
+}
+
+.footer-bottom-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-copy {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.78rem;
+    color: #3a3020;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #3a3020;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #d4af37;
+}
+
+.footer-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.25);
+    display: inline-block;
+}
+
+/* ====================================
+   RESPONSIVE
+==================================== */
+@media (max-width: 1100px) {
+    .footer-body-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(28px, 4vw, 40px);
+    }
+
+    .footer-col--brand {
+        grid-column: span 2;
+    }
+
+    .footer-col--contact {
+        grid-column: span 2;
+    }
+
+    .footer-col--contact .footer-contact-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .footer-whatsapp-btn {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-newsletter-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fnl-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .fnl-input-wrap {
+        min-width: 0;
+    }
+
+    .footer-body-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-col--brand {
+        grid-column: span 2;
+    }
+
+    .footer-col--contact {
+        grid-column: span 2;
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .footer-bottom-links {
+        order: 2;
+    }
+
+    .footer-copy {
+        order: 3;
+    }
+
+    .footer-col--contact .footer-contact-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-body-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-col--brand {
+        grid-column: span 1;
+    }
+
+    .footer-col--contact {
+        grid-column: span 1;
+    }
+
+    .footer-bottom-inner {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-copy {
+        justify-content: center;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+    }
+
+    .footer-coverage-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* <═══════════ SCROLL ON TOP IS HERE ═══════════> */

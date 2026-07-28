@@ -250,6 +250,37 @@ const blogObserver = new IntersectionObserver(
 
 blogCards.forEach((card) => blogObserver.observe(card));
 
+// ---- FOOTER SCRIPTS ----
+
+// 1. Auto year in copyright
+document.getElementById("footerYear").textContent = new Date().getFullYear();
+
+// 2. Newsletter form
+document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const emailInput = document.getElementById("nlEmail");
+  const btn = this.querySelector(".fnl-btn");
+  const email = emailInput.value.trim();
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    emailInput.style.borderColor = "rgba(229,57,53,0.6)";
+    emailInput.focus();
+    return;
+  }
+
+  emailInput.style.borderColor = "";
+
+  // Visual feedback — replace with your actual newsletter API
+  btn.classList.add("subscribed");
+  btn.innerHTML = '<i class="fa-solid fa-check"></i> Subscribed!';
+
+  setTimeout(() => {
+    emailInput.value = "";
+    btn.classList.remove("subscribed");
+    btn.innerHTML = 'Subscribe <i class="fa-solid fa-arrow-right"></i>';
+  }, 3500);
+});
+
 // SCROLL ON TOP
 function scrolltop() {
   window.scrollTo({
