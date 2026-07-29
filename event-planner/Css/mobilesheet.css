@@ -167,7 +167,6 @@
 
     .nav-cta {
         display: none;
-        /* CTA is inside drawer on mobile */
     }
 
     #navbar {
@@ -188,16 +187,9 @@
 /* -------------------------------- */
 @media screen and (max-width: 768px) {
 
-    /* HOME SECTION */
-    /* #home {
-        height: 65vh;
-        min-height: 450px;
-    } */
-
     .mySwiperHome .swiper-button-next,
     .mySwiperHome .swiper-button-prev {
         display: none;
-        /* arrows clutter small screens, swipe gesture is enough */
     }
 
     .mySwiperHome .caption {
@@ -367,9 +359,9 @@
     }
 
     /* < SCROLL ON TOP */
-    #scroll-on-top {
-        bottom: 5.5rem;
-        right: 1.5rem;
+    .scroll-top-btn {
+        bottom: 80px;
+        right: 20px;
     }
 
     /* < WHATSAPP BUTTON */
@@ -456,12 +448,6 @@
         height: 46px;
     }
 
-    /* HOME SECTION */
-    /* #home {
-        height: 60vh;
-        min-height: 400px;
-    } */
-
     .mySwiperHome .hero-btn {
         padding: 10px 24px;
     }
@@ -541,9 +527,11 @@
     }
 
     /* < SCROLL ON TOP */
-    #scroll-on-top {
-        bottom: 5rem;
-        right: 1rem;
+    .scroll-top-btn {
+        bottom: 70px;
+        right: 16px;
+        height: 35px;
+        width: 35px;
     }
 
     /* < WHATSAPP BUTTON */

@@ -771,8 +771,8 @@ body {
 /* Floating event card — bottom right */
 .abt-float-card {
     position: absolute;
-    bottom: -18px;
-    right: -24px;
+    bottom: 35px;
+    right: -35px;
     z-index: 5;
     background: #fff;
     border: 1px solid rgba(212, 175, 55, 0.25);
@@ -3901,32 +3901,36 @@ body {
 }
 
 /* <═══════════ SCROLL ON TOP IS HERE ═══════════> */
-#scroll-on-top {
-    background-color: #d4af37;
-    color: #fdfaf4;
-    padding: 9px;
-    border-radius: 9px;
-    width: 35px;
-    height: 35px;
+.scroll-top-btn {
     position: fixed;
-    bottom: 6.5rem;
-    right: 1.9rem;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2001;
+    bottom: 105px;
+    right: 25px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4af37, #b8860b);
+    border: none;
     cursor: pointer;
-    touch-action: manipulation;
-}
-
-#scroll-on-top span i {
-    transition: transform 0.3s ease;
-}
-
-#scroll-on-top span i:hover {
-    transform: scale(1.2);
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    z-index: 990;
+    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(212, 175, 55, 0.55);
 }
 
 /* <═══════════ WHATSAPP BUTTON IS HERE ═══════════> */

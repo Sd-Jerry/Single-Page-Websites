@@ -282,12 +282,11 @@ document.getElementById("newsletterForm").addEventListener("submit", function (e
 });
 
 // SCROLL ON TOP
-function scrolltop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
+const scrollBtn = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", () => {
+  scrollBtn.classList.toggle("visible", window.scrollY > 500);
+}, { passive: true });
+scrollBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
 // Whatsapp.sticky Delay Js
 window.addEventListener('load', () => {
