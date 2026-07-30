@@ -1745,41 +1745,6 @@ body {
     gap: 12px;
 }
 
-/* ----- BOTTOM CTA ----- */
-.events-cta {
-    text-align: center;
-}
-
-.events-gallery-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 40px;
-    background: transparent;
-    border: 1.5px solid rgba(212, 175, 55, 0.5);
-    color: #d4af37;
-    text-decoration: none;
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-    font-size: clamp(0.9rem, 1.3vw, 1rem);
-    border-radius: 50px;
-    transition: background 0.35s ease, border-color 0.35s ease,
-        color 0.35s ease, transform 0.3s ease, box-shadow 0.35s ease;
-    letter-spacing: 0.3px;
-}
-
-.events-gallery-btn:hover {
-    background: linear-gradient(135deg, #d4af37, #b8860b);
-    border-color: transparent;
-    color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.4);
-}
-
-.events-gallery-btn i {
-    font-size: 16px;
-}
-
 /* ---------- TESTIMONIALS SECTION ----------- */
 #testimonials {
     width: 100%;
