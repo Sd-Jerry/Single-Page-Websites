@@ -1,4 +1,4 @@
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
     .nav-hamburger {
         display: none;
     }
@@ -10,13 +10,13 @@
     .nav-backdrop {
         display: none;
     }
-}
+} */
 
 /* -------------------------------- */
 @media screen and (max-width: 1024px) {
 
     /* ----- HEADER SECTION ----- */
-    .nav-list {
+    /* .nav-list {
         gap: 0;
     }
 
@@ -28,7 +28,7 @@
     .nav-cta {
         padding: 9px 18px;
         font-size: 0.8rem;
-    }
+    } */
 
     /* HOME SECTION */
     #home {
@@ -136,13 +136,13 @@
 @media screen and (max-width: 911px) {
 
     /* ----- HEADER SECTION ----- */
-    .nav-left img {
+    /* .nav-left img {
         width: 150px;
     }
 
     .list li a {
         font-size: 1rem;
-    }
+    } */
 
     /* F A Q SECTION */
     .faq-grid {
@@ -157,7 +157,7 @@
     }
 
     /* HEADER SECTION */
-    .nav-list {
+    /* .nav-list {
         display: none;
     }
 
@@ -180,7 +180,7 @@
 
     #site-header.nav-scrolled #navbar {
         height: 62px;
-    }
+    } */
 
 }
 
@@ -439,15 +439,16 @@
 @media screen and (max-width: 475px) {
 
     /* HEADER SECTION */
-    #navbar {
+    /* #navbar {
         height: 64px;
         padding: 0 4%;
     }
 
     .nav-logo img {
         height: 46px;
-    }
+    } */
 
+    /* HOME SECTION */
     .mySwiperHome .hero-btn {
         padding: 10px 24px;
     }

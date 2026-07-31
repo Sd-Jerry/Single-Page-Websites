@@ -46,63 +46,6 @@ a {
 }
 
 /* ==============================
-           NAVBAR
-        ============================== */
-.abt-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    padding: 18px clamp(5%, 8vw, 80px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background 0.4s ease, box-shadow 0.4s ease;
-}
-
-.abt-nav.scrolled {
-    background: rgba(17, 17, 17, 0.96);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
-
-.nav-logo {
-    font-family: "Cinzel", serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: 1px;
-}
-
-.nav-logo span {
-    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.nav-back {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-family: "Nunito", sans-serif;
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: var(--gold);
-    border: 1.5px solid rgba(212, 175, 55, 0.5);
-    padding: 8px 20px;
-    border-radius: 50px;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.nav-back:hover {
-    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-    color: var(--white);
-    border-color: transparent;
-}
-
-/* ==============================
            HERO BANNER
         ============================== */
 .abt-hero {
