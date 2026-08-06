@@ -14,58 +14,20 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="./Css/navbar.css" />
+
     <link rel="stylesheet" href="./Css/events.css">
 
 </head>
 
 <body>
-
-    <!-- ================================
-         NAVBAR
+<!-- ================================
+    NAVBAR
     ================================ -->
-    <header id="site-header">
-        <nav id="navbar">
-            <div class="nav-logo">
-                <a href="./index.html">
-                    <img src="./imgs/icons/bl-events-logo-white.svg" alt="BL Events Logo" />
-                </a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="./index.html#home" class="nav-link">Home</a></li>
-                <li><a href="./index.html#wedding-section" class="nav-link">About Us</a></li>
-                <li><a href="./index.html#services" class="nav-link">Services</a></li>
-                <li><a href="./index.html#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="./index.html#events" class="nav-link active">Events</a></li>
-                <li><a href="./index.html#blog" class="nav-link">Blog</a></li>
-                <li><a href="./index.html#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <a href="./index.html#contact" class="nav-cta">Book Event <i class="fa-solid fa-arrow-right"></i></a>
-                <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </nav>
-        <div class="nav-drawer" id="navDrawer">
-            <ul class="drawer-list">
-                <li><a href="./index.html#home" class="drawer-link">Home</a></li>
-                <li><a href="./index.html#wedding-section" class="drawer-link">About Us</a></li>
-                <li><a href="./index.html#services" class="drawer-link">Services</a></li>
-                <li><a href="./index.html#testimonials" class="drawer-link">Testimonials</a></li>
-                <li><a href="./index.html#events" class="drawer-link">Events</a></li>
-                <li><a href="./index.html#blog" class="drawer-link">Blog</a></li>
-                <li><a href="./index.html#contact" class="drawer-link">Contact Us</a></li>
-            </ul>
-            <a href="./index.html#contact" class="drawer-cta"><i class="fa-solid fa-calendar-check"></i> Book Your
-                Event</a>
-            <div class="drawer-contact">
-                <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
-                <a href="mailto:hello@blevents.in"><i class="fa-solid fa-envelope"></i> hello@blevents.in</a>
-            </div>
-        </div>
-        <div class="nav-backdrop" id="navBackdrop"></div>
-    </header>
-
+    <div id="bl-navbar"></div>
+    
     <!-- ================================
          HERO
     ================================ -->
@@ -102,7 +64,8 @@
 
             <div class="ev-hero-btns">
                 <a href="#gallery" class="ev-btn-primary">Explore Gallery <i class="fa-solid fa-arrow-down"></i></a>
-                <a href="./contact.html#inquiry" target="_blank" class="ev-btn-ghost"><i class="fa-solid fa-calendar-check"></i> Book Your
+                <a href="./contact.html#inquiry" target="_blank" class="ev-btn-ghost"><i
+                        class="fa-solid fa-calendar-check"></i> Book Your
                     Event</a>
             </div>
         </div>
@@ -357,12 +320,12 @@
             </div>
             <div class="showreel-label reveal">
                 <i class="fa-solid fa-circle-play"></i>
-                BL Events — Official Highlight Reel 2024
+                BL Events — Official Highlight Reel 2026
             </div>
             <div class="showreel-frame reveal" id="showreelWrapper">
                 <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
                 <iframe id="showreelIframe"
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&modestbranding=1&color=white"
+                    src="./videos/Video-16561 - ROTATE - Videobolt.net (1).mp4"
                     title="BL Events Highlight Reel 2024" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen loading="lazy">
@@ -741,6 +704,9 @@
         <p>© 2025 BL Events. All rights reserved. Rajkot, Gujarat.</p>
         <a href="./index.html"><i class="fa-solid fa-arrow-left"></i> Back to Main Site</a>
     </div>
+
+    <!-- Navbar JS — MUST come before page JS -->
+    <script src="./Js/navbar.js"></script>
 
     <!-- Link your JS here with 'defer' -->
     <script src="./Js/events.js" defer></script>

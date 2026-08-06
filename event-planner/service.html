@@ -17,10 +17,13 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="./Css/navbar.css" />
+
     <!-- Css Link -->
     <link rel="stylesheet" href="./Css/service.css">
-    <!-- Link your JS here with 'defer' -->
-    <script src="./Js/service.js" defer></script>
+    
 </head>
 
 <body>
@@ -28,51 +31,7 @@
     <!-- ==============================
          NAVBAR
     ============================== -->
-    <header id="site-header">
-        <nav id="navbar">
-            <div class="nav-logo">
-                <a href="./index.html">
-                    <img src="./imgs/icons/bl-events-logo-white.svg" alt="BL Events Logo" />
-                </a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="./index.html#home" class="nav-link">Home</a></li>
-                <li><a href="./index.html#wedding-section" class="nav-link">About Us</a></li>
-                <li><a href="./index.html#services" class="nav-link active">Services</a></li>
-                <li><a href="./index.html#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="./index.html#events" class="nav-link">Events</a></li>
-                <li><a href="./index.html#blog" class="nav-link">Blog</a></li>
-                <li><a href="./index.html#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <a href="./index.html#contact" class="nav-cta">
-                    Book Event <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </nav>
-        <div class="nav-drawer" id="navDrawer">
-            <ul class="drawer-list">
-                <li><a href="./index.html#home" class="drawer-link">Home</a></li>
-                <li><a href="./index.html#wedding-section" class="drawer-link">About Us</a></li>
-                <li><a href="./index.html#services" class="drawer-link">Services</a></li>
-                <li><a href="./index.html#testimonials" class="drawer-link">Testimonials</a></li>
-                <li><a href="./index.html#events" class="drawer-link">Events</a></li>
-                <li><a href="./index.html#blog" class="drawer-link">Blog</a></li>
-                <li><a href="./index.html#contact" class="drawer-link">Contact Us</a></li>
-            </ul>
-            <a href="./index.html#contact" class="drawer-cta">
-                <i class="fa-solid fa-calendar-check"></i> Book Your Event
-            </a>
-            <div class="drawer-contact">
-                <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
-                <a href="mailto:hello@blevents.in"><i class="fa-solid fa-envelope"></i> hello@blevents.in</a>
-            </div>
-        </div>
-        <div class="nav-backdrop" id="navBackdrop"></div>
-    </header>
+    <div id="bl-navbar"></div>
 
     <!-- ==============================
          HERO
@@ -874,6 +833,12 @@
         <p>© 2025 BL Events. All rights reserved. Rajkot, Gujarat.</p>
         <a href="./index.html"><i class="fa-solid fa-arrow-left"></i> Back to Main Site</a>
     </div>
+
+    <!-- Navbar JS — MUST come before page JS -->
+    <script src="./Js/navbar.js"></script>
+    
+    <!-- Link your JS here with 'defer' -->
+    <script src="./Js/service.js" defer></script>
 </body>
 
 </html>

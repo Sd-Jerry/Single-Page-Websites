@@ -8,28 +8,6 @@ const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";  // ← Your EmailJS Service ID
 const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // ← Your EmailJS Template ID
 
 /* ================================
-   NAVBAR
-================================ */
-const header = document.getElementById("site-header");
-const hamburger = document.getElementById("navHamburger");
-const drawer = document.getElementById("navDrawer");
-const backdrop = document.getElementById("navBackdrop");
-
-function handleScroll() {
-    header.classList.toggle("nav-scrolled", window.scrollY > 50);
-    header.classList.toggle("nav-top", window.scrollY <= 50);
-}
-window.addEventListener("scroll", handleScroll, { passive: true });
-handleScroll();
-
-function openDrawer() { drawer.classList.add("open"); backdrop.classList.add("open"); hamburger.classList.add("open"); document.body.style.overflow = "hidden"; }
-function closeDrawer() { drawer.classList.remove("open"); backdrop.classList.remove("open"); hamburger.classList.remove("open"); document.body.style.overflow = ""; }
-hamburger.addEventListener("click", () => drawer.classList.contains("open") ? closeDrawer() : openDrawer());
-backdrop.addEventListener("click", closeDrawer);
-document.querySelectorAll(".drawer-link,.drawer-cta").forEach(l => l.addEventListener("click", closeDrawer));
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeDrawer(); });
-
-/* ================================
    MULTI-STEP FORM
 ================================ */
 let currentStep = 1;

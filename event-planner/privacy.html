@@ -14,7 +14,11 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<link rel="stylesheet" href="./Css/privacy.css">
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="./Css/navbar.css" />
+
+    <link rel="stylesheet" href="./Css/privacy.css">
 </head>
 
 <body>
@@ -32,45 +36,7 @@
     <!-- ================================
          NAVBAR
     ================================ -->
-    <header id="site-header">
-        <nav id="navbar">
-            <div class="nav-logo">
-                <a href="./index.html">
-                    <img src="./imgs/icons/bl-events-logo-gold.svg" alt="BL Events Logo" />
-                </a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="./index.html#home" class="nav-link">Home</a></li>
-                <li><a href="./about.html" class="nav-link">About Us</a></li>
-                <li><a href="./services.html" class="nav-link">Services</a></li>
-                <li><a href="./events.html" class="nav-link">Events</a></li>
-                <li><a href="./testimonials.html" class="nav-link">Reviews</a></li>
-                <li><a href="./contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <a href="./contact.html" class="nav-cta">Book Event <i class="fa-solid fa-arrow-right"></i></a>
-                <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </nav>
-        <div class="nav-drawer" id="navDrawer">
-            <ul class="drawer-list">
-                <li><a href="./index.html" class="drawer-link">Home</a></li>
-                <li><a href="./about.html" class="drawer-link">About Us</a></li>
-                <li><a href="./services.html" class="drawer-link">Services</a></li>
-                <li><a href="./events.html" class="drawer-link">Events</a></li>
-                <li><a href="./testimonials.html" class="drawer-link">Reviews</a></li>
-                <li><a href="./contact.html" class="drawer-link">Contact Us</a></li>
-            </ul>
-            <a href="./contact.html" class="drawer-cta"><i class="fa-solid fa-calendar-check"></i> Book Your Event</a>
-            <div class="drawer-contact">
-                <a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
-                <a href="mailto:hello@blevents.in"><i class="fa-solid fa-envelope"></i> hello@blevents.in</a>
-            </div>
-        </div>
-        <div class="nav-backdrop" id="navBackdrop"></div>
-    </header>
+    <div id="bl-navbar"></div>
 
     <!-- ================================
          HERO
@@ -164,7 +130,8 @@
                                 India</strong>, operating under the trade name BL Events.</p>
                         <p>This Privacy Policy applies to all information collected through our website
                             <em>blevents.in</em>, our inquiry forms, our social media pages, and any related services we
-                            provide (collectively, the "Services").</p>
+                            provide (collectively, the "Services").
+                        </p>
                         <div class="pp-highlight">
                             <p><strong>By using our website or submitting an inquiry, you agree to the collection and
                                     use of information in accordance with this Privacy Policy.</strong> If you do not
@@ -491,7 +458,8 @@
                         <p>As a user of our website and a client of BL Events, you have the following rights with
                             respect to your personal data. You may exercise these rights at any time by contacting us at
                             <a href="mailto:hello@blevents.in"
-                                style="color:var(--gold-dark);font-weight:700;">hello@blevents.in</a>.</p>
+                                style="color:var(--gold-dark);font-weight:700;">hello@blevents.in</a>.
+                        </p>
 
                         <div class="rights-grid">
                             <div class="right-card">
@@ -733,75 +701,10 @@
     <!-- ================================
          JAVASCRIPT
     ================================ -->
-    <script>
-        // ---- Navbar ----
-        const header = document.getElementById("site-header");
-        const hamburger = document.getElementById("navHamburger");
-        const drawer = document.getElementById("navDrawer");
-        const backdrop = document.getElementById("navBackdrop");
 
-        function handleNavScroll() {
-            header.classList.toggle("nav-scrolled", window.scrollY > 50);
-            header.classList.toggle("nav-top", window.scrollY <= 50);
-        }
-        window.addEventListener("scroll", handleNavScroll, { passive: true });
-        handleNavScroll();
+    <script src="./Js/navbar.js"></script>
 
-        function openDrawer() { drawer.classList.add("open"); backdrop.classList.add("open"); hamburger.classList.add("open"); document.body.style.overflow = "hidden"; }
-        function closeDrawer() { drawer.classList.remove("open"); backdrop.classList.remove("open"); hamburger.classList.remove("open"); document.body.style.overflow = ""; }
-        hamburger.addEventListener("click", () => drawer.classList.contains("open") ? closeDrawer() : openDrawer());
-        backdrop.addEventListener("click", closeDrawer);
-        document.querySelectorAll(".drawer-link,.drawer-cta").forEach(l => l.addEventListener("click", closeDrawer));
-        document.addEventListener("keydown", e => { if (e.key === "Escape") closeDrawer(); });
-
-        // ---- Scroll progress bar ----
-        const progressBar = document.getElementById("progressBar");
-
-        window.addEventListener("scroll", () => {
-            const total = document.documentElement.scrollHeight - window.innerHeight;
-            const pct = (window.scrollY / total) * 100;
-            progressBar.style.width = pct + "%";
-        }, { passive: true });
-
-        // ---- Scroll to top ----
-        const scrollBtn = document.getElementById("scrollTopBtn");
-        window.addEventListener("scroll", () => {
-            scrollBtn.classList.toggle("visible", window.scrollY > 500);
-        }, { passive: true });
-        scrollBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-
-        // ---- Auto year ----
-        document.getElementById("ppYear").textContent = new Date().getFullYear();
-
-        // ---- Active TOC link on scroll ----
-        const sections = document.querySelectorAll(".pp-section");
-        const tocLinks = document.querySelectorAll(".pp-toc-link");
-
-        const sectionObs = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.getAttribute("id");
-                    tocLinks.forEach(link => {
-                        link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
-                    });
-                }
-            });
-        }, { threshold: 0.4, rootMargin: "-80px 0px 0px 0px" });
-
-        sections.forEach(s => sectionObs.observe(s));
-
-        // ---- Scroll reveal ----
-        const revealEls = document.querySelectorAll(".reveal");
-        const revealObs = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("revealed");
-                    revealObs.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        revealEls.forEach(el => revealObs.observe(el));
-    </script>
+    <script src="./Js/privacy.js"></script>
 
 </body>
 
