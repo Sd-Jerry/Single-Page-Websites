@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog & Event Insights — BL Events | Rajkot, Gujarat</title>
+    <meta name="description"
+        content="Event planning tips, wedding trends, corporate event guides and behind-the-scenes stories from BL Events — Gujarat's most trusted event management company." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Navbar CSS -->
+    <link rel="stylesheet" href="./Css/navbar.css" />
+
+    <link rel="stylesheet" href="./Css/blog.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Scroll To Top -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ================================
+         NAVBAR
+    ================================ -->
+    <div id="bl-navbar"></div>
+
+    <!-- ================================
+         HERO
+    ================================ -->
+    <section class="blog-hero">
+        <div class="blog-hero-bg"></div>
+        <div class="blog-hero-quote">"</div>
+        <div class="blog-hero-content">
+            <div class="hero-breadcrumb">
+                <span>Home</span>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Blog</span>
+            </div>
+            <h1>Stories, Tips & <em>Event Insights</em></h1>
+            <p>From wedding trends to corporate event guides — our blog is your go-to resource for everything events in
+                Gujarat and beyond.</p>
+            <!-- Hero Search -->
+            <div class="blog-search-wrap" id="heroSearchWrap">
+                <div class="blog-search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" class="blog-search-input" id="heroSearch"
+                    placeholder="Search articles, tips, trends..." />
+                <button class="blog-search-btn" onclick="triggerSearch()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <div class="blog-stats-strip">
+        <div class="blog-stats-inner">
+            <div class="blog-stat-item"><i class="fa-solid fa-newspaper"></i><span><strong>12</strong> Articles
+                    Published</span></div>
+            <div class="blog-stat-item"><i class="fa-solid fa-tags"></i><span><strong>8</strong> Event Categories</span>
+            </div>
+            <div class="blog-stat-item"><i class="fa-solid fa-clock"></i><span>Updated <strong>Weekly</strong></span>
+            </div>
+            <div class="blog-stat-item"><i class="fa-solid fa-location-dot"></i><span>For <strong>Gujarat</strong>
+                    Events</span></div>
+        </div>
+    </div>
+
+    <!-- ================================
+         CATEGORY FILTER
+    ================================ -->
+    <div class="cat-filter-strip">
+        <div class="cat-filter-inner" id="catFilterRow">
+            <button class="cat-filter-btn active" data-cat="all">
+                <i class="fa-solid fa-grip"></i> All Posts
+                <span class="count">12</span>
+            </button>
+            <button class="cat-filter-btn" data-cat="wedding">
+                <i class="fa-solid fa-rings-wedding"></i> Wedding
+                <span class="count">3</span>
+            </button>
+            <button class="cat-filter-btn" data-cat="corporate">
+                <i class="fa-solid fa-briefcase"></i> Corporate
+                <span class="count">2</span>
+            </button>
+            <button class="cat-filter-btn" data-cat="birthday">
+                <i class="fa-solid fa-cake-candles"></i> Birthday
+                <span class="count">1</span>
+            </button>
+            <button class="cat-filter-btn" data-cat="tips">
+                <i class="fa-solid fa-lightbulb"></i> Tips & Guides
+                <span class="count">2</span>
+            </button>
+            <button class="cat-filter-btn" data-cat="photography">
+                <i class="fa-solid fa-camera"></i> Photography
+                <span class="count">2</span>
+            </button>
+            <button class="cat-filter-btn" data-cat="behind-scenes">
+                <i class="fa-solid fa-film"></i> Behind The Scenes
+                <span class="count">1</span>
+            </button>
+            <button class="cat-filter-btn" data-cat="cultural">
+                <i class="fa-solid fa-masks-theater"></i> Cultural
+                <span class="count">1</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ================================
+         MAIN CONTENT
+    ================================ -->
+    <main class="blog-main">
+        <div class="blog-main-inner">
+
+            <!-- ======= LEFT — POSTS ======= -->
+            <div class="blog-posts-col">
+
+                <!-- Featured Post -->
+                <div class="featured-post reveal">
+                    <div class="featured-label">
+                        <i class="fa-solid fa-star"></i> Featured Article
+                    </div>
+                    <div class="featured-card" data-cat="wedding">
+                        <div class="featured-thumb">
+                            <img src="./imgs/blog/blog-wedding-trends.webp" alt="Wedding Décor Trends 2025"
+                                loading="lazy" />
+                            <span class="featured-cat-badge">Wedding</span>
+                        </div>
+                        <div class="featured-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 20 June 2025</span>
+                                <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+                                <span><i class="fa-solid fa-eye"></i> 1.2k views</span>
+                            </div>
+                            <h2>
+                                <a href="./blog/wedding-decor-trends-2025.html">
+                                    10 Wedding Décor Trends That Will Define Celebrations in 2025
+                                </a>
+                            </h2>
+                            <p>From floral ceiling installations to LED-lit mandaps — Gujarat's wedding scene is
+                                evolving fast. Here's what couples are choosing this season and why these trends are
+                                making every celebration more magical than ever before.</p>
+                            <a href="./blog/wedding-decor-trends-2025.html" class="featured-read-btn">
+                                Read Full Article <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <div class="blog-author">
+                                <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                                <div>
+                                    <span class="author-name">BL Events Team</span>
+                                    <span class="author-role">Wedding & Décor Specialists</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid Label -->
+                <div class="blog-grid-label">
+                    <h3>All Articles</h3>
+                    <span class="blog-results-count">Showing <span id="resultCount">12</span> articles</span>
+                </div>
+
+                <!-- Blog Grid -->
+                <div class="blog-grid" id="blogGrid">
+
+                    <!-- Post 2 -->
+                    <div class="blog-card reveal" data-cat="corporate">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-corporate.webp" alt="Corporate Event Planning" loading="lazy" />
+                            <span class="card-cat-badge">Corporate</span>
+                            <span class="card-readtime">5 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 10 June 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 890 views</span>
+                            </div>
+                            <h3><a href="./blog/corporate-event-planning.html">How to Plan a Corporate Event That Leaves
+                                    a Lasting Impression</a></h3>
+                            <p>Corporate events are more than meetings — they're brand moments. Here's how BL Events
+                                turns every corporate gathering into a professionally polished, high-impact experience
+                                for clients and employees alike.</p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 10 June 2025</span>
+                                </div>
+                                <a href="./blog/corporate-event-planning.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div class="blog-card reveal" data-cat="birthday">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-birthday.webp" alt="Birthday Party Checklist" loading="lazy" />
+                            <span class="card-cat-badge">Birthday</span>
+                            <span class="card-readtime">4 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 2 June 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 740 views</span>
+                            </div>
+                            <h3><a href="./blog/birthday-party-checklist.html">The Ultimate Birthday Party Planning
+                                    Checklist for 2025</a></h3>
+                            <p>Planning a birthday party in Gujarat? From theme selection to entertainment and catering
+                                — here's the complete checklist every host needs to make the day truly unforgettable.
+                            </p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 2 June 2025</span>
+                                </div>
+                                <a href="./blog/birthday-party-checklist.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 4 -->
+                    <div class="blog-card reveal" data-cat="tips">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-planner.webp" alt="Why Hire an Event Planner" loading="lazy" />
+                            <span class="card-cat-badge">Tips</span>
+                            <span class="card-readtime">5 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 25 May 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 1.1k views</span>
+                            </div>
+                            <h3><a href="./blog/why-hire-event-planner.html">5 Reasons Hiring a Professional Event
+                                    Planner Is Worth Every Rupee</a></h3>
+                            <p>Thinking of managing your event yourself? Here's why professional event management saves
+                                you money, stress, and time — and delivers results you simply can't achieve alone.</p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 25 May 2025</span>
+                                </div>
+                                <a href="./blog/why-hire-event-planner.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 5 -->
+                    <div class="blog-card reveal" data-cat="photography">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-photography.webp" alt="Event Photography Guide" loading="lazy" />
+                            <span class="card-cat-badge">Photography</span>
+                            <span class="card-readtime">4 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 5 May 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 680 views</span>
+                            </div>
+                            <h3><a href="./blog/photography-tips-events.html">Photography Guide: How to Capture Timeless
+                                    Moments at Any Event</a></h3>
+                            <p>Great event photography is about more than a good camera — it's about timing, lighting,
+                                and knowing the key moments before they happen. Here's what our in-house team swears by.
+                            </p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 5 May 2025</span></div>
+                                <a href="./blog/photography-tips-events.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 6 — Horizontal -->
+                    <div class="blog-card blog-card--horizontal reveal" data-cat="behind-scenes"
+                        style="grid-column:span 2;">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-behind-scenes.webp" alt="Behind the Scenes Wedding"
+                                loading="lazy" />
+                            <span class="card-cat-badge">Behind The Scenes</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 15 May 2025</span>
+                                <span><i class="fa-regular fa-clock"></i> 7 min read</span>
+                                <span><i class="fa-solid fa-eye"></i> 1.5k views</span>
+                            </div>
+                            <h3><a href="./blog/behind-scenes-500-guest-wedding.html">Behind the Scenes: How We Planned
+                                    a 500-Guest Wedding in Rajkot in Just 45 Days</a></h3>
+                            <p>500 guests. 45 days. One dedicated team. Here's the real story behind our most ambitious
+                                project — the logistics, the challenges, and the unforgettable moments that made it all
+                                worth it in the end.</p>
+                            <div class="card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                                    <div>
+                                        <span class="author-name">BL Events Team</span>
+                                        <span class="author-role">Operations & Planning</span>
+                                    </div>
+                                </div>
+                                <a href="./blog/behind-scenes-500-guest-wedding.html" class="card-read-link">Read Full
+                                    Story <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 7 -->
+                    <div class="blog-card reveal" data-cat="wedding">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-haldi.webp" alt="Haldi Ceremony Ideas" loading="lazy" />
+                            <span class="card-cat-badge">Wedding</span>
+                            <span class="card-readtime">4 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 28 April 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 920 views</span>
+                            </div>
+                            <h3><a href="./blog/haldi-ceremony-ideas.html">20 Stunning Haldi Ceremony Decoration Ideas
+                                    for Your Gujarat Wedding</a></h3>
+                            <p>The haldi ceremony is one of the most joyful pre-wedding functions — and it deserves a
+                                setup that matches the energy. Here are 20 fresh decoration ideas our team loves most.
+                            </p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 28 April 2025</span>
+                                </div>
+                                <a href="./blog/haldi-ceremony-ideas.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 8 -->
+                    <div class="blog-card reveal" data-cat="cultural">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-navratri.webp" alt="Navratri Event Planning" loading="lazy" />
+                            <span class="card-cat-badge">Cultural</span>
+                            <span class="card-readtime">5 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 15 April 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 1.3k views</span>
+                            </div>
+                            <h3><a href="./blog/navratri-event-planning-guide.html">How to Organize a Large-Scale
+                                    Navratri Event in Gujarat — Complete Guide</a></h3>
+                            <p>Navratri is Gujarat's biggest festival and organizing a community event requires serious
+                                planning. From venue selection to artist booking and crowd management — here's our
+                                complete guide.</p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 15 April 2025</span>
+                                </div>
+                                <a href="./blog/navratri-event-planning-guide.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 9 -->
+                    <div class="blog-card reveal" data-cat="corporate">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-award-night.webp" alt="Award Night Planning" loading="lazy" />
+                            <span class="card-cat-badge">Corporate</span>
+                            <span class="card-readtime">6 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 2 April 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 560 views</span>
+                            </div>
+                            <h3><a href="./blog/corporate-award-night-guide.html">How to Plan a Memorable Corporate
+                                    Award Night — The BL Events Way</a></h3>
+                            <p>Award nights are powerful employee motivation tools — but only when executed well. Here's
+                                how we plan every element to create an evening your team will talk about all year.</p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 2 April 2025</span>
+                                </div>
+                                <a href="./blog/corporate-award-night-guide.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 10 -->
+                    <div class="blog-card reveal" data-cat="tips">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-budget.webp" alt="Event Budget Tips" loading="lazy" />
+                            <span class="card-cat-badge">Tips</span>
+                            <span class="card-readtime">5 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 20 March 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 1.8k views</span>
+                            </div>
+                            <h3><a href="./blog/event-budget-planning-tips.html">How to Plan a Premium Event Without
+                                    Blowing Your Budget in Gujarat</a></h3>
+                            <p>A premium event doesn't have to mean an unlimited budget. Here are the 7 smart decisions
+                                BL Events makes for every client to maximize impact and minimize unnecessary spend.</p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 20 March 2025</span>
+                                </div>
+                                <a href="./blog/event-budget-planning-tips.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 11 -->
+                    <div class="blog-card reveal" data-cat="photography">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-cinematic.webp" alt="Cinematic Wedding Film" loading="lazy" />
+                            <span class="card-cat-badge">Photography</span>
+                            <span class="card-readtime">4 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 10 March 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 790 views</span>
+                            </div>
+                            <h3><a href="./blog/cinematic-wedding-film-guide.html">Cinematic Wedding Films vs
+                                    Traditional Videos — Which Is Right for You?</a></h3>
+                            <p>A cinematic film tells your love story like a movie. A traditional video captures
+                                everything sequentially. Here's how to decide which style fits your personality and
+                                vision best.</p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 10 March 2025</span>
+                                </div>
+                                <a href="./blog/cinematic-wedding-film-guide.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 12 -->
+                    <div class="blog-card reveal" data-cat="wedding">
+                        <div class="card-thumb">
+                            <img src="./imgs/blog/blog-venue.webp" alt="Wedding Venue Selection" loading="lazy" />
+                            <span class="card-cat-badge">Wedding</span>
+                            <span class="card-readtime">6 min read</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="blog-meta">
+                                <span><i class="fa-regular fa-calendar"></i> 1 March 2025</span>
+                                <span><i class="fa-solid fa-eye"></i> 1.0k views</span>
+                            </div>
+                            <h3><a href="./blog/wedding-venue-selection-guide.html">How to Choose the Perfect Wedding
+                                    Venue in Rajkot & Saurashtra</a></h3>
+                            <p>The right venue sets the tone for everything. From banquet halls to open gardens and
+                                farmhouses — here's the complete guide to selecting your perfect wedding venue in
+                                Saurashtra.</p>
+                            <div class="card-footer">
+                                <div class="blog-meta"><span><i class="fa-regular fa-clock"></i> 1 March 2025</span>
+                                </div>
+                                <a href="./blog/wedding-venue-selection-guide.html" class="card-read-link">Read More <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- No Results Message -->
+                    <div class="no-results" id="noResults">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h4>No articles found</h4>
+                        <p>Try a different search term or browse all categories.</p>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="blog-pagination" id="pagination">
+                    <button class="page-btn page-arrow" aria-label="Previous">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn page-arrow" aria-label="Next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- ======= SIDEBAR ======= -->
+            <aside class="blog-sidebar">
+
+                <!-- Search Widget -->
+                <div class="sidebar-widget">
+                    <div class="sidebar-widget-head">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h4>Search Articles</h4>
+                    </div>
+                    <div class="sidebar-widget-body">
+                        <div class="sidebar-search-wrap">
+                            <input type="text" id="sidebarSearch" placeholder="Search blog..." />
+                            <button class="sidebar-search-btn" onclick="triggerSearch()">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Widget -->
+                <div class="sidebar-widget sidebar-about">
+                    <div class="sidebar-about-inner">
+                        <img src="./imgs/icons/bl-events-logo-gold.svg" alt="BL Events" class="sidebar-about-logo" />
+                        <p>BL Events is Rajkot's most trusted event management company — crafting extraordinary
+                            celebrations across Saurashtra and Gujarat since 2014.</p>
+                        <a href="./aboutus.html" class="sidebar-about-btn">
+                            <i class="fa-solid fa-arrow-right"></i> Learn About Us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="sidebar-widget">
+                    <div class="sidebar-widget-head">
+                        <i class="fa-solid fa-tags"></i>
+                        <h4>Categories</h4>
+                    </div>
+                    <div class="sidebar-widget-body">
+                        <div class="sidebar-cat-list">
+                            <div class="sidebar-cat-item active" onclick="filterByCategory('all')">
+                                <div class="sidebar-cat-left"><i class="fa-solid fa-grip"></i> All Articles</div>
+                                <span class="sidebar-cat-count">12</span>
+                            </div>
+                            <div class="sidebar-cat-item" onclick="filterByCategory('wedding')">
+                                <div class="sidebar-cat-left"><i class="fa-solid fa-rings-wedding"></i> Wedding</div>
+                                <span class="sidebar-cat-count">3</span>
+                            </div>
+                            <div class="sidebar-cat-item" onclick="filterByCategory('corporate')">
+                                <div class="sidebar-cat-left"><i class="fa-solid fa-briefcase"></i> Corporate</div>
+                                <span class="sidebar-cat-count">2</span>
+                            </div>
+                            <div class="sidebar-cat-item" onclick="filterByCategory('birthday')">
+                                <div class="sidebar-cat-left"><i class="fa-solid fa-cake-candles"></i> Birthday</div>
+                                <span class="sidebar-cat-count">1</span>
+                            </div>
+                            <div class="sidebar-cat-item" onclick="filterByCategory('tips')">
+                                <div class="sidebar-cat-left"><i class="fa-solid fa-lightbulb"></i> Tips & Guides</div>
+                                <span class="sidebar-cat-count">2</span>
+                            </div>
+                            <div class="sidebar-cat-item" onclick="filterByCategory('photography')">
+                                <div class="sidebar-cat-left"><i class="fa-solid fa-camera"></i> Photography</div>
+                                <span class="sidebar-cat-count">2</span>
+                            </div>
+                            <div class="sidebar-cat-item" onclick="filterByCategory('behind-scenes')">
+                                <div class="sidebar-cat-left"><i class="fa-solid fa-film"></i> Behind The Scenes</div>
+                                <span class="sidebar-cat-count">1</span>
+                            </div>
+                            <div class="sidebar-cat-item" onclick="filterByCategory('cultural')">
+                                <div class="sidebar-cat-left"><i class="fa-solid fa-masks-theater"></i> Cultural Events
+                                </div>
+                                <span class="sidebar-cat-count">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Posts Widget -->
+                <div class="sidebar-widget">
+                    <div class="sidebar-widget-head">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <h4>Recent Posts</h4>
+                    </div>
+                    <div class="sidebar-widget-body">
+                        <div class="recent-post-list">
+                            <a href="./blog/wedding-decor-trends-2025.html" class="recent-post-item">
+                                <div class="recent-post-thumb">
+                                    <img src="./imgs/blog/blog-wedding-trends.webp" alt="Wedding Trends"
+                                        loading="lazy" />
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5>10 Wedding Décor Trends for 2025</h5>
+                                    <div class="recent-post-date"><i class="fa-regular fa-calendar"></i> 20 June 2025
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./blog/corporate-event-planning.html" class="recent-post-item">
+                                <div class="recent-post-thumb">
+                                    <img src="./imgs/blog/blog-corporate.webp" alt="Corporate Events" loading="lazy" />
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5>How to Plan a Corporate Event</h5>
+                                    <div class="recent-post-date"><i class="fa-regular fa-calendar"></i> 10 June 2025
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./blog/behind-scenes-500-guest-wedding.html" class="recent-post-item">
+                                <div class="recent-post-thumb">
+                                    <img src="./imgs/blog/blog-behind-scenes.webp" alt="Behind The Scenes"
+                                        loading="lazy" />
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5>500-Guest Wedding in 45 Days</h5>
+                                    <div class="recent-post-date"><i class="fa-regular fa-calendar"></i> 15 May 2025
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./blog/event-budget-planning-tips.html" class="recent-post-item">
+                                <div class="recent-post-thumb">
+                                    <img src="./imgs/blog/blog-budget.webp" alt="Budget Planning" loading="lazy" />
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5>Plan a Premium Event on a Budget</h5>
+                                    <div class="recent-post-date"><i class="fa-regular fa-calendar"></i> 20 March 2025
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tags Widget -->
+                <div class="sidebar-widget">
+                    <div class="sidebar-widget-head">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h4>Popular Tags</h4>
+                    </div>
+                    <div class="sidebar-widget-body">
+                        <div class="tags-cloud">
+                            <span class="tag-chip" onclick="searchTag('Wedding Planning')">Wedding Planning</span>
+                            <span class="tag-chip" onclick="searchTag('Gujarat Events')">Gujarat Events</span>
+                            <span class="tag-chip" onclick="searchTag('Décor Ideas')">Décor Ideas</span>
+                            <span class="tag-chip" onclick="searchTag('Rajkot')">Rajkot</span>
+                            <span class="tag-chip" onclick="searchTag('Corporate')">Corporate</span>
+                            <span class="tag-chip" onclick="searchTag('Photography')">Photography</span>
+                            <span class="tag-chip" onclick="searchTag('Saurashtra')">Saurashtra</span>
+                            <span class="tag-chip" onclick="searchTag('Budget Tips')">Budget Tips</span>
+                            <span class="tag-chip" onclick="searchTag('Navratri')">Navratri</span>
+                            <span class="tag-chip" onclick="searchTag('Birthday')">Birthday</span>
+                            <span class="tag-chip" onclick="searchTag('Live Shows')">Live Shows</span>
+                            <span class="tag-chip" onclick="searchTag('Trends 2025')">Trends 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter Widget -->
+                <div class="sidebar-widget newsletter-widget">
+                    <div class="sidebar-widget-head">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <h4>Stay Updated</h4>
+                    </div>
+                    <div class="sidebar-widget-body">
+                        <p>Get the latest event tips, trend guides, and BL Events updates straight to your inbox. No
+                            spam — ever.</p>
+                        <div class="nl-input-wrap">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" class="nl-input" id="nlEmail" placeholder="Your email address" />
+                        </div>
+                        <button class="nl-btn" id="nlBtn" onclick="subscribeNL()">
+                            Subscribe to Newsletter
+                        </button>
+                        <div class="nl-note">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            No spam. Unsubscribe anytime.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Widget -->
+                <div class="sidebar-widget cta-widget">
+                    <div class="sidebar-widget-body">
+                        <i class="fa-solid fa-calendar-check cta-icon"></i>
+                        <h4>Ready to Plan Your Event?</h4>
+                        <p>From wedding to corporate events — BL Events brings your vision to life across Gujarat. Free
+                            consultation, no commitment.</p>
+                        <a href="./contact.html" class="cta-widget-btn">
+                            <i class="fa-solid fa-arrow-right"></i> Get Free Quote
+                        </a>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- ================================
+         CTA BANNER
+    ================================ -->
+    <section class="blog-cta-banner">
+        <div class="blog-cta-deco">BL EVENTS</div>
+        <div class="blog-cta-inner reveal">
+            <span class="section-tag">/ Plan Your Celebration</span>
+            <h2>Ready to Create Your <em>Perfect Event?</em></h2>
+            <p>You've read the tips — now let's put them into action. Contact BL Events for a free consultation and let
+                us plan something truly extraordinary for you.</p>
+            <div class="blog-cta-btns">
+                <a href="./contact.html" class="cta-btn-primary">
+                    Book Free Consultation <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="./service.html" class="cta-btn-ghost">
+                    <i class="fa-solid fa-star"></i> Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Strip -->
+    <div class="blog-footer">
+        <p>© <span id="blogYear"></span> BL Events · All rights reserved · Rajkot, Gujarat.</p>
+        <div class="blog-footer-links">
+            <a href="./privacy.html">Privacy Policy</a>
+            <span></span>
+            <a href="./terms.html">Terms & Conditions</a>
+            <span></span>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <a href="./index.html" class="blog-back-link">
+            <i class="fa-solid fa-arrow-left"></i> Back to Main Site
+        </a>
+    </div>
+
+    <!-- ================================
+         SCRIPTS
+    ================================ -->
+    <script src="./Js/navbar.js"></script>
+
+    <script>
+        /* ================================
+           SCROLL PROGRESS & TOP
+        ================================ */
+        const progressBar = document.getElementById("progressBar");
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        window.addEventListener("scroll", () => {
+            const total = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = ((window.scrollY / total) * 100) + "%";
+            scrollTopBtn.classList.toggle("visible", window.scrollY > 500);
+        }, { passive: true });
+
+        scrollTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+        /* ================================
+           AUTO YEAR
+        ================================ */
+        document.getElementById("blogYear").textContent = new Date().getFullYear();
+
+        /* ================================
+           CATEGORY FILTER
+        ================================ */
+        const allCards = document.querySelectorAll(".blog-grid .blog-card");
+        const filterBtns = document.querySelectorAll(".cat-filter-btn");
+        const sidebarCats = document.querySelectorAll(".sidebar-cat-item");
+        const resultCount = document.getElementById("resultCount");
+        const noResults = document.getElementById("noResults");
+
+        function filterByCategory(cat) {
+            let visible = 0;
+
+            allCards.forEach(card => {
+                const cardCat = card.dataset.cat;
+                const matches = cat === "all" || cardCat === cat;
+                card.style.display = matches ? "" : "none";
+                card.style.gridColumn = matches ? "" : "";
+                if (matches) visible++;
+            });
+
+            // Handle horizontal card spanning
+            allCards.forEach(card => {
+                if (card.classList.contains("blog-card--horizontal") && card.style.display !== "none") {
+                    card.style.gridColumn = "span 2";
+                }
+            });
+
+            resultCount.textContent = visible;
+            noResults.classList.toggle("show", visible === 0);
+
+            // Update filter button states
+            filterBtns.forEach(btn => btn.classList.toggle("active", btn.dataset.cat === cat));
+            sidebarCats.forEach(item => {
+                const itemCat = item.getAttribute("onclick")?.match(/'([^']+)'/)?.[1];
+                item.classList.toggle("active", itemCat === cat);
+            });
+        }
+
+        // Top filter buttons
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => filterByCategory(btn.dataset.cat));
+        });
+
+        /* ================================
+           SEARCH
+        ================================ */
+        function triggerSearch() {
+            const heroVal = document.getElementById("heroSearch").value.trim().toLowerCase();
+            const sideVal = document.getElementById("sidebarSearch").value.trim().toLowerCase();
+            const query = heroVal || sideVal;
+
+            if (!query) { filterByCategory("all"); return; }
+
+            let visible = 0;
+
+            allCards.forEach(card => {
+                const title = card.querySelector("h3")?.textContent.toLowerCase() || "";
+                const text = card.querySelector("p")?.textContent.toLowerCase() || "";
+                const cat = card.querySelector(".card-cat-badge")?.textContent.toLowerCase() || "";
+                const matches = title.includes(query) || text.includes(query) || cat.includes(query);
+                card.style.display = matches ? "" : "none";
+                card.style.gridColumn = (matches && card.classList.contains("blog-card--horizontal")) ? "span 2" : "";
+                if (matches) visible++;
+            });
+
+            resultCount.textContent = visible;
+            noResults.classList.toggle("show", visible === 0);
+
+            // Reset filter btn active state
+            filterBtns.forEach(btn => btn.classList.remove("active"));
+            sidebarCats.forEach(item => item.classList.remove("active"));
+
+            // Scroll to grid
+            document.getElementById("blogGrid").scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        function searchTag(tag) {
+            document.getElementById("sidebarSearch").value = tag;
+            triggerSearch();
+        }
+
+        // Search on Enter key
+        document.getElementById("heroSearch").addEventListener("keydown", e => {
+            if (e.key === "Enter") triggerSearch();
+        });
+        document.getElementById("sidebarSearch").addEventListener("keydown", e => {
+            if (e.key === "Enter") triggerSearch();
+        });
+
+        // Live search as user types
+        document.getElementById("sidebarSearch").addEventListener("input", function () {
+            if (this.value === "") { filterByCategory("all"); return; }
+            triggerSearch();
+        });
+        document.getElementById("heroSearch").addEventListener("input", function () {
+            if (this.value === "") { filterByCategory("all"); return; }
+        });
+
+        /* ================================
+           NEWSLETTER
+        ================================ */
+        function subscribeNL() {
+            const input = document.getElementById("nlEmail");
+            const btn = document.getElementById("nlBtn");
+            const email = input.value.trim();
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                input.style.borderColor = "rgba(229,57,53,0.6)";
+                input.focus();
+                return;
+            }
+
+            input.style.borderColor = "";
+            btn.textContent = "✓ Subscribed! Thank You";
+            btn.style.background = "linear-gradient(135deg,#2e7d32,#1b5e20)";
+            input.value = "";
+
+            setTimeout(() => {
+                btn.textContent = "Subscribe to Newsletter";
+                btn.style.background = "";
+            }, 3500);
+        }
+
+        /* ================================
+           PAGINATION
+        ================================ */
+        document.querySelectorAll(".page-btn:not(.page-arrow)").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".page-btn:not(.page-arrow)").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                window.scrollTo({ top: document.querySelector(".blog-main").offsetTop - 100, behavior: "smooth" });
+            });
+        });
+
+        /* ================================
+           SCROLL REVEAL
+        ================================ */
+        const revealEls = document.querySelectorAll(".reveal");
+        const revealObs = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const siblings = [...entry.target.parentElement.children];
+                    const idx = siblings.indexOf(entry.target);
+                    setTimeout(() => entry.target.classList.add("revealed"), idx * 80);
+                    revealObs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        revealEls.forEach(el => revealObs.observe(el));
+    </script>
+
+</body>
+
+</html>
