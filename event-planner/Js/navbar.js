@@ -5,8 +5,8 @@
         { label: "Home", href: "index.html", section: "home" },
         { label: "About Us", href: "aboutus.html", section: "about" },
         { label: "Services", href: "service.html", section: "services" },
-        { label: "Testimonials", href: "testimonials.html", section: "testimonials" },
         { label: "Events", href: "events.html", section: "events" },
+        { label: "Testimonials", href: "testimonials.html", section: "testimonials" },
         { label: "Blog", href: "blog.html", section: "blog" },
         { label: "Contact Us", href: "contact.html", section: "contact" },
     ];
