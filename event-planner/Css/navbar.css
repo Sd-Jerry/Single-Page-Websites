@@ -340,6 +340,11 @@
 }
 
 @media (max-width: 1024px) {
+
+    #navbar{
+        padding: 0 clamp(1%, 1vw, 70px);
+    }
+
     .nav-list {
         gap: 0;
     }
