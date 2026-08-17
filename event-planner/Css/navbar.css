@@ -19,8 +19,8 @@
 
 #site-header.nav-scrolled {
     background: rgba(14, 12, 4, 0.97);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    /* backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px); */
     box-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
 }
 

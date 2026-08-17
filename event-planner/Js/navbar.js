@@ -189,7 +189,7 @@
                     }
                 });
             },
-            { threshold: 0.35, rootMargin: "-80px 0px 0px 0px" }
+            { threshold: 0, rootMargin: "-45% 0px -50% 0px" }
         );
 
         sections.forEach(s => observer.observe(s));
