@@ -11,3 +11,10 @@ const observer = new IntersectionObserver(entries => {
     });
 }, { threshold: 0.1 });
 revealEls.forEach(el => observer.observe(el));
+
+// ---- Scroll to top ----
+const scrollBtn = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", () => {
+    scrollBtn.classList.toggle("visible", window.scrollY > 500);
+}, { passive: true });
+scrollBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));

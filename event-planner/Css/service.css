@@ -67,7 +67,7 @@ ul {
 .srv-hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('./imgs/service-img/services-hero-bg.webp');
+    background-image: url('../imgs/service-img/service-bg.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.22;
@@ -1046,6 +1046,39 @@ ul {
 
 .srv-footer-strip a:hover {
     color: var(--gold);
+}
+
+/* Scroll to top */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    z-index: 990;
+    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(212, 175, 55, 0.55);
 }
 
 /* ==============================
