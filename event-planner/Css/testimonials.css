@@ -104,7 +104,7 @@
  .tl-hero-bg {
      position: absolute;
      inset: 0;
-     background-image: url('./imgs/testimonials/hero-bg.webp');
+     background-image: url('../imgs/testimonials/testi-bg.webp');
      background-size: cover;
      background-position: center;
      opacity: 0.18;
@@ -436,8 +436,9 @@
  /* 3-col featured grid */
  .featured-grid {
      display: grid;
-     grid-template-columns: 1.2fr 1fr 1fr;
+     grid-template-columns: repeat(3, minmax(0, 1fr));
      gap: clamp(16px, 2.5vw, 24px);
+     align-items: stretch;
  }
 
  /* Featured card base */
@@ -470,6 +471,13 @@
      border-color: rgba(212, 175, 55, 0.45);
      background: rgba(212, 175, 55, 0.06);
      transform: translateY(-6px);
+ }
+
+ .ft-side-column {
+     display: flex;
+     flex-direction: column;
+     gap: clamp(16px, 2.5vw, 24px);
+     min-width: 0;
  }
 
  /* Hero card — first one, spans different */
@@ -554,7 +562,7 @@
      margin-bottom: 3px;
  }
 
- .ft-event-tag {
+ .ft-event-type {
      display: inline-block;
      font-family: "Nunito", sans-serif;
      font-size: 0.72rem;
@@ -1548,7 +1556,7 @@
         ================================ */
  @media (max-width:1100px) {
      .featured-grid {
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: repeat(2, minmax(0, 1fr));
      }
 
      .stats-banner-inner {
