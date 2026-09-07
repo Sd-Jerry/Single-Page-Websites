@@ -153,6 +153,67 @@
             ]
         },
 
+        /* ── LIVE SHOWS ───────────────────────────────────── */
+        "bollywood-night-live": {
+            title: "Bollywood Night Live — Rajkot Arena 2023",
+            category: "Live Show",
+            icon: "fa-solid fa-music",
+            location: "Rajkot · 8,000+ Attended",
+            photos: [
+                { src: "./imgs/events/liveshow/bollywood-night-01.webp", caption: "Arena Stage Setup" },
+                { src: "./imgs/events/liveshow/bollywood-night-02.webp", caption: "Opening Performance" },
+                { src: "./imgs/events/liveshow/bollywood-night-03.webp", caption: "Crowd Aerial View" },
+                { src: "./imgs/events/liveshow/bollywood-night-04.webp", caption: "Celebrity Guest Appearance" },
+                { src: "./imgs/events/liveshow/bollywood-night-05.webp", caption: "Laser & Pyro Show" },
+                { src: "./imgs/events/liveshow/bollywood-night-06.webp", caption: "Finale Confetti Drop" },
+            ]
+        },
+
+        /* ── CORPORATE ────────────────────────────────────── */
+        "industry-excellence-award-night": {
+            title: "Industry Excellence Award Night",
+            category: "Corporate",
+            icon: "fa-solid fa-briefcase",
+            location: "Surat, Gujarat",
+            photos: [
+                { src: "./imgs/events/corporate/award-night-01.webp", caption: "Red Carpet Entrance" },
+                { src: "./imgs/events/corporate/award-night-02.webp", caption: "Opening Address" },
+                { src: "./imgs/events/corporate/award-night-03.webp", caption: "Award Presentation" },
+                { src: "./imgs/events/corporate/award-night-04.webp", caption: "Winners Group Photo" },
+                { src: "./imgs/events/corporate/award-night-05.webp", caption: "Gala Dinner" },
+            ]
+        },
+
+        /* ── CULTURAL ─────────────────────────────────────── */
+        "ram-navami-community-program": {
+            title: "Ram Navami Community Program",
+            category: "Cultural",
+            icon: "fa-solid fa-masks-theater",
+            location: "Rajkot, Gujarat",
+            photos: [
+                { src: "./imgs/events/cultural/ram-navami-01.webp", caption: "Community Ground Setup" },
+                { src: "./imgs/events/cultural/ram-navami-02.webp", caption: "Opening Aarti" },
+                { src: "./imgs/events/cultural/ram-navami-03.webp", caption: "Procession Rally" },
+                { src: "./imgs/events/cultural/ram-navami-04.webp", caption: "Devotional Performance" },
+                { src: "./imgs/events/cultural/ram-navami-05.webp", caption: "Prasad Distribution" },
+            ]
+        },
+
+        /* ── BIRTHDAY ─────────────────────────────────────── */
+        "enchanted-garden-kids-birthday": {
+            title: "Enchanted Garden Kids Birthday",
+            category: "Birthday",
+            icon: "fa-solid fa-cake-candles",
+            location: "Rajkot, Gujarat",
+            photos: [
+                { src: "./imgs/events/birthday/enchanted-garden-01.webp", caption: "Garden Theme Setup" },
+                { src: "./imgs/events/birthday/enchanted-garden-02.webp", caption: "Balloon Arch Entrance" },
+                { src: "./imgs/events/birthday/enchanted-garden-03.webp", caption: "Kids Play Zone" },
+                { src: "./imgs/events/birthday/enchanted-garden-04.webp", caption: "Character Mascot Visit" },
+                { src: "./imgs/events/birthday/enchanted-garden-05.webp", caption: "Cake Cutting Moment" },
+            ]
+        },
+
     };
 
 
