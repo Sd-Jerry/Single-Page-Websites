@@ -52,7 +52,7 @@
 
         /* ── CORPORATE ────────────────────────────────────── */
         "annual-leadership-gala": {
-            title: "Annual Leadership Gala 2024",
+            title: "Annual Leadership Gala 2026",
             category: "Corporate",
             icon: "fa-solid fa-briefcase",
             location: "Ahmedabad, Gujarat",
