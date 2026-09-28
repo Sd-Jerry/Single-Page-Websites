@@ -493,3 +493,48 @@ body::before {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ── WHATSAPP CTA (success screen) ── */
+.wa-cta {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+.wa-cta-text {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.wa-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25d366;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 28px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: background 0.18s, transform 0.12s, box-shadow 0.18s;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.30);
+    letter-spacing: 0.2px;
+}
+
+.wa-btn:hover {
+    background: #1ebe5d;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.40);
+    transform: translateY(-1px);
+}
+
+.wa-btn:active {
+    transform: scale(0.99);
+}
+
+.wa-btn svg {
+    flex-shrink: 0;
+}
