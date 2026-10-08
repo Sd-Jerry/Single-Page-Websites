@@ -207,7 +207,7 @@
             location: "Rajkot, Gujarat",
             photos: [
                 { src: "./imgs/events/birthday/enchanted-garden-01.webp", caption: "Garden Theme Setup" },
-                { src: "./imgs/events/birthday/enchanted-garden-02.webp", caption: "Balloon Arch Entrance" },
+                { src: "./imgs/events/birthday/enchanted-garden-02.webp", caption: "Balloon Arch Design" },
                 { src: "./imgs/events/birthday/enchanted-garden-03.webp", caption: "Kids Play Zone" },
                 { src: "./imgs/events/birthday/enchanted-garden-04.webp", caption: "Character Mascot Visit" },
                 { src: "./imgs/events/birthday/enchanted-garden-05.webp", caption: "Cake Cutting Moment" },
