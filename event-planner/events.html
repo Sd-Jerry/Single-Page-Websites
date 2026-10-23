@@ -25,11 +25,11 @@
 </head>
 
 <body>
-<!-- ================================
+    <!-- ================================
     NAVBAR
     ================================ -->
     <div id="bl-navbar"></div>
-    
+
     <!-- ================================
          HERO
     ================================ -->
@@ -124,7 +124,8 @@
                 <!-- Card 1 — Featured large -->
                 <div class="ev-card" data-category="wedding" data-album-id="sharma-mehta-wedding">
                     <div class="ev-card-thumb">
-                        <img src="./imgs/events/wedding/sharma-mehta-04.webp" alt="Grand Wedding Reception" loading="lazy" />
+                        <img src="./imgs/events/wedding/sharma-mehta-04.webp" alt="Grand Wedding Reception"
+                            loading="lazy" />
                     </div>
                     <div class="ev-card-overlay">
                         <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
@@ -140,7 +141,8 @@
                 <!-- Card 2 -->
                 <div class="ev-card" data-category="corporate" data-album-id="annual-leadership-gala">
                     <div class="ev-card-thumb">
-                        <img src="./imgs/events/corporate/leadership-gala-02.webp" alt="Corporate Gala" loading="lazy" />
+                        <img src="./imgs/events/corporate/leadership-gala-02.webp" alt="Corporate Gala"
+                            loading="lazy" />
                     </div>
                     <div class="ev-card-overlay">
                         <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
@@ -186,7 +188,8 @@
                 <!-- Card 5 — Span 2 cols -->
                 <div class="ev-card" data-category="branding" data-album-id="luxury-brand-activation">
                     <div class="ev-card-thumb">
-                        <img src="./imgs/events/branding/luxury-brand-05.webp" alt="Brand Launch Event" loading="lazy" />
+                        <img src="./imgs/events/branding/luxury-brand-05.webp" alt="Brand Launch Event"
+                            loading="lazy" />
                     </div>
                     <div class="ev-card-overlay">
                         <div class="ev-card-play"><i class="fa-solid fa-expand"></i></div>
@@ -324,14 +327,31 @@
                 <i class="fa-solid fa-circle-play"></i>
                 BL Events — Official Highlight Reel 2026
             </div>
-            <div class="showreel-frame reveal" id="showreelWrapper">
-                <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
-                <iframe id="showreelIframe"
-                    src="./videos/about-reel.mp4"
-                    title="BL Events Highlight Reel 2024" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen loading="lazy">
-                </iframe>
+            <div class="reel-grid" id="showreelWrapper">
+                <div class="reel-phone reveal">
+                    <div class="reel-phone-screen">
+                        <video class="reel-video" src="./videos/event-reel-1.mp4" muted loop playsinline
+                            preload="metadata"></video>
+                        <span class="reel-notch"></span>
+                        <div class="reel-tag"><i class="fa-solid fa-circle-play"></i> BL Events — Real Moments</div>
+                    </div>
+                </div>
+                <div class="reel-phone reveal">
+                    <div class="reel-phone-screen">
+                        <video class="reel-video" src="./videos/event-reel-2.mp4" muted loop playsinline
+                            preload="metadata"></video>
+                        <span class="reel-notch"></span>
+                        <div class="reel-tag"><i class="fa-solid fa-circle-play"></i> Weddings &amp; Celebrations</div>
+                    </div>
+                </div>
+                <div class="reel-phone reveal">
+                    <div class="reel-phone-screen">
+                        <video class="reel-video" src="./videos/event-reel-3.mp4" muted loop playsinline
+                            preload="metadata"></video>
+                        <span class="reel-notch"></span>
+                        <div class="reel-tag"><i class="fa-solid fa-circle-play"></i> Concerts &amp; Festivals</div>
+                    </div>
+                </div>
             </div>
             <div class="showreel-caption reveal">
                 <i class="fa-solid fa-film"></i>

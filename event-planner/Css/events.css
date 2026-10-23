@@ -649,22 +649,77 @@ ul {
     line-height: 1.75;
 }
 
-.showreel-frame {
+/* 3 reels side by side (phone frames) */
+.reel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(16px, 3vw, 40px);
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.reel-phone {
     position: relative;
-    border-radius: 22px;
-    overflow: hidden;
-    aspect-ratio: 16/9;
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18),
+    border-radius: clamp(26px, 3.4vw, 40px);
+    padding: 5px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18),
         0 0 0 1px rgba(212, 175, 55, 0.08);
+}
+
+/* slight stagger for a more premium look on desktop */
+.reel-phone:nth-child(2) {
+    margin-top: 28px;
+}
+
+.reel-phone-screen {
+    position: relative;
+    aspect-ratio: 9 / 16;
+    border-radius: clamp(22px, 3vw, 35px);
+    overflow: hidden;
     background: #111;
 }
 
-.showreel-frame iframe {
+.reel-video {
     width: 100%;
     height: 100%;
-    border: none;
+    object-fit: cover;
     display: block;
+}
+
+.reel-notch {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28%;
+    height: 14px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    pointer-events: none;
+}
+
+.reel-tag {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 28px 14px 14px;
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(0.65rem, 1.2vw, 0.82rem);
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+    pointer-events: none;
+}
+
+.reel-tag i {
+    color: var(--gold);
+    font-size: 1.1em;
 }
 
 /* Label above video */
@@ -1522,6 +1577,27 @@ ul {
 }
 
 @media (max-width:600px) {
+    /* reels become a swipe-able row on phones */
+    .reel-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        padding: 4px 6px 18px;
+        margin: 0 -6px;
+        scrollbar-width: none;
+    }
+
+    .reel-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .reel-phone {
+        flex: 0 0 68%;
+        scroll-snap-align: center;
+    }
+
     .upcoming-grid {
         grid-template-columns: 1fr;
     }

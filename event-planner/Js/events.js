@@ -35,33 +35,20 @@ const revealObs = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 revealEls.forEach(el => revealObs.observe(el));
 
-// ---- Showreel autoplay on scroll ----
-const showreelWrapper = document.getElementById("showreelWrapper");
-const iframe = document.getElementById("showreelIframe");
-let playerReady = false;
+// ---- Showreel videos: play when visible, pause when off-screen ----
+const reelVideos = document.querySelectorAll(".reel-video");
 
-const videoObs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (!playerReady) return;
-        const src = iframe.src;
-        if (entry.isIntersecting) {
-            iframe.contentWindow.postMessage(
-                '{"event":"command","func":"playVideo","args":""}', "*"
-            );
-        } else {
-            iframe.contentWindow.postMessage(
-                '{"event":"command","func":"pauseVideo","args":""}', "*"
-            );
-        }
-    });
-}, { threshold: 0.4 });
+if (reelVideos.length) {
+    const reelObs = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const vid = entry.target;
+            if (entry.isIntersecting) {
+                vid.play().catch(() => { });
+            } else {
+                vid.pause();
+            }
+        });
+    }, { threshold: 0.4 });
 
-if (showreelWrapper) {
-    videoObs.observe(showreelWrapper);
-    // Update iframe to enable JS API
-    const currentSrc = iframe.src;
-    if (!currentSrc.includes("enablejsapi")) {
-        iframe.src = currentSrc + "&enablejsapi=1";
-    }
-    setTimeout(() => { playerReady = true; }, 2000);
+    reelVideos.forEach(v => reelObs.observe(v));
 }
