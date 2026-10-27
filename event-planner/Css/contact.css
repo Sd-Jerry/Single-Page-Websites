@@ -93,7 +93,7 @@ ul {
 .ct-hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('./imgs/contact/hero-bg.webp');
+    background-image: url("../imgs/couple-img-2.webp");
     background-size: cover;
     background-position: center;
     opacity: 0.18;
