@@ -66,3 +66,46 @@ document.querySelector(".wr-submit").addEventListener("click", function () {
         this.style.background = "";
     }, 3000);
 });
+
+// ---- Video Testimonials (click play -> video plays) ----
+const vtlThumbs = document.querySelectorAll(".vtl-thumb");
+
+vtlThumbs.forEach(thumb => {
+    const video = thumb.querySelector(".vtl-video");
+    const playBtn = thumb.querySelector(".vtl-play");
+    const duration = thumb.querySelector(".vtl-duration");
+    if (!video || !playBtn) return;
+
+    // Auto-fill the duration badge from the real video length
+    video.addEventListener("loadedmetadata", () => {
+        if (!duration || !isFinite(video.duration)) return;
+        const m = Math.floor(video.duration / 60);
+        const s = Math.floor(video.duration % 60).toString().padStart(2, "0");
+        duration.textContent = `${m}:${s}`;
+    });
+
+    // Play button starts the video and reveals native controls
+    playBtn.addEventListener("click", () => {
+        // Pause any other testimonial video first
+        vtlThumbs.forEach(other => {
+            const v = other.querySelector(".vtl-video");
+            if (v && v !== video) v.pause();
+        });
+        video.controls = true;
+        thumb.classList.add("is-playing");
+        video.play().catch(() => {
+            // Playback failed (e.g. file missing) - restore the play button
+            video.controls = false;
+            thumb.classList.remove("is-playing");
+        });
+    });
+
+    // Reset to the play-button state when the video ends
+    video.addEventListener("ended", () => {
+        video.controls = false;
+        video.currentTime = 0;
+        thumb.classList.remove("is-playing");
+    });
+
+    // If the video is paused by another one starting, keep controls so user can resume
+});
